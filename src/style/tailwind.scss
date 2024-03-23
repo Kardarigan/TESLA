@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply shadow-lg p-5 my-20 rounded-3xl dark:bg-black;
+
+        h4 {
+            @apply text-xl dark:text-white;
+        }
+
+        p {
+            @apply text-slate-400;
+        }
+
+        button {
+            @apply mt-8 rounded-md bg-black hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-slate-100 text-white px-6 py-2;
+        }
+    }
+}
