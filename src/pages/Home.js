@@ -1,12 +1,25 @@
-import React from "react";
+import {
+    Hero,
+    Home_Vehicles,
+    Home_Planet,
+    Home_Energy,
+    Home_Accessories,
+    Home_Weekly,
+    Home_Statistics
+} from "../comps/Portal"
+
 
 const Home = () => {
     return (
-        <main className="p-5">
-            <h1>
-                Hello world!
-            </h1>
-        </main>
+        <>
+            <Hero />
+            <Home_Statistics />
+            <Home_Vehicles />
+            <Home_Planet />
+            <Home_Energy />
+            <Home_Accessories />
+            <Home_Weekly />
+        </>
     );
 };
 

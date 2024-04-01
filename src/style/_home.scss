@@ -1,0 +1,105 @@
+.splide {
+    height: 100%;
+
+    &__track {
+        border-radius: 30px;
+    }
+
+    &__slide {
+        @apply padding-x flex md:flex-row flex-col-reverse justify-center;
+
+        .slide {
+            width: 100%;
+
+            h3 {
+                mix-blend-mode: difference;
+                font-size: 5rem;
+            }
+        }
+    }
+
+    &__pagination {
+        mix-blend-mode: difference;
+        top: 80vh;
+
+        &__page {
+            width: 20vw;
+            border-radius: 10px;
+            background-color: rgba($color_prime, 0.5);
+
+            &.is-active {
+                transform: scale(1);
+                width: 20vw;
+                border-radius: 50px;
+                background-color: $color_prime;
+            }
+
+        }
+    }
+}
+
+.vehicles {
+    &-section {
+        height: 20vh;
+        min-height: 100px;
+        max-height: 200px;
+        transition: all 0.5s;
+        position: relative;
+
+        div {
+            @include backgroundGradient(0.4)
+        }
+
+        p {
+            text-wrap: nowrap;
+            position: absolute;
+            top: 40%;
+            opacity: 0;
+            margin-top: 10px;
+            transition: all 0.7s;
+        }
+
+        &:nth-child(1) {
+            background-image: url(../assets/Homepage-Model-X-Desktop-LHD.jpg);
+        }
+
+        &:nth-child(2) {
+            background-image: url(../assets/Model-3-Exterior-Desktop-NA.jpg);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../assets/Homepage-Model-Y-Global-Desktop.jpg);
+        }
+
+        &:nth-child(4) {
+            background-image: url(../assets/Homepage-Model-S-Desktop-LHD-6.22.jpg);
+        }
+
+        &:nth-child(5) {
+            background-image: url(../assets/Homepage-Cybertruck-Desktop.jpg);
+        }
+
+        &:hover {
+            min-height: 30vh;
+
+            p {
+                opacity: 1;
+                top: 60%;
+            }
+        }
+    }
+}
+
+.mars {
+    animation: planetRase 5s linear 2s infinite alternate;
+
+    @keyframes planetRase {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-30px);
+        }
+    }
+}
