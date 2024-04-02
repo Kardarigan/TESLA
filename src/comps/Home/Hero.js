@@ -4,7 +4,7 @@ import { heroSlides } from '../../constants'
 
 const Hero = () => {
   return (
-    <section id='hero' className='h-screen'>
+    <section id='hero' className='h-screen flex-centralizer'>
 
       <div className="w-full">
         <Splide aria-label="Tesla Hero Slider" options={
