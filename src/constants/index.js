@@ -18,7 +18,6 @@ export const navTools = [
 ]
 
 export const footLinks = [
-    { href: './about', label: 'Tesla © 2024' },
     { href: './privacy', label: 'Privacy & Legal' },
     { href: './recalls', label: 'Vehicle Recalls' },
     { href: './contact', label: 'Contact' },

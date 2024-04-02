@@ -1,26 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { footLinks } from "../constants";
-import Button from "./Button"
-import Background from "../assets/Cybertruck-Second-Hero-Desktop.jpg"
 
 const Footer = () => {
     return (
-        <footer className="w-full flex flex-col justify-between min-h-[50vh] bg-fullcenter" style={{ backgroundImage: "url(" + Background + ")" }}>
-            <div className="text-center padding">
-                <h2 className="text-slate-100 font-semibold md:text-4xl text-2xl">Join to the Tesla's Family</h2>
-                <Button to="/" label="Choose Yours" customClass="mt-3" />
-            </div>
-
-            <ul className="pb-3 mx-auto font-thin text-center grid md:grid-cols-7 sm:grid-cols-2 gap-4 text-slate-100 text-sm">
+        <footer className="w-full absolute bottom-0 text-slate-100 text-sm font-thin text-center">
+            <ul className="pb-3 mx-auto md:w-4/5 grid md:grid-cols-6 sm:grid-cols-2 gap-4">
                 {footLinks.map((item) => {
                     return (
-                        <li className="">
+                        <li>
                             <Link to={item.href}>{item.label}</Link>
                         </li>
                     )
                 })}
             </ul>
+            <p className='py-3'><Link to='/about'>Tesla © 2024</Link></p>
         </footer>
     );
 };

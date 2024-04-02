@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Layout from './comps/Layout'
-import Home from './pages/Home'
-
+import { Layout, Home, Overview } from './comps/Portal'
 
 function App() {
   return (
@@ -9,6 +7,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<Home />} />
+          <Route path='/vehicles' element={<Overview />} />
         </Route>
       </Routes>
     </Router>

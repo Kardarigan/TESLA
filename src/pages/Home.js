@@ -5,7 +5,8 @@ import {
     Home_Energy,
     Home_Accessories,
     Home_Weekly,
-    Home_Statistics
+    Home_Statistics,
+    Home_Join
 } from "../comps/Portal"
 
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Home_Energy />
             <Home_Accessories />
             <Home_Weekly />
+            <Home_Join />
         </>
     );
 };
