@@ -7,7 +7,7 @@ const Hero = () => {
     <section id='hero' className='h-screen'>
 
       <div className="w-full">
-        <Splide aria-label="My Favorite Images" options={
+        <Splide aria-label="Tesla Hero Slider" options={
           {
             type: 'fade',
             rewind: true,

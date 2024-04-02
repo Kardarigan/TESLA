@@ -21,7 +21,7 @@ const Home_Weekly = () => {
             <div className="flex justify-between flex-col w-full min-h-[100px] rounded-lg p-4 bg-slate-800">
               <div className="flex items-center text-slate-200">
                 <i className="fa-light fa-envelope-circle text-4xl pe-3" />
-                <label htmlFor="weeklyMail" className='text-[12px] max-w-[250px]'>Enter your Email Address to Recieve them every Weeks :</label>
+                <label htmlFor="weeklyMail" className='text-sm max-w-[260px] font-bold'>Enter your Email Address to Recieve them every Weeks :</label>
               </div>
               <input type="text" id="weeklyMail" class="field mt-12" placeholder='example@email.com' required />
             </div>
