@@ -10,7 +10,8 @@ const Home_Vehicles = () => {
             <div className="w-full h-full flex-centralizer">
               <h2 className='text-3xl font-semibold'>{model.model}</h2>
             </div>
-            <p>{model.describe}</p></Link>
+            <p>{model.describe}</p>
+          </Link>
         )
       })}
     </section>

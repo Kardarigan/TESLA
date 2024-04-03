@@ -1,6 +1,11 @@
 import Cybertruck from '../assets/Mega-Menu-Vehicles-Cybertruck-1x.png'
 import Model_Y from '../assets/Mega-Menu-Vehicles-Model-Y.png'
 import Model_X from '../assets/Mega-Menu-Vehicles-Model-X.png'
+import Ow_Model_S from '../assets/Overview/ModelS_71.jpg'
+import Ow_Model_Y from '../assets/Overview/ModelY_58.jpg'
+import Ow_Model_X from '../assets/Overview/ModelX_93.jpg'
+import Ow_Model_3 from '../assets/Overview/Model3-67.jpg'
+import Ow_Cybertruck from '../assets/Overview/Cybertruck_63.jpg'
 
 
 export const navLinks = [
@@ -45,4 +50,12 @@ export const homeVehicles = [
     { model: "Model Y", path: "/", describe: "Something Truely Special" },
     { model: "Model S", path: "/", describe: "Something Truely Special" },
     { model: "Cybertruck", path: "/", describe: "Something Truely Special" }
+]
+
+export const overVehicles = [
+    { model: "Model 3", subtitle: "Affortable But Special", orderLink: "/", learnLink: "/", cover: Ow_Model_3 },
+    { model: "Model Y", subtitle: "Big Fast Dude", orderLink: "/", learnLink: "/", cover: Ow_Model_Y },
+    { model: "Model S", subtitle: "Speed for Miles", orderLink: "/", learnLink: "/", cover: Ow_Model_S },
+    { model: "Model X", subtitle: "Big Boss", orderLink: "/", learnLink: "/", cover: Ow_Model_X },
+    { model: "Cybertruck", subtitle: "Not Just for Earth", orderLink: "/", learnLink: "/", cover: Ow_Cybertruck },
 ]
