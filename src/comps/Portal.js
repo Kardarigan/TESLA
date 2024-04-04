@@ -12,6 +12,8 @@ import Home_Statistics from "./Home/Home_Statistics";
 import Home_Join from "./Home/Home_Join";
 import Overview from "../pages/Overview";
 import Ow_Hero from "./Ow/Ow_Hero";
+import Order from "./Car/Order"
+import Learn from "./Car/Learn"
 
 
 export {
@@ -28,5 +30,7 @@ export {
     Home_Join,
     Overview,
     Ow_Hero,
+    Order,
+    Learn,
     Layout,
 };

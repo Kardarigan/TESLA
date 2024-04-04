@@ -44,18 +44,11 @@ export const heroSlides = [
     { title: "Find the Tesla for You", subtitle: "Discover which model is best for you based on your budget, driving habits and lifestyle.", image: Model_X, alt: "Model-X", link1: "/", link1_label: "Help Me Choose" },
 ]
 
-export const homeVehicles = [
-    { model: "Model X", path: "/", describe: "Something Truely Special" },
-    { model: "Model 3", path: "/", describe: "Something Truely Special" },
-    { model: "Model Y", path: "/", describe: "Something Truely Special" },
-    { model: "Model S", path: "/", describe: "Something Truely Special" },
-    { model: "Cybertruck", path: "/", describe: "Something Truely Special" }
-]
 
-export const overVehicles = [
-    { model: "Model 3", subtitle: "Affortable But Special", orderLink: "/", learnLink: "/", cover: Ow_Model_3 },
-    { model: "Model Y", subtitle: "Big Fast Dude", orderLink: "/", learnLink: "/", cover: Ow_Model_Y },
-    { model: "Model S", subtitle: "Speed for Miles", orderLink: "/", learnLink: "/", cover: Ow_Model_S },
-    { model: "Model X", subtitle: "Big Boss", orderLink: "/", learnLink: "/", cover: Ow_Model_X },
-    { model: "Cybertruck", subtitle: "Not Just for Earth", orderLink: "/", learnLink: "/", cover: Ow_Cybertruck },
+export const vehicles = [
+    { model: "Model X", subtitle: "Affortable But Special", orderLink: "/model_x/order", learnLink: "/model_x/learn", cover: Ow_Model_3 },
+    { model: "Model 3", subtitle: "Big Fast Dude", orderLink: "/model_3/order", learnLink: "/model_3/learn", cover: Ow_Model_Y },
+    { model: "Model Y", subtitle: "Speed for Miles", orderLink: "/model_y/order", learnLink: "/model_y/learn", cover: Ow_Model_S },
+    { model: "Model S", subtitle: "Big Boss", orderLink: "/model_s/order", learnLink: "/model_s/learn", cover: Ow_Model_X },
+    { model: "Cybertruck", subtitle: "Not Just for Earth", orderLink: "/cybertruck/order", learnLink: "/cybertruck/learn", cover: Ow_Cybertruck }
 ]
