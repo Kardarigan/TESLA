@@ -88,8 +88,8 @@ export const vehicles = [
   {
     model: "Model X",
     subtitle: "Affortable But Special",
-    orderLink: "/model_x/order",
-    learnLink: "/model_x/learn",
+    orderLink: "/model x/order",
+    learnLink: "/model x/learn",
     cover: Ow_Model_3,
     slidesbg: [Slide_1_3, Slide_2_3, Slide_3_3],
     saving:
@@ -152,8 +152,8 @@ export const vehicles = [
   {
     model: "Model 3",
     subtitle: "Big Fast Dude",
-    orderLink: "/model_3/order",
-    learnLink: "/model_3/learn",
+    orderLink: "/model 3/order",
+    learnLink: "/model 3/learn",
     cover: Ow_Model_Y,
     slidesbg: [Slide_1_3, Slide_2_3, Slide_3_3],
     saving:
@@ -216,8 +216,8 @@ export const vehicles = [
   {
     model: "Model Y",
     subtitle: "Speed for Miles",
-    orderLink: "/model_y/order",
-    learnLink: "/model_y/learn",
+    orderLink: "/model y/order",
+    learnLink: "/model y/learn",
     cover: Ow_Model_S,
     slidesbg: [Slide_1_3, Slide_2_3, Slide_3_3],
     saving:
@@ -280,8 +280,8 @@ export const vehicles = [
   {
     model: "Model S",
     subtitle: "Big Boss",
-    orderLink: "/model_s/order",
-    learnLink: "/model_s/learn",
+    orderLink: "/model s/order",
+    learnLink: "/model s/learn",
     cover: Ow_Model_X,
     slidesbg: [Slide_1_3, Slide_2_3, Slide_3_3],
     saving:
