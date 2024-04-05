@@ -12,7 +12,7 @@ const Learn_Slide = ({ model, title, subtitle, backgournd, to }) => {
         }}
       >
         <div className="text-center h-3/5 flex flex-col justify-between">
-          <div>
+          <div className="mix-blend-difference">
             <h3 className="text-xl">{title}</h3>
             <h1>{model}</h1>
             <p>{subtitle}</p>

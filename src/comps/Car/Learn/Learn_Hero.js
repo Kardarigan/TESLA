@@ -6,7 +6,7 @@ const Learn_Hero = (props) => {
   const { car } = props;
   const carSlides = vehicles.find(
     (vehicle) => vehicle.model === car.model
-  ).slidesbg;
+  ).slides;
 
   return (
     <section className="h-screen flex-centralizer">

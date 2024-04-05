@@ -1,10 +1,6 @@
 .splide {
     height: 100%;
 
-    &__track {
-        border-radius: 30px;
-    }
-
     &__slide {
         @apply padding-x flex md:flex-row flex-col-reverse justify-center;
 

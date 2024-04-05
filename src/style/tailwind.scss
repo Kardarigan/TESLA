@@ -44,7 +44,7 @@
     @apply h-screen w-full flex-centralizer bg-fullcenter;
 
     h2, h1{
-      @apply font-bold xl:text-4xl text-2xl
+      @apply font-bold md:text-6xl text-4xl
     }
     p{
       @apply my-3
