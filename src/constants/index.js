@@ -91,7 +91,23 @@ export const vehicles = [
     orderLink: "/model x/order",
     learnLink: "/model x/learn",
     cover: Ow_Model_3,
-    slidesbg: [Slide_1_3, Slide_2_3, Slide_3_3],
+    slidesbg: [
+      {
+        bg: Slide_1_3,
+        title: "Reengineered",
+        subtitle: "Lease starting at $329/mo*",
+      },
+      {
+        bg: Slide_2_3,
+        title: "Reengineered",
+        subtitle: "Lease starting at $329/mo*",
+      },
+      {
+        bg: Slide_3_3,
+        title: "Reengineered",
+        subtitle: "Lease starting at $329/mo*",
+      },
+    ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
     interImage: Interios_3,

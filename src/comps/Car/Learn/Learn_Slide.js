@@ -1,34 +1,27 @@
-import { SplideSlide } from '@splidejs/react-splide'
-import Button from '../Button'
+import { SplideSlide } from "@splidejs/react-splide";
+import Button from "../../Button";
 
-const Learn_Slide = ({
-    title,
-    subtitle,
-    image,
-    alt,
-    link1,
-    link1_label,
-    link2,
-    link2_label,
-}) => {
-    return (
-        <SplideSlide>
-            <div className="halfhalf">
-                <div className="relative md:w-1/2 flex justify-start flex-col w-full padding-b md:pt-28 pt-10">
-                    <h1 className='mt-2 font-bold xl:text-4xl text-2xl'>{title}</h1>
-                    <h2 className='mt-3 text-slate-400'>{subtitle}</h2>
-                    <div className="mt-5 md:flex gap-5">
-                        <Button to={link1} label={link1_label} light />
-                        {link2 && <Button
-                            to={link2} label={link2_label} customClass="md:mt-0 mt-2" />}
-                    </div>
-                </div>
-                <div className="md:w-1/2 w-full sm:pt-28">
-                    <img className='bg-slate-200 rounded-lg' src={image} alt={alt} />
-                </div>
-            </div>
-        </SplideSlide>
-    );
+const Learn_Slide = ({ model, title, subtitle, backgournd, to }) => {
+  return (
+    <SplideSlide>
+      <section
+        className="fullSection"
+        style={{
+          backgroundImage: "url(" + backgournd + ")",
+          mixBlendMode: "difference",
+        }}
+      >
+        <div className="text-center h-3/5 flex flex-col justify-between">
+          <div>
+            <h3 className="text-xl">{title}</h3>
+            <h1>{model}</h1>
+            <p>{subtitle}</p>
+          </div>
+          <Button to={to} label="Order Now" />
+        </div>
+      </section>
+    </SplideSlide>
+  );
 };
 
 export default Learn_Slide;

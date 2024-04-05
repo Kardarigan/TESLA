@@ -1,20 +1,20 @@
-import { Splide } from '@splidejs/react-splide'
-import Hero_Slide from './Hero_Slide'
-import { heroSlides } from '../../constants'
+import { Splide } from "@splidejs/react-splide";
+import Hero_Slide from "./Hero_Slide";
+import { heroSlides } from "../../constants";
 
 const Hero = () => {
   return (
-    <section id='hero' className='h-screen flex-centralizer'>
-
+    <section className="h-screen flex-centralizer">
       <div className="w-full">
-        <Splide aria-label="Tesla Hero Slider" options={
-          {
-            type: 'fade',
+        <Splide
+          aria-label="Tesla Hero Slider"
+          options={{
+            type: "fade",
             rewind: true,
             autoplay: true,
-            arrows: false
-          }
-        }>
+            arrows: false,
+          }}
+        >
           {heroSlides.map((slide) => {
             return (
               <Hero_Slide
@@ -27,16 +27,15 @@ const Hero = () => {
                 link2={slide.link2}
                 link2_label={slide.link2_label}
               />
-            )
+            );
           })}
           <div className="md:block hidden splide__progress">
             <div className="splide__progress__bar" />
           </div>
         </Splide>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
