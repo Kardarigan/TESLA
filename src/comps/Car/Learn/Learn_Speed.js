@@ -9,7 +9,7 @@ const Learn_Speed = (props) => {
 
   return (
     <section
-      className="bg-slate-950 bg-fullcenter h-auto"
+      className="bg-slate-950 bg-fullcenter flex items-end min-h-[70vh]"
       style={{ backgroundImage: "url(" + car.roadImage + ")" }}
     >
       <div className="flex-seperate size-full shadowFromBottom md:px-32 padding">

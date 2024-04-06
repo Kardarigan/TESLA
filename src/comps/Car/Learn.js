@@ -6,6 +6,7 @@ import {
   Learn_Exterior,
   Learn_Hero,
   Learn_Inter,
+  Learn_Intertop,
   Learn_Powertrain,
   Learn_Range,
   Learn_Speed,
@@ -20,6 +21,7 @@ const Learn = () => {
     <div id="learn">
       <Learn_Hero car={car} />
       <Learn_Speed car={car} />
+      <Learn_Intertop car={car} />
       <Learn_Inter car={car} />
       <Learn_Amenities car={car} />
       <Learn_Design car={car} />

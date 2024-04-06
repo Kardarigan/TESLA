@@ -141,35 +141,33 @@ export const vehicles = [
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
     interImage: Interios_S,
-    interior: {
-      topImage: Interios_S,
-      slides: [
-        {
-          image: Inter_Slide_1_S,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_2_S,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_3_S,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_4_S,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-      ],
-    },
+    topImage: Interios_S,
+    interiorSlides: [
+      {
+        image: Inter_Slide_1_S,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_2_S,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_3_S,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_4_S,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+    ],
     amenities: [
       {
         image: Amenity_1_3,
@@ -240,35 +238,34 @@ export const vehicles = [
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
     interImage: Interios_3,
-    interior: {
-      topImage: Interios_3,
-      slides: [
-        {
-          image: Inter_Slide_1_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_2_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_3_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_4_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-      ],
-    },
+    topImage: Interios_3,
+    interiorSlides: [
+      {
+        image: Inter_Slide_1_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_2_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_3_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_4_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+    ],
+
     amenities: [
       {
         image: Amenity_1_3,
@@ -339,35 +336,33 @@ export const vehicles = [
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
     interImage: Interios_3,
-    interior: {
-      topImage: Interios_Y,
-      slides: [
-        {
-          image: Inter_Slide_1_Y,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_2_Y,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_3_Y,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_4_Y,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-      ],
-    },
+    topImage: Interios_Y,
+    interiorSlides: [
+      {
+        image: Inter_Slide_1_Y,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_2_Y,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_3_Y,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_4_Y,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+    ],
     amenities: [
       {
         image: Amenity_1_3,
@@ -438,35 +433,33 @@ export const vehicles = [
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
     interImage: Interios_X,
-    interior: {
-      topImage: Interios_X,
-      slides: [
-        {
-          image: Inter_Slide_1_X,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_2_X,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_3_X,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_4_X,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-      ],
-    },
+    topImage: Interios_X,
+    interior: [
+      {
+        image: Inter_Slide_1_X,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_2_X,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_3_X,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_4_X,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+    ],
     amenities: [
       {
         image: Amenity_1_3,
@@ -538,35 +531,33 @@ export const vehicles = [
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
     interImage: Interios_3,
-    interior: {
-      topImage: Interios_3,
-      slides: [
-        {
-          image: Inter_Slide_1_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_2_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_3_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-        {
-          image: Inter_Slide_4_3,
-          title: "Cinematic Experience",
-          describe:
-            "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
-        },
-      ],
-    },
+    topImage: Interios_3,
+    interior: [
+      {
+        image: Inter_Slide_1_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_2_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_3_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+      {
+        image: Inter_Slide_4_3,
+        title: "Cinematic Experience",
+        describe:
+          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+      },
+    ],
     amenities: [
       {
         image: Amenity_1_3,

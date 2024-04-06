@@ -23,6 +23,9 @@
     &-fullcenter {
       @apply bg-center bg-cover bg-no-repeat;
     }
+    &-fullobject{
+      @apply object-center object-cover;
+    }
   }
 
   .input {

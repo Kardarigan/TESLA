@@ -3,11 +3,11 @@ import { vehicles } from "../../../constants";
 
 const Learn_Amenities = (props) => {
   const { car } = props;
-  const carSlides = vehicles.find(
+  const carAmenities = vehicles.find(
     (vehicle) => vehicle.model === car.model
-  ).slides;
+  ).amenities;
 
-  return <div>Learn_Amenities</div>;
+  return <section></section>;
 };
 
 export default Learn_Amenities;
