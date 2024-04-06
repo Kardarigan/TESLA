@@ -118,8 +118,8 @@ export const vehicles = [
   {
     model: "Model S",
     subtitle: "Affortable But Special",
-    orderLink: "/model x/order",
-    learnLink: "/model x/learn",
+    orderLink: "/model s/order",
+    learnLink: "/model s/learn",
     cover: Ow_Model_S,
     slides: [
       {
@@ -190,10 +190,29 @@ export const vehicles = [
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
     ],
+    numbers: [
+      {
+        key: "Range (EPA est.)",
+        value: 326,
+        unit: "km",
+      },
+      {
+        key: "0-100 km/h",
+        value: 3.99,
+        unit: "s",
+      },
+      {
+        key: "Peack Power",
+        value: "1,020",
+        unit: "hp",
+      },
+      {
+        key: "Top Speed",
+        value: 322,
+        unit: "km/h",
+      },
+    ],
     roadImage: Road_S,
-    range: 326,
-    mph060: 3.99,
-    peakPower: 1020,
   },
   {
     model: "Model 3",
@@ -270,10 +289,29 @@ export const vehicles = [
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
     ],
+    numbers: [
+      {
+        key: "Range (EPA est.)",
+        value: 326,
+        unit: "km",
+      },
+      {
+        key: "0-100 km/h",
+        value: 3.99,
+        unit: "s",
+      },
+      {
+        key: "Peack Power",
+        value: 1020,
+        unit: "hp",
+      },
+      {
+        key: "Top Speed",
+        value: "1,020",
+        unit: "hp",
+      },
+    ],
     roadImage: Road_3,
-    range: 326,
-    mph060: 3.99,
-    peakPower: 1020,
   },
   {
     model: "Model Y",
@@ -350,16 +388,35 @@ export const vehicles = [
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
     ],
+    numbers: [
+      {
+        key: "Range (EPA est.)",
+        value: 326,
+        unit: "km",
+      },
+      {
+        key: "0-100 km/h",
+        value: 3.99,
+        unit: "s",
+      },
+      {
+        key: "Peack Power",
+        value: 1020,
+        unit: "hp",
+      },
+      {
+        key: "Top Speed",
+        value: "1,020",
+        unit: "hp",
+      },
+    ],
     roadImage: Road_Y,
-    range: 326,
-    mph060: 3.99,
-    peakPower: 1020,
   },
   {
     model: "Model X",
     subtitle: "Big Boss",
-    orderLink: "/model s/order",
-    learnLink: "/model s/learn",
+    orderLink: "/model x/order",
+    learnLink: "/model x/learn",
     cover: Ow_Model_X,
     slides: [
       {
@@ -430,10 +487,30 @@ export const vehicles = [
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
     ],
+
+    numbers: [
+      {
+        key: "Range (EPA est.)",
+        value: 326,
+        unit: "km",
+      },
+      {
+        key: "0-100 km/h",
+        value: 3.99,
+        unit: "s",
+      },
+      {
+        key: "Peack Power",
+        value: 1020,
+        unit: "hp",
+      },
+      {
+        key: "Top Speed",
+        value: "1,020",
+        unit: "hp",
+      },
+    ],
     roadImage: Road_X,
-    range: 326,
-    mph060: 3.99,
-    peakPower: 1020,
   },
   {
     model: "Cybertruck",
@@ -510,9 +587,29 @@ export const vehicles = [
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
     ],
+
+    numbers: [
+      {
+        key: "Range (EPA est.)",
+        value: 326,
+        unit: "km",
+      },
+      {
+        key: "0-100 km/h",
+        value: 3.99,
+        unit: "s",
+      },
+      {
+        key: "Peack Power",
+        value: 1020,
+        unit: "hp",
+      },
+      {
+        key: "Top Speed",
+        value: "1,020",
+        unit: "hp",
+      },
+    ],
     roadImage: Road_3,
-    range: 326,
-    mph060: 3.99,
-    peakPower: 1020,
   },
 ];

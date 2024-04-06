@@ -1,6 +1,11 @@
 import React from "react";
+import { vehicles } from "../../../constants";
 
-const Learn_Storage = () => {
+const Learn_Storage = (props) => {
+  const { car } = props;
+  const carSlides = vehicles.find(
+    (vehicle) => vehicle.model === car.model
+  ).slides;
   return <div>Learn_Storage</div>;
 };
 

@@ -5,7 +5,7 @@ const Learn_Slide = ({ model, title, subtitle, backgournd, to }) => {
   return (
     <SplideSlide>
       <section
-        className="fullSection"
+        className="fullSection shadowFromBottom"
         style={{
           backgroundImage: "url(" + backgournd + ")",
           mixBlendMode: "difference",

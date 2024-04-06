@@ -33,7 +33,7 @@ const Learn_Hero = (props) => {
           );
         })}
 
-        <div className="absolute w-full text-center top-[90%] z-10">
+        <div className="absolute w-full text-center top-[90%] z-10 md:text-sm text-[9px]">
           <p>{car.saving}</p>
           <Link className="link">Learn about est. gas savings.</Link>
         </div>
