@@ -1,5 +1,5 @@
 import { Splide } from "@splidejs/react-splide";
-import Hero_Slide from "./Hero_Slide";
+import { Hero_Slide } from "../Portal";
 import { heroSlides } from "../../constants";
 
 const Hero = () => {

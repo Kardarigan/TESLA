@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { vehicles } from "../../constants";
-import Learn_Hero from "./Learn/Learn_Hero";
+import { Learn_Hero, Learn_Inter, Learn_Speed } from "../Portal";
 
 const Learn = () => {
   const { model } = useParams();
@@ -9,6 +9,8 @@ const Learn = () => {
   return (
     <div id="learn">
       <Learn_Hero car={car} />
+      <Learn_Speed car={car} />
+      <Learn_Inter car={car} />
     </div>
   );
 };

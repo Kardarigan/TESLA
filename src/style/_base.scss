@@ -16,3 +16,11 @@ $color_dark: #171a20;
     background: -webkit-linear-gradient(to right, rgba($color_dark, $alpha), rgba($color_second, $alpha));
     background: linear-gradient(to right, rgba($color_dark, $alpha), rgba($color_second, $alpha));
 }
+
+.shadowFromTop{
+    background: linear-gradient(180deg, $color_dark -30%, transparent 100%);
+}
+
+.shadowFromBottom{
+    background: linear-gradient(0deg, $color_dark 0%, transparent 100%);
+}

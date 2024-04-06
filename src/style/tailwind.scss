@@ -32,7 +32,9 @@
   .navitem {
     @apply transition text-gray-100 duration-200 text-sm font-semibold rounded px-3 py-2 bg-gradient-to-br hover:bg-gray-300 hover:bg-opacity-5 hover:backdrop-blur-sm;
   }
-
+  .link{
+    @apply underline hover:decoration-2
+  }
   .halfhalf {
     @apply flex md:flex-row flex-col-reverse justify-center sm:gap-12 max-container
   }
