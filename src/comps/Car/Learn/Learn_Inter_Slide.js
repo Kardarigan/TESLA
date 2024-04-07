@@ -9,7 +9,7 @@ const Learn_Inter_Slide = ({ image, title, describe }) => {
           src={image}
           alt={title}
         />
-        <div className="mt-10 max-w-80">
+        <div className="mt-10 md:w-3/5 mx-auto">
           <h3 className="text-2xl font-smibold">{title}</h3>
           <p className="mt-5">{describe}</p>
         </div>

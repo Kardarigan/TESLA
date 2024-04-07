@@ -1,5 +1,4 @@
 import React from "react";
-import { vehicles } from "../../../constants";
 import { Learn_Inter_Slide } from "../../Portal";
 import { Splide } from "@splidejs/react-splide";
 
@@ -7,7 +6,7 @@ const Learn_Inter = (props) => {
   const { car } = props;
 
   return (
-    <div className="padding sectionSplide">
+    <div className="padding-x padding-t sectionSplide">
       <Splide
         options={{
           type: "fade",
