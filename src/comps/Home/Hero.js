@@ -4,8 +4,8 @@ import { heroSlides } from "../../constants";
 
 const Hero = () => {
   return (
-    <section className="h-screen flex-centralizer">
-      <div className="w-full">
+    <section className="min-h-screen flex-centralizer">
+      <div className="w-full heroSplide">
         <Splide
           aria-label="Tesla Hero Slider"
           options={{
@@ -29,9 +29,6 @@ const Hero = () => {
               />
             );
           })}
-          <div className="md:block hidden splide__progress">
-            <div className="splide__progress__bar" />
-          </div>
         </Splide>
       </div>
     </section>

@@ -7,7 +7,7 @@ const Learn_Inter = (props) => {
   const { car } = props;
 
   return (
-    <div className="padding">
+    <div className="padding sectionSplide">
       <Splide
         options={{
           type: "fade",

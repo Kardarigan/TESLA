@@ -4,11 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ECEEFF",
-        "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
-        "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)",
+        slate: {
+          50: "#ffffff",
+          100: "#f3f4f4",
+          200: "#f1f1f2",
+          300: "#a2a3a6",
+          400: "#8b8d90",
+          500: "#747679",
+          600: "#5d5f63",
+          700: "#45484d",
+          800: "#2e3136",
+          900: "#171a20",
+          950: "#15171d",
+        },
       },
       screens: {
         wide: "1440px",

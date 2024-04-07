@@ -10,7 +10,7 @@ const Learn_Hero = (props) => {
   ).slides;
 
   return (
-    <section className="w-full h-screen">
+    <section className="w-full h-screen heroSplide">
       <Splide
         aria-label={`${car.model} hero slider`}
         options={{

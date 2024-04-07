@@ -1,39 +1,60 @@
-.splide {
-    height: 100%;
-
-    &__slide {
-        @apply padding-x flex md:flex-row flex-col-reverse justify-center;
-
-        .slide {
-            width: 100%;
-
-            h3 {
-                mix-blend-mode: difference;
-                font-size: 5rem;
+.heroSplide{
+    .splide {
+        height: 100%;
+    
+        &__slide {
+            @apply padding-x flex md:flex-row flex-col-reverse justify-center;
+    
+            .slide {
+                width: 100%;
+    
+                h3 {
+                    mix-blend-mode: difference;
+                    font-size: 5rem;
+                }
             }
         }
-    }
-
-    &__pagination {
-        mix-blend-mode: difference;
-        top: 70%;
-
-        &__page {
-            width: 20vw;
-            border-radius: 10px;
-            background-color: rgba($color_prime, 0.5);
-
-            &.is-active {
-                transform: scale(1);
+    
+        &__pagination {
+            mix-blend-mode: difference;
+            &__page {
                 width: 20vw;
-                border-radius: 50px;
-                background-color: $color_prime;
+                border-radius: 10px;
+                background-color: rgba($color_prime, 0.5);
+    
+                &.is-active {
+                    transform: scale(1);
+                    width: 20vw;
+                    border-radius: 50px;
+                    background-color: $color_prime;
+                }
+    
             }
-
         }
     }
 }
+.sectionSplide{
+    .splide{
 
+        &__pagination {
+            mix-blend-mode: difference;
+            top: 30%;
+            &__page {
+                width: 15vw;
+                border-radius: 10px;
+                background-color: rgba($color_prime, 0.5);
+    
+                &.is-active {
+                    transform: scale(1);
+                    border-radius: 50px;
+                    background-color: $color_prime;
+                }
+    
+            }
+        }
+    }
+
+}
 .vehicles {
     &-section {
         height: 20vh;

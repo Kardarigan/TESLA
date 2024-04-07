@@ -5,13 +5,13 @@ const Learn_Inter_Slide = ({ image, title, describe }) => {
     <SplideSlide>
       <section className="min-h-screen w-full bg-fullcenter">
         <img
-          className="bg-fullobject w-full rounded h-[80vh]"
+          className="bg-fullobject w-full rounded h-[70vh]"
           src={image}
           alt={title}
         />
-        <div className="mt-20 max-w-56">
-          <h3 className="text-xl">{title}</h3>
-          <p>{describe}</p>
+        <div className="mt-10 max-w-80">
+          <h3 className="text-2xl font-smibold">{title}</h3>
+          <p className="mt-5">{describe}</p>
         </div>
       </section>
     </SplideSlide>
