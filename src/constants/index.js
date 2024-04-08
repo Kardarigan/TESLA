@@ -10,7 +10,7 @@ import Ow_Cybertruck from "../assets/Overview/Cybertruck_63.jpg";
 import Slide_1_3 from "../assets/Single/3/Slide_Model3_1.jpg";
 import Slide_2_3 from "../assets/Single/3/Slide_Model3_2.jpg";
 import Slide_3_3 from "../assets/Single/3/Slide_Model3_3.jpg";
-import Interios_3 from "../assets/Single/3/Interior_Model3.jpg.jpg";
+import Interior_3 from "../assets/Single/3/Interior_Model3.jpg.jpg";
 import Inter_Slide_1_3 from "../assets/Single/3/InteriorSlide_Model3_1.jpg";
 import Inter_Slide_2_3 from "../assets/Single/3/InteriorSlide_Model3_2.jpg";
 import Inter_Slide_3_3 from "../assets/Single/3/InteriorSlide_Model3_3.jpg";
@@ -23,7 +23,7 @@ import Road_3 from "../assets/Single/3/Road_Model3.jpg";
 import Slide_1_Y from "../assets/Single/Y/Slide_ModelY_1.jpg";
 import Slide_2_Y from "../assets/Single/Y/Slide_ModelY_2.jpg";
 import Slide_3_Y from "../assets/Single/Y/Slide_ModelY_3.jpg";
-import Interios_Y from "../assets/Single/Y/Interior_ModelY.jpg";
+import Interior_Y from "../assets/Single/Y/Interior_ModelY.jpg";
 import Inter_Slide_1_Y from "../assets/Single/Y/InteriorSlide_ModelY_1.jpg";
 import Inter_Slide_2_Y from "../assets/Single/Y/InteriorSlide_ModelY_2.jpg";
 import Inter_Slide_3_Y from "../assets/Single/Y/InteriorSlide_ModelY_3.jpg";
@@ -33,7 +33,7 @@ import Road_Y from "../assets/Single/Y/Road_ModelY.jpg";
 import Slide_1_S from "../assets/Single/S/Slide_ModelS_1.jpg";
 import Slide_2_S from "../assets/Single/S/Slide_ModelS_2.jpg";
 import Slide_3_S from "../assets/Single/S/Slide_ModelS_3.jpg";
-import Interios_S from "../assets/Single/S/Interior_ModelS.jpg";
+import Interior_S from "../assets/Single/S/Interior_ModelS.jpg";
 import Inter_Slide_1_S from "../assets/Single/S/InteriorSlide_ModelS_1.jpg";
 import Inter_Slide_2_S from "../assets/Single/S/InteriorSlide_ModelS_2.jpg";
 import Inter_Slide_3_S from "../assets/Single/S/InteriorSlide_ModelS_3.jpg";
@@ -43,7 +43,7 @@ import Road_S from "../assets/Single/S/Road_ModelS.jpg";
 import Slide_1_X from "../assets/Single/X/Slide_ModelX_1.jpg";
 import Slide_2_X from "../assets/Single/X/Slide_ModelX_2.jpg";
 import Slide_3_X from "../assets/Single/X/Slide_ModelX_3.jpg";
-import Interios_X from "../assets/Single/X/Interior_ModelX.jpg";
+import Interior_X from "../assets/Single/X/Interior_ModelX.jpg";
 import Inter_Slide_1_X from "../assets/Single/X/InteriorSlide_ModelX_1.jpg";
 import Inter_Slide_2_X from "../assets/Single/X/InteriorSlide_ModelX_2.jpg";
 import Inter_Slide_3_X from "../assets/Single/X/InteriorSlide_ModelX_3.jpg";
@@ -140,8 +140,7 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
-    interImage: Interios_S,
-    topImage: Interios_S,
+    topImage: Interior_S,
     interiorSlides: [
       {
         image: Inter_Slide_1_S,
@@ -237,8 +236,7 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
-    interImage: Interios_3,
-    topImage: Interios_3,
+    topImage: Interior_3,
     interiorSlides: [
       {
         image: Inter_Slide_1_3,
@@ -335,8 +333,7 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
-    interImage: Interios_3,
-    topImage: Interios_Y,
+    topImage: Interior_Y,
     interiorSlides: [
       {
         image: Inter_Slide_1_Y,
@@ -432,9 +429,8 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
-    interImage: Interios_X,
-    topImage: Interios_X,
-    interior: [
+    topImage: Interior_X,
+    interiorSlides: [
       {
         image: Inter_Slide_1_X,
         title: "Cinematic Experience",
@@ -530,9 +526,8 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
-    interImage: Interios_3,
-    topImage: Interios_3,
-    interior: [
+    topImage: Interior_3,
+    interiorSlides: [
       {
         image: Inter_Slide_1_3,
         title: "Cinematic Experience",

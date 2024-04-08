@@ -57,7 +57,7 @@
 }
 .vehicles {
     &-section {
-        height: 20vh;
+        height: 45vh;
         min-height: 100px;
         max-height: 200px;
         transition: all 0.5s;
@@ -76,28 +76,8 @@
             transition: all 0.7s;
         }
 
-        &:nth-child(1) {
-            background-image: url(../assets/Homepage-Model-X-Desktop-LHD.jpg);
-        }
-
-        &:nth-child(2) {
-            background-image: url(../assets/Model-3-Exterior-Desktop-NA.jpg);
-        }
-
-        &:nth-child(3) {
-            background-image: url(../assets/Homepage-Model-Y-Global-Desktop.jpg);
-        }
-
-        &:nth-child(4) {
-            background-image: url(../assets/Homepage-Model-S-Desktop-LHD-6.22.jpg);
-        }
-
-        &:nth-child(5) {
-            background-image: url(../assets/Homepage-Cybertruck-Desktop.jpg);
-        }
-
         &:hover {
-            min-height: 30vh;
+            min-height: 50vh;
 
             p {
                 opacity: 1;

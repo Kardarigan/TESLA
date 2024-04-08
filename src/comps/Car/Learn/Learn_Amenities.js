@@ -8,18 +8,18 @@ const Learn_Amenities = (props) => {
   ).amenities;
 
   return (
-    <section className="lg:px-10 py-5 mx-auto max-w-[1200px]">
+    <section className="lg:px-10 py-10 mx-auto max-w-[1200px]">
       {carAmenities.map((item, index) => {
         return (
           <div
             key={index}
             className={`flex justify-between sm:${
               index % 2 === 1 ? "flex-row-reverse" : "flex-row"
-            } flex-col sm:px-5 py-1`}
+            } flex-col sm:px-5 sm:py-0 py-5`}
           >
             <div className="sm:w-1/2 flex items-center">
               {item.image.endsWith(".mp4") || item.image.endsWith(".webm") ? (
-                <video autoPlay muted loop className=" bg-fullobject w-full">
+                <video autoPlay muted loop className="bg-fullobject w-full">
                   <source
                     src={item.image}
                     type={`video/${item.image.split(".").pop()}`}
