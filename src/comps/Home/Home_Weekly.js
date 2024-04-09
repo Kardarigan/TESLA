@@ -6,7 +6,7 @@ const Home_Weekly = () => {
       <div className="w-full">
         <div className="flex md:flex-row flex-col justify-center sm:gap-12 max-container bg-slate-200 padding-x rounded">
           <div className="relative md:w-3/5 flex justify-start flex-col w-full py-5">
-            <h1 className="mt-2 text-slate-950 font-bold xl:text-4xl text-2xl">
+            <h1 className="mt-2 text-slate-950  xl:text-4xl text-2xl">
               Always Be Up To Date
             </h1>
             <h2 className="mt-3 text-slate-600">
@@ -20,10 +20,7 @@ const Home_Weekly = () => {
             <div className="flex justify-between flex-col w-full min-h-[100px] rounded-lg p-4 bg-slate-800">
               <div className="flex items-center text-slate-200">
                 <i className="fa-light fa-envelope-circle text-4xl pe-3" />
-                <label
-                  htmlFor="weeklyMail"
-                  className="text-sm max-w-[260px] font-bold"
-                >
+                <label htmlFor="weeklyMail" className="text-sm max-w-[260px] ">
                   Enter your Email Address to Recieve them every Weeks :
                 </label>
               </div>

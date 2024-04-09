@@ -30,16 +30,25 @@ const Learn = () => {
         title={carPlaid.title}
         topic={carPlaid.topic}
         describe={carPlaid.describe}
-        link1={carPlaid.orderLink}
-        link1_label={carPlaid.orderLinkLabel}
-        link2={carPlaid.inventoryLink}
-        link2_label={carPlaid.inventoryLinkLabel}
+        orderLink={car.orderLink}
         light
       />
-      <Learn_Design car={car} />
-      <Learn_Exterior car={car} />
-      <Learn_Range car={car} />
       <Learn_Powertrain car={car} />
+      <Learn_Range car={car} />
+      <section
+        className="h-[60vh] bg-fullcenter"
+        style={{
+          backgroundImage: "url(" + car.designTop + ")",
+        }}
+      ></section>
+      <Learn_Middle
+        title={carPlaid.title}
+        topic={carPlaid.topic}
+        describe={carPlaid.describe}
+        orderLink={car.orderLink}
+        inventoryLink={car.inventoryLink}
+      />
+      <Learn_Exterior car={car} />
       <Learn_Storage car={car} />
     </div>
   );

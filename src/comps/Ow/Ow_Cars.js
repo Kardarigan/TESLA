@@ -15,7 +15,11 @@ const Ow_Cars = () => {
                 <p>{car.subtitle}</p>
               </div>
               <div>
-                <Button to={car.learnLink} label="Learn About" outline />
+                <Button
+                  to={car.learnLink}
+                  label="Learn About"
+                  outline="light"
+                />
                 <Button
                   to={car.orderLink}
                   label="Order Now"

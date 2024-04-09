@@ -49,6 +49,9 @@ import Inter_Slide_2_X from "../assets/Single/X/InteriorSlide_ModelX_2.jpg";
 import Inter_Slide_3_X from "../assets/Single/X/InteriorSlide_ModelX_3.jpg";
 import Inter_Slide_4_X from "../assets/Single/X/InteriorSlide_ModelX_4.jpg";
 import Road_X from "../assets/Single/X/Road_ModelX.jpg";
+import Designe_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.avif";
+import Motor_X from "../assets/Single/X/Model-X-Performance-Dual-Motor-Desktop-Powertrain-Carousel.avif";
+import Motor_X_Plaid from "../assets/Single/X/Model-X-Performance-Tri-Motor-Powertrain-Carousel-Desktop.avif";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -126,10 +129,6 @@ export const vehicles = [
       topic: "Plaid",
       describe:
         "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
-      orderLink: "/model s/order",
-      orderLinkLabel: "Order Now",
-      inventoryLink: "/",
-      inventoryLinkLabel: "View Inventory",
     },
     slides: [
       {
@@ -150,6 +149,36 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    powerTrain: {
+      describe:
+        "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
+      editions: [
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X,
+
+          acceleration: 3.9,
+          range: 529,
+        },
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X_Plaid,
+          acceleration: 2.6,
+          range: 529,
+        },
+      ],
+    },
+    designTop: Designe_X,
+    design: {
+      title: "Designed for Efficiency",
+      topic: "Exterior",
+      describe:
+        "Model X has a drag coefficient of just .24 Cd, the lowest of any production SUV on the planet. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.",
+    },
     topImage: Interior_S,
     interiorSlides: [
       {
@@ -232,10 +261,6 @@ export const vehicles = [
       topic: "Plaid",
       describe:
         "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
-      orderLink: "/model 3/order",
-      orderLinkLabel: "Order Now",
-      inventoryLink: "/",
-      inventoryLinkLabel: "View Inventory",
     },
     slides: [
       {
@@ -256,6 +281,35 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    powerTrain: {
+      describe:
+        "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
+      editions: [
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X,
+          acceleration: 3.9,
+          range: 529,
+        },
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X_Plaid,
+          acceleration: 2.6,
+          range: 529,
+        },
+      ],
+    },
+    designTop: Designe_X,
+    design: {
+      title: "Designed for Efficiency",
+      topic: "Exterior",
+      describe:
+        "Model X has a drag coefficient of just .24 Cd, the lowest of any production SUV on the planet. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.",
+    },
     topImage: Interior_3,
     interiorSlides: [
       {
@@ -339,10 +393,6 @@ export const vehicles = [
       topic: "Plaid",
       describe:
         "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
-      orderLink: "/model y/order",
-      orderLinkLabel: "Order Now",
-      inventoryLink: "/",
-      inventoryLinkLabel: "View Inventory",
     },
     slides: [
       {
@@ -363,6 +413,35 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    powerTrain: {
+      describe:
+        "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
+      editions: [
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X,
+          acceleration: 3.9,
+          range: 529,
+        },
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X_Plaid,
+          acceleration: 2.6,
+          range: 529,
+        },
+      ],
+    },
+    designTop: Designe_X,
+    design: {
+      title: "Designed for Efficiency",
+      topic: "Exterior",
+      describe:
+        "Model X has a drag coefficient of just .24 Cd, the lowest of any production SUV on the planet. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.",
+    },
     topImage: Interior_Y,
     interiorSlides: [
       {
@@ -445,10 +524,6 @@ export const vehicles = [
       topic: "Plaid",
       describe:
         "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
-      orderLink: "/model x/order",
-      orderLinkLabel: "Order Now",
-      inventoryLink: "/",
-      inventoryLinkLabel: "View Inventory",
     },
     slides: [
       {
@@ -469,6 +544,35 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    powerTrain: {
+      describe:
+        "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
+      editions: [
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X,
+          acceleration: 3.9,
+          range: 529,
+        },
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X_Plaid,
+          acceleration: 2.6,
+          range: 529,
+        },
+      ],
+    },
+    designTop: Designe_X,
+    design: {
+      title: "Designed for Efficiency",
+      topic: "Exterior",
+      describe:
+        "Model X has a drag coefficient of just .24 Cd, the lowest of any production SUV on the planet. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.",
+    },
     topImage: Interior_X,
     interiorSlides: [
       {
@@ -552,10 +656,6 @@ export const vehicles = [
       topic: "Plaid",
       describe:
         "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
-      orderLink: "/cybertruck/order",
-      orderLinkLabel: "Order Now",
-      inventoryLink: "/",
-      inventoryLinkLabel: "View Inventory",
     },
     slides: [
       {
@@ -576,6 +676,35 @@ export const vehicles = [
     ],
     saving:
       "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    powerTrain: {
+      describe:
+        "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
+      editions: [
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X,
+          acceleration: 3.9,
+          range: 529,
+        },
+        {
+          title: "Model X Plaid",
+          describe:
+            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
+          image: Motor_X_Plaid,
+          acceleration: 2.6,
+          range: 529,
+        },
+      ],
+    },
+    designTop: Designe_X,
+    design: {
+      title: "Designed for Efficiency",
+      topic: "Exterior",
+      describe:
+        "Model X has a drag coefficient of just .24 Cd, the lowest of any production SUV on the planet. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.",
+    },
     topImage: Interior_3,
     interiorSlides: [
       {
