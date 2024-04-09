@@ -121,6 +121,16 @@ export const vehicles = [
     orderLink: "/model s/order",
     learnLink: "/model s/learn",
     cover: Ow_Model_S,
+    plaid: {
+      title: "Beyond Ludicrous",
+      topic: "Plaid",
+      describe:
+        "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
+      orderLink: "/model s/order",
+      orderLinkLabel: "Order Now",
+      inventoryLink: "/",
+      inventoryLinkLabel: "View Inventory",
+    },
     slides: [
       {
         bg: Slide_1_S,
@@ -217,6 +227,16 @@ export const vehicles = [
     orderLink: "/model 3/order",
     learnLink: "/model 3/learn",
     cover: Ow_Model_3,
+    plaid: {
+      title: "Beyond Ludicrous",
+      topic: "Plaid",
+      describe:
+        "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
+      orderLink: "/model 3/order",
+      orderLinkLabel: "Order Now",
+      inventoryLink: "/",
+      inventoryLinkLabel: "View Inventory",
+    },
     slides: [
       {
         bg: Slide_1_3,
@@ -314,6 +334,16 @@ export const vehicles = [
     orderLink: "/model y/order",
     learnLink: "/model y/learn",
     cover: Ow_Model_Y,
+    plaid: {
+      title: "Beyond Ludicrous",
+      topic: "Plaid",
+      describe:
+        "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
+      orderLink: "/model y/order",
+      orderLinkLabel: "Order Now",
+      inventoryLink: "/",
+      inventoryLinkLabel: "View Inventory",
+    },
     slides: [
       {
         bg: Slide_1_Y,
@@ -410,6 +440,16 @@ export const vehicles = [
     orderLink: "/model x/order",
     learnLink: "/model x/learn",
     cover: Ow_Model_X,
+    plaid: {
+      title: "Beyond Ludicrous",
+      topic: "Plaid",
+      describe:
+        "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
+      orderLink: "/model x/order",
+      orderLinkLabel: "Order Now",
+      inventoryLink: "/",
+      inventoryLinkLabel: "View Inventory",
+    },
     slides: [
       {
         bg: Slide_1_X,
@@ -507,6 +547,16 @@ export const vehicles = [
     orderLink: "/cybertruck/order",
     learnLink: "/cybertruck/learn",
     cover: Ow_Cybertruck,
+    plaid: {
+      title: "Beyond Ludicrous",
+      topic: "Plaid",
+      describe:
+        "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
+      orderLink: "/cybertruck/order",
+      orderLinkLabel: "Order Now",
+      inventoryLink: "/",
+      inventoryLinkLabel: "View Inventory",
+    },
     slides: [
       {
         bg: Slide_1_3,

@@ -7,6 +7,7 @@ import {
   Learn_Hero,
   Learn_Inter,
   Learn_Intertop,
+  Learn_Middle,
   Learn_Powertrain,
   Learn_Range,
   Learn_Speed,
@@ -16,6 +17,7 @@ import {
 const Learn = () => {
   const { model } = useParams();
   const car = vehicles.find((e) => e.model.toLowerCase() === model);
+  const carPlaid = car.plaid;
 
   return (
     <div id="learn">
@@ -24,6 +26,16 @@ const Learn = () => {
       <Learn_Intertop car={car} />
       <Learn_Inter car={car} />
       <Learn_Amenities car={car} />
+      <Learn_Middle
+        title={carPlaid.title}
+        topic={carPlaid.topic}
+        describe={carPlaid.describe}
+        link1={carPlaid.orderLink}
+        link1_label={carPlaid.orderLinkLabel}
+        link2={carPlaid.inventoryLink}
+        link2_label={carPlaid.inventoryLinkLabel}
+        light
+      />
       <Learn_Design car={car} />
       <Learn_Exterior car={car} />
       <Learn_Range car={car} />

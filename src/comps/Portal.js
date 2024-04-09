@@ -27,6 +27,7 @@ import Learn_Storage from "./Car/Learn/Learn_Storage";
 import Learn_Powertrain from "./Car/Learn/Learn_Powertrain";
 import Learn_Intertop from "./Car/Learn/Learn_Intertop";
 import Learn_Inter_Slide from "./Car/Learn/Learn_Inter_Slide";
+import Learn_Middle from "./Car/Learn/Learn_Middle";
 import Order from "./Car/Order";
 
 export {
@@ -60,4 +61,5 @@ export {
   Learn_Intertop,
   Learn_Powertrain,
   Learn_Inter_Slide,
+  Learn_Middle,
 };

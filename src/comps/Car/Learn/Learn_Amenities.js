@@ -12,8 +12,8 @@ const Learn_Amenities = (props) => {
       {carAmenities.map((item, index) => {
         return (
           <div
-            className={`flex justify-between sm:${
-              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            className={`flex justify-between ${
+              index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
             } flex-col sm:px-5 sm:py-0 py-5`}
           >
             <div className="sm:w-1/2 flex items-center">
