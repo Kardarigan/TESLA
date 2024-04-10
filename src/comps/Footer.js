@@ -3,7 +3,7 @@ import { footLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="shadowFromBottom w-full absolute bottom-0 text-slate-100 text-sm font-thin text-center">
+    <footer className="shadowFromBottom w-full absolute bottom-0 text-slate-100 mix-blend-exclusion text-sm font-thin text-center">
       <ul className="pb-3 mx-auto md:w-4/5 grid md:grid-cols-6 grid-cols-2 gap-4">
         {footLinks.map((item) => {
           return (

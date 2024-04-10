@@ -19,6 +19,7 @@ import Amenity_1_3 from "../assets/Single/3/MS-Interior-Grid-A-Desktop.avif";
 import Amenity_2_3 from "../assets/Single/3/MS-Interior-Grid-2-Audio-Desktop.webm";
 import Amenity_3_3 from "../assets/Single/3/MS-Interior-Grid-D-Desktop.avif";
 import Road_3 from "../assets/Single/3/Road_Model3.jpg";
+import Overall_3 from "../assets/Single/3/jx0v1531co6yhxbk7w3y.png";
 
 import Slide_1_Y from "../assets/Single/Y/Slide_ModelY_1.jpg";
 import Slide_2_Y from "../assets/Single/Y/Slide_ModelY_2.jpg";
@@ -29,6 +30,7 @@ import Inter_Slide_2_Y from "../assets/Single/Y/InteriorSlide_ModelY_2.jpg";
 import Inter_Slide_3_Y from "../assets/Single/Y/InteriorSlide_ModelY_3.jpg";
 import Inter_Slide_4_Y from "../assets/Single/Y/InteriorSlide_ModelY_4.jpg";
 import Road_Y from "../assets/Single/Y/Road_ModelY.jpg";
+import Overall_Y from "../assets/Single/Y/Model-Y-Order.avif";
 
 import Slide_1_S from "../assets/Single/S/Slide_ModelS_1.jpg";
 import Slide_2_S from "../assets/Single/S/Slide_ModelS_2.jpg";
@@ -42,6 +44,7 @@ import Exterior_Grid_1_S from "../assets/Single/S/Model-S-Exterior-Grid-A-Deskto
 import Exterior_Grid_2_S from "../assets/Single/S/Model-S-Exterior-Grid-B-Desktop-Global.avif";
 import Exterior_Grid_3_S from "../assets/Single/S/Model-S-Exterior-Grid-C-Desktop-Global.avif";
 import Road_S from "../assets/Single/S/Road_ModelS.jpg";
+import Overall_S from "../assets/Single/S/Model-S-Order-Hero-Desktop-Mobile-LHD.avif";
 
 import Slide_1_X from "../assets/Single/X/Slide_ModelX_1.jpg";
 import Slide_2_X from "../assets/Single/X/Slide_ModelX_2.jpg";
@@ -62,6 +65,7 @@ import Range_X from "../assets/Single/X/Model-X-Range_Desktop-LHD.avif";
 import Designe_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.avif";
 import Motor_X from "../assets/Single/X/Model-X-Performance-Dual-Motor-Desktop-Powertrain-Carousel.avif";
 import Motor_X_Plaid from "../assets/Single/X/Model-X-Performance-Tri-Motor-Powertrain-Carousel-Desktop.avif";
+import Overall_X from "../assets/Single/X/Model-X-Order-Desktop_Mobile-LHD.avif";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -206,7 +210,6 @@ export const vehicles = [
         },
       ],
     },
-
     range: {
       title: "Go Anywhere",
       cover: Range_X,
@@ -350,6 +353,9 @@ export const vehicles = [
         unit: "km/h",
       },
     ],
+    overal: Overall_S,
+    footerMessage:
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_S,
   },
   {
@@ -405,7 +411,6 @@ export const vehicles = [
         },
       ],
     },
-
     range: {
       title: "Go Anywhere",
       cover: Range_X,
@@ -551,6 +556,9 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    overal: Overall_3,
+    footerMessage:
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_3,
   },
   {
@@ -751,6 +759,9 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    overal: Overall_Y,
+    footerMessage:
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_Y,
   },
   {
@@ -945,6 +956,9 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    overal: Overall_X,
+    footerMessage:
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_X,
   },
   {
@@ -1097,6 +1111,9 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    overal: Overall_3,
+    footerMessage:
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_3,
   },
 ];

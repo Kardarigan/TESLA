@@ -10,12 +10,15 @@ import {
   Learn_Powertrain,
   Learn_Speed,
   Learn_Middle_Image,
+  Learn_Overall,
 } from "../Portal";
 
 const Learn = () => {
   const { model } = useParams();
   const car = vehicles.find((e) => e.model.toLowerCase() === model);
   const carPlaid = car.plaid;
+  const overallLight =
+    car.model === "Model S" || car.model === "Model X" ? true : false;
 
   return (
     <div id="learn">
@@ -66,6 +69,13 @@ const Learn = () => {
         inventoryLink={car.inventoryLink}
         numbers={car.range.numbers}
         right
+      />
+      <Learn_Overall
+        title={car.model}
+        message={car.footerMessage}
+        image={car.overal}
+        orderLink={car.orderLink}
+        light={overallLight}
       />
     </div>
   );
