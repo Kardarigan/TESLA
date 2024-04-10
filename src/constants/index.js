@@ -38,6 +38,9 @@ import Inter_Slide_1_S from "../assets/Single/S/InteriorSlide_ModelS_1.jpg";
 import Inter_Slide_2_S from "../assets/Single/S/InteriorSlide_ModelS_2.jpg";
 import Inter_Slide_3_S from "../assets/Single/S/InteriorSlide_ModelS_3.jpg";
 import Inter_Slide_4_S from "../assets/Single/S/InteriorSlide_ModelS_4.jpg";
+import Exterior_Grid_1_S from "../assets/Single/S/Model-S-Exterior-Grid-A-Desktop-Global.avif";
+import Exterior_Grid_2_S from "../assets/Single/S/Model-S-Exterior-Grid-B-Desktop-Global.avif";
+import Exterior_Grid_3_S from "../assets/Single/S/Model-S-Exterior-Grid-C-Desktop-Global.avif";
 import Road_S from "../assets/Single/S/Road_ModelS.jpg";
 
 import Slide_1_X from "../assets/Single/X/Slide_ModelX_1.jpg";
@@ -48,6 +51,11 @@ import Inter_Slide_1_X from "../assets/Single/X/InteriorSlide_ModelX_1.jpg";
 import Inter_Slide_2_X from "../assets/Single/X/InteriorSlide_ModelX_2.jpg";
 import Inter_Slide_3_X from "../assets/Single/X/InteriorSlide_ModelX_3.jpg";
 import Inter_Slide_4_X from "../assets/Single/X/InteriorSlide_ModelX_4.jpg";
+import Amenity_1_X from "../assets/Single/X/MX-Interior-Grid-B-Desktop_LHD.avif";
+import Amenity_2_X from "../assets/Single/X/MX-Interior-Grid_C-Desktop.avif";
+import Exterior_Grid_1_X from "../assets/Single/X/Model-X-Exterior-Grid-A-Desktop-Mobile-Global.avif";
+import Exterior_Grid_2_X from "../assets/Single/X/Model-X-Exterior-Grid-B-Desktop-Mobile-Global.avif";
+import Exterior_Grid_3_X from "../assets/Single/X/Model-X-Exterior-Grid-C-Desktop_Mobile-LHD.avif";
 import Road_X from "../assets/Single/X/Road_ModelX.jpg";
 import Designe_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.avif";
 import Motor_X from "../assets/Single/X/Model-X-Performance-Dual-Motor-Desktop-Powertrain-Carousel.avif";
@@ -215,15 +223,34 @@ export const vehicles = [
       },
       {
         image: Amenity_2_3,
-        title: "Stay Connected",
+        title: "Immersive Sound",
         describe:
-          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+          "A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.",
       },
       {
         image: Amenity_3_3,
-        title: "Stay Connected",
+        title: "Room for Everything",
         describe:
-          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+          "With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.",
+      },
+    ],
+    exterior: [
+      {
+        image: Exterior_Grid_1_S,
+        title: "Relentless Performance",
+        describe:
+          "Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.",
+      },
+      {
+        image: Exterior_Grid_2_S,
+        title: "Optimized Aerodynamics",
+        describe:
+          "Attention to detail on all exterior surfaces makes Model S the most aerodynamic production car on Earth.",
+      },
+      {
+        image: Exterior_Grid_3_S,
+        title: "Refined Styling",
+        describe: "An iconic silhouette meets refreshed, elegant proportions.",
       },
     ],
     numbers: [
@@ -339,6 +366,26 @@ export const vehicles = [
     ],
 
     amenities: [
+      {
+        image: Amenity_1_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+      {
+        image: Amenity_2_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+      {
+        image: Amenity_3_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+    ],
+    exterior: [
       {
         image: Amenity_1_3,
         title: "Stay Connected",
@@ -489,6 +536,26 @@ export const vehicles = [
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
     ],
+    exterior: [
+      {
+        image: Amenity_1_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+      {
+        image: Amenity_2_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+      {
+        image: Amenity_3_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+    ],
     numbers: [
       {
         key: "Range (EPA est.)",
@@ -602,22 +669,36 @@ export const vehicles = [
     ],
     amenities: [
       {
-        image: Amenity_1_3,
+        image: Amenity_1_X,
         title: "Stay Connected",
         describe:
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
       {
-        image: Amenity_2_3,
-        title: "Stay Connected",
+        image: Amenity_2_X,
+        title: "Sublime Sound",
         describe:
-          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+          "A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers the best listening experience wherever you are.",
+      },
+    ],
+    exterior: [
+      {
+        image: Exterior_Grid_1_X,
+        title: "Relentless Performance",
+        describe:
+          "Performance wheels and tires keep the SUV planted, transferring even more power down to the road.",
       },
       {
-        image: Amenity_3_3,
-        title: "Stay Connected",
+        image: Exterior_Grid_2_X,
+        title: "Optimized Aerodynamics",
         describe:
-          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+          "Attention to detail on all exterior surfaces makes Model X the most aerodynamic production SUV on Earth.",
+      },
+      {
+        image: Exterior_Grid_3_X,
+        title: "Refined Styling",
+        describe:
+          "Exterior design combines an iconic look with elegant details.",
       },
     ],
 
@@ -733,6 +814,26 @@ export const vehicles = [
       },
     ],
     amenities: [
+      {
+        image: Amenity_1_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+      {
+        image: Amenity_2_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+      {
+        image: Amenity_3_3,
+        title: "Stay Connected",
+        describe:
+          "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
+      },
+    ],
+    exterior: [
       {
         image: Amenity_1_3,
         title: "Stay Connected",

@@ -13,13 +13,12 @@ const Ow_Hero = () => {
             <h1>Find Your Best, Then Customize It</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
           </div>
-          <div className="flex flex-col">
+          <section className="pt-32">
             <Button to="/inventory" label="View Invertory" />
-
-            <p className="text-slate-300">
+            <p>
               You Can Also Check Out the Inventory To Find Already Made Vehicles
             </p>
-          </div>
+          </section>
         </div>
       </div>
     </section>
