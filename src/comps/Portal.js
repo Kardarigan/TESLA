@@ -20,14 +20,12 @@ import Learn_Speed from "./Car/Learn/Learn_Speed";
 import Learn_Inter from "./Car/Learn/Learn_Inter";
 import Learn_Slide from "./Car/Learn/Learn_Slide";
 import Learn_Amenities from "./Car/Learn/Learn_Amenities";
-import Learn_Design from "./Car/Learn/Learn_Design";
 import Learn_Exterior from "./Car/Learn/Learn_Exterior";
-import Learn_Range from "./Car/Learn/Learn_Range";
-import Learn_Storage from "./Car/Learn/Learn_Storage";
 import Learn_Powertrain from "./Car/Learn/Learn_Powertrain";
 import Learn_Intertop from "./Car/Learn/Learn_Intertop";
 import Learn_Inter_Slide from "./Car/Learn/Learn_Inter_Slide";
 import Learn_Middle from "./Car/Learn/Learn_Middle";
+import Learn_Middle_Image from "./Car/Learn/Learn_Middle_Image";
 import Order from "./Car/Order";
 
 export {
@@ -54,12 +52,10 @@ export {
   Learn_Slide,
   Learn_Speed,
   Learn_Amenities,
-  Learn_Design,
   Learn_Exterior,
-  Learn_Range,
-  Learn_Storage,
   Learn_Intertop,
   Learn_Powertrain,
   Learn_Inter_Slide,
+  Learn_Middle_Image,
   Learn_Middle,
 };

@@ -2,16 +2,14 @@ import { useParams } from "react-router-dom";
 import { vehicles } from "../../constants";
 import {
   Learn_Amenities,
-  Learn_Design,
   Learn_Exterior,
   Learn_Hero,
   Learn_Inter,
   Learn_Intertop,
   Learn_Middle,
   Learn_Powertrain,
-  Learn_Range,
   Learn_Speed,
-  Learn_Storage,
+  Learn_Middle_Image,
 } from "../Portal";
 
 const Learn = () => {
@@ -34,7 +32,17 @@ const Learn = () => {
         light
       />
       <Learn_Powertrain car={car} />
-      <Learn_Range car={car} />
+      {car.utility && (
+        <Learn_Middle_Image
+          topic="Utility"
+          title={car.utility.title}
+          cover={car.utility.cover}
+          describe={car.utility.descrbie}
+          orderLink={car.orderLink}
+          inventoryLink={car.inventoryLink}
+          numbers={car.utility.numbers}
+        />
+      )}
       <section
         className="h-[60vh] bg-fullcenter"
         style={{
@@ -49,7 +57,16 @@ const Learn = () => {
         inventoryLink={car.inventoryLink}
       />
       <Learn_Exterior car={car} />
-      <Learn_Storage car={car} />
+      <Learn_Middle_Image
+        topic="Range"
+        title={car.range.title}
+        cover={car.range.cover}
+        describe={car.range.descrbie}
+        orderLink={car.orderLink}
+        inventoryLink={car.inventoryLink}
+        numbers={car.range.numbers}
+        right
+      />
     </div>
   );
 };

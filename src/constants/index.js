@@ -57,6 +57,8 @@ import Exterior_Grid_1_X from "../assets/Single/X/Model-X-Exterior-Grid-A-Deskto
 import Exterior_Grid_2_X from "../assets/Single/X/Model-X-Exterior-Grid-B-Desktop-Mobile-Global.avif";
 import Exterior_Grid_3_X from "../assets/Single/X/Model-X-Exterior-Grid-C-Desktop_Mobile-LHD.avif";
 import Road_X from "../assets/Single/X/Road_ModelX.jpg";
+import Utility_X from "../assets/Single/X/Model-X-Utility-Hero-Desktop-LHD.avif";
+import Range_X from "../assets/Single/X/Model-X-Range_Desktop-LHD.avif";
 import Designe_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.avif";
 import Motor_X from "../assets/Single/X/Model-X-Performance-Dual-Motor-Desktop-Powertrain-Carousel.avif";
 import Motor_X_Plaid from "../assets/Single/X/Model-X-Performance-Tri-Motor-Powertrain-Carousel-Desktop.avif";
@@ -177,6 +179,79 @@ export const vehicles = [
           image: Motor_X_Plaid,
           acceleration: 2.6,
           range: 529,
+        },
+      ],
+    },
+    range: {
+      title: "Go Anywhere",
+      descrbie:
+        "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
+      numbers: [
+        {
+          value: 647,
+          unit: "km",
+          describe:
+            "Go anywhere with up to 647 km of estimated range on a single charge",
+        },
+        {
+          value: 15,
+          unit: "min",
+          describe:
+            "Recharge up to 322 km in 15 minutes at Supercharger locations",
+        },
+        {
+          value: 50000,
+          unit: "+",
+          describe: "Superchargers placed along popular routes",
+        },
+      ],
+    },
+
+    range: {
+      title: "Go Anywhere",
+      cover: Range_X,
+      descrbie:
+        "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
+      numbers: [
+        {
+          value: 647,
+          unit: "km",
+          describe:
+            "Go anywhere with up to 647 km of estimated range on a single charge",
+        },
+        {
+          value: 15,
+          unit: "min",
+          describe:
+            "Recharge up to 322 km in 15 minutes at Supercharger locations",
+        },
+        {
+          value: 50000,
+          unit: "+",
+          describe: "Superchargers placed along popular routes",
+        },
+      ],
+    },
+    utility: {
+      title: "Even More Capable",
+      cover: Utility_X,
+      descrbie:
+        "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
+      numbers: [
+        {
+          value: 2614,
+          unit: "L",
+          describe: "Up to 2,614 L of storage",
+        },
+        {
+          value: 2267,
+          unit: "kg",
+          describe: "Tow up to 2,267 kg",
+        },
+        {
+          value: "falconDoors",
+          unit: null,
+          describe: "Falcon Wing Doors",
         },
       ],
     },
@@ -327,6 +402,55 @@ export const vehicles = [
           image: Motor_X_Plaid,
           acceleration: 2.6,
           range: 529,
+        },
+      ],
+    },
+
+    range: {
+      title: "Go Anywhere",
+      cover: Range_X,
+      descrbie:
+        "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
+      numbers: [
+        {
+          value: 647,
+          unit: "km",
+          describe:
+            "Go anywhere with up to 647 km of estimated range on a single charge",
+        },
+        {
+          value: 15,
+          unit: "min",
+          describe:
+            "Recharge up to 322 km in 15 minutes at Supercharger locations",
+        },
+        {
+          value: 50000,
+          unit: "+",
+          describe: "Superchargers placed along popular routes",
+        },
+      ],
+    },
+    utility: {
+      title: "Even More Capable",
+      cover: Utility_X,
+      descrbie:
+        "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
+      numbers: [
+        {
+          value: 2614,
+          unit: "L",
+          describe: "Up to 2,614 L of storage",
+        },
+        {
+          value: 2267,
+          unit: "kg",
+          describe: "Tow up to 2,267 kg",
+        },
+        {
+          value: "falconDoors",
+          unit: null,
+          describe: "Falcon Wing Doors",
         },
       ],
     },
@@ -482,6 +606,55 @@ export const vehicles = [
         },
       ],
     },
+
+    range: {
+      title: "Go Anywhere",
+      cover: Range_X,
+      descrbie:
+        "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
+      numbers: [
+        {
+          value: 647,
+          unit: "km",
+          describe:
+            "Go anywhere with up to 647 km of estimated range on a single charge",
+        },
+        {
+          value: 15,
+          unit: "min",
+          describe:
+            "Recharge up to 322 km in 15 minutes at Supercharger locations",
+        },
+        {
+          value: 50000,
+          unit: "+",
+          describe: "Superchargers placed along popular routes",
+        },
+      ],
+    },
+    utility: {
+      title: "Even More Capable",
+      cover: Utility_X,
+      descrbie:
+        "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
+      numbers: [
+        {
+          value: 2614,
+          unit: "L",
+          describe: "Up to 2,614 L of storage",
+        },
+        {
+          value: 2267,
+          unit: "kg",
+          describe: "Tow up to 2,267 kg",
+        },
+        {
+          value: "falconDoors",
+          unit: null,
+          describe: "Falcon Wing Doors",
+        },
+      ],
+    },
     designTop: Designe_X,
     design: {
       title: "Designed for Efficiency",
@@ -630,6 +803,54 @@ export const vehicles = [
           image: Motor_X_Plaid,
           acceleration: 2.6,
           range: 529,
+        },
+      ],
+    },
+    range: {
+      title: "Go Anywhere",
+      cover: Range_X,
+      descrbie:
+        "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
+      numbers: [
+        {
+          value: 647,
+          unit: "km",
+          describe:
+            "Go anywhere with up to 647 km of estimated range on a single charge",
+        },
+        {
+          value: 15,
+          unit: "min",
+          describe:
+            "Recharge up to 322 km in 15 minutes at Supercharger locations",
+        },
+        {
+          value: 50000,
+          unit: "+",
+          describe: "Superchargers placed along popular routes",
+        },
+      ],
+    },
+    utility: {
+      title: "Even More Capable",
+      cover: Utility_X,
+      descrbie:
+        "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
+      numbers: [
+        {
+          value: 2614,
+          unit: "L",
+          describe: "Up to 2,614 L of storage",
+        },
+        {
+          value: 2267,
+          unit: "kg",
+          describe: "Tow up to 2,267 kg",
+        },
+        {
+          value: "falconDoors",
+          unit: null,
+          describe: "Falcon Wing Doors",
         },
       ],
     },
