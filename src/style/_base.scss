@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/noto-sans');
 
-$color_prime: white;
+$color_prime: #f3f4f4;
 $color_second: #4B79A1;
 $color_dark: #171a20;
 
@@ -23,4 +23,14 @@ $color_dark: #171a20;
 
 .shadowFromBottom{
     background: linear-gradient(0deg, $color_dark 0%, transparent 100%);
+}
+.fakeBorderDark{
+    box-shadow: 0 0 0 2px $color_dark inset;
+-webkit-box-shadow: 0 0 0 2px $color_dark inset;
+-moz-box-shadow: 0 0 0 2px $color_dark inset;
+}
+.fakeBorderLight{
+    box-shadow: 0 0 0 2px $color_prime inset;
+-webkit-box-shadow: 0 0 0 2px $color_prime inset;
+-moz-box-shadow: 0 0 0 2px $color_prime inset;
 }

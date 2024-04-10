@@ -30,7 +30,6 @@ const Learn_Middle = ({
               to={inventoryLink}
               label="Veiw Inventory"
               customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
-              light
             />
           </div>
         </div>
