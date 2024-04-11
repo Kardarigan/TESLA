@@ -66,6 +66,10 @@ import Designe_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.a
 import Motor_X from "../assets/Single/X/Model-X-Performance-Dual-Motor-Desktop-Powertrain-Carousel.avif";
 import Motor_X_Plaid from "../assets/Single/X/Model-X-Performance-Tri-Motor-Powertrain-Carousel-Desktop.avif";
 import Overall_X from "../assets/Single/X/Model-X-Order-Desktop_Mobile-LHD.avif";
+import AP_LineChange_X from "../assets/Single/X/autoPilot/lane_change_0-mp4.webm";
+import AP_Navigate_X from "../assets/Single/X/autoPilot/Model_S_Navigate_0-mp4.webm";
+import AP_Parking_X from "../assets/Single/X/autoPilot/parking-mp4.webm";
+import AP_Summon_X from "../assets/Single/X/autoPilot/summon_1-mp4.webm";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -168,7 +172,7 @@ export const vehicles = [
         "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
       editions: [
         {
-          title: "Model X Plaid",
+          title: "Model X",
           describe:
             "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
           image: Motor_X,
@@ -353,6 +357,38 @@ export const vehicles = [
         unit: "km/h",
       },
     ],
+    autoPilot: {
+      topic: "Autopilot",
+      title: "Future of Driving",
+      describe:
+        "Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.",
+      features: {
+        describe:
+          "Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:",
+        items: [
+          {
+            title: "Navigate on Autopilot",
+            describe: "Active guidance from highway on-ramp to off-ramp",
+            video: AP_Navigate_X,
+          },
+          {
+            title: "Auto Lane Change",
+            describe: "Automatically change lanes while driving on the highway",
+            video: AP_LineChange_X,
+          },
+          {
+            title: "Summon",
+            describe: "Automatically retrieve your car",
+            video: AP_Summon_X,
+          },
+          {
+            title: "Autopark",
+            describe: "Parallel and perpendicular parking, with a single touch",
+            video: AP_Parking_X,
+          },
+        ],
+      },
+    },
     overal: Overall_S,
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
@@ -394,7 +430,7 @@ export const vehicles = [
         "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
       editions: [
         {
-          title: "Model X Plaid",
+          title: "Model X",
           describe:
             "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
           image: Motor_X,
@@ -556,6 +592,38 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    autoPilot: {
+      topic: "Autopilot",
+      title: "Future of Driving",
+      describe:
+        "Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.",
+      features: {
+        describe:
+          "Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:",
+        items: [
+          {
+            title: "Navigate on Autopilot",
+            describe: "Active guidance from highway on-ramp to off-ramp",
+            video: AP_Navigate_X,
+          },
+          {
+            title: "Auto Lane Change",
+            describe: "Automatically change lanes while driving on the highway",
+            video: AP_LineChange_X,
+          },
+          {
+            title: "Summon",
+            describe: "Automatically retrieve your car",
+            video: AP_Summon_X,
+          },
+          {
+            title: "Autopark",
+            describe: "Parallel and perpendicular parking, with a single touch",
+            video: AP_Parking_X,
+          },
+        ],
+      },
+    },
     overal: Overall_3,
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
@@ -597,7 +665,7 @@ export const vehicles = [
         "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
       editions: [
         {
-          title: "Model X Plaid",
+          title: "Model X",
           describe:
             "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
           image: Motor_X,
@@ -759,6 +827,38 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    autoPilot: {
+      topic: "Autopilot",
+      title: "Future of Driving",
+      describe:
+        "Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.",
+      features: {
+        describe:
+          "Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:",
+        items: [
+          {
+            title: "Navigate on Autopilot",
+            describe: "Active guidance from highway on-ramp to off-ramp",
+            video: AP_Navigate_X,
+          },
+          {
+            title: "Auto Lane Change",
+            describe: "Automatically change lanes while driving on the highway",
+            video: AP_LineChange_X,
+          },
+          {
+            title: "Summon",
+            describe: "Automatically retrieve your car",
+            video: AP_Summon_X,
+          },
+          {
+            title: "Autopark",
+            describe: "Parallel and perpendicular parking, with a single touch",
+            video: AP_Parking_X,
+          },
+        ],
+      },
+    },
     overal: Overall_Y,
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
@@ -800,7 +900,7 @@ export const vehicles = [
         "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
       editions: [
         {
-          title: "Model X Plaid",
+          title: "Model X",
           describe:
             "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
           image: Motor_X,
@@ -956,6 +1056,38 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    autoPilot: {
+      topic: "Autopilot",
+      title: "Future of Driving",
+      describe:
+        "Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.",
+      features: {
+        describe:
+          "Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:",
+        items: [
+          {
+            title: "Navigate on Autopilot",
+            describe: "Active guidance from highway on-ramp to off-ramp",
+            video: AP_Navigate_X,
+          },
+          {
+            title: "Auto Lane Change",
+            describe: "Automatically change lanes while driving on the highway",
+            video: AP_LineChange_X,
+          },
+          {
+            title: "Summon",
+            describe: "Automatically retrieve your car",
+            video: AP_Summon_X,
+          },
+          {
+            title: "Autopark",
+            describe: "Parallel and perpendicular parking, with a single touch",
+            video: AP_Parking_X,
+          },
+        ],
+      },
+    },
     overal: Overall_X,
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
@@ -997,7 +1129,7 @@ export const vehicles = [
         "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
       editions: [
         {
-          title: "Model X Plaid",
+          title: "Model X",
           describe:
             "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
           image: Motor_X,
@@ -1111,6 +1243,38 @@ export const vehicles = [
         unit: "hp",
       },
     ],
+    autoPilot: {
+      topic: "Autopilot",
+      title: "Future of Driving",
+      describe:
+        "Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.",
+      features: {
+        describe:
+          "Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, including:",
+        items: [
+          {
+            title: "Navigate on Autopilot",
+            describe: "Active guidance from highway on-ramp to off-ramp",
+            video: AP_Navigate_X,
+          },
+          {
+            title: "Auto Lane Change",
+            describe: "Automatically change lanes while driving on the highway",
+            video: AP_LineChange_X,
+          },
+          {
+            title: "Summon",
+            describe: "Automatically retrieve your car",
+            video: AP_Summon_X,
+          },
+          {
+            title: "Autopark",
+            describe: "Parallel and perpendicular parking, with a single touch",
+            video: AP_Parking_X,
+          },
+        ],
+      },
+    },
     overal: Overall_3,
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",

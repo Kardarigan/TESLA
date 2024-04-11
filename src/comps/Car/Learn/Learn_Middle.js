@@ -26,11 +26,20 @@ const Learn_Middle = ({
               customClass="sm:max-w-[220px] lg:my-3 sm:my-0 my-3"
               outline={light ? "dark" : "light"}
             />
-            <Button
-              to={inventoryLink}
-              label="Veiw Inventory"
-              customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
-            />
+            {light ? (
+              <Button
+                to={inventoryLink}
+                label="Veiw Inventory"
+                customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
+                light
+              />
+            ) : (
+              <Button
+                to={inventoryLink}
+                label="Veiw Inventory"
+                customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
+              />
+            )}
           </div>
         </div>
         <p className="w-3/5 px-10 lg:block hidden">{describe}</p>

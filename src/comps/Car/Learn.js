@@ -11,12 +11,12 @@ import {
   Learn_Speed,
   Learn_Middle_Image,
   Learn_Overall,
+  Learn_Autopilot,
 } from "../Portal";
 
 const Learn = () => {
   const { model } = useParams();
   const car = vehicles.find((e) => e.model.toLowerCase() === model);
-  const carPlaid = car.plaid;
   const overallLight =
     car.model === "Model S" || car.model === "Model X" ? true : false;
 
@@ -28,9 +28,9 @@ const Learn = () => {
       <Learn_Inter car={car} />
       <Learn_Amenities car={car} />
       <Learn_Middle
-        title={carPlaid.title}
-        topic={carPlaid.topic}
-        describe={carPlaid.describe}
+        title={car.plaid.title}
+        topic={car.plaid.topic}
+        describe={car.plaid.describe}
         orderLink={car.orderLink}
         light
       />
@@ -53,9 +53,9 @@ const Learn = () => {
         }}
       ></section>
       <Learn_Middle
-        title={carPlaid.title}
-        topic={carPlaid.topic}
-        describe={carPlaid.describe}
+        title={car.plaid.title}
+        topic={car.plaid.topic}
+        describe={car.plaid.describe}
         orderLink={car.orderLink}
         inventoryLink={car.inventoryLink}
       />
@@ -70,6 +70,15 @@ const Learn = () => {
         numbers={car.range.numbers}
         right
       />
+      <Learn_Middle
+        title={car.autoPilot.title}
+        topic={car.autoPilot.topic}
+        describe={car.autoPilot.describe}
+        orderLink={car.orderLink}
+        inventoryLink={car.inventoryLink}
+        light
+      />
+      <Learn_Autopilot car={car} />
       <Learn_Overall
         title={car.model}
         message={car.footerMessage}
