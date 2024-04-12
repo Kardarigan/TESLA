@@ -135,6 +135,22 @@ export const heroSlides = [
   },
 ];
 
+export const vision360 = [
+  {
+    title: "360°",
+    sub: "Degrees of Visibility",
+  },
+  {
+    title: false,
+    sub: "Tesla Vision",
+  },
+  {
+    title: "250",
+    unit: "m",
+    sub: "Powerful Visual Processing",
+  },
+];
+
 export const vehicles = [
   {
     model: "Model S",

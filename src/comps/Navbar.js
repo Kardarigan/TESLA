@@ -19,9 +19,9 @@ const Navbar = () => {
           </svg>
         </Link>
         <ul className="lg:flex hidden gap-4">
-          {navLinks.map((item) => {
+          {navLinks.map((item, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link to={item.href} className="navitem">
                   {item.label}
                 </Link>
@@ -30,9 +30,13 @@ const Navbar = () => {
           })}
         </ul>
         <div className="lg:flex hidden justify-center w-[130px]">
-          {navTools.map((item) => {
+          {navTools.map((item, index) => {
             return (
-              <Link to={item.href} className="navitem text-xl px-2 py-1">
+              <Link
+                to={item.href}
+                key={index}
+                className="navitem text-xl px-2 py-1"
+              >
                 <i class={item.class} />
               </Link>
             );

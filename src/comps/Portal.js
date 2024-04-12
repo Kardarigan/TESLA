@@ -28,6 +28,7 @@ import Learn_Middle from "./Car/Learn/Learn_Middle";
 import Learn_Middle_Image from "./Car/Learn/Learn_Middle_Image";
 import Learn_Overall from "./Car/Learn/Learn_Overall";
 import Learn_Autopilot from "./Car/Learn/Learn_Autopilot";
+import Learn_360 from "./Car/Learn/Learn_360";
 import Order from "./Car/Order";
 
 export {
@@ -62,4 +63,5 @@ export {
   Learn_Middle,
   Learn_Overall,
   Learn_Autopilot,
+  Learn_360,
 };

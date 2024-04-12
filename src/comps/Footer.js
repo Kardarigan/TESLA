@@ -7,7 +7,7 @@ const Footer = () => {
       <ul className="pb-3 mx-auto md:w-4/5 grid md:grid-cols-6 grid-cols-2 gap-4">
         {footLinks.map((item) => {
           return (
-            <li>
+            <li key={item}>
               <Link to={item.href}>{item.label}</Link>
             </li>
           );
