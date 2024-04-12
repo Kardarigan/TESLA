@@ -13,6 +13,7 @@ import {
   Learn_Overall,
   Learn_Autopilot,
   Learn_360,
+  Actioncenter,
 } from "../Portal";
 
 const Learn = () => {
@@ -23,6 +24,7 @@ const Learn = () => {
 
   return (
     <div id="learn">
+      <Actioncenter />
       <Learn_Hero car={car} />
       <Learn_Speed car={car} />
       <Learn_Intertop car={car} />
