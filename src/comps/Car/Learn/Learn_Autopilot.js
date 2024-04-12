@@ -1,8 +1,33 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import React, { useEffect, useRef } from "react";
 
 const Learn_Autopilot = (props) => {
   const { car } = props;
   const carAutopilot = car.autoPilot.features;
+
+  const videoSlide = document.getElementsByClassName("splide__slide");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      for (let i = 0; i < videoSlide.length; i++) {
+        if (videoSlide[i] && videoSlide[i].classList.contains("is-visible")) {
+          const video = videoSlide[i].querySelector("video");
+          if (video) {
+            video.play();
+          }
+        } else {
+          const video = videoSlide[i].querySelector("video");
+          if (video) {
+            video.pause();
+            video.currentTime = 0;
+          }
+        }
+      }
+    }, 50000000000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <section className="padding bg-slate-50 text-slate-950">
       <div className="padding-x">
@@ -22,8 +47,8 @@ const Learn_Autopilot = (props) => {
       >
         {carAutopilot.items.map((feature) => {
           return (
-            <SplideSlide>
-              <video autoPlay muted loop className="bg-fullobject w-full">
+            <SplideSlide data-splide-interval={feature.duration}>
+              <video loop className="bg-fullobject w-full">
                 <source
                   src={feature.video}
                   type={`video/${feature.video.split(".").pop()}`}
