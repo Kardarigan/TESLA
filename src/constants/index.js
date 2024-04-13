@@ -425,8 +425,8 @@ export const vehicles = [
       marks: [
         {
           title: "Impact Protection",
-          y: 213,
-          x: 56,
+          y: 2,
+          x: 38,
         },
         {
           title: "Side Collision Protection",
@@ -688,8 +688,8 @@ export const vehicles = [
       marks: [
         {
           title: "Impact Protection",
-          y: 213,
-          x: 56,
+          y: 2,
+          x: 38,
         },
         {
           title: "Side Collision Protection",
@@ -950,8 +950,8 @@ export const vehicles = [
       marks: [
         {
           title: "Impact Protection",
-          y: 213,
-          x: 56,
+          y: 2,
+          x: 38,
         },
         {
           title: "Side Collision Protection",
@@ -1206,8 +1206,8 @@ export const vehicles = [
       marks: [
         {
           title: "Impact Protection",
-          y: 213,
-          x: 56,
+          y: 2,
+          x: 38,
         },
         {
           title: "Side Collision Protection",
@@ -1420,8 +1420,8 @@ export const vehicles = [
       marks: [
         {
           title: "Impact Protection",
-          y: 213,
-          x: 56,
+          y: 2,
+          x: 38,
         },
         {
           title: "Side Collision Protection",
