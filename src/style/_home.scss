@@ -106,15 +106,3 @@
         padding: 0;
     }
 }
-
-.safemark{
-    @apply absolute size-full;
-    &::after{
-        content: '';
-        @apply block absolute w-[2px] h-[120px] bg-slate-50;
-    }
-    &::before{
-        content: '';        
-        @apply block absolute w-[4px] h-[4px] rounded-full ring-1 ring-slate-50 bg-slate-950;
-    }
-}
