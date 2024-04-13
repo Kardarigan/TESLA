@@ -20,6 +20,7 @@ import Amenity_2_3 from "../assets/Single/3/MS-Interior-Grid-2-Audio-Desktop.web
 import Amenity_3_3 from "../assets/Single/3/MS-Interior-Grid-D-Desktop.avif";
 import Road_3 from "../assets/Single/3/Road_Model3.jpg";
 import Overall_3 from "../assets/Single/3/jx0v1531co6yhxbk7w3y.png";
+import Safe_3 from "../assets/Single/3/Model-3-Safety-Hero-Desktop.jpg";
 
 import Slide_1_Y from "../assets/Single/Y/Slide_ModelY_1.jpg";
 import Slide_2_Y from "../assets/Single/Y/Slide_ModelY_2.jpg";
@@ -45,6 +46,7 @@ import Exterior_Grid_2_S from "../assets/Single/S/Model-S-Exterior-Grid-B-Deskto
 import Exterior_Grid_3_S from "../assets/Single/S/Model-S-Exterior-Grid-C-Desktop-Global.avif";
 import Road_S from "../assets/Single/S/Road_ModelS.jpg";
 import Overall_S from "../assets/Single/S/Model-S-Order-Hero-Desktop-Mobile-LHD.avif";
+import Safe_S from "../assets/Single/S/Model-S-Safety-Hero-Desktop-Global.avif";
 
 import Slide_1_X from "../assets/Single/X/Slide_ModelX_1.jpg";
 import Slide_2_X from "../assets/Single/X/Slide_ModelX_2.jpg";
@@ -70,6 +72,7 @@ import AP_LineChange_X from "../assets/Single/X/autoPilot/lane_change_0-mp4.webm
 import AP_Navigate_X from "../assets/Single/X/autoPilot/Model_S_Navigate_0-mp4.webm";
 import AP_Parking_X from "../assets/Single/X/autoPilot/parking-mp4.webm";
 import AP_Summon_X from "../assets/Single/X/autoPilot/summon_1-mp4.webm";
+import Safe_X from "../assets/Single/X/Model-X-Safety-Hero-Desktop.avif";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -413,6 +416,30 @@ export const vehicles = [
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_S,
+    safety: {
+      title: "Engineered for Safety",
+      describe:
+        "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
+      cover: Safe_3,
+
+      marks: [
+        {
+          title: "Impact Protection",
+          y: 213,
+          x: 56,
+        },
+        {
+          title: "Side Collision Protection",
+          y: 120,
+          x: 80,
+        },
+        {
+          title: "Lane Departure Warning",
+          y: 300,
+          x: 30,
+        },
+      ],
+    },
   },
   {
     model: "Model 3",
@@ -652,6 +679,30 @@ export const vehicles = [
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_3,
+    safety: {
+      title: "Engineered for Safety",
+      describe:
+        "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
+      cover: Safe_3,
+
+      marks: [
+        {
+          title: "Impact Protection",
+          y: 213,
+          x: 56,
+        },
+        {
+          title: "Side Collision Protection",
+          y: 120,
+          x: 80,
+        },
+        {
+          title: "Lane Departure Warning",
+          y: 300,
+          x: 30,
+        },
+      ],
+    },
   },
   {
     model: "Model Y",
@@ -891,6 +942,29 @@ export const vehicles = [
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_Y,
+    safety: {
+      title: "Engineered for Safety",
+      describe:
+        "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
+      cover: Safe_3,
+      marks: [
+        {
+          title: "Impact Protection",
+          y: 213,
+          x: 56,
+        },
+        {
+          title: "Side Collision Protection",
+          y: 120,
+          x: 80,
+        },
+        {
+          title: "Lane Departure Warning",
+          y: 300,
+          x: 30,
+        },
+      ],
+    },
   },
   {
     model: "Model X",
@@ -1124,6 +1198,29 @@ export const vehicles = [
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_X,
+    safety: {
+      title: "Engineered for Safety",
+      describe:
+        "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
+      cover: Safe_3,
+      marks: [
+        {
+          title: "Impact Protection",
+          y: 213,
+          x: 56,
+        },
+        {
+          title: "Side Collision Protection",
+          y: 120,
+          x: 80,
+        },
+        {
+          title: "Lane Departure Warning",
+          y: 300,
+          x: 30,
+        },
+      ],
+    },
   },
   {
     model: "Cybertruck",
@@ -1315,5 +1412,28 @@ export const vehicles = [
     footerMessage:
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_3,
+    safety: {
+      title: "Engineered for Safety",
+      describe:
+        "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
+      cover: Safe_3,
+      marks: [
+        {
+          title: "Impact Protection",
+          y: 213,
+          x: 56,
+        },
+        {
+          title: "Side Collision Protection",
+          y: 120,
+          x: 80,
+        },
+        {
+          title: "Lane Departure Warning",
+          y: 300,
+          x: 30,
+        },
+      ],
+    },
   },
 ];

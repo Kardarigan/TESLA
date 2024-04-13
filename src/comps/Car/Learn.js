@@ -14,6 +14,7 @@ import {
   Learn_Autopilot,
   Learn_360,
   Actioncenter,
+  Learn_Safety,
 } from "../Portal";
 
 const Learn = () => {
@@ -82,6 +83,7 @@ const Learn = () => {
         light
       />
       <Learn_Autopilot car={car} />
+      <Learn_Safety car={car} />
       <Learn_360 car={car} />
       <Learn_Overall
         title={car.model}
