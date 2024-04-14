@@ -74,6 +74,9 @@ import AP_Parking_X from "../assets/Single/X/autoPilot/parking-mp4.webm";
 import AP_Summon_X from "../assets/Single/X/autoPilot/summon_1-mp4.webm";
 import Safe_X from "../assets/Single/X/Model-X-Safety-Hero-Desktop.avif";
 
+import En_Powerwall from "../assets/Energy_Powerwall.jpg";
+import En_Megapack from "../assets/Energy_Megapack.avif";
+
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
   { href: "./energy", label: "ENERGY" },
@@ -1435,5 +1438,18 @@ export const vehicles = [
         },
       ],
     },
+  },
+];
+
+export const energyHero = [
+  {
+    title: "Powerwall",
+    cover: En_Powerwall,
+    link: "/",
+  },
+  {
+    title: "Megapack",
+    cover: En_Megapack,
+    link: "/",
   },
 ];
