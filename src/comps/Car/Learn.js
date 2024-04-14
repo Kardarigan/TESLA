@@ -6,10 +6,10 @@ import {
   Learn_Hero,
   Learn_Inter,
   Learn_Intertop,
-  Learn_Middle,
+  Middle,
   Learn_Powertrain,
   Learn_Speed,
-  Learn_Middle_Image,
+  Middle_Image,
   Learn_Overall,
   Learn_Autopilot,
   Learn_360,
@@ -31,7 +31,7 @@ const Learn = () => {
       <Learn_Intertop car={car} />
       <Learn_Inter car={car} />
       <Learn_Amenities car={car} />
-      <Learn_Middle
+      <Middle
         title={car.plaid.title}
         topic={car.plaid.topic}
         describe={car.plaid.describe}
@@ -40,7 +40,7 @@ const Learn = () => {
       />
       <Learn_Powertrain car={car} />
       {car.utility && (
-        <Learn_Middle_Image
+        <Middle_Image
           topic="Utility"
           title={car.utility.title}
           cover={car.utility.cover}
@@ -56,7 +56,7 @@ const Learn = () => {
           backgroundImage: "url(" + car.designTop + ")",
         }}
       ></section>
-      <Learn_Middle
+      <Middle
         title={car.plaid.title}
         topic={car.plaid.topic}
         describe={car.plaid.describe}
@@ -64,7 +64,7 @@ const Learn = () => {
         inventoryLink={car.inventoryLink}
       />
       <Learn_Exterior car={car} />
-      <Learn_Middle_Image
+      <Middle_Image
         topic="Range"
         title={car.range.title}
         cover={car.range.cover}
@@ -74,7 +74,7 @@ const Learn = () => {
         numbers={car.range.numbers}
         right
       />
-      <Learn_Middle
+      <Middle
         title={car.autoPilot.title}
         topic={car.autoPilot.topic}
         describe={car.autoPilot.describe}

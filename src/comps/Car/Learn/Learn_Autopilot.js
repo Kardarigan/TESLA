@@ -72,7 +72,7 @@ const Learn_Autopilot = (props) => {
               data-splide-interval={feature.duration}
               data-tabcontent={`tabAutopilot_${index}`}
             >
-              <video loop className="bg-fullobject w-full">
+              <video muted loop className="bg-fullobject w-full">
                 <source
                   src={feature.video}
                   type={`video/${feature.video.split(".").pop()}`}
