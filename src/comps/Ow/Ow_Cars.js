@@ -14,7 +14,7 @@ const Ow_Cars = () => {
                 <h2>{car.model}</h2>
                 <p>{car.subtitle}</p>
               </div>
-              <div>
+              <div className="linkBox">
                 <Button
                   to={car.learnLink}
                   label="Learn About"

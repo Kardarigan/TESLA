@@ -15,7 +15,7 @@ const Home_Accessories = () => {
             Accessories
           </p>
         </div>
-        <div>
+        <div className="linkBox">
           <Button to="/" label="Explore Accessories" light />
           <Button to="/" label="Learn About" customClass="md:mt-0 mt-2" />
         </div>

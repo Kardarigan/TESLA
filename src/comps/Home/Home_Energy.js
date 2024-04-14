@@ -15,7 +15,7 @@ const Home_Energy = () => {
             Built
           </p>
         </div>
-        <div className="">
+        <div className="linkBox">
           <Button to="/" label="Explore Products" light />
           <Button to="/" label="Learn About" customClass="md:mt-0 mt-2" />
         </div>

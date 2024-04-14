@@ -77,6 +77,8 @@ import Safe_X from "../assets/Single/X/Model-X-Safety-Hero-Desktop.avif";
 import En_Powerwall from "../assets/Energy_Powerwall.jpg";
 import En_Megapack from "../assets/Energy_Megapack.avif";
 
+import Pw_Hero from "../assets/Powerwall/PW-Hero-Desktop-EMEA.avif";
+
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
   { href: "./energy", label: "ENERGY" },
@@ -1445,11 +1447,30 @@ export const energyHero = [
   {
     title: "Powerwall",
     cover: En_Powerwall,
-    link: "/",
+    link: "/powerwall",
   },
   {
     title: "Megapack",
     cover: En_Megapack,
-    link: "/",
+    link: "/megapack",
   },
 ];
+
+export const powerwall = {
+  getLink: "/",
+  heroCover: Pw_Hero,
+  heroAbilities: [
+    {
+      title: "24/7",
+      describe: "Store Energy",
+    },
+    {
+      title: "24/7",
+      describe: "Store Energy",
+    },
+    {
+      title: "24/7",
+      describe: "Store Energy",
+    },
+  ],
+};

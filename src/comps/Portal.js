@@ -33,6 +33,9 @@ import Learn_Safety from "./Car/Learn/Learn_Safety";
 import Actioncenter from "./Car/Actioncenter";
 import Order from "./Car/Order";
 import Energy from "./Energy/Energy";
+import Powerwall from "./Energy/Powerwall";
+import Megapack from "./Energy/Megapack";
+import En_Hero from "./Energy/Commons/En_Hero";
 
 export {
   Navbar,
@@ -53,6 +56,7 @@ export {
   Order,
   Learn,
   Layout,
+  En_Hero,
   Learn_Hero,
   Learn_Inter,
   Learn_Slide,
@@ -70,4 +74,6 @@ export {
   Learn_360,
   Actioncenter,
   Energy,
+  Powerwall,
+  Megapack,
 };
