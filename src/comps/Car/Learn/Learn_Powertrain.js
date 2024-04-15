@@ -1,7 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-const Learn_Powertrain = (props) => {
-  const { car } = props;
+const Learn_Powertrain = ({ car }) => {
   const carPowerTrain = car.powerTrain;
 
   if (car.powerTrain) {

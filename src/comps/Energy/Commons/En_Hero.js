@@ -17,12 +17,16 @@ const En_Hero = ({ prod, title, get, dark }) => {
           {prod.heroAbilities.map((item, index) => {
             return (
               <div className="text-center" key={index}>
-                <h3 className="md:text-2xl text-xl">{item.title}</h3>
-                <h6 className="sm:text-base text-xs">{item.describe}</h6>
+                {item.icon ? (
+                  <i className={item.icon + " md:text-3xl text-xl"} />
+                ) : (
+                  <h3 className="md:text-3xl text-xl">{item.title}</h3>
+                )}
+                <h6 className="sm:text-base text-xs mt-2">{item.describe}</h6>
               </div>
             );
           })}
-          <div className="lg:block hidden">
+          <div className="lg:block hidden pt-3">
             <Button
               label={"Get " + title}
               to={get}

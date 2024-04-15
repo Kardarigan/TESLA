@@ -8,7 +8,7 @@ const Home_Accessories = () => {
       style={{ backgroundImage: "url(" + Background + ")" }}
     >
       <div className="text-center h-3/5 flex flex-col justify-between">
-        <div className="lg:text-slate-50 text-slate-950">
+        <div className="text-slate-950">
           <h2>Tesla's Life Style</h2>
           <p>
             If you'r a Big Huge Giant Fan of Tesla, You Must check the

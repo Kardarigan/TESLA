@@ -5,8 +5,9 @@ const Learn_Middle = ({
   topic = false,
   describe = false,
   orderLink,
-  inventoryLink,
+  inventoryLink = false,
   light = false,
+  pw = false,
 }) => {
   if (title) {
     return (
@@ -22,24 +23,25 @@ const Learn_Middle = ({
           <div className="md:flex lg:flex-col md:flex-row w-full">
             <Button
               to={orderLink}
-              label="Order Now"
+              label={pw ? "Get Powerwall" : "Order Now"}
               customClass="sm:max-w-[220px] lg:my-3 sm:my-0 my-3"
               outline={light ? "dark" : "light"}
             />
-            {light ? (
-              <Button
-                to={inventoryLink}
-                label="Veiw Inventory"
-                customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
-                light
-              />
-            ) : (
-              <Button
-                to={inventoryLink}
-                label="Veiw Inventory"
-                customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
-              />
-            )}
+            {inventoryLink &&
+              (light ? (
+                <Button
+                  to={inventoryLink}
+                  label="Veiw Inventory"
+                  customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
+                  light
+                />
+              ) : (
+                <Button
+                  to={inventoryLink}
+                  label="Veiw Inventory"
+                  customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
+                />
+              ))}
           </div>
         </div>
         <p className="w-3/5 px-10 lg:block hidden">{describe}</p>

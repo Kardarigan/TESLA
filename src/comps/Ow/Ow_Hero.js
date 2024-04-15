@@ -4,7 +4,7 @@ import Button from "../Button";
 const Ow_Hero = () => {
   return (
     <section
-      className="fullSection"
+      className="fullSection padding"
       style={{ backgroundImage: "url(" + Background + ")" }}
     >
       <div className="text-center h-full">

@@ -1,8 +1,7 @@
 import React from "react";
 import { vehicles } from "../../../constants";
 
-const Learn_Exterior = (props) => {
-  const { car } = props;
+const Learn_Exterior = ({ car }) => {
   const carExterior = vehicles.find(
     (vehicle) => vehicle.model === car.model
   ).exterior;

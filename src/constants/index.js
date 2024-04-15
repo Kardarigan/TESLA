@@ -7,6 +7,8 @@ import Ow_Model_X from "../assets/Overview/ModelX_93.jpg";
 import Ow_Model_3 from "../assets/Overview/Model3-67.jpg";
 import Ow_Cybertruck from "../assets/Overview/Cybertruck_63.jpg";
 
+import Cover_360 from "../assets/Autopilot/360.jpg";
+
 import Slide_1_3 from "../assets/Single/3/Slide_Model3_1.jpg";
 import Slide_2_3 from "../assets/Single/3/Slide_Model3_2.jpg";
 import Slide_3_3 from "../assets/Single/3/Slide_Model3_3.jpg";
@@ -46,7 +48,6 @@ import Exterior_Grid_2_S from "../assets/Single/S/Model-S-Exterior-Grid-B-Deskto
 import Exterior_Grid_3_S from "../assets/Single/S/Model-S-Exterior-Grid-C-Desktop-Global.avif";
 import Road_S from "../assets/Single/S/Road_ModelS.jpg";
 import Overall_S from "../assets/Single/S/Model-S-Order-Hero-Desktop-Mobile-LHD.avif";
-import Safe_S from "../assets/Single/S/Model-S-Safety-Hero-Desktop-Global.avif";
 
 import Slide_1_X from "../assets/Single/X/Slide_ModelX_1.jpg";
 import Slide_2_X from "../assets/Single/X/Slide_ModelX_2.jpg";
@@ -78,6 +79,13 @@ import En_Powerwall from "../assets/Energy_Powerwall.jpg";
 import En_Megapack from "../assets/Energy_Megapack.avif";
 
 import Pw_Hero from "../assets/Powerwall/PW-Hero-Desktop-EMEA.avif";
+import Pw_Abilities_Cover from "../assets/Powerwall/D_Powerwall_Security_2880x1800.jpg";
+import Pw_slide_1 from "../assets/Powerwall/Home/_Desktop_1.mp4";
+import Pw_slide_2 from "../assets/Powerwall/Home/_Desktop_2.mp4";
+import Pw_slide_3 from "../assets/Powerwall/Home/_Desktop_3.mp4";
+import Pw_slide_4 from "../assets/Powerwall/Home/_Desktop_4.mp4";
+import Pw_slide_5 from "../assets/Powerwall/Home/_Desktop_5.mp4";
+import Pw_Mobile from "../assets/Powerwall/Home/PW-Control-Desktop-Global.avif";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -149,7 +157,7 @@ export const vision360 = [
     sub: "Degrees of Visibility",
   },
   {
-    title: false,
+    icon: "fal fa-webcam",
     sub: "Tesla Vision",
   },
   {
@@ -1461,16 +1469,83 @@ export const powerwall = {
   heroCover: Pw_Hero,
   heroAbilities: [
     {
-      title: "24/7",
+      icon: "fa-light fa-bolt",
       describe: "Store Energy",
     },
     {
       title: "24/7",
-      describe: "Store Energy",
+      describe: "Backup Protection",
+    },
+    {
+      icon: "fa-light fa-house-day",
+      describe: "Power Your Home",
+    },
+  ],
+  abilitiesCover: Pw_Abilities_Cover,
+  abilities: [
+    {
+      icon: "fa-light fa-house-day",
+      describe: "Use stored energy to power your home during an outage",
+    },
+    {
+      icon: "fa-light fa-solar-panel",
+      describe: "Recharge with clean energy when paired with solar",
+    },
+    {
+      icon: "fa-light fa-transformer-bolt",
+      describe: "Keep appliances running without interruption",
+    },
+  ],
+  security: {
+    title: "Backup Protection",
+    describe:
+      "Powerwall is a battery that stores energy, detects outages and automatically becomes your home's energy source when the grid goes down. Unlike generators, Powerwall keeps your lights on and phones charged without upkeep, fuel or noise. Pair with solar and recharge with sunlight to keep your appliances running for days.",
+  },
+  independence: {
+    title: "Power Everything",
+    describe:
+      "Powerwall reduces your reliance on the grid by storing your solar energy for use when the sun isn’t shining. Use Powerwall alone or combine it with other Tesla products to save money, reduce your carbon footprint and prepare your home for power outages.",
+  },
+  slides: [
+    {
+      title: "Store energy from the grid or solar",
+      video: Pw_slide_1,
+      duration: 10000,
+    },
+    {
+      title: "Use your stored energy anytime to power your home",
+      video: Pw_slide_2,
+      duration: 6000,
+    },
+    {
+      title: "At night when the sun isn't shining",
+      video: Pw_slide_3,
+      duration: 6000,
+    },
+    {
+      title: "Or when the power is out during an outage",
+      video: Pw_slide_4,
+      duration: 5000,
+    },
+    {
+      title: "Recharge when the sun rises, or the grid turns back on",
+      video: Pw_slide_5,
+      duration: 5000,
+    },
+  ],
+  mobileCover: Pw_Mobile,
+  mobile: [
+    {
+      title: "$",
+      sub: "Customise settings for personalised savings",
     },
     {
       title: "24/7",
-      describe: "Store Energy",
+      sub: "Stay connected with instant alerts before severe weather",
+    },
+    {
+      icon: "fa-light fa-mobile-signal",
+      sub: "Manage your energy",
     },
   ],
 };

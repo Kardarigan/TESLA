@@ -1,6 +1,4 @@
-const Learn_Intertop = (props) => {
-  const { car } = props;
-
+const Learn_Intertop = ({ car }) => {
   return (
     <section
       className="h-screen bg-fullcenter text-center"

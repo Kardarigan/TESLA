@@ -1,8 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 
-const Learn_Autopilot = (props) => {
-  const { car } = props;
+const Learn_Autopilot = ({ car }) => {
   const carAutopilot = car.autoPilot.features;
   const videoSlide = document.getElementsByClassName("splide__slide");
 

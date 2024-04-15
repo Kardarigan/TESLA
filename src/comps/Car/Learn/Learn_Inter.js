@@ -2,9 +2,7 @@ import React from "react";
 import { Learn_Inter_Slide } from "../../Portal";
 import { Splide } from "@splidejs/react-splide";
 
-const Learn_Inter = (props) => {
-  const { car } = props;
-
+const Learn_Inter = ({ car }) => {
   return (
     <div className="padding-x padding-t sectionSplide">
       <Splide

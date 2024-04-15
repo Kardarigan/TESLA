@@ -1,7 +1,6 @@
 import Button from "../../Button";
 
-const Learn_Safety = (props) => {
-  const { car } = props;
+const Learn_Safety = ({ car }) => {
   const carSafe = car.safety;
 
   return (

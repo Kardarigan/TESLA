@@ -3,8 +3,7 @@ import Learn_Slide from "../Learn/Learn_Slide";
 import { vehicles } from "../../../constants";
 import { Link } from "react-router-dom";
 
-const Learn_Hero = (props) => {
-  const { car } = props;
+const Learn_Hero = ({ car }) => {
   const carSlides = vehicles.find(
     (vehicle) => vehicle.model === car.model
   ).slides;

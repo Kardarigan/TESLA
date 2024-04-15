@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { vehicles } from "../../constants";
+import { vehicles, vision360 } from "../../constants";
 import {
   Learn_Amenities,
   Learn_Exterior,
@@ -12,10 +12,11 @@ import {
   Middle_Image,
   Learn_Overall,
   Learn_Autopilot,
-  Learn_360,
   Actioncenter,
   Learn_Safety,
+  Three,
 } from "../Portal";
+import V360 from "../../assets/Autopilot/360.jpg";
 
 const Learn = () => {
   const { model } = useParams();
@@ -84,7 +85,7 @@ const Learn = () => {
       />
       <Learn_Autopilot car={car} />
       <Learn_Safety car={car} />
-      <Learn_360 car={car} />
+      <Three items={vision360} cover={V360} />
       <Learn_Overall
         title={car.model}
         message={car.footerMessage}
