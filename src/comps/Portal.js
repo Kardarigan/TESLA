@@ -38,8 +38,9 @@ import En_Hero from "./Energy/Commons/En_Hero";
 import Pw_Abilities from "./Energy/Powerwall/Pw_Abilities";
 import Pw_Home from "./Energy/Powerwall/Pw_Home";
 import Three from "./Three";
-
+import Specs from "./Specs";
 export {
+  Specs,
   Navbar,
   Footer,
   Home,

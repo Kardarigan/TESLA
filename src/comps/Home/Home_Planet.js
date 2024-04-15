@@ -17,7 +17,7 @@ const Home_Planet = () => {
             </h2>
             <div className="mt-5 md:flex gap-5"></div>
           </div>
-          <div className="md:w-2/5 w-full flex-centralizer">
+          <div className="md:w-2/5 w-full flex-fullcenter">
             <img className="mars  max-w-[300px]" src={Earth} alt="Our Planet" />
           </div>
         </div>

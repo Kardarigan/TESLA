@@ -9,7 +9,12 @@ $color_dark: #171a20;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Noto Sans", Arial, sans-serif;
+  font-family: gotham, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url(../assets/1744-font.otf);
 }
 
 @mixin backgroundGradient($alpha) {

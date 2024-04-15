@@ -86,6 +86,8 @@ import Pw_slide_3 from "../assets/Powerwall/Home/_Desktop_3.mp4";
 import Pw_slide_4 from "../assets/Powerwall/Home/_Desktop_4.mp4";
 import Pw_slide_5 from "../assets/Powerwall/Home/_Desktop_5.mp4";
 import Pw_Mobile from "../assets/Powerwall/Home/PW-Control-Desktop-Global.avif";
+import Pw_Design from "../assets/Powerwall/Home/D_PW_Design_2100x1800.jpg";
+import Pw_Specs from "../assets/Powerwall/Home/Desktop_PW_Specs_1400x1800_R4.jpg";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -288,8 +290,7 @@ export const vehicles = [
           describe: "Tow up to 2,267 kg",
         },
         {
-          value: "falconDoors",
-          unit: null,
+          icon: "fa-light fa-starship-freighter",
           describe: "Falcon Wing Doors",
         },
       ],
@@ -549,8 +550,7 @@ export const vehicles = [
           describe: "Tow up to 2,267 kg",
         },
         {
-          value: "falconDoors",
-          unit: null,
+          icon: "fa-thin fa-starship-freighter",
           describe: "Falcon Wing Doors",
         },
       ],
@@ -813,8 +813,7 @@ export const vehicles = [
           describe: "Tow up to 2,267 kg",
         },
         {
-          value: "falconDoors",
-          unit: null,
+          icon: "fa-thin fa-starship-freighter",
           describe: "Falcon Wing Doors",
         },
       ],
@@ -1074,8 +1073,7 @@ export const vehicles = [
           describe: "Tow up to 2,267 kg",
         },
         {
-          value: "falconDoors",
-          unit: null,
+          icon: "fa-thin fa-starship-freighter",
           describe: "Falcon Wing Doors",
         },
       ],
@@ -1548,4 +1546,85 @@ export const powerwall = {
       sub: "Manage your energy",
     },
   ],
+  control: {
+    title: "Monitor and Optimise",
+    describe:
+      "With the Tesla app, you can monitor your home’s energy production and consumption in real time. Set your preferences to optimise for energy independence, outage protection or savings. With instant alerts and remote access, you can control your system from anywhere.",
+  },
+  design: {
+    title: "Modern and Compact",
+    cover: Pw_Design,
+    descrbie:
+      "With easy installation and a minimalist design, Powerwall complements a variety of home styles. The compact, all-in-one construction features versatile mounting options for indoor or outdoor spaces.",
+    numbers: [
+      {
+        icon: "fa-light fa-fingerprint",
+        describe: "Child and pet friendly with no exposed wires or hot vents",
+      },
+      {
+        value: 10,
+        unit: "x",
+        describe: "Stack up to 10 Powerwalls together to meet your needs",
+      },
+      {
+        icon: "fa-light fa-shield-check",
+        describe: "Water resistant and tough for all weather conditions",
+      },
+    ],
+  },
+  specs: {
+    title: "Powerwall",
+    cover: Pw_Specs,
+    items: {
+      fisrtCol: [
+        {
+          title: "Energy Capacity",
+          details: [
+            "13.5 kWh",
+            "100% depth of discharge",
+            "90% round trip efficiency",
+          ],
+        },
+        {
+          title: "Power",
+          details: [
+            "7kW peak / 5kW continuous",
+            "Seamless backup transitio",
+            "Pure sine wave output",
+          ],
+        },
+        {
+          title: "Size and Weight",
+          details: [
+            "L x W x D",
+            '45.3" x 29.6" x 5.75"',
+            "1150 mm x 753 mm x 147 mm 251.3 lbs / 114 kg",
+          ],
+        },
+      ],
+      secondCol: [
+        {
+          title: "Installation",
+          details: [
+            "Floor or wall mounted",
+            "Indoor or outdoor",
+            "Up to 10 Powerwalls",
+            "-4°F to 122°F / -20°C to 50°C",
+            "Water and dust resistance to IP67",
+          ],
+        },
+        {
+          title: "Certifications",
+          details: [
+            "Meets US and international safety standards",
+            "Meets US and international EMI standards",
+          ],
+        },
+        {
+          title: "Warranty",
+          details: ["10 years"],
+        },
+      ],
+    },
+  },
 };

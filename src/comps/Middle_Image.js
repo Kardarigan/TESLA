@@ -6,9 +6,10 @@ const Learn_Middle_Image = ({
   cover,
   describe,
   orderLink,
-  inventoryLink,
+  inventoryLink = false,
   numbers,
-  right,
+  right = false,
+  pw = false,
 }) => {
   return (
     <section
@@ -21,18 +22,22 @@ const Learn_Middle_Image = ({
           <h2>{topic}</h2>
           <h3 className="sm:text-4xl text-2xl">{title}</h3>
           <p className="mt-4">{describe}</p>
-          <Button
-            to={orderLink}
-            label="Order Now"
-            outline="dark"
-            customClass="w-full mt-24 mb-3"
-          />
-          <Button
-            to={inventoryLink}
-            label="View Inventory"
-            light
-            customClass="w-full"
-          />
+          <div>
+            <Button
+              to={orderLink}
+              label={pw ? "Get Powerwall" : "Order Now"}
+              outline="dark"
+              customClass="w-full mt-24 mb-3"
+            />
+            {inventoryLink && (
+              <Button
+                to={inventoryLink}
+                label="View Inventory"
+                light
+                customClass="w-full"
+              />
+            )}
+          </div>
         </div>
       </div>
       <div className="lg:w-2/3 relative">
@@ -49,16 +54,14 @@ const Learn_Middle_Image = ({
             return (
               <div className="text-center">
                 <h4 className="md:text-3xl text-xl">
-                  {item.value === "falconDoors" ? (
-                    <i class="fal fa-plane"></i>
-                  ) : (
-                    item.value
-                  )}
+                  {item.icon ? <i class={item.icon}></i> : item.value}
                   {item.unit && (
                     <span className="md:text-xl text-sm"> {item.unit}</span>
                   )}
                 </h4>
-                <p className="sm:text-[12px] text-[10px]">{item.describe}</p>
+                <p className="sm:text-[12px] text-[10px] mt-5">
+                  {item.describe}
+                </p>
               </div>
             );
           })}

@@ -8,10 +8,10 @@ const Home_Vehicles = () => {
         return (
           <Link
             to={model.learnLink}
-            className="vehicles-section bg-fullcenter text-slate-100 w-full flex-centralizer flex-col h-[45vh] min-h-[50vh]"
+            className="vehicles-section bg-fullcenter text-slate-100 w-full flex-fullcenter flex-col h-[45vh] min-h-[50vh]"
             style={{ backgroundImage: "url(" + model.cover + ")" }}
           >
-            <div className="w-full h-full flex-centralizer">
+            <div className="w-full h-full flex-fullcenter">
               <h2 className="text-3xl font-semibold">{model.model}</h2>
             </div>
             <p>{model.subtitle}</p>

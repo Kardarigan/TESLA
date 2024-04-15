@@ -16,7 +16,7 @@ const Home_Weekly = () => {
             <Button to="/" label="Last Events" customClass="mt-10" />
             <div className="mt-5 md:flex gap-5"></div>
           </div>
-          <form className="md:w-2/5 w-full flex-centralizer md:py-5 pb-5">
+          <form className="md:w-2/5 w-full flex-fullcenter md:py-5 pb-5">
             <div className="flex justify-between flex-col w-full min-h-[100px] rounded-lg p-4 bg-slate-800">
               <div className="flex items-center text-slate-200">
                 <i className="fa-light fa-envelope-circle text-4xl pe-3" />
