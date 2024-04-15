@@ -89,6 +89,14 @@ import Pw_Mobile from "../assets/Powerwall/Home/PW-Control-Desktop-Global.avif";
 import Pw_Design from "../assets/Powerwall/Home/D_PW_Design_2100x1800.jpg";
 import Pw_Specs from "../assets/Powerwall/Home/Desktop_PW_Specs_1400x1800_R4.jpg";
 
+import Mp_Hero from "../assets/Megapack/Megapack_Hero_D.avif";
+import Mp_Hero_Video from "../assets/Megapack/Megapack_Hero_D.webm";
+import Mp_Cleaner from "../assets/Megapack/Megapack_CleanerGrid_D.avif";
+import Mp_Install from "../assets/Megapack/Megapack_Installation_D.webm";
+import Mp_Resiliency from "../assets/Megapack/Megapack_Outage_D.avif";
+import Mp_Integrated from "../assets/Megapack/Megapack_FullyIntegrated_D.avif";
+import Mp_Design from "../assets/Megapack/Megapack_Safety_D.webm";
+
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
   { href: "./energy", label: "ENERGY" },
@@ -105,9 +113,7 @@ export const navTools = [
 
 export const footLinks = [
   { href: "./privacy", label: "Privacy & Legal" },
-  { href: "./recalls", label: "Vehicle Recalls" },
   { href: "./contact", label: "Contact" },
-  { href: "./news", label: "News" },
   { href: "./updates", label: "Get Updates" },
   { href: "./locations", label: "Locations" },
 ];
@@ -1626,5 +1632,60 @@ export const powerwall = {
         },
       ],
     },
+  },
+  overall: {
+    title: "Connect With an Installer",
+    describe:
+      "Request Powerwall from Tesla to be connected to a Tesla Certified Installer or contact an installer directly",
+  },
+};
+
+export const megapack = {
+  getLink: "/",
+  heroCover: Mp_Hero,
+  heroVideo: Mp_Hero_Video,
+  heroAbilities: [
+    {
+      icon: "fa-light fa-bolt",
+      describe: "Store Energy",
+    },
+    {
+      title: "24/7",
+      describe: "Backup Protection",
+    },
+    {
+      icon: "fa-light fa-house-day",
+      describe: "Power Your Home",
+    },
+  ],
+  cleaner: {
+    title: "A Cleaner Grid",
+    describe:
+      "The future of renewable energy relies on large-scale energy storage. Megapack is a powerful battery that provides energy storage and support, helping to stabilize the grid and prevent outages. By strengthening our sustainable energy infrastructure, we can create a cleaner grid that protects our communities and the environment.",
+    cover: Mp_Cleaner,
+  },
+  resiliency: {
+    title: "Resiliency",
+    describe:
+      "Megapack stores energy for the grid reliably and safely, eliminating the need for gas peaker plants and helping to avoid outages. Each unit can store over 3.9 MWh of energy—that's enough energy to power an average of 3,600 homes for one hour.",
+    cover: Mp_Resiliency,
+  },
+  install: {
+    title: "Easy Installation",
+    describe:
+      "Each Megapack unit ships fully assembled and ready to operate, allowing for quick installation timelines and reduced complexity. Systems require minimal maintenance and include up to a 20-year warranty.",
+    cover: Mp_Install,
+  },
+  integrated: {
+    title: "Fully Integrated",
+    describe:
+      "Megapack delivers more power and reliability at a lower cost over its lifetime. Each battery module is paired with its own inverter for improved efficiency and increased safety. With over-the-air software updates, Megapack gets better over time.",
+    cover: Mp_Integrated,
+  },
+  design: {
+    title: "Safe by Design",
+    describe:
+      "Megapack is one of the safest battery storage products of its kind. Units undergo extensive fire testing and include integrated safety systems, specialized monitoring software and 24/7 support.",
+    cover: Mp_Design,
   },
 };

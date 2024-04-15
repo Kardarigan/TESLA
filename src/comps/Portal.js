@@ -35,10 +35,14 @@ import Energy from "./Energy/Energy";
 import Powerwall from "./Energy/Powerwall";
 import Megapack from "./Energy/Megapack";
 import En_Hero from "./Energy/Commons/En_Hero";
+import En_Overall from "./Energy/Commons/En_Overall";
 import Pw_Abilities from "./Energy/Powerwall/Pw_Abilities";
 import Pw_Home from "./Energy/Powerwall/Pw_Home";
 import Three from "./Three";
 import Specs from "./Specs";
+import Full_Middle from "./Energy/Megapack/Full_Middle";
+import Padding_Middle from "./Energy/Megapack/Padding_Middle";
+
 export {
   Specs,
   Navbar,
@@ -60,6 +64,7 @@ export {
   Learn,
   Layout,
   En_Hero,
+  En_Overall,
   Learn_Hero,
   Learn_Inter,
   Learn_Slide,
@@ -81,4 +86,6 @@ export {
   Pw_Abilities,
   Pw_Home,
   Three,
+  Padding_Middle,
+  Full_Middle,
 };

@@ -3,7 +3,7 @@ import { navLinks, navTools } from "../constants";
 
 const Navbar = () => {
   return (
-    <header className="absolute w-full z-10">
+    <header className="absolute w-full z-50">
       <nav className="shadowFromTop text-gray-100 padding-x py-3 w-full z-10 flex-seperate">
         <Link to="/">
           <svg

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   En_Hero,
+  En_Overall,
   Middle,
   Middle_Image,
   Pw_Abilities,
@@ -52,6 +53,12 @@ const Powerwall = () => {
         title={powerwall.specs.title}
         cover={powerwall.specs.cover}
         items={powerwall.specs.items}
+      />
+      <En_Overall
+        title={powerwall.overall.title}
+        descrbie={powerwall.overall.describe}
+        link={powerwall.getLink}
+        label="Get Powerwall"
       />
     </>
   );
