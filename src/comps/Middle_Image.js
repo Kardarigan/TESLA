@@ -20,7 +20,7 @@ const Learn_Middle_Image = ({
       <div className="lg:w-1/3 text-slate-900">
         <div className="padding flex flex-col">
           <h2>{topic}</h2>
-          <h3 className="sm:text-4xl text-2xl">{title}</h3>
+          <h3 className="title">{title}</h3>
           <p className="mt-4">{describe}</p>
           <div>
             <Button

@@ -16,7 +16,7 @@ const Learn_Safety = ({ car }) => {
         })}
       </div>
       <div className="md:px-48 px-14 pt-24">
-        <h2 className="sm:text-4xl text-2xl">{carSafe.title}</h2>
+        <h2 className="title">{carSafe.title}</h2>
         <p className="py-7">{carSafe.describe}</p>
         <Button label="Safety Overview" to="/" outline="light" />
       </div>

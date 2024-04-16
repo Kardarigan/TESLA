@@ -7,7 +7,7 @@ const Learn_Powertrain = ({ car }) => {
     return (
       <section className="sectionSplide padding text-slate-900 bg-slate-200">
         <div className="padding-x py-12">
-          <h2 className="sm:text-4xl text-2xl">Electric Powertrain</h2>
+          <h2 className="title">Electric Powertrain</h2>
           <p className="pt-5">{carPowerTrain.describe}</p>
         </div>
         <Splide

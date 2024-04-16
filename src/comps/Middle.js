@@ -18,7 +18,7 @@ const Learn_Middle = ({
       >
         <div className="lg:w-2/5 w-full lg:px-10">
           <h5>{topic}</h5>
-          <h2 className="sm:text-4xl text-2xl mt-1 mb-3">{title}</h2>
+          <h2 className="title mt-1 mb-3">{title}</h2>
           <p className="lg:hidden py-5">{describe}</p>
           <div className="md:flex lg:flex-col md:flex-row w-full">
             <Button

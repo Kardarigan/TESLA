@@ -25,7 +25,7 @@ const Energy = () => {
         })}
 
         <div className="absolute top-[48vh] text-center displayTrans group-hover:invisible group-hover:opacity-0 flex-fullcenter w-full">
-          <h4 className="md:text-2xl text-xl font-bold">Choose one Product</h4>
+          <h4 className="title">Choose one Product</h4>
         </div>
       </div>
     </section>

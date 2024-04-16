@@ -13,7 +13,7 @@ const Hero_Slide = ({
 }) => {
   return (
     <SplideSlide>
-      <section className="halfhalf min-h-screen padding-t">
+      <section className="halfhalf padding-x min-h-screen padding-t">
         <div className="relative md:w-1/2 flex justify-start flex-col w-full padding-b md:pt-28 pt-10">
           <h1 className="mt-2  xl:text-4xl text-2xl">{title}</h1>
           <h2 className="mt-3 text-slate-400">{subtitle}</h2>

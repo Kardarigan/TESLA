@@ -3,7 +3,7 @@
     height: 100%;
 
     &__slide {
-      @apply padding-x flex md:flex-row flex-col-reverse justify-center;
+      @apply flex md:flex-row flex-col-reverse justify-center;
 
       .slide {
         width: 100%;

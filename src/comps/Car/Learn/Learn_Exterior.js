@@ -34,7 +34,7 @@ const Learn_Exterior = ({ car }) => {
             </div>
             <div className="sm:w-1/2 flex items-center">
               <div className="px-5 sm:py-0 py-10">
-                <h3 className="font-bold">{item.title}</h3>
+                <h3>{item.title}</h3>
                 <p className="mt-3">{item.describe}</p>
               </div>
             </div>

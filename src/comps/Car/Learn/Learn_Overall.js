@@ -5,7 +5,7 @@ const Learn_Overall = ({ title, message, image, orderLink, light = false }) => {
     <section className={`padding ${light && "bg-slate-50 text-slate-950"}`}>
       <div className="grid md:grid-cols-2 gap-5">
         <div className="padding-x pt-20">
-          <h2 className="sm:text-4xl text-2xl">{title}</h2>
+          <h2 className="title">{title}</h2>
           <p>
             Design yours or get a trade-in estimate for your current vehicle.
           </p>

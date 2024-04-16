@@ -30,9 +30,7 @@ const Padding_Middle = ({ title, cover, describe, right = false }) => {
       </div>
       <div className="md:w-2/5 padding-y">
         <div className="padding">
-          <h2 className="md:text-3xl text-2xl text-slate-950 font-bold">
-            {title}
-          </h2>
+          <h2 className="title text-slate-950">{title}</h2>
           <p className="text-sm text-slate-600 pt-6">{describe}</p>
         </div>
       </div>

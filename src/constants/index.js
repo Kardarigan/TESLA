@@ -96,6 +96,10 @@ import Mp_Install from "../assets/Megapack/Megapack_Installation_D.webm";
 import Mp_Resiliency from "../assets/Megapack/Megapack_Outage_D.avif";
 import Mp_Integrated from "../assets/Megapack/Megapack_FullyIntegrated_D.avif";
 import Mp_Design from "../assets/Megapack/Megapack_Safety_D.webm";
+import Mp_Slide_1 from "../assets/Megapack/Slider/Megapack_CaseStudy_Texas_D.avif";
+import Mp_Slide_2 from "../assets/Megapack/Slider/Megapack_CaseStudy_Soldotna_D.avif";
+import Mp_Slide_3 from "../assets/Megapack/Slider/Megapack_CaseStudy_Australia_D.avif";
+import Mp_Apps from "../assets/Megapack/Megapack_Apps_D.avif";
 
 export const navLinks = [
   { href: "./vehicles", label: "VEHICLE" },
@@ -1687,5 +1691,91 @@ export const megapack = {
     describe:
       "Megapack is one of the safest battery storage products of its kind. Units undergo extensive fire testing and include integrated safety systems, specialized monitoring software and 24/7 support.",
     cover: Mp_Design,
+  },
+  studies: {
+    title: "Case Studies",
+    describe:
+      "Megapack systems are customizable and infinitely scalable, making them suitable for projects of various sizes and locations.",
+    slides: [
+      {
+        title: "Angleton, Texas",
+        describe:
+          "The Gambit Energy Storage Park is an 81-unit, 100 MW system that provides the grid with renewable energy storage and greater outage protection during severe weather.",
+        cover: Mp_Slide_1,
+      },
+      {
+        title: "Soldotna, Alaska",
+        describe:
+          "Homer Electric installed a 37-unit, 46 MW system to increase renewable energy capacity along Alaska’s rural Kenai Peninsula, reducing reliance on gas turbines and helping to prevent outages.",
+        cover: Mp_Slide_2,
+      },
+      {
+        title: "Victoria, Australia",
+        describe:
+          "The Victoria Big Battery—a 212-unit, 350 MW system—is one of the largest renewable energy storage parks in the world, providing backup protection to Victoria.",
+        cover: Mp_Slide_3,
+      },
+    ],
+  },
+  apps: {
+    title: "Applications",
+    describe:
+      "Megapack is designed for utilities and large-scale commercial projects. Our team of experts will help you design a system that meets your project goals and maximizes your site potential.",
+    cover: Mp_Apps,
+    items: {
+      fisrtCol: [
+        {
+          title: "Energy Capacity",
+          details: [
+            "13.5 kWh",
+            "100% depth of discharge",
+            "90% round trip efficiency",
+          ],
+        },
+        {
+          title: "Power",
+          details: [
+            "7kW peak / 5kW continuous",
+            "Seamless backup transitio",
+            "Pure sine wave output",
+          ],
+        },
+        {
+          title: "Size and Weight",
+          details: [
+            "L x W x D",
+            '45.3" x 29.6" x 5.75"',
+            "1150 mm x 753 mm x 147 mm 251.3 lbs / 114 kg",
+          ],
+        },
+      ],
+      secondCol: [
+        {
+          title: "Installation",
+          details: [
+            "Floor or wall mounted",
+            "Indoor or outdoor",
+            "Up to 10 Powerwalls",
+            "-4°F to 122°F / -20°C to 50°C",
+            "Water and dust resistance to IP67",
+          ],
+        },
+        {
+          title: "Certifications",
+          details: [
+            "Meets US and international safety standards",
+            "Meets US and international EMI standards",
+          ],
+        },
+        {
+          title: "Warranty",
+          details: ["10 years"],
+        },
+      ],
+    },
+  },
+  overall: {
+    title: "Build a Cleaner Grid",
+    describe: "Contact us for more information.",
   },
 };

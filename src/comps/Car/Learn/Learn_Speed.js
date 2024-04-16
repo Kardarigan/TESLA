@@ -15,7 +15,7 @@ const Learn_Speed = ({ car }) => {
         {caeNumebrs.map((item) => {
           return (
             <div key={item.key} className="text-center">
-              <h4 className="font-bold md:text-4xl sm:text-2xl text-md">
+              <h4 className="md:text-4xl sm:text-2xl text-md">
                 {item.value}{" "}
                 <span className="md:text-xl text-[10px]">{item.unit}</span>
               </h4>
