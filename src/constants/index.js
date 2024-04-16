@@ -43,11 +43,19 @@ import Inter_Slide_1_S from "../assets/Single/S/InteriorSlide_ModelS_1.jpg";
 import Inter_Slide_2_S from "../assets/Single/S/InteriorSlide_ModelS_2.jpg";
 import Inter_Slide_3_S from "../assets/Single/S/InteriorSlide_ModelS_3.jpg";
 import Inter_Slide_4_S from "../assets/Single/S/InteriorSlide_ModelS_4.jpg";
+import Amenity_1_S from "../assets/Single/S/MS-Interior-Grid-A-Desktop.avif";
+import Amenity_2_S from "../assets/Single/S/MS-Interior-Grid-2-Audio-Desktop.webm";
+import Amenity_3_S from "../assets/Single/S/MS-Interior-Grid-D-Desktop.avif";
 import Exterior_Grid_1_S from "../assets/Single/S/Model-S-Exterior-Grid-A-Desktop-Global.avif";
 import Exterior_Grid_2_S from "../assets/Single/S/Model-S-Exterior-Grid-B-Desktop-Global.avif";
 import Exterior_Grid_3_S from "../assets/Single/S/Model-S-Exterior-Grid-C-Desktop-Global.avif";
+import Motor_S from "../assets/Single/S/Model-S-Dual-Motor-Powertrain-Carousel-Desktop.avif";
+import Motor_S_Plaid from "../assets/Single/S/Model-S-Plaid-Tri-Motor-Powertrain-Carousel-Desktop.avif";
 import Road_S from "../assets/Single/S/Road_ModelS.jpg";
 import Overall_S from "../assets/Single/S/Model-S-Order-Hero-Desktop-Mobile-LHD.avif";
+import Design_S from "../assets/Single/S/Model-S-Exterior-Hero-Desktop-Global.avif";
+import Rnage_S from "../assets/Single/S/Plaid-Range-Web-Desktop-8mb.mp4";
+import Safe_S from "../assets/Single/S/Model-S-Safety-Hero-Desktop-Global.avif";
 
 import Slide_1_X from "../assets/Single/X/Slide_ModelX_1.jpg";
 import Slide_2_X from "../assets/Single/X/Slide_ModelX_2.jpg";
@@ -65,7 +73,7 @@ import Exterior_Grid_3_X from "../assets/Single/X/Model-X-Exterior-Grid-C-Deskto
 import Road_X from "../assets/Single/X/Road_ModelX.jpg";
 import Utility_X from "../assets/Single/X/Model-X-Utility-Hero-Desktop-LHD.avif";
 import Range_X from "../assets/Single/X/Model-X-Range_Desktop-LHD.avif";
-import Designe_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.avif";
+import Design_X from "../assets/Single/X/Model-X-Exterior-Hero-Desktop-Global.avif";
 import Motor_X from "../assets/Single/X/Model-X-Performance-Dual-Motor-Desktop-Powertrain-Carousel.avif";
 import Motor_X_Plaid from "../assets/Single/X/Model-X-Performance-Tri-Motor-Powertrain-Carousel-Desktop.avif";
 import Overall_X from "../assets/Single/X/Model-X-Order-Desktop_Mobile-LHD.avif";
@@ -190,7 +198,7 @@ export const vehicles = [
       title: "Beyond Ludicrous",
       topic: "Plaid",
       describe:
-        "With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Updated battery architecture enables both Long Range and Plaid configurations to complete back-to-back track runs without performance degradation.",
+        "Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation.",
     },
     slides: [
       {
@@ -209,108 +217,58 @@ export const vehicles = [
         subtitle: "Lease starting at $329/mo*",
       },
     ],
-    saving:
-      "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    saving: "Specs displayed are Model S Plaid values.",
     powerTrain: {
       describe:
-        "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions.",
+        "Model S platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.",
       editions: [
         {
-          title: "Model X",
+          title: "Model S",
           describe:
-            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
-          image: Motor_X,
-
-          acceleration: 3.9,
-          range: 529,
+            "Dual Motor All-Wheel Drive unlocks more range than any other vehicle in our current lineup, with insane power and maximum control.",
+          image: Motor_S,
+          acceleration: 3.2,
+          range: 647,
         },
         {
-          title: "Model X Plaid",
+          title: "Model S Plaid",
           describe:
-            "Dual Motor All-Wheel Drive platform has the longest range, and now delivers insane power and acceleration.",
-          image: Motor_X_Plaid,
-          acceleration: 2.6,
-          range: 529,
+            "Maintain 1,000+ horsepower all the way to 322 km/h with Tri-Motor All-Wheel Drive, featuring torque vectoring and three independent carbon-sleeved rotors.",
+          image: Motor_S_Plaid,
+          acceleration: 2.1,
+          range: 578,
         },
       ],
     },
     range: {
       title: "Go Anywhere",
+      cover: Rnage_S,
       descrbie:
         "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
       numbers: [
         {
           value: 647,
           unit: "km",
-          describe:
-            "Go anywhere with up to 647 km of estimated range on a single charge",
+          describe: "Range (EPA est.)",
         },
         {
           value: 15,
           unit: "min",
-          describe:
-            "Recharge up to 322 km in 15 minutes at Supercharger locations",
+          describe: "Recharge up to 322 km",
         },
         {
           value: 50000,
           unit: "+",
-          describe: "Superchargers placed along popular routes",
+          describe: "Global Superchargers",
         },
       ],
     },
-    range: {
-      title: "Go Anywhere",
-      cover: Range_X,
-      descrbie:
-        "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
-      numbers: [
-        {
-          value: 647,
-          unit: "km",
-          describe:
-            "Go anywhere with up to 647 km of estimated range on a single charge",
-        },
-        {
-          value: 15,
-          unit: "min",
-          describe:
-            "Recharge up to 322 km in 15 minutes at Supercharger locations",
-        },
-        {
-          value: 50000,
-          unit: "+",
-          describe: "Superchargers placed along popular routes",
-        },
-      ],
-    },
-    utility: {
-      title: "Even More Capable",
-      cover: Utility_X,
-      descrbie:
-        "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
-      numbers: [
-        {
-          value: 2614,
-          unit: "L",
-          describe: "Up to 2,614 L of storage",
-        },
-        {
-          value: 2267,
-          unit: "kg",
-          describe: "Tow up to 2,267 kg",
-        },
-        {
-          icon: "fa-light fa-starship-freighter",
-          describe: "Falcon Wing Doors",
-        },
-      ],
-    },
-    designTop: Designe_X,
+    designTop: Design_S,
     design: {
       title: "Designed for Efficiency",
       topic: "Exterior",
       describe:
-        "Model X has a drag coefficient of just .24 Cd, the lowest of any production SUV on the planet. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.",
+        "With a drag coefficient of just .208 Cd, the lowest on the planet, Model S is built for speed, endurance and range. Improved aerodynamics and a wider chassis offer more responsive performance so you can take corners quicker and with more confidence.",
     },
     topImage: Interior_S,
     interiorSlides: [
@@ -322,38 +280,38 @@ export const vehicles = [
       },
       {
         image: Inter_Slide_2_S,
-        title: "Cinematic Experience",
+        title: "Yoke Steering",
         describe:
-          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+          "A bold new approach gives you a true connection to Model S, offering better steering feel and unobstructed views of your dash and the road ahead. Tap the brake and Model S automatically selects the correct direction to start your trip.",
       },
       {
         image: Inter_Slide_3_S,
-        title: "Cinematic Experience",
+        title: "Perfect Environment",
         describe:
-          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+          "Air vents are hidden throughout the cabin, while tri-zone temperature controls, ventilated seats and HEPA filtration deliver the perfect environment.",
       },
       {
         image: Inter_Slide_4_S,
-        title: "Cinematic Experience",
+        title: "Redesigned Second Row",
         describe:
-          "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
+          "Seating for three adults, with extra legroom, headroom and a stowable armrest with integrated storage and wireless charging.",
       },
     ],
     amenities: [
       {
-        image: Amenity_1_3,
+        image: Amenity_1_S,
         title: "Stay Connected",
         describe:
           "Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.",
       },
       {
-        image: Amenity_2_3,
+        image: Amenity_2_S,
         title: "Immersive Sound",
         describe:
           "A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.",
       },
       {
-        image: Amenity_3_3,
+        image: Amenity_3_S,
         title: "Room for Everything",
         describe:
           "With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.",
@@ -381,12 +339,12 @@ export const vehicles = [
     numbers: [
       {
         key: "Range (EPA est.)",
-        value: 326,
+        value: 578,
         unit: "km",
       },
       {
         key: "0-100 km/h",
-        value: 3.99,
+        value: 2.1,
         unit: "s",
       },
       {
@@ -441,27 +399,15 @@ export const vehicles = [
       "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
     roadImage: Road_S,
     safety: {
-      title: "Engineered for Safety",
+      title: "High Impact Protection",
       describe:
-        "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
-      cover: Safe_3,
+        "Model S is built from the ground up as an electric vehicle, with a high-strength architecture and floor-mounted battery pack for incredible occupant protection and low rollover risk. Every new Model S includes Tesla’s latest active safety features, such as Automatic Emergency Braking, at no extra cost.",
+      cover: Safe_S,
 
       marks: [
-        {
-          title: "Impact Protection",
-          y: 2,
-          x: 38,
-        },
-        {
-          title: "Side Collision Protection",
-          y: 120,
-          x: 80,
-        },
-        {
-          title: "Lane Departure Warning",
-          y: 300,
-          x: 30,
-        },
+        "Front-Impact Protection",
+        "Side-Impact Protection",
+        "Very Low Rollover Risk",
       ],
     },
   },
@@ -565,7 +511,7 @@ export const vehicles = [
         },
       ],
     },
-    designTop: Designe_X,
+    designTop: Design_X,
     design: {
       title: "Designed for Efficiency",
       topic: "Exterior",
@@ -709,21 +655,9 @@ export const vehicles = [
       cover: Safe_3,
 
       marks: [
-        {
-          title: "Impact Protection",
-          y: 2,
-          x: 38,
-        },
-        {
-          title: "Side Collision Protection",
-          y: 120,
-          x: 80,
-        },
-        {
-          title: "Lane Departure Warning",
-          y: 300,
-          x: 30,
-        },
+        "Impact Protection",
+        "Side Collision Protection",
+        "Lane Departure Warning",
       ],
     },
   },
@@ -828,7 +762,7 @@ export const vehicles = [
         },
       ],
     },
-    designTop: Designe_X,
+    designTop: Design_X,
     design: {
       title: "Designed for Efficiency",
       topic: "Exterior",
@@ -970,21 +904,9 @@ export const vehicles = [
         "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
       cover: Safe_3,
       marks: [
-        {
-          title: "Impact Protection",
-          y: 2,
-          x: 38,
-        },
-        {
-          title: "Side Collision Protection",
-          y: 120,
-          x: 80,
-        },
-        {
-          title: "Lane Departure Warning",
-          y: 300,
-          x: 30,
-        },
+        "Impact Protection",
+        "Side Collision Protection",
+        "Lane Departure Warning",
       ],
     },
   },
@@ -1088,7 +1010,7 @@ export const vehicles = [
         },
       ],
     },
-    designTop: Designe_X,
+    designTop: Design_X,
     design: {
       title: "Designed for Efficiency",
       topic: "Exterior",
@@ -1225,21 +1147,9 @@ export const vehicles = [
         "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
       cover: Safe_3,
       marks: [
-        {
-          title: "Impact Protection",
-          y: 2,
-          x: 38,
-        },
-        {
-          title: "Side Collision Protection",
-          y: 120,
-          x: 80,
-        },
-        {
-          title: "Lane Departure Warning",
-          y: 300,
-          x: 30,
-        },
+        "Impact Protection",
+        "Side Collision Protection",
+        "Lane Departure Warning",
       ],
     },
   },
@@ -1296,7 +1206,7 @@ export const vehicles = [
         },
       ],
     },
-    designTop: Designe_X,
+    designTop: Design_X,
     design: {
       title: "Designed for Efficiency",
       topic: "Exterior",
@@ -1439,21 +1349,9 @@ export const vehicles = [
         "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
       cover: Safe_3,
       marks: [
-        {
-          title: "Impact Protection",
-          y: 2,
-          x: 38,
-        },
-        {
-          title: "Side Collision Protection",
-          y: 120,
-          x: 80,
-        },
-        {
-          title: "Lane Departure Warning",
-          y: 300,
-          x: 30,
-        },
+        "Impact Protection",
+        "Side Collision Protection",
+        "Lane Departure Warning",
       ],
     },
   },

@@ -34,7 +34,6 @@ const Learn_Hero = ({ car }) => {
 
         <div className="absolute w-full text-center top-[90%] z-10 md:text-sm text-[9px]">
           <p>{car.saving}</p>
-          <Link className="link">Learn about est. gas savings.</Link>
         </div>
         <div className="md:block hidden splide__progress">
           <div className="splide__progress__bar" />
