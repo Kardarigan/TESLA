@@ -1,26 +1,32 @@
-import Background from "../../assets/Overviewpage-Group-83.jpg";
+import Poster from "../../assets/Overview/Homepage-Demo-Drive-Desktop-Poster-NA.avif";
+import Video from "../../assets/Overview/Homepage-Demo-Drive-Desktop-NA.webm";
 import Button from "../Button";
 
 const Ow_Hero = () => {
   return (
-    <section
-      className="fullSection padding"
-      style={{ backgroundImage: "url(" + Background + ")" }}
-    >
-      <div className="text-center h-full">
-        <div className="text-center flex flex-col justify-between">
-          <div>
-            <h1>Find Your Best, Then Customize It</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
-          </div>
-          <section className="xl:pt-60 lg:pt-44 md:pt-24 sm:pt-64 pt-72">
-            <Button to="/inventory" label="View Invertory" light />
-            <p className="max-w-[600px] mx-auto sm:text-sm text-xs pt-3">
-              Lorem ipsum dolor sit amet consectetur, it amet consectetur,
-              adipisicing elit ipsum id! Tenetur inventore earum maiores neque
-              animi <u>et odit eligendi, sequi velit.</u>
-            </p>
-          </section>
+    <section className="fullSection">
+      <video
+        autoPlay
+        muted
+        loop
+        poster={Poster}
+        className="absolute bg-fullobject w-full"
+      >
+        <source src={Video} type={`video/${Video.split(".").pop()}`} />
+        Your browser does not support the video tag.
+      </video>
+      <div className="text-center h-full  z-20 flex flex-col justify-between pt-[100px]">
+        <div className="mix-blend-exclusion">
+          <h1>This is Tesla Family</h1>
+          <p>Find Your Best, Then Customize It</p>
+        </div>
+        <div>
+          <Button to="/inventory" label="View Invertory" light />
+          <p className="max-w-[600px] mx-auto pt-3">
+            Lorem ipsum dolor sit amet consectetur, it amet consectetur,
+            adipisicing elit ipsum id! Tenetur inventore earum maiores neque
+            animi <u>et odit eligendi, sequi velit.</u>
+          </p>
         </div>
       </div>
     </section>

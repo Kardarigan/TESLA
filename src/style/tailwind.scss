@@ -47,14 +47,14 @@
     @apply bg-slate-600 text-slate-200 text-sm rounded focus:ring-1 focus:ring-slate-800 block w-full px-6 py-4;
   }
   .fullSection {
-    @apply h-screen w-full flex-fullcenter bg-fullcenter;
+    @apply h-screen w-full relative flex-fullcenter bg-fullcenter;
 
     h2,
     h1 {
       @apply md:text-6xl text-4xl;
     }
     p {
-      @apply my-2;
+      @apply my-2 sm:text-sm text-xs;
     }
     .linkBox {
       @apply md:flex gap-5 md:mx-auto padding;

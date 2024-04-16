@@ -21,7 +21,7 @@ const Three = ({ items, cover }) => {
                   <i className={item.icon} />
                 )}
               </div>
-              <p className="sm:text-sm text-xs">{item.sub}</p>
+              <p>{item.sub}</p>
             </li>
           );
         })}
