@@ -43,8 +43,9 @@ import Specs from "./Specs";
 import Full_Middle from "./Energy/Megapack/Full_Middle";
 import Padding_Middle from "./Energy/Megapack/Padding_Middle";
 import Studios from "./Energy/Megapack/Studios";
-
+import Dropdown from "./Dropdown";
 export {
+  Dropdown,
   Studios,
   Specs,
   Navbar,

@@ -8,7 +8,6 @@ const Three = ({ items, cover }) => {
     >
       <ul className="padding flex md:flex-col flex-row md:text-start text-center size-full justify-between">
         {items.map((item, index) => {
-          console.log(item.icon);
           return (
             <li key={index} className="md:max-w-[250px] w-1/3">
               <div className="md:text-4xl text-xl">

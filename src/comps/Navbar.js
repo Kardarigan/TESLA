@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { navLinks, navTools } from "../constants";
+import { blahblah, navLinks, navTools } from "../constants";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   return (
     <header className="absolute w-full z-50">
-      <nav className="shadowFromTop text-gray-100 padding-x py-3 w-full z-10 flex-seperate">
+      <nav className="padding-x py-3 w-full z-10 flex-seperate text-slate-50 hover:text-slate-950 hover:bg-slate-50">
         <Link to="/">
           <svg
             class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
@@ -21,11 +22,14 @@ const Navbar = () => {
         <ul className="lg:flex hidden gap-4">
           {navLinks.map((item, index) => {
             return (
-              <li key={index}>
-                <Link to={item.href} className="navitem">
-                  {item.label}
-                </Link>
-              </li>
+              <>
+                <li key={index}>
+                  <Link to={item.href} className="navitem">
+                    {item.label}
+                  </Link>
+                </li>
+                <Dropdown prods={item.products} links={item.links} />
+              </>
             );
           })}
         </ul>

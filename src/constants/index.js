@@ -1,6 +1,6 @@
-import Cybertruck from "../assets/Mega-Menu-Vehicles-Cybertruck-1x.png";
-import Model_Y from "../assets/Mega-Menu-Vehicles-Model-Y.png";
-import Model_X from "../assets/Mega-Menu-Vehicles-Model-X.png";
+import Cybertruck from "../assets/Navbar/Mega-Menu-Vehicles-Cybertruck-1x.png";
+import Model_Y from "../assets/Navbar/Mega-Menu-Vehicles-Model-Y.png";
+import Model_X from "../assets/Navbar/Mega-Menu-Vehicles-Model-X.png";
 import Ow_Model_S from "../assets/Overview/ModelS_71.jpg";
 import Ow_Model_Y from "../assets/Overview/ModelY_58.jpg";
 import Ow_Model_X from "../assets/Overview/ModelX_93.jpg";
@@ -109,12 +109,386 @@ import Mp_Slide_2 from "../assets/Megapack/Slider/Megapack_CaseStudy_Soldotna_D.
 import Mp_Slide_3 from "../assets/Megapack/Slider/Megapack_CaseStudy_Australia_D.avif";
 import Mp_Apps from "../assets/Megapack/Megapack_Apps_D.avif";
 
+import Nav_S from "../assets/Navbar/Mega-Menu-Vehicles-Model-S.png";
+import Nav_X from "../assets/Navbar/Mega-Menu-Vehicles-Model-X.png";
+import Nav_3 from "../assets/Navbar/Mega-Menu-Vehicles-Model-3-LHD.png";
+import Nav_Y from "../assets/Navbar/Mega-Menu-Vehicles-Model-Y.png";
+import Nav_Roadster from "../assets/Navbar/Mega-Menu-Vehicles-Model-Roadster.webp";
+import Nav_Cybertruck from "../assets/Navbar/Mega-Menu-Vehicles-Cybertruck-1x.png";
+import Nav_Semi from "../assets/Navbar/Mega-Menu-Vehicles-Model-Semi.png";
+import Nav_HMC from "../assets/Navbar/Mega-Menu-Vehicles-HMC-RedBlue-LHD.png";
+
 export const navLinks = [
-  { href: "./vehicles", label: "VEHICLE" },
-  { href: "./energy", label: "ENERGY" },
-  { href: "./charging", label: "CHARGING" },
-  { href: "./discover", label: "DISCOVER" },
-  { href: "./shop", label: "SHOP" },
+  {
+    href: "./vehicles",
+    label: "VEHICLE",
+    products: [
+      {
+        cover: Nav_S,
+        title: "Model S",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_X,
+        title: "Model X",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_3,
+        title: "Model 3",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Y,
+        title: "Model Y",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Roadster,
+        title: "Roadster",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Cybertruck,
+        title: "Cybertruck",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Semi,
+        title: "Semi",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_HMC,
+        title: "Help Me Choose",
+        links: [{ label: "Get Started", to: "/" }],
+      },
+    ],
+    links: [
+      { label: "Inventory", to: "/" },
+      { label: "Used Cars", to: "/" },
+      { label: "Demo Drive", to: "/" },
+      { label: "Trade-in", to: "/" },
+      { label: "Fleet", to: "/" },
+    ],
+  },
+  {
+    href: "./energy",
+    label: "ENERGY",
+    products: [
+      {
+        cover: Nav_S,
+        title: "Model S",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_X,
+        title: "Model X",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_3,
+        title: "Model 3",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Y,
+        title: "Model Y",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Roadster,
+        title: "Roadster",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Cybertruck,
+        title: "Cybertruck",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Semi,
+        title: "Semi",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_HMC,
+        title: "Help Me Choose",
+        links: [{ label: "Get Started", to: "/" }],
+      },
+    ],
+    links: [
+      { label: "Inventory", to: "/" },
+      { label: "Used Cars", to: "/" },
+      { label: "Demo Drive", to: "/" },
+      { label: "Trade-in", to: "/" },
+      { label: "Fleet", to: "/" },
+    ],
+  },
+  {
+    href: "./charging",
+    label: "CHARGING",
+    products: [
+      {
+        cover: Nav_S,
+        title: "Model S",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_X,
+        title: "Model X",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_3,
+        title: "Model 3",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Y,
+        title: "Model Y",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Roadster,
+        title: "Roadster",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Cybertruck,
+        title: "Cybertruck",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Semi,
+        title: "Semi",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_HMC,
+        title: "Help Me Choose",
+        links: [{ label: "Get Started", to: "/" }],
+      },
+    ],
+    links: [
+      { label: "Inventory", to: "/" },
+      { label: "Used Cars", to: "/" },
+      { label: "Demo Drive", to: "/" },
+      { label: "Trade-in", to: "/" },
+      { label: "Fleet", to: "/" },
+    ],
+  },
+  {
+    href: "./discover",
+    label: "DISCOVER",
+    products: [
+      {
+        cover: Nav_S,
+        title: "Model S",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_X,
+        title: "Model X",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_3,
+        title: "Model 3",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Y,
+        title: "Model Y",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Roadster,
+        title: "Roadster",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Cybertruck,
+        title: "Cybertruck",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Semi,
+        title: "Semi",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_HMC,
+        title: "Help Me Choose",
+        links: [{ label: "Get Started", to: "/" }],
+      },
+    ],
+    links: [
+      { label: "Inventory", to: "/" },
+      { label: "Used Cars", to: "/" },
+      { label: "Demo Drive", to: "/" },
+      { label: "Trade-in", to: "/" },
+      { label: "Fleet", to: "/" },
+    ],
+  },
+  {
+    href: "./shop",
+    label: "SHOP",
+    products: [
+      {
+        cover: Nav_S,
+        title: "Model S",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_X,
+        title: "Model X",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_3,
+        title: "Model 3",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Y,
+        title: "Model Y",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Roadster,
+        title: "Roadster",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Cybertruck,
+        title: "Cybertruck",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_Semi,
+        title: "Semi",
+        links: [
+          { label: "Learn", to: "/" },
+          { label: "Order", to: "/" },
+        ],
+      },
+      {
+        cover: Nav_HMC,
+        title: "Help Me Choose",
+        links: [{ label: "Get Started", to: "/" }],
+      },
+    ],
+    links: [
+      { label: "Inventory", to: "/" },
+      { label: "Used Cars", to: "/" },
+      { label: "Demo Drive", to: "/" },
+      { label: "Trade-in", to: "/" },
+      { label: "Fleet", to: "/" },
+    ],
+  },
 ];
 
 export const navTools = [
