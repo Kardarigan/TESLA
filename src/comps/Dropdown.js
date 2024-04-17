@@ -12,7 +12,7 @@ const Dropdown = ({
     >
       <div className="flex px-12">
         <div className="w-3/4 grid grid-cols-4 gap-3 padding">
-          {prods.map((item, index) => {
+          {prods?.map((item, index) => {
             console.log(item.links);
             return (
               <Link to={item.getLink} key={index} className="text-center">

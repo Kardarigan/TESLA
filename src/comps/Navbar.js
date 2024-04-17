@@ -4,11 +4,13 @@ import Dropdown from "./Dropdown";
 import { useState } from "react";
 const Navbar = () => {
   const [navOver, setNavOver] = useState(false);
-
-  const handleMouseOver = () => {
+  const [currentItem, setCurrentItem] = useState(null);
+  const handleMouseOver = (item) => {
     setNavOver(true);
+    if (!currentItem) {
+      setCurrentItem(item);
+    }
   };
-
   const handleMouseOut = (event) => {
     if (!event.relatedTarget || !event.relatedTarget.closest("nav")) {
       setNavOver(false);
@@ -44,19 +46,26 @@ const Navbar = () => {
                   <Link
                     to={item.href}
                     className={`navitem ${navOver && "hover"}`}
-                    onMouseOver={handleMouseOver}
+                    onMouseOver={() => {
+                      handleMouseOver(item);
+                      setCurrentItem(item); // Set the current item here
+                    }}
                   >
                     {item.label}
                   </Link>
                 </li>
                 <div className="dropdownContainer">
-                  <Dropdown
-                    className={
-                      navOver ? "top-0 opacity-100" : "top-[-500px]  opacity-0"
-                    }
-                    prods={item.products}
-                    links={item.links}
-                  />
+                  {currentItem && (
+                    <Dropdown
+                      className={
+                        navOver
+                          ? "top-0 opacity-100"
+                          : "top-[-500px]  opacity-0"
+                      }
+                      prods={currentItem.products}
+                      links={currentItem.links}
+                    />
+                  )}
                 </div>
               </>
             );
