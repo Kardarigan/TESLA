@@ -334,11 +334,11 @@ export const navLinks = [
       },
     ],
     links: [
-      { label: "Inventory", to: "/" },
-      { label: "Used Cars", to: "/" },
-      { label: "Demo Drive", to: "/" },
-      { label: "Trade-in", to: "/" },
-      { label: "Fleet", to: "/" },
+      { label: "Inventory 2", to: "/" },
+      { label: "Used Cars 2", to: "/" },
+      { label: "Demo Drive 2", to: "/" },
+      { label: "Trade-in 2", to: "/" },
+      { label: "Fleet 2", to: "/" },
     ],
   },
   {

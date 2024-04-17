@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 
-const Dropdown = ({ prods = false, links = false, discover = false }) => {
+const Dropdown = ({
+  prods = false,
+  links = false,
+  discover = false,
+  className = null,
+}) => {
   return (
-    <section className="absolute top-[50px] start-0 w-full bg-slate-50 text-slate-950 z-30 max-h-[500px]">
+    <section
+      className={`dropdown absolute start-0 w-full bg-slate-50 text-slate-950 z-30 max-h-[500px] transition-all duration-700 pt-12 ${className}`}
+    >
       <div className="flex px-12">
         <div className="w-3/4 grid grid-cols-4 gap-3 padding">
           {prods.map((item, index) => {
