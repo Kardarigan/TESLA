@@ -235,7 +235,7 @@ export const navLinks = [
       {
         cover: Nav_Charging,
         title: "Charging",
-        links: [{ label: "Learn", to: "/" }],
+        links: [{ label: "Learn", to: "/charging" }],
       },
       {
         cover: Nav_Home_Charging,
@@ -1392,9 +1392,8 @@ export const vehicles = [
         unit: "km/h",
       },
     ],
-    overal: Overall_X,
     footerMessage:
-      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. Learn more about Standard Connectivity and any limitations.",
     roadImage: Road_Roadster,
     design: {
       cover: Design_Roadster,
