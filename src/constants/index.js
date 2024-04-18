@@ -117,6 +117,11 @@ import Nav_Roadster from "../assets/Navbar/Mega-Menu-Vehicles-Model-Roadster.web
 import Nav_Cybertruck from "../assets/Navbar/Mega-Menu-Vehicles-Cybertruck-1x.png";
 import Nav_Semi from "../assets/Navbar/Mega-Menu-Vehicles-Model-Semi.png";
 import Nav_HMC from "../assets/Navbar/Mega-Menu-Vehicles-HMC-RedBlue-LHD.png";
+import Nav_Powerwall from "../assets/Navbar/Mega-Menu-Energy-Powerwall-US.png";
+import Nav_Megapack from "../assets/Navbar/Mega-Menu-Energy-Megapack.png";
+import Nav_Charging from "../assets/Navbar/Mega-Menu-Charging-Charging.jpeg";
+import Nav_Home_Charging from "../assets/Navbar/Mega-Menu-Charging-Home-Charging.jpeg";
+import Nav_Supercharging from "../assets/Navbar/Mega-Menu-Charging-Supercharging-NA.png";
 
 export const navLinks = [
   {
@@ -198,73 +203,20 @@ export const navLinks = [
     label: "ENERGY",
     products: [
       {
-        cover: Nav_S,
-        title: "Model S",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
+        cover: Nav_Powerwall,
+        title: "Powerwall",
+        links: [{ label: "Learn", to: "/powerwall" }],
       },
       {
-        cover: Nav_X,
-        title: "Model X",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_3,
-        title: "Model 3",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Y,
-        title: "Model Y",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Roadster,
-        title: "Roadster",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Cybertruck,
-        title: "Cybertruck",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Semi,
-        title: "Semi",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_HMC,
-        title: "Help Me Choose",
-        links: [{ label: "Get Started", to: "/" }],
+        cover: Nav_Megapack,
+        title: "Megapack",
+        links: [{ label: "Learn", to: "/megapack" }],
       },
     ],
     links: [
-      { label: "Inventory", to: "/" },
-      { label: "Used Cars", to: "/" },
-      { label: "Demo Drive", to: "/" },
-      { label: "Trade-in", to: "/" },
-      { label: "Fleet", to: "/" },
+      { label: "Support", to: "/" },
+      { label: "Commercial", to: "/" },
+      { label: "Utilities", to: "/" },
     ],
   },
   {
@@ -272,224 +224,86 @@ export const navLinks = [
     label: "CHARGING",
     products: [
       {
-        cover: Nav_S,
-        title: "Model S",
+        cover: Nav_Charging,
+        title: "Charging",
+        links: [{ label: "Learn", to: "/" }],
+      },
+      {
+        cover: Nav_Home_Charging,
+        title: "Home Charging",
         links: [
           { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
+          { label: "Shop", to: "/" },
         ],
       },
       {
-        cover: Nav_X,
-        title: "Model X",
+        cover: Nav_Supercharging,
+        title: "Supercharging",
         links: [
           { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
+          { label: "Find", to: "/" },
         ],
-      },
-      {
-        cover: Nav_3,
-        title: "Model 3",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Y,
-        title: "Model Y",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Roadster,
-        title: "Roadster",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Cybertruck,
-        title: "Cybertruck",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Semi,
-        title: "Semi",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_HMC,
-        title: "Help Me Choose",
-        links: [{ label: "Get Started", to: "/" }],
       },
     ],
     links: [
-      { label: "Inventory 2", to: "/" },
-      { label: "Used Cars 2", to: "/" },
-      { label: "Demo Drive 2", to: "/" },
-      { label: "Trade-in 2", to: "/" },
-      { label: "Fleet 2", to: "/" },
+      { label: "Trip Planner", to: "/" },
+      { label: "Charging With NACS", to: "/" },
+      { label: "Supercharger Voting", to: "/" },
+      { label: "Host a Supercharger", to: "/" },
+      { label: "Host Wall Connectors", to: "/" },
     ],
   },
   {
     href: "./discover",
     label: "DISCOVER",
-    products: [
-      {
-        cover: Nav_S,
-        title: "Model S",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_X,
-        title: "Model X",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_3,
-        title: "Model 3",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Y,
-        title: "Model Y",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Roadster,
-        title: "Roadster",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Cybertruck,
-        title: "Cybertruck",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Semi,
-        title: "Semi",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_HMC,
-        title: "Help Me Choose",
-        links: [{ label: "Get Started", to: "/" }],
-      },
-    ],
     links: [
-      { label: "Inventory", to: "/" },
-      { label: "Used Cars", to: "/" },
-      { label: "Demo Drive", to: "/" },
-      { label: "Trade-in", to: "/" },
-      { label: "Fleet", to: "/" },
-    ],
-  },
-  {
-    href: "./shop",
-    label: "SHOP",
-    products: [
       {
-        cover: Nav_S,
-        title: "Model S",
+        title: "Resources",
         links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
+          { label: "Demo Drive", to: "/" },
+          { label: "Customer Stories", to: "/" },
+          { label: "Events", to: "/" },
         ],
       },
       {
-        cover: Nav_X,
-        title: "Model X",
+        title: "Location Services",
         links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
+          { label: "Find Us", to: "/" },
+          { label: "Trip Planner", to: "/" },
+          { label: "Find a Collision Center", to: "/" },
+          { label: "Find a Certified Installer", to: "/" },
         ],
       },
       {
-        cover: Nav_3,
-        title: "Model 3",
+        title: "Company",
         links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
+          { label: "About", to: "/" },
+          { label: "Careers", to: "/" },
+          { label: "Investor Relations", to: "/" },
         ],
       },
-      {
-        cover: Nav_Y,
-        title: "Model Y",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Roadster,
-        title: "Roadster",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Cybertruck,
-        title: "Cybertruck",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_Semi,
-        title: "Semi",
-        links: [
-          { label: "Learn", to: "/" },
-          { label: "Order", to: "/" },
-        ],
-      },
-      {
-        cover: Nav_HMC,
-        title: "Help Me Choose",
-        links: [{ label: "Get Started", to: "/" }],
-      },
-    ],
-    links: [
-      { label: "Inventory", to: "/" },
-      { label: "Used Cars", to: "/" },
-      { label: "Demo Drive", to: "/" },
-      { label: "Trade-in", to: "/" },
-      { label: "Fleet", to: "/" },
     ],
   },
 ];
+
+export const navDiscover = {
+  Resources: [
+    { label: "Demo Drive", to: "/" },
+    { label: "Customer Stories", to: "/" },
+    { label: "Events", to: "/" },
+  ],
+  "Location Services": [
+    { label: "Find Us", to: "/" },
+    { label: "Trip Planner", to: "/" },
+    { label: "Find a Collision Center", to: "/" },
+    { label: "Find a Certified Installer", to: "/" },
+  ],
+  Company: [
+    { label: "About", to: "/" },
+    { label: "Careers", to: "/" },
+    { label: "Investor Relations", to: "/" },
+  ],
+};
 
 export const navTools = [
   { href: "./guid", class: "fal fa-question-circle" },

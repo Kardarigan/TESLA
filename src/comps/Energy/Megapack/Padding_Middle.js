@@ -5,7 +5,7 @@ const Padding_Middle = ({ title, cover, describe, right = false }) => {
     <section
       className={`min-h-screen bg-slate-50 padding flex ${
         right ? "md:flex-row-reverse" : "md:flex-row"
-      }`}
+      } flex-col`}
     >
       <div className="md:w-3/5 padding-y">
         <div className="padding-x pt-6">

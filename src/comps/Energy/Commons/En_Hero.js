@@ -8,7 +8,12 @@ const En_Hero = ({ prod, title, subtitle, get, dark }) => {
         style={{ backgroundImage: "url(" + prod.heroCover + ")" }}
       >
         {prod.heroVideo && (
-          <video autoPlay muted loop className="absolute bg-fullobject w-full">
+          <video
+            autoPlay
+            muted
+            loop
+            className="absolute bg-fullobject w-full h-screen"
+          >
             <source
               src={prod.heroVideo}
               type={`video/${prod.heroVideo.split(".").pop()}`}
