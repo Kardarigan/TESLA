@@ -2,17 +2,17 @@ import React from "react";
 import { vehicles } from "../../../constants";
 
 const Learn_Speed = ({ car }) => {
-  const caeNumebrs = vehicles.find(
+  const carNumebrs = vehicles.find(
     (vehicle) => vehicle.model === car.model
   ).numbers;
 
   return (
     <section
-      className="bg-slate-950 bg-fullcenter flex items-end min-h-[70vh]"
+      className="bg-slate-950 bg-fullcenter flex items-end min-h-[100vh]"
       style={{ backgroundImage: "url(" + car.roadImage + ")" }}
     >
       <div className="flex-seperate size-full shadowFromBottom md:px-32 padding">
-        {caeNumebrs.map((item) => {
+        {carNumebrs.map((item) => {
           return (
             <div key={item.key} className="text-center">
               <h4 className="md:text-4xl sm:text-2xl text-md">

@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/vehicles" element={<Overview />} />
           <Route path=":model/order" element={<Order />} />
-          <Route path=":model/learn" element={<Learn />} />
+          <Route path=":model" element={<Learn />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />

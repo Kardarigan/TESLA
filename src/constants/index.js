@@ -6,6 +6,7 @@ import Ow_Model_Y from "../assets/Overview/ModelY_58.jpg";
 import Ow_Model_X from "../assets/Overview/ModelX_93.jpg";
 import Ow_Model_3 from "../assets/Overview/Model3-67.jpg";
 import Ow_Cybertruck from "../assets/Overview/Cybertruck_63.jpg";
+import Ow_Roadster from "../assets/Overview/Roadster_cover.png";
 
 import Cover_360 from "../assets/Autopilot/360.jpg";
 
@@ -83,6 +84,14 @@ import AP_Parking_X from "../assets/Single/X/autoPilot/parking-mp4.webm";
 import AP_Summon_X from "../assets/Single/X/autoPilot/summon_1-mp4.webm";
 import Safe_X from "../assets/Single/X/Model-X-Safety-Hero-Desktop.avif";
 
+import Slide_1_Roadster from "../assets/Single/Roadster/roadster-hero-desktop.jpeg";
+import Slide_2_Roadster from "../assets/Single/Roadster/0x0-Roadster_07.jpg";
+import Road_Roadster from "../assets/Single/Roadster/roadster_aero_desktop.jpeg";
+import Roadster_Demovideo from "../assets/Single/Roadster/roadster-loop-metric-kilometer.webm";
+import Design_Roadster from "../assets/Single/Roadster/roadster_aero_desktop.avif";
+import Roof_Roadster from "../assets/Single/Roadster/roadster-glass-desktop.avif";
+import Inter_Roadster from "../assets/Single/Roadster/roadster-interior-desktop.avif";
+
 import En_Powerwall from "../assets/Energy_Powerwall.jpg";
 import En_Megapack from "../assets/Energy_Megapack.avif";
 
@@ -132,7 +141,7 @@ export const navLinks = [
         cover: Nav_S,
         title: "Model S",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/model s" },
           { label: "Order", to: "/" },
         ],
       },
@@ -140,7 +149,7 @@ export const navLinks = [
         cover: Nav_X,
         title: "Model X",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/model x" },
           { label: "Order", to: "/" },
         ],
       },
@@ -148,7 +157,7 @@ export const navLinks = [
         cover: Nav_3,
         title: "Model 3",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/model 3" },
           { label: "Order", to: "/" },
         ],
       },
@@ -156,7 +165,7 @@ export const navLinks = [
         cover: Nav_Y,
         title: "Model Y",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/model y" },
           { label: "Order", to: "/" },
         ],
       },
@@ -164,7 +173,7 @@ export const navLinks = [
         cover: Nav_Roadster,
         title: "Roadster",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/roadster" },
           { label: "Order", to: "/" },
         ],
       },
@@ -172,7 +181,7 @@ export const navLinks = [
         cover: Nav_Cybertruck,
         title: "Cybertruck",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/cybertruck" },
           { label: "Order", to: "/" },
         ],
       },
@@ -180,14 +189,14 @@ export const navLinks = [
         cover: Nav_Semi,
         title: "Semi",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/semi" },
           { label: "Order", to: "/" },
         ],
       },
       {
         cover: Nav_HMC,
         title: "Help Me Choose",
-        links: [{ label: "Get Started", to: "/" }],
+        links: [{ label: "Get Started", to: "/help" }],
       },
     ],
     links: [
@@ -380,7 +389,7 @@ export const vehicles = [
     model: "Model S",
     subtitle: "Affortable But Special",
     orderLink: "/model s/order",
-    learnLink: "/model s/learn",
+    learnLink: "/model s",
     cover: Ow_Model_S,
     plaid: {
       title: "Beyond Ludicrous",
@@ -603,7 +612,7 @@ export const vehicles = [
     model: "Model 3",
     subtitle: "Big Fast Dude",
     orderLink: "/model 3/order",
-    learnLink: "/model 3/learn",
+    learnLink: "/model 3",
     cover: Ow_Model_3,
     plaid: {
       title: "Beyond Ludicrous",
@@ -853,7 +862,7 @@ export const vehicles = [
     model: "Model Y",
     subtitle: "Speed for Miles",
     orderLink: "/model y/order",
-    learnLink: "/model y/learn",
+    learnLink: "/model y",
     cover: Ow_Model_Y,
     plaid: {
       title: "Beyond Ludicrous",
@@ -1102,7 +1111,7 @@ export const vehicles = [
     model: "Model X",
     subtitle: "Big Boss",
     orderLink: "/model x/order",
-    learnLink: "/model x/learn",
+    learnLink: "/model x",
     cover: Ow_Model_X,
     plaid: {
       title: "Beyond Ludicrous",
@@ -1342,10 +1351,75 @@ export const vehicles = [
     },
   },
   {
+    model: "Roadster",
+    orderLink: "/roadster/order",
+    learnLink: "/roadster",
+    cover: Ow_Roadster,
+    demoVideo: Roadster_Demovideo,
+    slides: [
+      {
+        bg: Slide_1_Roadster,
+        title: "Reengineered",
+        subtitle: "Lease starting at $329/mo*",
+      },
+      {
+        bg: Slide_2_Roadster,
+        title: "Reengineered",
+        subtitle: "Lease starting at $329/mo*",
+      },
+    ],
+    saving:
+      "*Price before savings is $74,990, excluding taxes and fees. Subject to change.",
+    numbers: [
+      {
+        key: "Range (EPA est.)",
+        value: "1,000",
+        unit: "km",
+      },
+      {
+        key: "0-100 km/h",
+        value: 2.1,
+        unit: "s",
+      },
+      {
+        key: "Peack Power",
+        value: 1020,
+        unit: "hp",
+      },
+      {
+        key: "Top Speed",
+        value: "+400",
+        unit: "km/h",
+      },
+    ],
+    overal: Overall_X,
+    footerMessage:
+      "Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. ",
+    roadImage: Road_Roadster,
+    design: {
+      cover: Design_Roadster,
+      title: "Designed for Performance and Aero Efficiency",
+      describe:
+        "As an all-electric supercar, Roadster maximizes the potential of aerodynamic engineering—with record-setting performance and efficiency.",
+    },
+    inter: {
+      cover: Inter_Roadster,
+      title: "Interior",
+      describe:
+        "The first supercar to set every performance record and still fit seating for four.",
+    },
+    roof: {
+      cover: Roof_Roadster,
+      title: "Glass Roof",
+      describe:
+        "A lightweight, removable Glass Roof stores in the trunk for an open-air, convertible driving experience.",
+    },
+  },
+  {
     model: "Cybertruck",
     subtitle: "Not Just for Earth",
     orderLink: "/cybertruck/order",
-    learnLink: "/cybertruck/learn",
+    learnLink: "/cybertruck",
     cover: Ow_Cybertruck,
     plaid: {
       title: "Beyond Ludicrous",

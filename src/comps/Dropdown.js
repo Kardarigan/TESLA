@@ -38,7 +38,11 @@ const Dropdown = ({
             <div className="w-3/4 grid grid-cols-4 gap-3 px-12">
               {prods?.map((item, index) => {
                 return (
-                  <Link to={item.getLink} key={index} className="text-center">
+                  <Link
+                    to={item.links[0].to}
+                    key={index}
+                    className="text-center"
+                  >
                     <div className="flex justify-center">
                       <img
                         src={item.cover}
@@ -65,7 +69,7 @@ const Dropdown = ({
               })}
             </div>
             <div className="w-1/4 flex flex-col justify-center">
-              <ul className="border-s ps-16 py-5 text-sm h-full font-bold">
+              <ul className="border-s ps-16 py-5 text-xs h-full font-bold">
                 {links.map((link, index) => (
                   <li key={index} className="py-1">
                     <Link

@@ -30,6 +30,9 @@ $color_dark: #171a20;
   );
 }
 
+.shadowAround {
+  box-shadow: inset 0px 0px 30px 30px rgba(black, 0.9);
+}
 .shadowFromTop {
   background: linear-gradient(180deg, $color_dark -30%, transparent 100%);
 }

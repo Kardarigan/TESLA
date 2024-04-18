@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="absolute w-full z-50">
+    <header className="absolute w-full z-50" onClick={handleMouseOut}>
       <nav
         className={`padding-x py-3 w-full z-10 flex-seperate text-slate-50 relative transition-all ${
           navOver && "text-slate-950"
