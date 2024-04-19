@@ -9,6 +9,7 @@ import {
   Powerwall,
   Megapack,
   Tradein,
+  Commercial,
 } from "./comps/Portal";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />
           <Route path="/tradein" element={<Tradein />} />
+          <Route path="/commercial" element={<Commercial />} />
           <Route path="*" element={<h1 className="m-auto">404</h1>} />
         </Route>
       </Routes>

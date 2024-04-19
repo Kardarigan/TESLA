@@ -1,14 +1,15 @@
 import Button from "./Button";
 import { Fadein } from "./Portal";
 
-const Learn_Middle_Image = ({
+const Middle_Image = ({
   topic,
   title,
   cover,
   describe,
-  orderLink,
+  learnLink = false,
+  orderLink = false,
   inventoryLink = false,
-  numbers,
+  numbers = false,
   right = false,
   pw = false,
 }) => {
@@ -19,17 +20,29 @@ const Learn_Middle_Image = ({
       } flex-col-reverse`}
     >
       <div className="lg:w-1/3 text-slate-900">
-        <div className="padding flex flex-col">
-          <h2>{topic}</h2>
-          <h3 className="title">{title}</h3>
-          <p className="mt-4">{describe}</p>
+        <div className="padding flex flex-col justify-between h-full">
           <div>
-            <Button
-              to={orderLink}
-              label={pw ? "Get Powerwall" : "Order Now"}
-              outline="dark"
-              customClass="w-full mt-24 mb-3"
-            />
+            <h2>{topic}</h2>
+            <h3 className="title">{title}</h3>
+            <p className="mt-4">{describe}</p>
+          </div>
+          <div>
+            {learnLink && (
+              <Button
+                to={learnLink}
+                label="Learn More"
+                outline="dark"
+                customClass="w-full mt-24 mb-3"
+              />
+            )}
+            {orderLink && (
+              <Button
+                to={orderLink}
+                label={pw ? "Get Powerwall" : "Order Now"}
+                outline="dark"
+                customClass="w-full mt-24 mb-3"
+              />
+            )}
             {inventoryLink && (
               <Button
                 to={inventoryLink}
@@ -50,28 +63,30 @@ const Learn_Middle_Image = ({
         ) : (
           <img src={cover} alt={title} className="size-full bg-fullobject" />
         )}
-        <div className="absolute grid grid-cols-3 gap-x-5 mx-auto bottom-0 w-full padding-x pb-12 shadowFromBottom">
-          {numbers.map((item) => {
-            return (
-              <Fadein>
-                <div className="text-center">
-                  <h4 className="md:text-3xl text-xl">
-                    {item.icon ? <i class={item.icon}></i> : item.value}
-                    {item.unit && (
-                      <span className="md:text-xl text-sm"> {item.unit}</span>
-                    )}
-                  </h4>
-                  <p className="sm:text-[12px] text-[10px] mt-5">
-                    {item.describe}
-                  </p>
-                </div>
-              </Fadein>
-            );
-          })}
-        </div>
+        {numbers && (
+          <div className="absolute grid grid-cols-3 gap-x-5 mx-auto bottom-0 w-full padding-x pb-12 shadowFromBottom">
+            {numbers.map((item) => {
+              return (
+                <Fadein>
+                  <div className="text-center">
+                    <h4 className="md:text-3xl text-xl">
+                      {item.icon ? <i class={item.icon}></i> : item.value}
+                      {item.unit && (
+                        <span className="md:text-xl text-sm"> {item.unit}</span>
+                      )}
+                    </h4>
+                    <p className="sm:text-[12px] text-[10px] mt-5">
+                      {item.describe}
+                    </p>
+                  </div>
+                </Fadein>
+              );
+            })}
+          </div>
+        )}
       </div>
     </section>
   );
 };
 
-export default Learn_Middle_Image;
+export default Middle_Image;

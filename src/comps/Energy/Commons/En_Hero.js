@@ -1,6 +1,6 @@
 import Button from "../../Button";
 
-const En_Hero = ({ prod, title, subtitle, get, dark }) => {
+const En_Hero = ({ prod, title, subtitle = false, get, dark }) => {
   return (
     <>
       <section

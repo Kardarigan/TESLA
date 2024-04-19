@@ -131,6 +131,11 @@ import Nav_Charging from "../assets/Navbar/Mega-Menu-Charging-Charging.jpeg";
 import Nav_Home_Charging from "../assets/Navbar/Mega-Menu-Charging-Home-Charging.jpeg";
 import Nav_Supercharging from "../assets/Navbar/Mega-Menu-Charging-Supercharging-NA.png";
 
+import Commercial_Center from "../assets/Commercial/Utilities-NOC.avif";
+import Com_Hero from "../assets/Commercial/CommercialEnergy_Web2.avif";
+import Com_Hero_Video from "../assets/Commercial/commercial-hero-desktop.webm";
+import Com_Storage from "../assets/Commercial/CE_Hardware_D.avif";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -223,7 +228,7 @@ export const navLinks = [
     ],
     links: [
       { label: "Support", to: "/" },
-      { label: "Commercial", to: "/" },
+      { label: "Commercial", to: "/commercial" },
       { label: "Utilities", to: "/" },
     ],
   },
@@ -439,7 +444,7 @@ export const vehicles = [
     range: {
       title: "Go Anywhere",
       cover: Rnage_S,
-      descrbie:
+      describe:
         "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
       numbers: [
         {
@@ -663,7 +668,7 @@ export const vehicles = [
     range: {
       title: "Go Anywhere",
       cover: Range_X,
-      descrbie:
+      describe:
         "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
       numbers: [
         {
@@ -688,7 +693,7 @@ export const vehicles = [
     utility: {
       title: "Even More Capable",
       cover: Utility_X,
-      descrbie:
+      describe:
         "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
       numbers: [
         {
@@ -914,7 +919,7 @@ export const vehicles = [
     range: {
       title: "Go Anywhere",
       cover: Range_X,
-      descrbie:
+      describe:
         "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
       numbers: [
         {
@@ -939,7 +944,7 @@ export const vehicles = [
     utility: {
       title: "Even More Capable",
       cover: Utility_X,
-      descrbie:
+      describe:
         "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
       numbers: [
         {
@@ -1162,7 +1167,7 @@ export const vehicles = [
     range: {
       title: "Go Anywhere",
       cover: Range_X,
-      descrbie:
+      describe:
         "With up to 647 kilometers of estimated range and access to the world’s largest and most powerful fast charging network, you’ll spend less time plugged in and more time on the road.",
       numbers: [
         {
@@ -1187,7 +1192,7 @@ export const vehicles = [
     utility: {
       title: "Even More Capable",
       cover: Utility_X,
-      descrbie:
+      describe:
         "With ample storage and 2,267 kg of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go.",
       numbers: [
         {
@@ -1722,7 +1727,7 @@ export const powerwall = {
   design: {
     title: "Modern and Compact",
     cover: Pw_Design,
-    descrbie:
+    describe:
       "With easy installation and a minimalist design, Powerwall complements a variety of home styles. The compact, all-in-one construction features versatile mounting options for indoor or outdoor spaces.",
     numbers: [
       {
@@ -1935,5 +1940,43 @@ export const megapack = {
   overall: {
     title: "Build a Cleaner Grid",
     describe: "Contact us for more information.",
+  },
+};
+
+export const commercial = {
+  getLink: "/commercial",
+  learnLink: "/",
+  heroCover: Com_Hero,
+  heroVideo: Com_Hero_Video,
+  controlCenter: Commercial_Center,
+  heroAbilities: [
+    {
+      title: "65+",
+      describe: "Countries",
+    },
+    {
+      title: "10 GWh+",
+      describe: "Deployed Storage",
+    },
+    {
+      title: "1,500+",
+      describe: "Sites in Operation",
+    },
+  ],
+  storage: {
+    title: "Fully Integrated",
+    cover: Com_Storage,
+    describe:
+      "Megapack stores your clean energy for use anytime. Customize our all-in-one system to suit your facility – with or without solar – and lower your energy bills from day one. Your system will include battery modules, bi-directional inverters, a thermal management system and controls.",
+  },
+  reliability: {
+    title: "24/7 Monitoring",
+    describe:
+      "With billions of cell-hours of safe operation, our systems deliver maximum reliability from transportation to installation—including 24/7 monitoring from our Network Operations Center.",
+  },
+  software: {
+    title: "Manage Complexity",
+    describe:
+      "Advanced software and controls automatically analyze market and site-specific conditions to determine the most efficient, scalable and secure use for your energy storage systems.",
   },
 };

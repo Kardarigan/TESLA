@@ -44,7 +44,7 @@ const Powerwall = () => {
         topic="Design"
         title={powerwall.design.title}
         cover={powerwall.design.cover}
-        describe={powerwall.design.descrbie}
+        describe={powerwall.design.describe}
         orderLink={powerwall.getLink}
         numbers={powerwall.design.numbers}
         pw
@@ -56,7 +56,7 @@ const Powerwall = () => {
       />
       <En_Overall
         title={powerwall.overall.title}
-        descrbie={powerwall.overall.describe}
+        describe={powerwall.overall.describe}
         link={powerwall.getLink}
         label="Get Powerwall"
       />

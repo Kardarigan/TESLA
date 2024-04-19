@@ -67,7 +67,7 @@ const Learn = () => {
               topic="Utility"
               title={car.utility.title}
               cover={car.utility.cover}
-              describe={car.utility.descrbie}
+              describe={car.utility.describe}
               orderLink={car.orderLink}
               inventoryLink={car.inventoryLink}
               numbers={car.utility.numbers}
@@ -91,7 +91,7 @@ const Learn = () => {
             topic="Range"
             title={car.range.title}
             cover={car.range.cover}
-            describe={car.range.descrbie}
+            describe={car.range.describe}
             orderLink={car.orderLink}
             inventoryLink={car.inventoryLink}
             numbers={car.range.numbers}

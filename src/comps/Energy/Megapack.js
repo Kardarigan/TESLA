@@ -54,7 +54,7 @@ const Megapack = () => {
       />
       <En_Overall
         title={megapack.overall.title}
-        descrbie={megapack.overall.describe}
+        describe={megapack.overall.describe}
         link={megapack.overall.getLink}
         label="Contact Us"
       />
