@@ -5,8 +5,15 @@ import { useState } from "react";
 const Navbar = () => {
   const [navOver, setNavOver] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
+  const dropdown = document.querySelectorAll(".dropdownContainer");
+
   const handleMouseOver = (item) => {
     setNavOver(true);
+    for (var i = 0; i < dropdown.length; i += 1) {
+      if ((dropdown[i].style.display = "none")) {
+        dropdown[i].style.display = "block";
+      }
+    }
     if (!currentItem) {
       setCurrentItem(item);
     }
@@ -14,13 +21,22 @@ const Navbar = () => {
   const handleMouseOut = (event) => {
     if (!event.relatedTarget || !event.relatedTarget.closest("nav")) {
       setNavOver(false);
+      setTimeout(() => {
+        for (var i = 0; i < dropdown.length; i += 1) {
+          if (dropdown[i] && dropdown[i].style) {
+            if (dropdown[i].style.display === "block" && !navOver) {
+              dropdown[i].style.display = "none";
+            }
+          }
+        }
+      }, 500);
     }
   };
 
   return (
     <header className="absolute w-full z-50" onClick={handleMouseOut}>
       <nav
-        className={`padding-x py-3 w-full z-10 flex-seperate text-slate-50 relative transition-all ${
+        className={`padding-x py-3 w-full z-10 flex-seperate text-slate-50 relative shadowFromTop transition-all ${
           navOver && "text-slate-950"
         }`}
         onMouseOut={handleMouseOut}
@@ -54,7 +70,7 @@ const Navbar = () => {
                     {item.label}
                   </Link>
                 </li>
-                <div className="dropdownContainer">
+                <div className="dropdownContainer absolute w-full max-h-[500px] top-0 left-0">
                   {currentItem &&
                     (currentItem.label === "DISCOVER" ? (
                       <Dropdown
@@ -95,7 +111,7 @@ const Navbar = () => {
             );
           })}
         </div>
-        <button className="lg:hidden block transition text-sm font-semibold rounded px-3 py-2  bg-opacity-0 bg-opacity-10 bg-slate-500 backdrop-blur-sm">
+        <button className="lg:hidden block transition text-sm font-semibold rounded px-3 py-2  bg-opacity-10 bg-slate-500 backdrop-blur-sm">
           <span>MENU</span>
         </button>
       </nav>
