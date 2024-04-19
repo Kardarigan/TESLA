@@ -1,4 +1,5 @@
 import React from "react";
+import { Fadein } from "./Portal";
 
 const Specs = ({ title, describe = false, cover, items }) => {
   return (
@@ -31,15 +32,17 @@ const Specs = ({ title, describe = false, cover, items }) => {
           <div className="pt-10">
             {items.secondCol.map((item, index) => {
               return (
-                <div className="md:text-sm pt-5" key={index}>
-                  <hr className="pb-3 border-slate-500 w-8" />
-                  <h4>{item.title}</h4>
-                  <ul className="text-slate-200 leading-5 text-xs">
-                    {item.details.map((item, index) => {
-                      return <li key={index}>{item}</li>;
-                    })}
-                  </ul>
-                </div>
+                <Fadein>
+                  <div className="md:text-sm pt-5" key={index}>
+                    <hr className="pb-3 border-slate-500 w-8" />
+                    <h4>{item.title}</h4>
+                    <ul className="text-slate-200 leading-5 text-xs">
+                      {item.details.map((item, index) => {
+                        return <li key={index}>{item}</li>;
+                      })}
+                    </ul>
+                  </div>
+                </Fadein>
               );
             })}
           </div>

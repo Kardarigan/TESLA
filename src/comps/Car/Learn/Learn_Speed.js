@@ -1,5 +1,6 @@
 import React from "react";
 import { vehicles } from "../../../constants";
+import { Fadein } from "../../Portal";
 
 const Learn_Speed = ({ car }) => {
   const carNumebrs = vehicles.find(
@@ -14,13 +15,17 @@ const Learn_Speed = ({ car }) => {
       <div className="flex-seperate size-full shadowFromBottom md:px-32 padding">
         {carNumebrs.map((item) => {
           return (
-            <div key={item.key} className="text-center">
-              <h4 className="md:text-4xl sm:text-2xl text-md">
-                {item.value}{" "}
-                <span className="md:text-xl text-[10px]">{item.unit}</span>
-              </h4>
-              <p className="md:text-sm sm:text-[10px] text-[8px]">{item.key}</p>
-            </div>
+            <Fadein>
+              <div key={item.key} className="text-center">
+                <h4 className="md:text-4xl sm:text-2xl text-md">
+                  {item.value}{" "}
+                  <span className="md:text-xl text-[10px]">{item.unit}</span>
+                </h4>
+                <p className="md:text-sm sm:text-[10px] text-[8px]">
+                  {item.key}
+                </p>
+              </div>
+            </Fadein>
           );
         })}
       </div>

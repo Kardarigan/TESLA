@@ -46,10 +46,12 @@ import Studios from "./Energy/Megapack/Studios";
 import Dropdown from "./Dropdown";
 import Fadein from "./Fadein";
 import Learn_Bgsection from "./Car/Learn/Learn_Bgsection";
+import Tradein from "./trade-in/Tradein";
 
 export {
-  Learn_Bgsection,
   Fadein,
+  Tradein,
+  Learn_Bgsection,
   Dropdown,
   Studios,
   Specs,

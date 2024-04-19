@@ -1,4 +1,3 @@
-import Cybertruck from "../assets/Navbar/Mega-Menu-Vehicles-Cybertruck-1x.png";
 import Model_Y from "../assets/Navbar/Mega-Menu-Vehicles-Model-Y.png";
 import Model_X from "../assets/Navbar/Mega-Menu-Vehicles-Model-X.png";
 import Ow_Model_S from "../assets/Overview/ModelS_71.jpg";
@@ -203,7 +202,7 @@ export const navLinks = [
       { label: "Inventory", to: "/" },
       { label: "Used Cars", to: "/" },
       { label: "Demo Drive", to: "/" },
-      { label: "Trade-in", to: "/" },
+      { label: "Trade-in", to: "/tradein" },
       { label: "Fleet", to: "/" },
     ],
   },
@@ -339,7 +338,7 @@ export const heroSlides = [
     title: "Electric Cars, Solar & Clean Energy. This is The Tesla",
     subtitle:
       "Discover which model is best for you based on your budget, driving habits and lifestyle.",
-    image: Cybertruck,
+    image: Nav_Cybertruck,
     alt: "Cybertruck",
     link1: "/",
     link1_label: "Shop Available",
@@ -350,7 +349,7 @@ export const heroSlides = [
     title: "Model Y Starting at $36,490 After Federal Tax Credit",
     subtitle:
       "Discover which model is best for you based on your budget, driving habits and lifestyle.",
-    image: Model_Y,
+    image: Nav_Y,
     alt: "Model-Y",
     link1: "/",
     link1_label: "Demo Drive",
@@ -361,8 +360,8 @@ export const heroSlides = [
     title: "Find the Tesla for You",
     subtitle:
       "Discover which model is best for you based on your budget, driving habits and lifestyle.",
-    image: Model_X,
-    alt: "Model-X",
+    image: Nav_3,
+    alt: "Model-3",
     link1: "/",
     link1_label: "Help Me Choose",
   },

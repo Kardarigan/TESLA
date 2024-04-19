@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { Fadein } from "./Portal";
 
 const Learn_Middle_Image = ({
   topic,
@@ -52,17 +53,19 @@ const Learn_Middle_Image = ({
         <div className="absolute grid grid-cols-3 gap-x-5 mx-auto bottom-0 w-full padding-x pb-12 shadowFromBottom">
           {numbers.map((item) => {
             return (
-              <div className="text-center">
-                <h4 className="md:text-3xl text-xl">
-                  {item.icon ? <i class={item.icon}></i> : item.value}
-                  {item.unit && (
-                    <span className="md:text-xl text-sm"> {item.unit}</span>
-                  )}
-                </h4>
-                <p className="sm:text-[12px] text-[10px] mt-5">
-                  {item.describe}
-                </p>
-              </div>
+              <Fadein>
+                <div className="text-center">
+                  <h4 className="md:text-3xl text-xl">
+                    {item.icon ? <i class={item.icon}></i> : item.value}
+                    {item.unit && (
+                      <span className="md:text-xl text-sm"> {item.unit}</span>
+                    )}
+                  </h4>
+                  <p className="sm:text-[12px] text-[10px] mt-5">
+                    {item.describe}
+                  </p>
+                </div>
+              </Fadein>
             );
           })}
         </div>

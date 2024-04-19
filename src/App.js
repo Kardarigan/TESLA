@@ -8,6 +8,7 @@ import {
   Energy,
   Powerwall,
   Megapack,
+  Tradein,
 } from "./comps/Portal";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />
+          <Route path="/tradein" element={<Tradein />} />
           <Route path="*" element={<h1 className="m-auto">404</h1>} />
         </Route>
       </Routes>

@@ -18,6 +18,29 @@
     }
   }
 
+  .button {
+    @apply transition duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-[12px] rounded md:w-auto inline-block w-full px-10 py-2;
+    &-outline {
+      * {
+        @apply bg-transparent;
+      }
+      &-light {
+        @apply text-slate-100  fakeBorderLight hover:bg-slate-50 hover:text-slate-800;
+      }
+      &-dark {
+        @apply text-slate-900 bg-transparent fakeBorderDark hover:bg-slate-900 hover:text-slate-200;
+      }
+    }
+    &-light {
+      @apply text-slate-800 bg-slate-200 bg-opacity-70 hover:bg-opacity-80;
+    }
+    &-dark {
+      @apply text-slate-200 bg-slate-700 bg-opacity-70 hover:bg-opacity-80;
+    }
+    &-sky {
+      @apply text-slate-200 bg-blue-600 hover:bg-opacity-80;
+    }
+  }
   .bg {
     &-fullcenter {
       @apply bg-center bg-cover bg-no-repeat;
@@ -26,10 +49,6 @@
       @apply object-center object-cover;
     }
   }
-  .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
-  }
-
   .navitem {
     @apply transition text-sm font-semibold rounded px-3 py-2  bg-opacity-0 hover:bg-opacity-10 hover:bg-slate-500 hover:backdrop-blur-sm;
   }
@@ -43,7 +62,7 @@
     @apply md:text-3xl text-xl font-bold;
   }
   .field {
-    @apply bg-slate-600 text-slate-200 text-sm rounded focus:ring-1 focus:ring-slate-800 block w-full px-6 py-4;
+    @apply bg-slate-600 text-slate-200 text-sm rounded focus:ring-1 focus:ring-slate-800 block w-full px-6;
   }
   .fullSection {
     @apply h-screen w-full relative flex-fullcenter bg-fullcenter;
