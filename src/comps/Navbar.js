@@ -21,11 +21,16 @@ const Navbar = () => {
   const handleMouseOut = (event) => {
     if (!event.relatedTarget || !event.relatedTarget.closest("nav")) {
       setNavOver(false);
-      setTimeout(() => {
-        for (var i = 0; i < dropdown.length; i += 1) {
-          dropdown[i].style.display = "none";
+      if (!navOver) {
+        const timer = setTimeout(() => {
+          for (var i = 0; i < dropdown.length; i += 1) {
+            dropdown[i].style.display = "none";
+          }
+        }, 700);
+        if (navOver) {
+          clearTimeout(timer);
         }
-      }, 700);
+      }
     }
   };
 
