@@ -37,7 +37,6 @@ import Megapack from "./Energy/Megapack";
 import En_Hero from "./Energy/Commons/En_Hero";
 import En_Overall from "./Energy/Commons/En_Overall";
 import Pw_Abilities from "./Energy/Powerwall/Pw_Abilities";
-import Pw_Home from "./Energy/Powerwall/Pw_Home";
 import Three from "./Three";
 import Specs from "./Specs";
 import Full_Middle from "./Energy/Megapack/Full_Middle";
@@ -48,8 +47,12 @@ import Fadein from "./Fadein";
 import Learn_Bgsection from "./Car/Learn/Learn_Bgsection";
 import Tradein from "./trade-in/Tradein";
 import Commercial from "./Energy/Commercial";
+import Free_slider from "./Free_Slider";
+import From from "./From";
 
 export {
+  From,
+  Free_slider,
   Commercial,
   Fadein,
   Tradein,
@@ -96,7 +99,6 @@ export {
   Powerwall,
   Megapack,
   Pw_Abilities,
-  Pw_Home,
   Three,
   Padding_Middle,
   Full_Middle,

@@ -2,10 +2,10 @@ import React from "react";
 import {
   En_Hero,
   En_Overall,
+  Free_slider,
   Middle,
   Middle_Image,
   Pw_Abilities,
-  Pw_Home,
   Specs,
   Three,
 } from "../Portal";
@@ -30,7 +30,7 @@ const Powerwall = () => {
         orderLink={powerwall.getLink}
         pw
       />
-      <Pw_Home pw={powerwall.slides} />
+      <Free_slider prod={powerwall.slides} dark />
       <Three items={powerwall.mobile} cover={powerwall.mobileCover} />
       <Middle
         title={powerwall.control.title}

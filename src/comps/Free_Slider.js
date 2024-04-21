@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 
-const Pw_Home = ({ pw }) => {
+const Free_slider = ({ prod, dark = false }) => {
   const videoSlide = document.getElementsByClassName("splide__slide");
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Pw_Home = ({ pw }) => {
   };
 
   return (
-    <section className="padding">
+    <section className={`padding ${!dark && "bg-slate-50 text-slate-950"}`}>
       <Splide
         aria-label="Power Train"
         options={{
@@ -59,33 +59,49 @@ const Pw_Home = ({ pw }) => {
           pagination: false,
         }}
       >
-        {pw.map((ability, index) => {
+        {prod.map((ability, index) => {
           return (
             <SplideSlide
               data-splide-interval={ability.duration}
               data-tabcontent={`tabAutopilot_${index}`}
             >
-              <video muted loop className="bg-fullobject w-full">
-                <source
-                  src={ability.video}
-                  type={`video/${ability.video.split(".").pop()}`}
+              {ability.cover.endsWith(".mp4") ||
+              ability.cover.endsWith(".webm") ? (
+                <video muted loop className="bg-fullobject w-full rounded">
+                  <source
+                    src={ability.cover}
+                    type={`video/${ability.cover.split(".").pop()}`}
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
+                  src={ability.cover}
+                  alt={ability.title}
+                  className="bg-fullobject w-full rounded"
                 />
-                Your browser does not support the video tag.
-              </video>
+              )}
             </SplideSlide>
           );
         })}
       </Splide>
 
-      <div className="flex padding-x py-12 gap-x-8 mx-auto">
-        {pw.map((ability, index) => {
+      <div className="flex padding-x py-5 gap-x-8 mx-auto">
+        {prod.map((ability, index) => {
           return (
             <div
-              className="w-1/4 border-t-2 border-slate-100 pt-3"
+              className={`border-t-2 px-1 pt-3 ${
+                dark ? "border-slate-100" : "border-slate-900"
+              }`}
               data-tabbutton={`tabAutopilot_${index}`}
               onClick={() => handleTabClick(`tabAutopilot_${index}`)}
             >
-              <h5 className="text-sm">{ability.title}</h5>
+              <h5 className={`${ability.describe ? "text-xl" : "text-sm"}`}>
+                {ability.title}
+              </h5>
+              {ability.describe && (
+                <p className="mt-3 text-xs">{ability.describe}</p>
+              )}
             </div>
           );
         })}
@@ -94,4 +110,4 @@ const Pw_Home = ({ pw }) => {
   );
 };
 
-export default Pw_Home;
+export default Free_slider;

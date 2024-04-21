@@ -136,6 +136,13 @@ import Com_Hero from "../assets/Commercial/CommercialEnergy_Web2.avif";
 import Com_Hero_Video from "../assets/Commercial/commercial-hero-desktop.webm";
 import Com_Storage from "../assets/Commercial/CE_Hardware_D.avif";
 
+import Ui_1 from "../assets/Commercial/CE_UI_Microgrid_D_Carousel-New.avif";
+import Ui_2 from "../assets/Commercial/CE_UI_Opticaster_D_Carousel-New.avif";
+import Ui_3 from "../assets/Commercial/CE_UI_Powerhub_D_Carousel-New.avif";
+
+import Case_1 from "../assets/Commercial/CE_Case1_D.avif";
+import Case_2 from "../assets/Commercial/CE_Case2_D.avif";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -1680,27 +1687,27 @@ export const powerwall = {
   slides: [
     {
       title: "Store energy from the grid or solar",
-      video: Pw_slide_1,
+      cover: Pw_slide_1,
       duration: 10000,
     },
     {
       title: "Use your stored energy anytime to power your home",
-      video: Pw_slide_2,
+      cover: Pw_slide_2,
       duration: 6000,
     },
     {
       title: "At night when the sun isn't shining",
-      video: Pw_slide_3,
+      cover: Pw_slide_3,
       duration: 6000,
     },
     {
       title: "Or when the power is out during an outage",
-      video: Pw_slide_4,
+      cover: Pw_slide_4,
       duration: 5000,
     },
     {
       title: "Recharge when the sun rises, or the grid turns back on",
-      video: Pw_slide_5,
+      cover: Pw_slide_5,
       duration: 5000,
     },
   ],
@@ -1811,6 +1818,7 @@ export const megapack = {
   getLink: "/",
   heroCover: Mp_Hero,
   heroVideo: Mp_Hero_Video,
+
   heroAbilities: [
     {
       icon: "fa-light fa-bolt",
@@ -1979,4 +1987,99 @@ export const commercial = {
     describe:
       "Advanced software and controls automatically analyze market and site-specific conditions to determine the most efficient, scalable and secure use for your energy storage systems.",
   },
+  apps: {
+    title: "Optimize and Control",
+    describe:
+      "Additional controls may help prevent or mitigate blackouts, increase sustainable generation, allow storage assets to participate in ancillary services and more.",
+    cover: Mp_Apps,
+    items: {
+      fisrtCol: [
+        {
+          title: "Ancillary Services",
+          details: [
+            "Provide services to the grid in response to utility or system operator signals",
+          ],
+        },
+        {
+          title: "Energy Shifting",
+          details: [
+            "Store and dispatch excess capacity from renewable sources",
+          ],
+        },
+        {
+          title: "Spinning Reserve",
+          details: [
+            "Provide power or energy capacity to the grid as a standalone asset",
+          ],
+        },
+        {
+          title: "Frequency Regulation",
+          details: ["Participate in frequency regulation markets"],
+        },
+      ],
+      secondCol: [
+        {
+          title: "Voltage and Reactive Power Support",
+          details: ["Provide system strength across all areas of the network"],
+        },
+        {
+          title: "Transmission and Distribution Support",
+          details: [
+            "Supply capacity to defer or eliminate the need to upgrade infrastructure",
+          ],
+        },
+        {
+          title: "Inertia",
+          details: [
+            "Enable more renewable generation by virtually emulating mechanical inertia",
+          ],
+        },
+      ],
+    },
+  },
+  studies: {
+    title: "Maximize Value",
+    describe:
+      "Protect and grow your business faster with reliable power, reduced costs and advanced software that optimizes itself. Generate and store sustainable energy for use anytime—during peak demand or grid outages.",
+    slides: [
+      {
+        title: "Kintetsu Railway",
+        describe:
+          "Maintains emergency backup to Osaka rail service with enough energy to get all trains to the nearest station in event of grid outage",
+        cover: Case_1,
+        duration: 10000,
+      },
+      {
+        title: "Sierra Nevada Brewing",
+        describe:
+          "Saves hundreds of thousands of dollars by storing its own clean energy for use when energy prices are high, or the sun isn’t shining",
+        cover: Case_2,
+        duration: 10000,
+      },
+    ],
+  },
 };
+
+export const controlSlides = [
+  {
+    title: "Powerhub",
+    describe:
+      "Advanced real-time monitoring and control platform for managing storage, generation and microgrids",
+    cover: Ui_1,
+    duration: 5000,
+  },
+  {
+    title: "Opticaster",
+    describe:
+      "Optimization engine for forecasting and improving energy use in real time to minimize electricity costs",
+    cover: Ui_2,
+    duration: 5000,
+  },
+  {
+    title: "Microgrid Controller",
+    describe:
+      "Off-grid control software for autonomously maintaining grid stability and minimizing costs across all energy assets",
+    cover: Ui_3,
+    duration: 5000,
+  },
+];

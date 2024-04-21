@@ -1,5 +1,12 @@
-import { commercial } from "../../constants";
-import { En_Hero, Middle, Middle_Image } from "../Portal";
+import { commercial, controlSlides } from "../../constants";
+import {
+  Control_panel,
+  En_Hero,
+  Free_slider,
+  Middle,
+  Middle_Image,
+  Specs,
+} from "../Portal";
 
 const Commercial = () => {
   return (
@@ -36,6 +43,22 @@ const Commercial = () => {
         learnLink={commercial.learnLink}
         light
       />
+      <Free_slider prod={controlSlides} />
+      <Specs
+        topic="Applications"
+        title={commercial.apps.title}
+        describe={commercial.apps.describe}
+        cover={commercial.apps.cover}
+        items={commercial.apps.items}
+      />
+      <Middle
+        topic="Case Studies"
+        title={commercial.studies.title}
+        describe={commercial.studies.describe}
+        light
+      />
+
+      <Free_slider prod={commercial.studies.slides} />
     </>
   );
 };
