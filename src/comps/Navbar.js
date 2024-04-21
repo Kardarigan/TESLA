@@ -23,13 +23,9 @@ const Navbar = () => {
       setNavOver(false);
       setTimeout(() => {
         for (var i = 0; i < dropdown.length; i += 1) {
-          if (dropdown[i] && dropdown[i].style) {
-            if (dropdown[i].style.display === "block" && !navOver) {
-              dropdown[i].style.display = "none";
-            }
-          }
+          dropdown[i].style.display = "none";
         }
-      }, 500);
+      }, 700);
     }
   };
 
