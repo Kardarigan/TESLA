@@ -50,7 +50,10 @@ import Commercial from "./Energy/Commercial";
 import Free_slider from "./Free_Slider";
 import Form from "./Form";
 import Utilities from "./Energy/Utilities";
+import Tradein_Form from "./trade-in/Tradein_Form";
+
 export {
+  Tradein_Form,
   Utilities,
   Form,
   Free_slider,

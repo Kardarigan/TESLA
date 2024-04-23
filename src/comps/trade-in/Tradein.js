@@ -3,8 +3,8 @@ import Cover from "../../assets/tradein.jpg";
 
 const Tradein = () => {
   return (
-    <section className="max-w-[800px] mx-auto pb-52">
-      <div className="flex max-md:flex-col-reverse md:pt-40 gap-10 min-h-screen">
+    <section className="max-w-[800px] mx-auto pb-52 min-h-screen">
+      <div className="flex max-md:flex-col-reverse md:pt-40 gap-10">
         <div className="max-md:padding-x">
           <h1 className="title">Get Trade-In Estimate</h1>
           <p>
@@ -29,6 +29,13 @@ const Tradein = () => {
           <img src={Cover} alt="Trade-in" className="rounded" />
         </div>
       </div>
+      <p className="text-center mt-12 text-xs text-slate-300">
+        You Wanna Use the Form Instead?{" "}
+        <Link to="/tradein/form" className="text-slate-50 link">
+          Click Here
+        </Link>
+        .
+      </p>
     </section>
   );
 };

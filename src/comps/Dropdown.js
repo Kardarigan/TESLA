@@ -14,7 +14,7 @@ const Dropdown = ({
         {discover ? (
           <div className="flex gap-12 py-5 mx-auto text-xs">
             {links?.map((linkCategory, index) => (
-              <ul>
+              <ul key={index}>
                 <h3 className="text-slate-500 font-thin mb-5">
                   {linkCategory.title}
                 </h3>

@@ -11,6 +11,7 @@ import {
   Tradein,
   Commercial,
   Utilities,
+  Tradein_Form,
 } from "./comps/Portal";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
+          <Route index path="/" element={<Home />} />
           <Route path="/vehicles" element={<Overview />} />
           <Route path=":model/order" element={<Order />} />
           <Route path=":model" element={<Learn />} />
@@ -26,6 +27,7 @@ function App() {
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />
           <Route path="/tradein" element={<Tradein />} />
+          <Route path="/tradein/form" element={<Tradein_Form />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/utilities" element={<Utilities />} />
           <Route path="*" element={<h1 className="m-auto">404</h1>} />

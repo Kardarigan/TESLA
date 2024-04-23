@@ -2405,3 +2405,30 @@ export const controlSlides = [
     duration: 5000,
   },
 ];
+
+export const tradeinForm = [
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "First Name",
+    type: "text",
+  },
+];
