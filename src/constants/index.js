@@ -148,6 +148,7 @@ import Utility_3 from "../assets/Utilities/Utilities-Case3.jpg";
 
 import Com_Case_1 from "../assets/Commercial/CE_Case1_D.avif";
 import Com_Case_2 from "../assets/Commercial/CE_Case2_D.avif";
+import { type } from "@testing-library/user-event/dist/type";
 
 export const navLinks = [
   {
@@ -2406,29 +2407,102 @@ export const controlSlides = [
   },
 ];
 
-export const tradeinForm = [
-  {
-    label: "First Name",
-    type: "text",
-  },
-  {
-    label: "First Name",
-    type: "text",
-  },
-  {
-    label: "First Name",
-    type: "text",
-  },
-  {
-    label: "First Name",
-    type: "text",
-  },
-  {
-    label: "First Name",
-    type: "text",
-  },
-  {
-    label: "First Name",
-    type: "text",
-  },
-];
+export const tradeinForm = {
+  vahicle: [
+    {
+      label: "Year",
+      type: "text",
+    },
+    {
+      label: "Make",
+      type: "select",
+      options: [
+        "Tesla",
+        "Lincoln",
+        "Chevrolet",
+        "Cadillac",
+        "Ford",
+        "GMC",
+        "Dodge",
+      ],
+    },
+    {
+      label: "Model",
+      type: "select",
+      options: [
+        "Tesla",
+        "Lincoln",
+        "Chevrolet",
+        "Cadillac",
+        "Ford",
+        "GMC",
+        "Dodge",
+      ],
+    },
+    {
+      label: "Trim",
+      type: "select",
+      options: ["Standard", "Entry", "Extra"],
+    },
+    {
+      label: "Odometer",
+      type: "number",
+    },
+    {
+      label: "Registration Postal Code",
+      type: "text",
+    },
+    {
+      label: "Accident History",
+      type: "select",
+      options: [
+        "No Accidents",
+        "Previous Accidents(s) with Minor Damage",
+        "Previous Accident(s) with Frame Damage",
+        "Previous Accident(s) where Airbag was Deployed",
+      ],
+    },
+    {
+      label: "Vehicle Condition",
+      type: "select",
+      options: ["Like New", "Average", "Not Great"],
+    },
+  ],
+  contact: [
+    {
+      label: "First Name",
+      type: "text",
+    },
+    {
+      label: "Last Name",
+      type: "text",
+    },
+    {
+      label: "Contact Preference",
+      type: "select",
+      options: ["Phone", "Desktop"],
+    },
+    {
+      label: "Phone Number",
+      type: "tel",
+    },
+    {
+      label: "Email Address",
+      type: "email",
+    },
+    {
+      label: "Region",
+      type: "select",
+      options: [
+        "- Select country -",
+        "USA",
+        "Canada",
+        "UK",
+        "Germany",
+        "Australia",
+        "Netherlands",
+      ],
+    },
+  ],
+  model: ["Model 3", "Model Y", "Model S", "Model X", "Roadster", "Cybertruck"],
+};
