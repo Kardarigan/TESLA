@@ -1,13 +1,9 @@
-import Model_Y from "../assets/Navbar/Mega-Menu-Vehicles-Model-Y.png";
-import Model_X from "../assets/Navbar/Mega-Menu-Vehicles-Model-X.png";
 import Ow_Model_S from "../assets/Overview/ModelS_71.jpg";
 import Ow_Model_Y from "../assets/Overview/ModelY_58.jpg";
 import Ow_Model_X from "../assets/Overview/ModelX_93.jpg";
 import Ow_Model_3 from "../assets/Overview/Model3-67.jpg";
 import Ow_Cybertruck from "../assets/Overview/Cybertruck_63.jpg";
 import Ow_Roadster from "../assets/Overview/Roadster_cover.png";
-
-import Cover_360 from "../assets/Autopilot/360.jpg";
 
 import Slide_1_3 from "../assets/Single/3/Slide_Model3_1.jpg";
 import Slide_2_3 from "../assets/Single/3/Slide_Model3_2.jpg";
@@ -135,13 +131,23 @@ import Commercial_Center from "../assets/Commercial/Utilities-NOC.avif";
 import Com_Hero from "../assets/Commercial/CommercialEnergy_Web2.avif";
 import Com_Hero_Video from "../assets/Commercial/commercial-hero-desktop.webm";
 import Com_Storage from "../assets/Commercial/CE_Hardware_D.avif";
+import Utility_Hero from "../assets/Utilities/Utilities-Hero.jpg";
+import Utility_Hard from "../assets/Utilities/Utilities-Megapack.avif";
 
 import Ui_1 from "../assets/Commercial/CE_UI_Microgrid_D_Carousel-New.avif";
 import Ui_2 from "../assets/Commercial/CE_UI_Opticaster_D_Carousel-New.avif";
 import Ui_3 from "../assets/Commercial/CE_UI_Powerhub_D_Carousel-New.avif";
 
-import Case_1 from "../assets/Commercial/CE_Case1_D.avif";
-import Case_2 from "../assets/Commercial/CE_Case2_D.avif";
+import Monitor_1 from "../assets/Utilities/Utilities_Slide1_D_Carousel-New.jpg";
+import Monitor_2 from "../assets/Utilities/Utilities_Slide2_D_Carousel-New.jpg";
+import Monitor_3 from "../assets/Utilities/Utilities_Slide3_D_Carousel-New.jpg";
+
+import Utility_1 from "../assets/Utilities/Utilities-Case1.jpg";
+import Utility_2 from "../assets/Utilities/Utilities-Case2.jpg";
+import Utility_3 from "../assets/Utilities/Utilities-Case3.jpg";
+
+import Com_Case_1 from "../assets/Commercial/CE_Case1_D.avif";
+import Com_Case_2 from "../assets/Commercial/CE_Case2_D.avif";
 
 export const navLinks = [
   {
@@ -236,7 +242,7 @@ export const navLinks = [
     links: [
       { label: "Support", to: "/" },
       { label: "Commercial", to: "/commercial" },
-      { label: "Utilities", to: "/" },
+      { label: "Utilities", to: "/utilities" },
     ],
   },
   {
@@ -1987,6 +1993,29 @@ export const commercial = {
     describe:
       "Advanced software and controls automatically analyze market and site-specific conditions to determine the most efficient, scalable and secure use for your energy storage systems.",
   },
+  controlSlides: [
+    {
+      title: "Powerhub",
+      describe:
+        "Advanced real-time monitoring and control platform for managing storage, generation and microgrids",
+      cover: Ui_1,
+      duration: 5000,
+    },
+    {
+      title: "Opticaster",
+      describe:
+        "Optimization engine for forecasting and improving energy use in real time to minimize electricity costs",
+      cover: Ui_2,
+      duration: 5000,
+    },
+    {
+      title: "Microgrid Controller",
+      describe:
+        "Off-grid control software for autonomously maintaining grid stability and minimizing costs across all energy assets",
+      cover: Ui_3,
+      duration: 5000,
+    },
+  ],
   apps: {
     title: "Optimize and Control",
     describe:
@@ -2046,18 +2075,311 @@ export const commercial = {
         title: "Kintetsu Railway",
         describe:
           "Maintains emergency backup to Osaka rail service with enough energy to get all trains to the nearest station in event of grid outage",
-        cover: Case_1,
+        cover: Com_Case_1,
         duration: 10000,
       },
       {
         title: "Sierra Nevada Brewing",
         describe:
           "Saves hundreds of thousands of dollars by storing its own clean energy for use when energy prices are high, or the sun isn’t shining",
-        cover: Case_2,
+        cover: Com_Case_2,
         duration: 10000,
       },
     ],
   },
+  formTitle: "Inquire About Commercial Products and Services",
+  form: [
+    {
+      label: "First Name",
+      type: "text",
+    },
+    {
+      label: "Last Name",
+      type: "text",
+    },
+    {
+      label: "Contact Preference",
+      type: "select",
+      options: ["Phone", "Desktop"],
+    },
+    {
+      label: "Telephone Number",
+      type: "tel",
+    },
+    {
+      label: "Email",
+      type: "email",
+    },
+    {
+      label: "Address",
+      type: "text",
+    },
+    {
+      label: "City",
+      type: "text",
+    },
+    {
+      label: "State",
+      type: "text",
+    },
+    {
+      label: "Zip Code",
+      type: "text",
+    },
+    {
+      label: "Country",
+      type: "select",
+      options: [
+        "- Select country -",
+        "USA",
+        "Canada",
+        "UK",
+        "Germany",
+        "Australia",
+        "Netherlands",
+      ],
+    },
+    {
+      label: "Company Name",
+      type: "text",
+    },
+    {
+      label: "Role",
+      type: "text",
+    },
+
+    {
+      label:
+        "Please tell us about your project site and intended applications for energy storage",
+      type: "textarea",
+    },
+  ],
+};
+
+export const utilities = {
+  getLink: "/utilities",
+  learnLink: "/",
+  heroCover: Utility_Hero,
+  controlCenter: Commercial_Center,
+  heroAbilities: [
+    {
+      title: "65+",
+      describe: "Countries",
+    },
+    {
+      title: "10 GWh+",
+      describe: "Deployed Storage",
+    },
+    {
+      title: "1,500+",
+      describe: "Sites in Operation",
+    },
+  ],
+  overview: {
+    title: "Built for Scale",
+    cover: Com_Storage,
+    describe:
+      "Every year, electrical grids around the world add more renewable energy. Our grid-scale batteries and software controls store and dispatch this energy, creating a more stable and sustainable grid. We can lower lifecycle costs and deliver reliable energy for utilities and developers alike by combining hardware, software, installation and service into one integrated system.",
+  },
+  hardware: {
+    title: "Meet Megapack",
+    cover: Utility_Hard,
+    describe:
+      "Megapack enables low-cost, high-density utility projects at gigawatt-hour scale. It ships ready to install with fully integrated battery modules, inverters and thermal systems.",
+    numbers: [
+      {
+        value: 10,
+        unit: "x",
+        describe: "Faster Installation",
+      },
+      {
+        value: "$",
+        describe: "Lowest Cost of Ownership",
+      },
+      {
+        value: "GWh+",
+        describe: "Gigawatt-hour Scale",
+      },
+    ],
+  },
+  reliability: {
+    title: "24/7 Monitoring",
+    describe:
+      "With billions of cell-hours of safe operation, our systems deliver maximum reliability from transportation to installation—including 24/7 monitoring from our Network Operations Center.",
+  },
+  software: {
+    title: "Manage Complexity",
+    describe:
+      "Advanced software and controls automatically analyze market and site-specific conditions to determine the most efficient, scalable and secure use for your energy storage systems.",
+  },
+  controlSlides: [
+    {
+      title: "Autobidder",
+      describe:
+        "Autonomous bidding platform that maximizes the value of energy storage assets in wholesale electricity markets",
+      cover: Monitor_1,
+      duration: 5000,
+    },
+    {
+      title: "Powerhub",
+      describe:
+        "Advanced real-time monitoring and control platform for managing storage, generation and microgrids",
+      cover: Monitor_2,
+      duration: 5000,
+    },
+    {
+      title: "Microgrid Controller",
+      describe:
+        "Off-grid control software for autonomously maintaining grid stability and minimizing costs by controlling all energy assets",
+      cover: Monitor_3,
+      duration: 5000,
+    },
+  ],
+  apps: {
+    title: "Optimize and Control",
+    describe:
+      "Additional controls may help prevent or mitigate blackouts, increase sustainable generation, allow storage assets to participate in ancillary services and more.",
+    cover: Mp_Apps,
+    items: {
+      fisrtCol: [
+        {
+          title: "Ancillary Services",
+          details: [
+            "Provide services to the grid in response to utility or system operator signals",
+          ],
+        },
+        {
+          title: "Energy Shifting",
+          details: [
+            "Store and dispatch excess capacity from renewable sources",
+          ],
+        },
+        {
+          title: "Spinning Reserve",
+          details: [
+            "Provide power or energy capacity to the grid as a standalone asset",
+          ],
+        },
+        {
+          title: "Frequency Regulation",
+          details: ["Participate in frequency regulation markets"],
+        },
+      ],
+      secondCol: [
+        {
+          title: "Voltage and Reactive Power Support",
+          details: ["Provide system strength across all areas of the network"],
+        },
+        {
+          title: "Transmission and Distribution Support",
+          details: [
+            "Supply capacity to defer or eliminate the need to upgrade infrastructure",
+          ],
+        },
+        {
+          title: "Inertia",
+          details: [
+            "Enable more renewable generation by virtually emulating mechanical inertia",
+          ],
+        },
+      ],
+    },
+  },
+  studies: {
+    title: "Proven Expertise",
+    describe:
+      "Operating in more than 65 countries, together with our partners we have completed some of the most innovative energy storage projects in the world.",
+    slides: [
+      {
+        title: "Hornsdale Power Reserve",
+        describe:
+          "Generated $150 million in the first two years of operation, while helping prevent South Australia’s blackouts",
+        cover: Utility_1,
+        duration: 10000,
+      },
+      {
+        title: "Holes Bay",
+        describe:
+          "Currently participating in wholesale energy market trading in the UK, needing less than 2,400 square feet for 15MWh of energy storage",
+        cover: Utility_2,
+        duration: 10000,
+      },
+      {
+        title: "Kauai Island Utility Cooperative",
+        describe:
+          "52MWh of storage paired with 13MW of solar generation provides energy shifting for the island, while saving 1.6 million gallons of fossil fuel each year",
+        cover: Utility_3,
+        duration: 10000,
+      },
+    ],
+  },
+  formTitle: "Inquire About Utility Products and Services",
+  form: [
+    {
+      label: "First Name",
+      type: "text",
+    },
+    {
+      label: "Last Name",
+      type: "text",
+    },
+    {
+      label: "Contact Preference",
+      type: "select",
+      options: ["Phone", "Desktop"],
+    },
+    {
+      label: "Telephone Number",
+      type: "tel",
+    },
+    {
+      label: "Email",
+      type: "email",
+    },
+    {
+      label: "Address",
+      type: "text",
+    },
+    {
+      label: "City",
+      type: "text",
+    },
+    {
+      label: "State",
+      type: "text",
+    },
+    {
+      label: "Zip Code",
+      type: "text",
+    },
+    {
+      label: "Country",
+      type: "select",
+      options: [
+        "- Select country -",
+        "USA",
+        "Canada",
+        "UK",
+        "Germany",
+        "Australia",
+        "Netherlands",
+      ],
+    },
+    {
+      label: "Company Name",
+      type: "text",
+    },
+    {
+      label: "Role",
+      type: "text",
+    },
+
+    {
+      label:
+        "Please tell us about your project site and intended applications for energy storage",
+      type: "textarea",
+    },
+  ],
 };
 
 export const controlSlides = [

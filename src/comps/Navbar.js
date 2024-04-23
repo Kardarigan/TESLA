@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 import { useState } from "react";
 const Navbar = () => {
   const [navOver, setNavOver] = useState(false);
-  const [currentItem, setCurrentItem] = useState(null);
+  const [currentItem, setCurrentItem] = useState("");
   const dropdown = document.querySelectorAll(".dropdownContainer");
 
   const handleMouseOver = (item) => {

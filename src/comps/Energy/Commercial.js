@@ -1,7 +1,7 @@
 import { commercial, controlSlides } from "../../constants";
 import {
-  Control_panel,
   En_Hero,
+  Form,
   Free_slider,
   Middle,
   Middle_Image,
@@ -43,7 +43,7 @@ const Commercial = () => {
         learnLink={commercial.learnLink}
         light
       />
-      <Free_slider prod={controlSlides} />
+      <Free_slider prod={commercial.controlSlides} />
       <Specs
         topic="Applications"
         title={commercial.apps.title}
@@ -57,8 +57,8 @@ const Commercial = () => {
         describe={commercial.studies.describe}
         light
       />
-
-      <Free_slider prod={commercial.studies.slides} />
+      <Free_slider prod={commercial.studies.slides} id="2" />
+      <Form title={commercial.formTitle} form={commercial.form} />
     </>
   );
 };

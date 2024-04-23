@@ -10,6 +10,7 @@ const Middle_Image = ({
   orderLink = false,
   inventoryLink = false,
   numbers = false,
+  darkNumbers = false,
   right = false,
   pw = false,
 }) => {
@@ -64,7 +65,11 @@ const Middle_Image = ({
           <img src={cover} alt={title} className="size-full bg-fullobject" />
         )}
         {numbers && (
-          <div className="absolute grid grid-cols-3 gap-x-5 mx-auto bottom-0 w-full padding-x pb-12 shadowFromBottom">
+          <div
+            className={`absolute grid grid-cols-3 gap-x-5 mx-auto bottom-0 w-full padding-x pb-12 ${
+              darkNumbers ? "text-slate-950" : "shadowFromBottom"
+            }`}
+          >
             {numbers.map((item) => {
               return (
                 <Fadein>
@@ -75,7 +80,7 @@ const Middle_Image = ({
                         <span className="md:text-xl text-sm"> {item.unit}</span>
                       )}
                     </h4>
-                    <p className="sm:text-[12px] text-[10px] mt-5">
+                    <p className="sm:text-[12px] text-[10px] mt-1">
                       {item.describe}
                     </p>
                   </div>

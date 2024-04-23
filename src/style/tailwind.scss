@@ -62,7 +62,7 @@
     @apply md:text-3xl text-xl font-bold;
   }
   .field {
-    @apply bg-slate-600 text-slate-200 text-sm rounded focus:ring-1 focus:ring-slate-800 block w-full px-6;
+    @apply bg-slate-700 text-slate-200 border-0 text-sm rounded focus:ring-1 focus:ring-blue-600 block w-full px-3;
   }
   .fullSection {
     @apply h-screen w-full relative flex-fullcenter bg-fullcenter;
@@ -120,4 +120,16 @@ h4,
 h5,
 h6 {
   @apply font-bold;
+}
+
+select {
+  &.field {
+    @apply py-2;
+  }
+}
+
+textarea {
+  &.field {
+    @apply py-2;
+  }
 }
