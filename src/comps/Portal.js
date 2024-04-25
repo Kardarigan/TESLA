@@ -52,8 +52,11 @@ import Form from "./Form";
 import Utilities from "./Energy/Utilities";
 import Tradein_Form from "./trade-in/Tradein_Form";
 import Checkbox from "./Checkbox";
-
+import Demo from "../pages/Demo";
+import Demo_Models from "./Demo/Demo_Models";
 export {
+  Demo_Models,
+  Demo,
   Checkbox,
   Tradein_Form,
   Utilities,

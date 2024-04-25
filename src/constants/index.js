@@ -220,7 +220,7 @@ export const navLinks = [
     links: [
       { label: "Inventory", to: "/" },
       { label: "Used Cars", to: "/" },
-      { label: "Demo Drive", to: "/" },
+      { label: "Demo Drive", to: "/demo" },
       { label: "Trade-in", to: "/tradein" },
       { label: "Fleet", to: "/" },
     ],
@@ -408,6 +408,7 @@ export const vehicles = [
     subtitle: "Affortable But Special",
     orderLink: "/model s/order",
     learnLink: "/model s",
+    trsModel: Nav_S,
     cover: Ow_Model_S,
     plaid: {
       title: "Beyond Ludicrous",
@@ -631,6 +632,7 @@ export const vehicles = [
     subtitle: "Big Fast Dude",
     orderLink: "/model 3/order",
     learnLink: "/model 3",
+    trsModel: Nav_3,
     cover: Ow_Model_3,
     plaid: {
       title: "Beyond Ludicrous",
@@ -881,6 +883,7 @@ export const vehicles = [
     subtitle: "Speed for Miles",
     orderLink: "/model y/order",
     learnLink: "/model y",
+    trsModel: Nav_Y,
     cover: Ow_Model_Y,
     plaid: {
       title: "Beyond Ludicrous",
@@ -1130,6 +1133,7 @@ export const vehicles = [
     subtitle: "Big Boss",
     orderLink: "/model x/order",
     learnLink: "/model x",
+    trsModel: Nav_X,
     cover: Ow_Model_X,
     plaid: {
       title: "Beyond Ludicrous",
@@ -1372,6 +1376,7 @@ export const vehicles = [
     model: "Roadster",
     orderLink: "/roadster/order",
     learnLink: "/roadster",
+    trsModel: Nav_Roadster,
     cover: Ow_Roadster,
     demoVideo: Roadster_Demovideo,
     slides: [
@@ -1437,6 +1442,7 @@ export const vehicles = [
     subtitle: "Not Just for Earth",
     orderLink: "/cybertruck/order",
     learnLink: "/cybertruck",
+    trsModel: Nav_Cybertruck,
     cover: Ow_Cybertruck,
     plaid: {
       title: "Beyond Ludicrous",

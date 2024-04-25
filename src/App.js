@@ -12,6 +12,7 @@ import {
   Commercial,
   Utilities,
   Tradein_Form,
+  Demo,
 } from "./comps/Portal";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />
+          <Route path="/demo" element={<Demo />} />
           <Route path="/tradein" element={<Tradein />} />
           <Route path="/tradein/form" element={<Tradein_Form />} />
           <Route path="/commercial" element={<Commercial />} />
