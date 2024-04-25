@@ -36,7 +36,6 @@ $color_dark: #171a20;
 .shadowFromTop {
   background: linear-gradient(180deg, $color_dark -30%, transparent 100%);
 }
-
 .shadowFromBottom {
   background: linear-gradient(0deg, $color_dark 0%, transparent 100%);
 }
@@ -54,66 +53,43 @@ $color_dark: #171a20;
   transition: visibility 1s, opacity 0.2s linear;
 }
 .checkWrapp {
-  display: block;
-  position: relative;
-
   .checkMark {
-    width: 24px;
-    height: 24px;
-    border: 1px solid map-get($bgShade, grayLine);
-    background-color: map-get($bgShade, gray01);
-    border-radius: 10%;
-    position: absolute;
-
     &::before {
       content: " ";
+      transition: all 0.2s;
       position: absolute;
-      display: none;
-      top: 11px;
-      left: 6px;
+      display: block;
+      scale: 0;
+      top: 9px;
+      left: 4px;
       width: 13px;
       height: 2px;
-      border-radius: 20px;
-      background-color: $colorLight;
+      background-color: $color_prime;
       transform: rotate(-45deg);
     }
 
     &::after {
       content: " ";
+      transition: all 0.2s;
       position: absolute;
       display: block;
-      transform: scale(0);
+      scale: 0;
       top: 10px;
-      left: 6px;
+      left: 4px;
       width: 2px;
-      height: 7px;
-      border-radius: 20px;
-      background-color: $colorLight;
+      height: 4px;
+      background-color: $color_prime;
       transform: rotate(-30deg);
     }
   }
 
   input {
-    display: none;
-
     &:checked {
       ~ .checkMark {
         &::after,
         &::before {
-          transform: scale(1);
+          scale: 1;
         }
-      }
-
-      &:hover {
-        ~ .checkMark {
-          box-shadow: 0 0 0 10px $colorAlpha-trs;
-        }
-      }
-    }
-
-    &:not(:checked) {
-      ~ .checkMark:hover {
-        box-shadow: 0 0 0 5px $colorDark-trs;
       }
     }
   }

@@ -51,8 +51,10 @@ import Free_slider from "./Free_Slider";
 import Form from "./Form";
 import Utilities from "./Energy/Utilities";
 import Tradein_Form from "./trade-in/Tradein_Form";
+import Checkbox from "./Checkbox";
 
 export {
+  Checkbox,
   Tradein_Form,
   Utilities,
   Form,
