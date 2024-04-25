@@ -1,72 +1,51 @@
 import { vehicles } from "../../constants";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Demo_Models = () => {
-  const [showModel, setShowModel] = useState(null);
+  const [showModel, setShowModel] = useState(0);
   const demoModel = document.getElementsByClassName("demoDriveModel");
-  const demoButton = document.getElementsByClassName("demoDriveButton");
-
-  const handleClick = (id) => {
-    const theDemoModel = document.querySelector(`[data-tabcontent="${id}"]`);
-    const theDemoButton = document.querySelector(`[data-tabcontent="${id}"]`);
-    if (theDemoModel && theDemoButton) {
-      for (let i = 0; i < demoModel.length; i++) {
-        if (demoModel[i] && demoModel[i].classList.contains("block")) {
-          demoModel[i].classList.remove("block");
-        }
-        if (
-          demoButton[i] &&
-          demoButton[i].classList.contains("border-2", "border-sky-500")
-        ) {
-          demoButton[i].classList.remove("border-2", "border-sky-500");
-          demoButton[i].classList.add("border", "border-slate-100");
-        }
-      }
-      theDemoModel.classList.add("block");
-      theDemoButton.classList.remove("border", "border-slate-100");
-      theDemoButton.classList.add("border-2", "border-sky-500");
-    }
-  };
-
-  useEffect(() => {
-    if (showModel) {
-      handleClick(showModel);
-    }
-  }, [showModel]);
+  const demoButton = Array.from(
+    document.getElementsByClassName("demoDriveButton")
+  );
+  demoButton.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      setShowModel(index);
+      console.log(showModel + "---" + index);
+    });
+  });
 
   return (
-    <section className="flex max-md:flex-col">
-      <div className="md:w-4/12 flex flex-col gap-2">
+    <section className="flex max-md:flex-col-reverse gap-5 mt-12">
+      <div className="md:w-4/12 grid max-md:grid-cols-6 gap-2">
         {vehicles.map((item, index) => {
-          const id = item.model.replace(/\s+/g, "-").toLowerCase();
           return (
             <button
               key={index}
-              data-model={`demo_${id}`}
-              onClick={() => setShowModel(`demo_${id}`)}
-              className="demoDriveButton rounded border border-slate-100 text-sm text-center py-3"
+              onClick={() => setShowModel(index)}
+              className={`demoDriveButton rounded border border-slate-200 transition-all ${
+                showModel === index && "bg-slate-200 text-slate-950"
+              } text-xs py-3 max-md:min-h-[100px] flex-fullcenter`}
             >
-              <h3>{item.model}</h3>
+              <h3 className="max-md:rotate-90 max-md:h-3 text-nowrap ">
+                {item.model}
+              </h3>
             </button>
           );
         })}
       </div>
-      <div className="md:w-8/12">
+      <div className="md:w-8/12 bg-slate-50 rounded flex-fullcenter relative min-h-[317px]">
         {vehicles.map((item, index) => {
-          const id = item.model.replace(/\s+/g, "-").toLowerCase();
           return (
             <div
               key={index}
-              data-model={`demo_${id}`}
-              className="flex-centralizer"
+              className={`absolute transition-all duration-500 ${
+                showModel === index ? "opacity-100" : "opacity-0"
+              }`}
             >
               <img
                 src={item.trsModel}
                 alt="Transparent Model"
-                data-model-demo={`demo_${id}`}
-                className={`demoDriveModel ${
-                  showModel === `demo_${id}` ? "block" : "hidden"
-                }`}
+                className="demoDriveModel"
               />
             </div>
           );
