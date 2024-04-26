@@ -111,6 +111,9 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
+  .pagecenter {
+    @apply max-w-[800px] mx-auto pt-32 padding;
+  }
 }
 h1,
 h2,

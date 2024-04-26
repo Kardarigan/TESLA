@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Demo = () => {
   return (
-    <section className="max-w-[800px] mx-auto pt-32 padding">
+    <section className="pagecenter">
       <h1 className="title">Schedule a Demo Drive</h1>
       <p className="text-xs my-3">Demo Drive a Tesla at a store near you.</p>
       <Demo_Models />

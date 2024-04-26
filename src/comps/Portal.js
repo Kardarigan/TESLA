@@ -55,7 +55,11 @@ import Checkbox from "./Checkbox";
 import Demo from "../pages/Demo";
 import Demo_Models from "./Demo/Demo_Models";
 import Field from "./Field";
+import Energy_Software from "../pages/Help/Energy_Software";
+import Help from "../pages/Help";
 export {
+  Help,
+  Energy_Software,
   Field,
   Demo_Models,
   Demo,

@@ -25,6 +25,10 @@ const Learn = () => {
   const overallLight =
     car.model === "Model S" || car.model === "Model X" ? true : false;
 
+  if (!model) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div id="learn">
       <Actioncenter />

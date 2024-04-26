@@ -149,6 +149,7 @@ import Utility_3 from "../assets/Utilities/Utilities-Case3.jpg";
 import Com_Case_1 from "../assets/Commercial/CE_Case1_D.avif";
 import Com_Case_2 from "../assets/Commercial/CE_Case2_D.avif";
 import { type } from "@testing-library/user-event/dist/type";
+import { Energy_Software } from "../comps/Portal";
 
 export const navLinks = [
   {
@@ -2544,3 +2545,8 @@ export const demoForm = [
     ],
   },
 ];
+
+export const helpPages = {
+  "energy-software":
+    '<h1>Tesla Energy Software</h1> <p> Tesla Energy Software is designed to seamlessly integrate with your Tesla energy products to give you complete energy control. </p> <h2>Energy Monitoring</h2> <p> Monitor your energy use and production in real-time with the Tesla app. Track your energy consumption and see how much energy your solar panels are producing. </p> <h2>Smart Energy Management</h2> <p> Tesla Energy Software uses machine learning to optimize your energy use and reduce your energy costs. The software can automatically charge your Powerwall when energy rates are low and discharge it when rates are high. </p> <h2>Over-the-Air Updates</h2> <p> Tesla Energy Software receives regular over-the-air updates to improve performance and add new features. These updates are free and can be installed remotely. </p> <h2>Support</h2> <p> If you have any questions or issues with your Tesla Energy Software, you can contact Tesla Support for assistance. </p> <a href="https://www.tesla.com/support/energy/tesla-software"> Learn more about Tesla Energy Software </a>',
+};

@@ -13,6 +13,7 @@ import {
   Utilities,
   Tradein_Form,
   Demo,
+  Help,
 } from "./comps/Portal";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/megapack" element={<Megapack />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/tradein" element={<Tradein />} />
+          <Route path=":help" element={<Help />} />
           <Route path="/tradein/form" element={<Tradein_Form />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/utilities" element={<Utilities />} />

@@ -8,7 +8,7 @@ const Tradein_Form = () => {
     "only screen and (max-width: 767px)"
   ).matches;
   return (
-    <section className="max-w-[800px] mx-auto pt-32 padding">
+    <section className="pagecenter">
       <p>
         <i className="fal fa-chevron-left" />
         <Link to="/" className="link ms-2">
