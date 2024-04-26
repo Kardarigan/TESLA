@@ -1,16 +1,23 @@
 import { vehicles } from "../../constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Demo_Models = () => {
   const [showModel, setShowModel] = useState(0);
-  const demoModel = document.getElementsByClassName("demoDriveModel");
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowModel((showModel) => (showModel + 1) % vehicles.length);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const demoButton = Array.from(
     document.getElementsByClassName("demoDriveButton")
   );
+
   demoButton.forEach((button, index) => {
     button.addEventListener("click", () => {
       setShowModel(index);
-      console.log(showModel + "---" + index);
     });
   });
 
@@ -42,11 +49,7 @@ const Demo_Models = () => {
                 showModel === index ? "opacity-100" : "opacity-0"
               }`}
             >
-              <img
-                src={item.trsModel}
-                alt="Transparent Model"
-                className="demoDriveModel"
-              />
+              <img src={item.trsModel} alt="Transparent Model" />
             </div>
           );
         })}

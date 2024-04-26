@@ -54,8 +54,9 @@ import Tradein_Form from "./trade-in/Tradein_Form";
 import Checkbox from "./Checkbox";
 import Demo from "../pages/Demo";
 import Demo_Models from "./Demo/Demo_Models";
-
+import Field from "./Field";
 export {
+  Field,
   Demo_Models,
   Demo,
   Checkbox,

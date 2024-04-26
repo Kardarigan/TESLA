@@ -30,6 +30,9 @@ $color_dark: #171a20;
   );
 }
 
+.allunset {
+  all: unset !important;
+}
 .shadowAround {
   box-shadow: inset 0px 0px 30px 30px rgba(black, 0.9);
 }

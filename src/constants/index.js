@@ -2512,3 +2512,35 @@ export const tradeinForm = {
   ],
   model: ["Model 3", "Model Y", "Model S", "Model X", "Roadster", "Cybertruck"],
 };
+
+export const demoForm = [
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "Last Name",
+    type: "text",
+  },
+  {
+    label: "Email Address",
+    type: "email",
+  },
+  {
+    label: "Phone Number",
+    type: "tel",
+  },
+  {
+    label: "Region",
+    type: "select",
+    options: [
+      "- Select country -",
+      "USA",
+      "Canada",
+      "UK",
+      "Germany",
+      "Australia",
+      "Netherlands",
+    ],
+  },
+];
