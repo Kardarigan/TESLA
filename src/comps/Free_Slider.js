@@ -1,69 +1,53 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Free_slider = ({ prod, dark = false }) => {
-  const videoSlide = document.getElementsByClassName("splide__slide");
+  const [showModel, setShowModel] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowModel((showModel) => (showModel + 1) % prod.length);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const demoButton = Array.from(
+    document.getElementsByClassName("demoDriveButton")
+  );
+  const demoSlide = Array.from(document.getElementsByClassName("modelSlide"));
+
+  demoButton.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      setShowModel(index);
+    });
+  });
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      for (let i = 0; i < videoSlide.length; i++) {
-        if (videoSlide[i] && videoSlide[i].classList.contains("is-visible")) {
-          const video = videoSlide[i].querySelector("video");
-          if (video && video.paused && document.hasFocus()) {
-            video.play();
-          }
-        } else {
-          const video = videoSlide[i].querySelector("video");
-          if (video) {
-            video.pause();
-            video.currentTime = 0;
+      for (let i = 0; i < demoSlide.length; i++) {
+        if (i === showModel) {
+          if (demoSlide[i].tagName.toLowerCase() === "video") {
+            demoSlide[i].pouse();
+            demoSlide[i].currentTime = 0;
+            demoSlide[i].play();
           }
         }
       }
-    }, 50);
+    }, 100);
 
     return () => clearInterval(intervalId);
   }, []);
 
-  const handleTabClick = (tabId) => {
-    const videoSlide = document.querySelector(`[data-tabcontent="${tabId}"]`);
-    if (videoSlide && !videoSlide.classList.contains("is-visible")) {
-      const visibleVideoSlide = document.querySelector(
-        ".splide__slide.is-visible"
-      );
-      if (visibleVideoSlide) {
-        const video = visibleVideoSlide.querySelector("video");
-        if (video) {
-          video.pause();
-          video.currentTime = 0;
-        }
-        visibleVideoSlide.classList.remove("is-visible", "is-active");
-      }
-      videoSlide.classList.add("is-visible", "is-active");
-      const video = videoSlide.querySelector("video");
-      if (video) {
-        video.play();
-      }
-    }
-  };
-
   return (
     <section className={`padding ${!dark && "bg-slate-50 text-slate-950"}`}>
-      <Splide
-        aria-label="Power Train"
-        options={{
-          type: "fade",
-          rewind: true,
-          autoplay: true,
-          arrows: false,
-          pagination: false,
-        }}
-      >
+      <div className="relative  h-[60vw]">
         {prod.map((ability, index) => {
           return (
-            <SplideSlide
+            <div
+              key={index}
+              className={`absolute modelSlide h-auto transition-all duration-500 ${
+                showModel === index ? "opacity-100" : "opacity-0"
+              }`}
               data-splide-interval={ability.duration}
-              data-tabcontent={`tabAutopilot_${index}`}
             >
               {ability.cover.endsWith(".mp4") ||
               ability.cover.endsWith(".webm") ? (
@@ -81,20 +65,19 @@ const Free_slider = ({ prod, dark = false }) => {
                   className="bg-fullobject w-full rounded"
                 />
               )}
-            </SplideSlide>
+            </div>
           );
         })}
-      </Splide>
+      </div>
 
       <div className="flex padding-x py-5 gap-x-8 mx-auto">
         {prod.map((ability, index) => {
           return (
             <div
-              className={`border-t-2 px-1 pt-3 ${
+              onClick={() => setShowModel(index)}
+              className={`border-t-2 px-1 pt-3 transition-all cursor-pointer ${
                 dark ? "border-slate-100" : "border-slate-900"
-              }`}
-              data-tabbutton={`tabAutopilot_${index}`}
-              onClick={() => handleTabClick(`tabAutopilot_${index}`)}
+              } ${showModel === index ? "opacity-100" : "opacity-45"}`}
             >
               <h5 className={`${ability.describe ? "text-xl" : "text-sm"}`}>
                 {ability.title}
