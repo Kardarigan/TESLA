@@ -16,6 +16,7 @@ import {
   Learn_Safety,
   Three,
   Learn_Bgsection,
+  Free_slider,
 } from "../Portal";
 import V360 from "../../assets/Autopilot/360.jpg";
 
@@ -109,7 +110,7 @@ const Learn = () => {
             inventoryLink={car.inventoryLink}
             light
           />
-          <Learn_Autopilot car={car} />
+          <Free_slider prod={car.autoPilot.features.items} duretion={8000} />
           <Learn_Safety car={car} />
         </>
       )}

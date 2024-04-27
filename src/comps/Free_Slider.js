@@ -1,14 +1,24 @@
 import { useEffect, useState } from "react";
 
-const Free_slider = ({ prod, dark = false, duretion = 3000 }) => {
+const Free_slider = ({ prod, dark = false }) => {
   const [showModel, setShowModel] = useState(0);
+  const [sliderHeight, setSliderHeight] = useState(0);
+  const [duration, setDuration] = useState(1000);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setShowModel((showModel) => (showModel + 1) % prod.length);
-    }, duretion);
+    }, duration);
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const modelSlide = document.querySelector(".modelSlide");
+    if (modelSlide) {
+      setSliderHeight(modelSlide.offsetHeight);
+    }
+  }, [prod]);
 
   const demoButton = Array.from(
     document.getElementsByClassName("demoDriveButton")
@@ -19,20 +29,20 @@ const Free_slider = ({ prod, dark = false, duretion = 3000 }) => {
       setShowModel(index);
     });
   });
+
   return (
     <section className={`padding ${!dark && "bg-slate-50 text-slate-950"}`}>
-      <div className="relative  h-[60vw]">
-        {prod.map((ability, index) => {
+      <div style={{ height: `${sliderHeight}px` }} className="relative">
+        {prod.map((item, index) => {
           return (
             <div
               key={index}
-              className={`absolute modelSlide h-auto transition-all duration-500 ${
+              className={`absolute modelSlide transition-all duration-500 ${
                 showModel === index ? "opacity-100" : "opacity-0"
               }`}
-              data-splide-interval={ability.duration}
+              data-splide-interval={item.duration}
             >
-              {ability.cover.endsWith(".mp4") ||
-              ability.cover.endsWith(".webm") ? (
+              {item.cover.endsWith(".mp4") || item.cover.endsWith(".webm") ? (
                 <video
                   autoPlay
                   muted
@@ -40,15 +50,15 @@ const Free_slider = ({ prod, dark = false, duretion = 3000 }) => {
                   className="bg-fullobject w-full rounded"
                 >
                   <source
-                    src={ability.cover}
-                    type={`video/${ability.cover.split(".").pop()}`}
+                    src={item.cover}
+                    type={`video/${item.cover.split(".").pop()}`}
                   />
                   Your browser does not support the video tag.
                 </video>
               ) : (
                 <img
-                  src={ability.cover}
-                  alt={ability.title}
+                  src={item.cover}
+                  alt={item.title}
                   className="bg-fullobject w-full rounded"
                 />
               )}
@@ -58,7 +68,7 @@ const Free_slider = ({ prod, dark = false, duretion = 3000 }) => {
       </div>
 
       <div className="flex padding-x py-5 gap-x-8 mx-auto">
-        {prod.map((ability, index) => {
+        {prod.map((item, index) => {
           return (
             <div
               onClick={() => setShowModel(index)}
@@ -66,12 +76,10 @@ const Free_slider = ({ prod, dark = false, duretion = 3000 }) => {
                 dark ? "border-slate-100" : "border-slate-900"
               } ${showModel === index ? "opacity-100" : "opacity-45"}`}
             >
-              <h5 className={`${ability.describe ? "text-xl" : "text-sm"}`}>
-                {ability.title}
+              <h5 className={`${item.describe ? "text-xl" : "text-sm"}`}>
+                {item.title}
               </h5>
-              {ability.describe && (
-                <p className="mt-3 text-xs">{ability.describe}</p>
-              )}
+              {item.describe && <p className="mt-3 text-xs">{item.describe}</p>}
             </div>
           );
         })}
