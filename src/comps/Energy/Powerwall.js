@@ -30,7 +30,7 @@ const Powerwall = () => {
         orderLink={powerwall.getLink}
         pw
       />
-      <Free_slider prod={powerwall.slides} dark />
+      <Free_slider prod={powerwall.slides} duretion={6000} dark />
       <Three items={powerwall.mobile} cover={powerwall.mobileCover} />
       <Middle
         title={powerwall.control.title}

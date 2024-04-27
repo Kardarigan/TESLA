@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-const Free_slider = ({ prod, dark = false }) => {
+const Free_slider = ({ prod, dark = false, duretion = 3000 }) => {
   const [showModel, setShowModel] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       setShowModel((showModel) => (showModel + 1) % prod.length);
-    }, 1000);
+    }, duretion);
 
     return () => clearInterval(interval);
   }, []);
@@ -13,30 +13,12 @@ const Free_slider = ({ prod, dark = false }) => {
   const demoButton = Array.from(
     document.getElementsByClassName("demoDriveButton")
   );
-  const demoSlide = Array.from(document.getElementsByClassName("modelSlide"));
 
   demoButton.forEach((button, index) => {
     button.addEventListener("click", () => {
       setShowModel(index);
     });
   });
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      for (let i = 0; i < demoSlide.length; i++) {
-        if (i === showModel) {
-          if (demoSlide[i].tagName.toLowerCase() === "video") {
-            demoSlide[i].pouse();
-            demoSlide[i].currentTime = 0;
-            demoSlide[i].play();
-          }
-        }
-      }
-    }, 100);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <section className={`padding ${!dark && "bg-slate-50 text-slate-950"}`}>
       <div className="relative  h-[60vw]">
@@ -51,7 +33,12 @@ const Free_slider = ({ prod, dark = false }) => {
             >
               {ability.cover.endsWith(".mp4") ||
               ability.cover.endsWith(".webm") ? (
-                <video muted loop className="bg-fullobject w-full rounded">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className="bg-fullobject w-full rounded"
+                >
                   <source
                     src={ability.cover}
                     type={`video/${ability.cover.split(".").pop()}`}

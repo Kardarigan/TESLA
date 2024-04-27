@@ -117,7 +117,7 @@ import Nav_S from "../assets/Navbar/Mega-Menu-Vehicles-Model-S.png";
 import Nav_X from "../assets/Navbar/Mega-Menu-Vehicles-Model-X.png";
 import Nav_3 from "../assets/Navbar/Mega-Menu-Vehicles-Model-3-LHD.png";
 import Nav_Y from "../assets/Navbar/Mega-Menu-Vehicles-Model-Y.png";
-import Nav_Roadster from "../assets/Navbar/Mega-Menu-Vehicles-Model-Roadster.webp";
+import Nav_Roadster from "../assets/Navbar/Mega-Menu-Vehicles-Model-Roadster.png";
 import Nav_Cybertruck from "../assets/Navbar/Mega-Menu-Vehicles-Cybertruck-1x.png";
 import Nav_Semi from "../assets/Navbar/Mega-Menu-Vehicles-Model-Semi.png";
 import Nav_HMC from "../assets/Navbar/Mega-Menu-Vehicles-HMC-RedBlue-LHD.png";
