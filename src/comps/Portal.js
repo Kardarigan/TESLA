@@ -56,7 +56,11 @@ import Demo from "../pages/Demo";
 import Demo_Models from "./Demo/Demo_Models";
 import Field from "./Field";
 import Help from "../pages/Help";
+import Subscribe from "../pages/Subscribe";
+import Callback from "../pages/Callback";
 export {
+  Callback,
+  Subscribe,
   Help,
   Field,
   Demo_Models,

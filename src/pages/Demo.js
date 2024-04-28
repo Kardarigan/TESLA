@@ -31,10 +31,7 @@ const Demo = () => {
             const id = item.label.replace(/\s+/g, "-").toLowerCase();
             return (
               <div key={index}>
-                <label
-                  htmlFor={id}
-                  className="text-slate-200 md:text-sm text-xs font-bold"
-                >
+                <label htmlFor={id} className="label">
                   {item.label}
                 </label>
                 <div className="mt-1">
@@ -68,7 +65,7 @@ const Demo = () => {
         understand calls or texts may use automatic or computer-assisted dialing
         or pre-recorded messages. Normal message and data rates apply. I can opt
         out at any time in the Tesla app or by{" "}
-        <Link to="/" className="link">
+        <Link to="/communication-preferences/unsubscribe" className="link">
           unsubscribing
         </Link>
         . This is not required for purchase.

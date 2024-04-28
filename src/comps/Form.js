@@ -16,10 +16,7 @@ const Form = ({ title = null, form }) => {
             const id = item.label.replace(/\s+/g, "-").toLowerCase();
             return (
               <div key={index} className={`${index > 0 && "mt-6"}`}>
-                <label
-                  htmlFor={id}
-                  className="text-slate-200 md:text-sm text-xs font-bold"
-                >
+                <label htmlFor={id} className="label">
                   {item.label}
                 </label>
                 <div className="mt-1">

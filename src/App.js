@@ -14,6 +14,8 @@ import {
   Tradein_Form,
   Demo,
   Help,
+  Subscribe,
+  Callback,
 } from "./comps/Portal";
 
 function App() {
@@ -31,6 +33,11 @@ function App() {
           <Route path="/demo" element={<Demo />} />
           <Route path="/tradein" element={<Tradein />} />
           <Route path=":help" element={<Help />} />
+          <Route
+            path="/communication-preferences/:subscribe"
+            element={<Subscribe />}
+          />
+          <Route path="/callback" element={<Callback />} />
           <Route path="/tradein/form" element={<Tradein_Form />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/utilities" element={<Utilities />} />
