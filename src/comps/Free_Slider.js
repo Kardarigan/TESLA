@@ -16,11 +16,12 @@ const Free_slider = ({ prod, dark = false }) => {
   }, [theDuration]);
 
   useEffect(() => {
-    const modelSlide = document.querySelector(".modelSlide");
-    if (modelSlide) {
-      setSliderHeight(modelSlide.offsetHeight);
-    }
-  }, [prod]);
+    const interval = setInterval(() => {
+      const modelSlide = document.querySelector(".modelSlide");
+      if (modelSlide) setSliderHeight(modelSlide.offsetHeight);
+    }, 10);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const demoButton = Array.from(
