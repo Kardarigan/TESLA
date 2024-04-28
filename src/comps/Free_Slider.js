@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-const Free_slider = ({ prod, dark = false }) => {
+const Free_slider = ({ prod, dark = false, customClass = false }) => {
   const [showModel, setShowModel] = useState(0);
   const [sliderHeight, setSliderHeight] = useState(0);
   const [duration, setDuration] = useState([]);
@@ -17,7 +17,7 @@ const Free_slider = ({ prod, dark = false }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const modelSlide = document.querySelector(".modelSlide");
+      const modelSlide = document.querySelector(`.modelSlide${customClass}`);
       if (modelSlide) setSliderHeight(modelSlide.offsetHeight);
     }, 10);
     return () => clearInterval(interval);
@@ -47,7 +47,7 @@ const Free_slider = ({ prod, dark = false }) => {
         {prod.map((item, index) => (
           <div
             key={index}
-            className={`absolute modelSlide transition-all duration-500 ${
+            className={`absolute modelSlide${customClass} transition-all duration-500 ${
               showModel === index ? "opacity-100" : "opacity-0"
             }`}
             data-splide-interval={item.duration}
@@ -88,6 +88,24 @@ const Free_slider = ({ prod, dark = false }) => {
               {item.title}
             </h5>
             {item.describe && <p className="mt-1 text-sm">{item.describe}</p>}
+            {item.acceleration && item.range && (
+              <div className="pt-12 grid sm:grid-cols-2 max-w-80">
+                <div>
+                  <h4 className="font-semibold text-3xl">
+                    {item.acceleration}
+                    <span> s</span>
+                  </h4>
+                  <h5>0-100 km/h</h5>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-3xl">
+                    {item.range}
+                    <span> km</span>
+                  </h4>
+                  <h5>Range (EPA est.)</h5>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>

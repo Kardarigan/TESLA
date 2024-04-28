@@ -66,7 +66,7 @@ const Learn = () => {
             orderLink={car.orderLink}
             light
           />
-          <Learn_Powertrain car={car} />
+          <Free_slider prod={car.powerTrain.editions} />
           {car.utility && (
             <Middle_Image
               topic="Utility"
@@ -110,7 +110,7 @@ const Learn = () => {
             inventoryLink={car.inventoryLink}
             light
           />
-          <Free_slider prod={car.autoPilot.features.items} duretion={8000} />
+          <Free_slider prod={car.autoPilot.features.items} customClass="Auto" />
           <Learn_Safety car={car} />
         </>
       )}
