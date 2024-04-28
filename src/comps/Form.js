@@ -6,9 +6,9 @@ const Form = ({ title = null, form }) => {
     "only screen and (max-width: 767px)"
   ).matches;
   return (
-    <section className="padding">
-      <div className="mx-auto max-w-[1000px] flex md:gap-x-24 max-md:flex-col-reverse">
-        <div className="md:w-3/5">
+    <section className="padding-x padding-t pb-32">
+      <div className="mx-auto max-w-[1000px] flex md:gap-x-24 max-md:flex-col">
+        <div className="md:w-3/5 pb-3">
           <h2 className="title">{title}</h2>
         </div>
         <form className="md:w-2/5">

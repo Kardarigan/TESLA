@@ -10,8 +10,8 @@ const Three = ({ items, cover }) => {
       <ul className="padding flex md:flex-col flex-row md:text-start text-center size-full justify-between">
         {items.map((item, index) => {
           return (
-            <Fadein>
-              <li key={index} className="md:max-w-[250px] w-1/3">
+            <li key={index} className="md:max-w-[250px] w-1/3">
+              <Fadein>
                 <div className="md:text-4xl text-xl">
                   {item.title ? (
                     <h3>
@@ -23,8 +23,8 @@ const Three = ({ items, cover }) => {
                   )}
                 </div>
                 <p>{item.sub}</p>
-              </li>
-            </Fadein>
+              </Fadein>
+            </li>
           );
         })}
       </ul>

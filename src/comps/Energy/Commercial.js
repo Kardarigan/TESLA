@@ -1,4 +1,4 @@
-import { commercial, controlSlides } from "../../constants";
+import { commercial } from "../../constants";
 import {
   En_Hero,
   Form,
