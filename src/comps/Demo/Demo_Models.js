@@ -6,7 +6,7 @@ const Demo_Models = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setShowModel((showModel) => (showModel + 1) % vehicles.length);
-    }, 1000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

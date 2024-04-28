@@ -90,22 +90,6 @@ const Free_slider = ({ prod, dark = false }) => {
           </div>
         ))}
       </div>
-
-      <div className="flex gap-x-4">
-        {prod.map((item, index) => (
-          <button
-            key={index}
-            ref={(el) => (demoButtonRef.current[index] = el)}
-            className={`demoDriveButton ${
-              showModel === index
-                ? "bg-slate-900 text-white"
-                : "bg-white text-slate-900"
-            }`}
-          >
-            {item.title}
-          </button>
-        ))}
-      </div>
     </section>
   );
 };
