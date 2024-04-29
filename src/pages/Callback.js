@@ -1,7 +1,5 @@
-import React from "react";
 import { contactFrom, tradeinForm } from "../constants";
-import Many_Fields from "../comps/Many_Fields";
-import { Checkbox } from "../comps/Portal";
+import { Checkbox, Many_Fields } from "../comps/Portal";
 import { Link } from "react-router-dom";
 
 const Callback = () => {

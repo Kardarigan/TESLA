@@ -1,13 +1,65 @@
-import { Checkbox, Demo_Models, Field, Many_Fields } from "../comps/Portal";
-import { contactFrom } from "../constants";
+import { Checkbox, Field, Many_Fields } from "../comps/Portal";
+import { contactFrom, vehicles } from "../constants";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Demo = () => {
+  const [showModel, setShowModel] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowModel((showModel) => (showModel + 1) % vehicles.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const demoButton = Array.from(
+    document.getElementsByClassName("demoDriveButton")
+  );
+
+  demoButton.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      setShowModel(index);
+    });
+  });
+
   return (
     <section className="pagecenter pb-32">
       <h1 className="title">Schedule a Demo Drive</h1>
       <p className="text-xs my-3">Demo Drive a Tesla at a store near you.</p>
-      <Demo_Models />
+      <div className="flex max-md:flex-col-reverse gap-5 mt-12">
+        <div className="md:w-4/12 grid max-md:grid-cols-6 gap-2">
+          {vehicles.map((item, index) => {
+            return (
+              <button
+                key={index}
+                onClick={() => setShowModel(index)}
+                className={`demoDriveButton rounded border border-slate-200 transition-all ${
+                  showModel === index && "bg-slate-200 text-slate-950"
+                } text-xs py-3 max-md:min-h-[100px] flex-fullcenter`}
+              >
+                <h3 className="max-md:rotate-90 max-md:h-3 text-nowrap ">
+                  {item.model}
+                </h3>
+              </button>
+            );
+          })}
+        </div>
+        <div className="md:w-8/12 bg-slate-50 rounded flex-fullcenter relative min-h-[317px]">
+          {vehicles.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className={`absolute transition-all duration-500 ${
+                  showModel === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <img src={item.trsModel} alt="Transparent Model" />
+              </div>
+            );
+          })}
+        </div>
+      </div>
       <div className="my-24">
         <h2 className="title">Find Time and Location</h2>
         <p className="my-6">

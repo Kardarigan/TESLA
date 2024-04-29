@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "./Commons/Navbar";
+import Footer from "./Commons/Footer";
 import Layout from "./Layout";
 import Home from "../pages/Home";
 import Hero from "./Home/Hero";
@@ -24,43 +24,43 @@ import Learn_Exterior from "./Car/Learn/Learn_Exterior";
 import Learn_Powertrain from "./Car/Learn/Learn_Powertrain";
 import Learn_Intertop from "./Car/Learn/Learn_Intertop";
 import Learn_Inter_Slide from "./Car/Learn/Learn_Inter_Slide";
-import Middle from "./Middle";
-import Middle_Image from "./Middle_Image";
+import Middle from "./Commons/Middle";
+import Middle_Image from "./Commons/Middle_Image";
 import Learn_Overall from "./Car/Learn/Learn_Overall";
 import Learn_Autopilot from "./Car/Learn/Learn_Autopilot";
 import Learn_Safety from "./Car/Learn/Learn_Safety";
 import Actioncenter from "./Car/Actioncenter";
 import Order from "./Car/Order";
-import Energy from "./Energy/Energy";
-import Powerwall from "./Energy/Powerwall";
-import Megapack from "./Energy/Megapack";
-import En_Hero from "./Energy/Commons/En_Hero";
-import En_Overall from "./Energy/Commons/En_Overall";
-import Pw_Abilities from "./Energy/Powerwall/Pw_Abilities";
-import Three from "./Three";
-import Specs from "./Specs";
-import Full_Middle from "./Energy/Megapack/Full_Middle";
-import Padding_Middle from "./Energy/Megapack/Padding_Middle";
-import Studios from "./Energy/Megapack/Studios";
-import Dropdown from "./Dropdown";
-import Fadein from "./Fadein";
+import Energy from "../pages/Energy";
+import Powerwall from "../pages/Powerwall";
+import Megapack from "../pages/Megapack";
+import En_Hero from "./Energy/En_Hero";
+import En_Overall from "./Energy/En_Overall";
+import Pw_Abilities from "./Energy/Pw_Abilities";
+import Three from "./Commons/Three";
+import Specs from "./Commons/Specs";
+import Full_Middle from "./Energy/Full_Middle";
+import Padding_Middle from "./Energy/Padding_Middle";
+import Studios from "./Energy/Studios";
+import Dropdown from "./Commons/Dropdown";
+import Fadein from "./Commons/Fadein";
 import Learn_Bgsection from "./Car/Learn/Learn_Bgsection";
 import Tradein from "./trade-in/Tradein";
-import Commercial from "./Energy/Commercial";
-import Free_slider from "./Free_Slider";
-import Form from "./Form";
-import Utilities from "./Energy/Utilities";
+import Commercial from "../pages/Commercial";
+import Free_slider from "./Commons/Free_Slider";
+import Form from "./Commons/Form";
+import Utilities from "../pages/Utilities";
 import Tradein_Form from "./trade-in/Tradein_Form";
-import Checkbox from "./Checkbox";
+import Checkbox from "./Commons/Checkbox";
 import Demo from "../pages/Demo";
-import Demo_Models from "./Demo/Demo_Models";
-import Field from "./Field";
+import Field from "./Commons/Field";
 import Help from "../pages/Help";
 import Subscribe from "../pages/Subscribe";
 import Callback from "../pages/Callback";
-import Many_Fields from "./Many_Fields";
-import Hamburger from "./Hamburger";
-import Button from "./Button";
+import Many_Fields from "./Commons/Many_Fields";
+import Hamburger from "./Commons/Hamburger";
+import Button from "./Commons/Button";
+
 export {
   Button,
   Hamburger,
@@ -69,7 +69,6 @@ export {
   Subscribe,
   Help,
   Field,
-  Demo_Models,
   Demo,
   Checkbox,
   Tradein_Form,
