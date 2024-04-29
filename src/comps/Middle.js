@@ -1,4 +1,4 @@
-import Button from "./Button";
+import { Button } from "./Portal";
 
 const Learn_Middle = ({
   title = false,

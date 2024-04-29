@@ -1,4 +1,4 @@
-import Button from "../Button";
+import { Button } from "../Portal";
 
 const Home_Weekly = () => {
   return (

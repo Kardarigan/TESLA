@@ -1,4 +1,3 @@
-import React from "react";
 import { energyHero } from "../../constants";
 import { Link } from "react-router-dom";
 

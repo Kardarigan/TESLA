@@ -1,5 +1,4 @@
-import Button from "./Button";
-import { Fadein } from "./Portal";
+import { Fadein, Button } from "./Portal";
 
 const Middle_Image = ({
   topic,

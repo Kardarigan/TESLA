@@ -1,4 +1,4 @@
-import Button from "../Button";
+import { Button } from "../Portal";
 import Background from "../../assets/Homepage-SolarPanels-01-Desktop.jpg";
 
 const Home_Energy = () => {

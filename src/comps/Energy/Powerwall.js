@@ -1,4 +1,3 @@
-import React from "react";
 import {
   En_Hero,
   En_Overall,

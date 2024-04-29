@@ -1,4 +1,4 @@
-import Button from "../../Button";
+import { Button } from "../../Portal";
 
 const En_Hero = ({ prod, title, subtitle = false, get, dark }) => {
   return (

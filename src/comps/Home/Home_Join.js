@@ -1,4 +1,4 @@
-import Button from "../Button";
+import { Button } from "../Portal";
 import Background from "../../assets/Cybertruck-Second-Hero-Desktop.jpg";
 
 const Home_Join = () => {

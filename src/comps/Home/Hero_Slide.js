@@ -1,5 +1,5 @@
 import { SplideSlide } from "@splidejs/react-splide";
-import Button from "../Button";
+import { Button } from "../Portal";
 
 const Hero_Slide = ({
   title,
