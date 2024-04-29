@@ -154,6 +154,9 @@ import Fleet_Better from "../assets/Fleet/Fleet-Better-Fleet-Desktop-NA.jpg";
 import Fleet_Slide_1 from "../assets/Fleet/On_the_Road_Desktop.jpg";
 import Fleet_Slide_2 from "../assets/Fleet/Desktop_At_the_Office-Carousel.jpg";
 import Fleet_Slide_3 from "../assets/Fleet/Upon_Arrival_Desktop.jpg";
+import Fleet_Mobile from "../assets/Fleet/MobileService_desktop.jpg";
+import Fleet_Safety from "../assets/Fleet/Safety_Desktop.jpg";
+import Fleet_Zero from "../assets/Fleet/Zero_Emissions_Desktop.jpg";
 
 export const navLinks = [
   {
@@ -2646,6 +2649,77 @@ export const fleet = {
         "Drivers can recharge at their destination while away from work, with convenient charging locations at hotels, restaurants and shopping centers.",
       cover: Fleet_Slide_3,
       duration: 5000,
+    },
+  ],
+  section: [
+    {
+      title: "Convenient Service",
+      describe:
+        "Remote diagnostics, Mobile Service and zero required maintenance make fleet servicing simple and keep total ownership costs low. With over-the-air software updates, every Tesla receives the latest features and functionality—making your fleet better over time.",
+      cover: Fleet_Mobile,
+    },
+    {
+      title: "Safety-First Design",
+      describe:
+        "We engineer our vehicles to be the safest in the world. With 5-star NHTSA safety ratings overall and in every category, every Tesla features exceptionally low probabilities of occupant injury and rollover risk. Active safety features and Autopilot come standard—helping reduce impact severity and prevent accidents from happening altogether.",
+      cover: Fleet_Safety,
+    },
+    {
+      title: "Zero Emissions",
+      describe:
+        "Reduce your company’s environmental impact with an all-electric fleet. Learn more about lifecycle emissions in our Impact Report. By deploying a Tesla fleet, you also emit zero tailpipe emissions, protecting our planet from toxic air pollutants.",
+      cover: Fleet_Zero,
+    },
+  ],
+  form: [
+    {
+      label: "First Name",
+      type: "text",
+    },
+    {
+      label: "Last Name",
+      type: "text",
+    },
+    {
+      label: "Telephone Number",
+      type: "tel",
+    },
+    {
+      label: "Email",
+      type: "email",
+    },
+    {
+      label: "Country",
+      type: "select",
+      options: [
+        "- Select country -",
+        "USA",
+        "Canada",
+        "UK",
+        "Germany",
+        "Australia",
+        "Netherlands",
+      ],
+    },
+    {
+      label: "Zip Code",
+      type: "text",
+    },
+    {
+      label: "Company Name",
+      type: "text",
+    },
+    {
+      label: "Job Title",
+      type: "text",
+    },
+    {
+      label: "Fleet Size",
+      type: "number",
+    },
+    {
+      label: "Additional Comments",
+      type: "textarea",
     },
   ],
 };

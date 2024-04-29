@@ -1,4 +1,4 @@
-import { En_Hero, Fadein, Free_slider } from "../comps/Portal";
+import { En_Hero, Fadein, Form, Free_slider } from "../comps/Portal";
 import { fleet } from "../constants";
 
 const Fleet = () => {
@@ -44,6 +44,28 @@ const Fleet = () => {
         </Fadein>
       </section>
       <Free_slider prod={fleet.charge} dark />
+      <section className="max-w-[1100px] mx-auto padding">
+        {fleet.section.map((item, index) => {
+          return (
+            <div className="py-8">
+              <img
+                src={item.cover}
+                alt={item.title}
+                className="bg-fullobject md:rounded"
+              />
+              <div className="flex max-md:flex-col pt-5 md:gap-x-12">
+                <h3 className="min-w-56 md:text-xl">{item.title}</h3>
+                <p className="text-xs">{item.describe}</p>
+              </div>
+            </div>
+          );
+        })}
+      </section>
+      <Form
+        title="Contact Us"
+        describe="A Tesla Advisor will reach out to learn more about your fleet needs."
+        form={fleet.form}
+      />
     </>
   );
 };

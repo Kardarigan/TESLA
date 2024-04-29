@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Many_Fields from "./Many_Fields";
 
-const Form = ({ title = null, form }) => {
+const Form = ({ title = null, describe = null, form }) => {
   const isMobile = window.matchMedia(
     "only screen and (max-width: 767px)"
   ).matches;
@@ -11,6 +11,7 @@ const Form = ({ title = null, form }) => {
       <div className="mx-auto max-w-[1000px] flex md:gap-x-24 max-md:flex-col">
         <div className="md:w-3/5 pb-3">
           <h2 className="title">{title}</h2>
+          {describe && <p className="mt-4">{describe}</p>}
         </div>
         <form className="md:w-2/5">
           <div className="grid gap-y-3">
