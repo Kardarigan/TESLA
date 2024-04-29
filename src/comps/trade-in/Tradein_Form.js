@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { tradeinForm } from "../../constants";
-import { Checkbox } from "../Portal";
+import { Checkbox, Many_Fields } from "../Portal";
 
 const Tradein_Form = () => {
-  const isMobile = window.matchMedia(
-    "only screen and (max-width: 767px)"
-  ).matches;
   return (
     <section className="pagecenter pb-32">
       <p>
@@ -18,79 +15,11 @@ const Tradein_Form = () => {
       <form action="">
         <h2 className="title mt-8">Vehicle Details</h2>
         <div className="mt-3 grid sm:grid-cols-2 gap-6">
-          {tradeinForm.vahicle.map((item, index) => {
-            const id = item.label.replace(/\s+/g, "-").toLowerCase();
-            return (
-              <div key={index}>
-                <label htmlFor={id} className="label">
-                  {item.label}
-                </label>
-                <div className="mt-1">
-                  {item.type === "textarea" ? (
-                    <textarea className="field min-h-[120px]"></textarea>
-                  ) : item.type === "select" ? (
-                    <select className="field">
-                      {item.options.map((option, index) => {
-                        let isSelected = false;
-                        if (item.label === "Contact Preference") {
-                          if (isMobile) {
-                            isSelected = index === 0;
-                          } else {
-                            isSelected = index === 1;
-                          }
-                        }
-                        return (
-                          <option key={index} selected={isSelected}>
-                            {option}
-                          </option>
-                        );
-                      })}
-                    </select>
-                  ) : (
-                    <input id={id} type={item.type} className="field" />
-                  )}
-                </div>
-              </div>
-            );
-          })}
+          <Many_Fields fields={tradeinForm.vahicle} />
         </div>
         <h2 className="title mt-8">Contact Information</h2>
         <div className="mt-3 grid sm:grid-cols-2 gap-6">
-          {tradeinForm.contact.map((item, index) => {
-            const id = item.label.replace(/\s+/g, "-").toLowerCase();
-            return (
-              <div key={index}>
-                <label htmlFor={id} className="label">
-                  {item.label}
-                </label>
-                <div className="mt-1">
-                  {item.type === "textarea" ? (
-                    <textarea className="field min-h-[120px]"></textarea>
-                  ) : item.type === "select" ? (
-                    <select className="field">
-                      {item.options.map((option, index) => {
-                        let isSelected = false;
-                        if (item.label === "Contact Preference") {
-                          if (isMobile) {
-                            isSelected = index === 0;
-                          } else {
-                            isSelected = index === 1;
-                          }
-                        }
-                        return (
-                          <option key={index} selected={isSelected}>
-                            {option}
-                          </option>
-                        );
-                      })}
-                    </select>
-                  ) : (
-                    <input id={id} type={item.type} className="field" />
-                  )}
-                </div>
-              </div>
-            );
-          })}
+          <Many_Fields fields={tradeinForm.contact} />
         </div>
         <h2 className="mt-8 mb-4">Product Interests</h2>
         <div className="mt-3 flex flex-col gap-y-4">
@@ -115,7 +44,7 @@ const Tradein_Form = () => {
           understand calls or texts may use automatic or computer-assisted
           dialing or pre-recorded messages. Normal message and data rates apply.
           I can opt out at any time in the Tesla app or by{" "}
-          <Link to="/" className="link">
+          <Link to="/communication-preferences/unsubscribe" className="link">
             unsubscribing
           </Link>
           .

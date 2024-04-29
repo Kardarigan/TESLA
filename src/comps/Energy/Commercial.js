@@ -21,7 +21,7 @@ const Commercial = () => {
         title={commercial.storage.title}
         describe={commercial.storage.describe}
         cover={commercial.storage.cover}
-        learnLink={commercial.learnLink}
+        contact
       />
       <section>
         <img
@@ -40,7 +40,7 @@ const Commercial = () => {
         topic="Software"
         title={commercial.software.title}
         describe={commercial.software.describe}
-        learnLink={commercial.learnLink}
+        contact
         light
       />
       <Free_slider prod={commercial.controlSlides} />

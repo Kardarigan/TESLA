@@ -9,6 +9,7 @@ const Middle_Image = ({
   learnLink = false,
   orderLink = false,
   inventoryLink = false,
+  contact = false,
   numbers = false,
   darkNumbers = false,
   right = false,
@@ -49,7 +50,15 @@ const Middle_Image = ({
                 to={inventoryLink}
                 label="View Inventory"
                 light
-                customClass="w-full"
+                customClass="w-full mt-24 mb-3"
+              />
+            )}
+            {contact && (
+              <Button
+                to="/callback"
+                label="Contact"
+                light
+                customClass="w-full mt-24 mb-3"
               />
             )}
           </div>

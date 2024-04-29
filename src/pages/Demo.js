@@ -1,6 +1,5 @@
-import React from "react";
-import { Checkbox, Demo_Models, Field } from "../comps/Portal";
-import { demoForm } from "../constants";
+import { Checkbox, Demo_Models, Field, Many_Fields } from "../comps/Portal";
+import { contactFrom } from "../constants";
 import { Link } from "react-router-dom";
 
 const Demo = () => {
@@ -27,29 +26,7 @@ const Demo = () => {
       <div className="mt-24">
         <h2 className="title">Contact Information</h2>
         <div className="mt-6 grid sm:grid-cols-2 gap-6">
-          {demoForm.map((item, index) => {
-            const id = item.label.replace(/\s+/g, "-").toLowerCase();
-            return (
-              <div key={index}>
-                <label htmlFor={id} className="label">
-                  {item.label}
-                </label>
-                <div className="mt-1">
-                  {item.type === "textarea" ? (
-                    <textarea className="field min-h-[120px]"></textarea>
-                  ) : item.type === "select" ? (
-                    <select className="field">
-                      {item.options.map((option, index) => {
-                        return <option key={index}>{option}</option>;
-                      })}
-                    </select>
-                  ) : (
-                    <input id={id} type={item.type} className="field" />
-                  )}
-                </div>
-              </div>
-            );
-          })}
+          <Many_Fields fields={contactFrom} />
         </div>
       </div>
       <p className="flex my-10">

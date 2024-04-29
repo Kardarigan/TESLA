@@ -7,6 +7,7 @@ const Learn_Middle = ({
   learnLink = false,
   orderLink = false,
   inventoryLink = false,
+  contact = false,
   light = false,
   pw = false,
 }) => {
@@ -22,7 +23,7 @@ const Learn_Middle = ({
           <h2 className="title mt-1 mb-3">{title}</h2>
           <p className="lg:hidden py-5">{describe}</p>
           <div className="md:flex lg:flex-col md:flex-row w-full">
-            {inventoryLink || learnLink || orderLink ? (
+            {inventoryLink || learnLink || orderLink || contact ? (
               <>
                 {light ? (
                   <Button
@@ -31,6 +32,8 @@ const Learn_Middle = ({
                         ? inventoryLink
                         : learnLink
                         ? learnLink
+                        : contact
+                        ? "/callback"
                         : orderLink
                     }
                     label={
@@ -38,6 +41,8 @@ const Learn_Middle = ({
                         ? "Veiw Inventory"
                         : learnLink
                         ? "Learn More"
+                        : contact
+                        ? "Contact"
                         : "Order Now"
                     }
                     customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
@@ -50,6 +55,8 @@ const Learn_Middle = ({
                         ? inventoryLink
                         : learnLink
                         ? learnLink
+                        : contact
+                        ? "/callback"
                         : orderLink
                     }
                     label={
@@ -57,6 +64,8 @@ const Learn_Middle = ({
                         ? "Veiw Inventory"
                         : learnLink
                         ? "Learn More"
+                        : contact
+                        ? "Contact"
                         : "Order Now"
                     }
                     customClass="sm:max-w-[220px] lg:ms-0 sm:ms-2"
@@ -64,7 +73,6 @@ const Learn_Middle = ({
                 )}
               </>
             ) : (
-              // Render an empty fragment if none of the links are truthy
               <></>
             )}
           </div>

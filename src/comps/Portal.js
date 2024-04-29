@@ -58,7 +58,11 @@ import Field from "./Field";
 import Help from "../pages/Help";
 import Subscribe from "../pages/Subscribe";
 import Callback from "../pages/Callback";
+import Many_Fields from "./Many_Fields";
+import Hamburger from "./Hamburger";
 export {
+  Hamburger,
+  Many_Fields,
   Callback,
   Subscribe,
   Help,
