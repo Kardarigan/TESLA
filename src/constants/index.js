@@ -148,8 +148,12 @@ import Utility_3 from "../assets/Utilities/Utilities-Case3.jpg";
 
 import Com_Case_1 from "../assets/Commercial/CE_Case1_D.avif";
 import Com_Case_2 from "../assets/Commercial/CE_Case2_D.avif";
-import { type } from "@testing-library/user-event/dist/type";
-import { Energy_Software } from "../comps/Portal";
+
+import Fleet_Hero from "../assets/Fleet/Fleet-Main-Hero-Desktop-CA-MX-PR.jpg";
+import Fleet_Better from "../assets/Fleet/Fleet-Better-Fleet-Desktop-NA.jpg";
+import Fleet_Slide_1 from "../assets/Fleet/On_the_Road_Desktop.jpg";
+import Fleet_Slide_2 from "../assets/Fleet/Desktop_At_the_Office-Carousel.jpg";
+import Fleet_Slide_3 from "../assets/Fleet/Upon_Arrival_Desktop.jpg";
 
 export const navLinks = [
   {
@@ -223,7 +227,7 @@ export const navLinks = [
       { label: "Used Cars", to: "/" },
       { label: "Demo Drive", to: "/demo" },
       { label: "Trade-in", to: "/tradein" },
-      { label: "Fleet", to: "/" },
+      { label: "Fleet", to: "/fleet" },
     ],
   },
   {
@@ -2571,3 +2575,77 @@ export const interestProduct = [
   "Solar Roof",
   "Charging",
 ];
+
+export const fleet = {
+  getLink: "/utilities",
+  learnLink: "/",
+  heroCover: Fleet_Hero,
+  controlCenter: Commercial_Center,
+  heroAbilities: [
+    {
+      title: "$",
+      describe: "Low Cost of Ownership",
+    },
+    {
+      title: "★★★★★",
+      describe: "5-Star Safety Ratings",
+    },
+    {
+      icon: "fa-light fa-car-wrench",
+      describe: "Mobile Service Anywhere",
+    },
+  ],
+  betterCover: Fleet_Better,
+  betterList: [
+    {
+      key: "Driver Benefits",
+      items: [
+        "Convenient charging with access to the world’s largest fast-charging network",
+        "Mobile Service and remote diagnostics",
+        "Carpool lane access and priority parking",
+        "5-Star NHTSA ratings",
+      ],
+    },
+    {
+      key: "Company Benefits",
+      items: [
+        "Never pay for gas again",
+        "Low cost of ownership, including no annual maintenance or regular fluid changes",
+        "Low charging costs",
+        "Over-the-air software updates",
+        "Industry-leading residual value",
+      ],
+    },
+    {
+      key: "Community Benefits",
+      items: [
+        "Safer roads with very low probability of injury tested by NHTSA, active safety features Autopilot and Full Self-Driving",
+        "Supports local charging network expansion",
+        "Reduced smog and pollution",
+      ],
+    },
+  ],
+  charge: [
+    {
+      title: "At the Office",
+      describe:
+        "Charge where you park. With Tesla Wall Connector, or just a conventional outlet, drivers can stay charged and ready to go throughout the day.",
+      cover: Fleet_Slide_1,
+      duration: 5000,
+    },
+    {
+      title: "On the Road",
+      describe:
+        "Go farther with access to our expansive Supercharger network. Drivers can plug in along their route and recover up to 322 km in just 15 minutes.",
+      cover: Fleet_Slide_2,
+      duration: 5000,
+    },
+    {
+      title: "Upon Arrival",
+      describe:
+        "Drivers can recharge at their destination while away from work, with convenient charging locations at hotels, restaurants and shopping centers.",
+      cover: Fleet_Slide_3,
+      duration: 5000,
+    },
+  ],
+};

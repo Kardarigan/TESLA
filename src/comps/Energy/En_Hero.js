@@ -1,6 +1,13 @@
 import { Button } from "../Portal";
 
-const En_Hero = ({ prod, title, subtitle = false, get, dark }) => {
+const En_Hero = ({
+  prod,
+  title,
+  subtitle = false,
+  get,
+  dark = false,
+  contact = false,
+}) => {
   return (
     <>
       <section
@@ -36,7 +43,7 @@ const En_Hero = ({ prod, title, subtitle = false, get, dark }) => {
                     ) : (
                       <h3 className="md:text-3xl text-xl">{item.title}</h3>
                     )}
-                    <h6 className="sm:text-base text-xs mt-2">
+                    <h6 className="md:text-base text-xs mt-2">
                       {item.describe}
                     </h6>
                   </div>
@@ -44,14 +51,14 @@ const En_Hero = ({ prod, title, subtitle = false, get, dark }) => {
               })}
               <div className="lg:block hidden pt-3">
                 <Button
-                  label={"Get " + title}
+                  label={contact ? "Contact Us" : "Get " + title}
                   to={get}
                   outline={dark ? "dark" : "light"}
                 />
               </div>
             </div>
             <Button
-              label={"Get " + title}
+              label={contact ? "Contact Us" : "Get " + title}
               to={get}
               outline={dark ? "dark" : "light"}
               customClass="lg:hidden block mt-7 mx-auto"

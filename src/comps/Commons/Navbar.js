@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { navLinks, navTools } from "../../constants";
-import Dropdown from "./Dropdown";
+import { Dropdown } from "../Portal";
 import { useState } from "react";
 const Navbar = () => {
   const [navOver, setNavOver] = useState(false);
