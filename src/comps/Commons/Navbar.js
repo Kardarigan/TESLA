@@ -78,7 +78,7 @@ const Navbar = () => {
                         className={
                           navOver
                             ? "top-0 opacity-100"
-                            : "top-[-100px]  opacity-0"
+                            : "top-[-100px] invisible opacity-0 displayTrans"
                         }
                         links={currentItem.links}
                         discover
@@ -88,7 +88,7 @@ const Navbar = () => {
                         className={
                           navOver
                             ? "top-0 opacity-100"
-                            : "top-[-100px]  opacity-0"
+                            : "top-[-100px] invisible opacity-0 displayTrans"
                         }
                         prods={currentItem.products}
                         links={currentItem.links}
