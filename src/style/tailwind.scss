@@ -117,6 +117,9 @@
   .pagecenter {
     @apply max-w-[800px] mx-auto pt-32 padding-x;
   }
+  .size-screen {
+    @apply w-screen h-screen;
+  }
 }
 h1,
 h2,

@@ -329,6 +329,47 @@ export const navLinks = [
   },
 ];
 
+export const hamburgerItems = [
+  {
+    href: "./vehicles",
+    label: "Vehicle",
+    submenu: {
+      products: ["model"],
+    },
+  },
+  {
+    href: "./energy",
+    label: "Energy",
+    submenu: {
+      products: ["model"],
+    },
+  },
+  {
+    href: "./charging",
+    label: "Charging",
+    submenu: {
+      products: ["model"],
+    },
+  },
+  {
+    href: "./discover",
+    label: "Discover",
+    submenu: {
+      products: ["model"],
+    },
+  },
+  { href: "./support", label: "Support" },
+  {
+    href: "./support",
+    label: "Languge",
+    icon: "fal fa-globe",
+    submenu: {
+      products: ["model"],
+    },
+  },
+  { href: "./account", label: "Account", icon: "fal fa-circle-user" },
+];
+
 export const navDiscover = {
   Resources: [
     { label: "Demo Drive", to: "/" },
