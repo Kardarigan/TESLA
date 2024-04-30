@@ -164,6 +164,7 @@ import Smei_Performance from "../assets/Single/Semi/Semi-Performance-Desktop-Glo
 import Semi_Safety from "../assets/Single/Semi/Semi-Safety-Desktop-Global-v2.webm";
 import Semi_Range from "../assets/Single/Semi/Semi-Range-Desktop-Global.webm";
 import Semi_Owner from "../assets/Single/Semi/Semi-Ownership-Desktop-Global.jpg";
+import Semi_Specs from "../assets/Single/Semi/Semi-Specs-Desktop-Global.avif";
 
 export const navLinks = [
   {
@@ -2773,5 +2774,53 @@ export const semi = {
     title: "Low Cost of Ownership",
     describe:
       "Charging with electricity is cheaper per kilometer than refueling with diesel.* With remote diagnostics, over-the-air software updates and fewer moving parts to maintain, operators will spend less time at service centers and more time on the road.",
+  },
+
+  specs: {
+    title: "Semi",
+    describe:
+      "Megapack is designed for utilities and large-scale commercial projects. Our team of experts will help you design a system that meets your project goals and maximizes your site potential.",
+    cover: Semi_Specs,
+    items: {
+      fisrtCol: [
+        {
+          title: "Mile Range",
+          details: ["Approximately 480 or 800 kilometers"],
+        },
+        {
+          title: "0-100 km/h",
+          details: ["25 seconds"],
+        },
+        {
+          title: "Speed Up a 5% Grade",
+          details: ["Highway speed limit"],
+        },
+        {
+          title: "Powertrain",
+          details: [
+            "3 independent motors on rear axles",
+            "US model and specs shown",
+          ],
+        },
+      ],
+      secondCol: [
+        {
+          title: "Energy Consumption",
+          details: ["Less than 1.25 kWh per kilometer"],
+        },
+
+        {
+          title: "Fast Charging",
+          details: ["Up to 70% of range in 30 minutes"],
+        },
+      ],
+    },
+  },
+  overall: {
+    title: "Semi",
+    describe:
+      "Stay informed on how we're accelerating the future of electric trucking.",
+    offer:
+      '*Based on average diesel prices in California between February 2022–July 2022 and typical electric rates. <br /><br /> Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. <a href="/" class="link"> Learn more about Standard Connectivity and any limitations </a> .',
   },
 };

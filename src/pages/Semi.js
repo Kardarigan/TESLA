@@ -1,4 +1,10 @@
-import { Button, Learn_Bgsection, En_Hero } from "../comps/Portal";
+import {
+  Button,
+  Learn_Bgsection,
+  En_Hero,
+  En_Overall,
+  Specs,
+} from "../comps/Portal";
 import { semi } from "../constants";
 
 const Semi = () => {
@@ -19,11 +25,24 @@ const Semi = () => {
         <Button to="/" label="Get Updates" outline="light" />
       </section>
       <Learn_Bgsection car={semi.performance} />
-
       <Learn_Bgsection car={semi.safety} seperate />
       <Learn_Bgsection car={semi.range} seperate />
-
       <Learn_Bgsection car={semi.owenership} />
+
+      <Specs
+        title={semi.specs.title}
+        describe={semi.specs.describe}
+        cover={semi.specs.cover}
+        items={semi.specs.items}
+      />
+
+      <En_Overall
+        title={semi.overall.title}
+        describe={semi.overall.describe}
+        link={semi.overall.getLink}
+        offer={semi.overall.offer}
+        label="Contact Us"
+      />
     </>
   );
 };

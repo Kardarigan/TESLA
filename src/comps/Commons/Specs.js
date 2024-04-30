@@ -1,5 +1,6 @@
 import React from "react";
 import { Fadein } from "../Portal";
+import { Link } from "react-router-dom";
 
 const Specs = ({ topic = false, title, describe = false, cover, items }) => {
   return (
