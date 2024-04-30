@@ -8,7 +8,7 @@ const Dropdown = ({
 }) => {
   return (
     <section
-      className={`dropdown absolute start-0 w-full bg-slate-50 text-slate-950 z-30 h-auto max-h-[500px] transition-all duration-700 pt-24 pb-12 ${className}`}
+      className={`dropdown absolute start-0 w-full bg-slate-50 text-slate-950 z-30 h-auto max-h-[500px] transition-all duration-700 pt-24 pb-12 shadow-sm ${className}`}
     >
       <div className="flex px-12">
         {discover ? (
@@ -38,17 +38,15 @@ const Dropdown = ({
             <div className="w-3/4 grid grid-cols-4 gap-3 px-12">
               {prods?.map((item, index) => {
                 return (
-                  <Link
-                    to={item.links[0].to}
-                    key={index}
-                    className="text-center"
-                  >
+                  <div key={index} className="text-center">
                     <div className="flex justify-center">
-                      <img
-                        src={item.cover}
-                        alt={item.title}
-                        className="h-[100px]"
-                      />
+                      <Link to={item.links[0].to}>
+                        <img
+                          src={item.cover}
+                          alt={item.title}
+                          className="h-[100px]"
+                        />
+                      </Link>
                     </div>
                     <h4 className="font-bold">{item.title}</h4>
                     <p className="text-xs mt-2">
@@ -64,7 +62,7 @@ const Dropdown = ({
                         );
                       })}
                     </p>
-                  </Link>
+                  </div>
                 );
               })}
             </div>

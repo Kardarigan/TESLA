@@ -4,10 +4,12 @@ const En_Hero = ({
   prod,
   title,
   subtitle = false,
+  offer = "Fully Loaded at 37k kg Gross Combination Weight",
   get,
   dark = false,
   contact = false,
 }) => {
+  const hasButton = get || contact;
   return (
     <>
       <section
@@ -34,7 +36,11 @@ const En_Hero = ({
             {subtitle && <h6>{subtitle}</h6>}
           </div>
           <div>
-            <div className="grid lg:grid-cols-4 grid-cols-3 gap-x-5">
+            <div
+              className={`grid ${
+                hasButton && "lg:grid-cols-4"
+              } grid-cols-3 gap-x-5`}
+            >
               {prod.heroAbilities.map((item, index) => {
                 return (
                   <div className="text-center" key={index}>
@@ -49,22 +55,28 @@ const En_Hero = ({
                   </div>
                 );
               })}
-              <div className="lg:block hidden pt-3">
-                <Button
-                  label={contact ? "Contact Us" : "Get " + title}
-                  to={get}
-                  outline={dark ? "dark" : "light"}
-                />
-              </div>
+              {hasButton && (
+                <div className="lg:block hidden pt-3">
+                  <Button
+                    label={contact ? "Contact Us" : "Get " + title}
+                    to={get}
+                    outline={dark ? "dark" : "light"}
+                  />
+                </div>
+              )}
             </div>
-            <Button
-              label={contact ? "Contact Us" : "Get " + title}
-              to={get}
-              outline={dark ? "dark" : "light"}
-              customClass="lg:hidden block mt-7 mx-auto"
-            />
+            {hasButton && (
+              <Button
+                label={contact ? "Contact Us" : "Get " + title}
+                to={get}
+                outline={dark ? "dark" : "light"}
+                customClass="lg:hidden block mt-7 mx-auto"
+              />
+            )}
           </div>
         </div>
+
+        {offer && <p className="absolute bottom-[1vh]">{offer}</p>}
       </section>
     </>
   );

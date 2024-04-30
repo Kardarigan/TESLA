@@ -61,8 +61,10 @@ import Many_Fields from "./Commons/Many_Fields";
 import Hamburger from "./Commons/Hamburger";
 import Button from "./Commons/Button";
 import Fleet from "../pages/Fleet";
+import Semi from "../pages/Semi";
 
 export {
+  Semi,
   Fleet,
   Button,
   Hamburger,

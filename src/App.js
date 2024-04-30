@@ -17,6 +17,7 @@ import {
   Subscribe,
   Callback,
   Fleet,
+  Semi,
 } from "./comps/Portal";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/vehicles" element={<Overview />} />
           <Route path=":model/order" element={<Order />} />
           <Route path=":model" element={<Learn />} />
+          <Route path="/Semi" element={<Semi />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />

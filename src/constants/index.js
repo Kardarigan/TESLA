@@ -158,6 +158,13 @@ import Fleet_Mobile from "../assets/Fleet/MobileService_desktop.jpg";
 import Fleet_Safety from "../assets/Fleet/Safety_Desktop.jpg";
 import Fleet_Zero from "../assets/Fleet/Zero_Emissions_Desktop.jpg";
 
+import Semi_Hero from "../assets/Single/Semi/Semi-Performance-Desktop-Global.jpg";
+import Semi_Hero_Video from "../assets/Single/Semi/Semi-Hero-Desktop-Global.webm";
+import Smei_Performance from "../assets/Single/Semi/Semi-Performance-Desktop-Global.jpg";
+import Semi_Safety from "../assets/Single/Semi/Semi-Safety-Desktop-Global-v2.webm";
+import Semi_Range from "../assets/Single/Semi/Semi-Range-Desktop-Global.webm";
+import Semi_Owner from "../assets/Single/Semi/Semi-Ownership-Desktop-Global.jpg";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -2722,4 +2729,49 @@ export const fleet = {
       type: "textarea",
     },
   ],
+};
+
+export const semi = {
+  getLink: "/",
+  heroCover: Semi_Hero,
+  heroVideo: Semi_Hero_Video,
+
+  heroAbilities: [
+    {
+      title: "25 s",
+      describe: "0-100 km/h",
+    },
+    {
+      title: "1.25 kWh",
+      describe: "Per km Energy Consumption",
+    },
+    {
+      title: "800 km",
+      describe: "Range (est.)",
+    },
+  ],
+  performance: {
+    cover: Smei_Performance,
+    title: "Badass Performance",
+    describe:
+      "Three independent motors provide instant torque and unmatched power at any speed so drivers can merge safely and keep pace with traffic. Accelerate from 0-100 km/h in 25 seconds, fully loaded, and maintain highway-level speeds even up steep grades.",
+  },
+  safety: {
+    cover: Semi_Safety,
+    title: "Maximum Safety",
+    describe:
+      "Semi comes standard with active safety features that pair with advanced motor and brake controls to deliver traction and stability in all conditions. A central seating position gives the driver better visibility, while an all-electric architecture reduces both rollover risk and cabin intrusion in case of an accident.",
+  },
+  range: {
+    cover: Semi_Range,
+    title: "Massive Range",
+    describe:
+      "With less than 1.25 kWh per kilometer of energy consumption, Semi can travel up to 800 kilometers on a single charge. Recover up to 70 percent of range in 30 minutes using Tesla’s Semi Chargers.",
+  },
+  owenership: {
+    cover: Semi_Owner,
+    title: "Low Cost of Ownership",
+    describe:
+      "Charging with electricity is cheaper per kilometer than refueling with diesel.* With remote diagnostics, over-the-air software updates and fewer moving parts to maintain, operators will spend less time at service centers and more time on the road.",
+  },
 };

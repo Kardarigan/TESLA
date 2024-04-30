@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import Many_Fields from "./Many_Fields";
 
 const Form = ({ title = null, describe = null, form }) => {
-  const isMobile = window.matchMedia(
-    "only screen and (max-width: 767px)"
-  ).matches;
   return (
     <section className="padding-x padding-t pb-32">
       <div className="mx-auto max-w-[1000px] flex md:gap-x-24 max-md:flex-col">
