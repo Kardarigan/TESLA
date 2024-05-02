@@ -1,27 +1,18 @@
-import { useState } from "react";
 import { hamburgerItems } from "../../constants";
 
-const Ham_Menu = () => {
-  const [submenu, setSubMenu] = useState(null);
-
-  const handleClick = (items) => {
-    setSubMenu(items);
-  };
-
+const Ham_Menu = ({ handleClick }) => {
   return (
     <ul className="flex flex-col gap-4">
       {hamburgerItems.map((item, index) => {
         return (
           <li
             className={`navitem py-4 ${item.submenu && "flex-seperate"}`}
+            onClick={() => handleClick(item.submenu)}
             key={index}
           >
             {item.icon ? (
               <>
-                <div
-                  className="flex items-center"
-                  onClick={item.submenu && handleClick(item.submenu)}
-                >
+                <div className="flex items-center">
                   <i className={`${item.icon} text-2xl me-2`} />
                   <span>{item.label}</span>
                   {item.label === "Languge" && (

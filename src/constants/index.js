@@ -333,39 +333,114 @@ export const hamburgerItems = [
   {
     href: "./vehicles",
     label: "Vehicle",
-    submenu: {
-      products: ["model"],
-    },
+    submenu: [
+      {
+        href: "./vehicles",
+        label: "Vehicle",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle",
+      },
+    ],
   },
   {
     href: "./energy",
     label: "Energy",
-    submenu: {
-      products: ["model"],
-    },
+    submenu: [
+      {
+        href: "./vehicles",
+        label: "Vehicle 2",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 2",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 2",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 2",
+      },
+    ],
   },
   {
     href: "./charging",
     label: "Charging",
-    submenu: {
-      products: ["model"],
-    },
+    submenu: [
+      {
+        href: "./vehicles",
+        label: "Vehicle 3",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 3",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 3",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 3",
+      },
+    ],
   },
   {
     href: "./discover",
     label: "Discover",
-    submenu: {
-      products: ["model"],
-    },
+    submenu: [
+      {
+        href: "./vehicles",
+        label: "Vehicle 4",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 4",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 4",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 4",
+      },
+    ],
   },
   { href: "./support", label: "Support" },
   {
     href: "./support",
     label: "Languge",
     icon: "fal fa-globe",
-    submenu: {
-      products: ["model"],
-    },
+    submenu: [
+      {
+        href: "./vehicles",
+        label: "Vehicle 5",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 5",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 5",
+      },
+      {
+        href: "./vehicles",
+        label: "Vehicle 5",
+      },
+    ],
   },
   { href: "./account", label: "Account", icon: "fal fa-circle-user" },
 ];

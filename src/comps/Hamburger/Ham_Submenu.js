@@ -1,7 +1,11 @@
-import React from "react";
-
-const Ham_Submenu = ({}) => {
-  return <div>Ham_Submenu</div>;
+const Ham_Submenu = ({ items }) => {
+  return (
+    <div>
+      {items.map((item) => (
+        <div>{item.label}</div>
+      ))}
+    </div>
+  );
 };
 
 export default Ham_Submenu;
