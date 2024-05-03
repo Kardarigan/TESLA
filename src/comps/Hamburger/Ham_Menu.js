@@ -7,7 +7,7 @@ const Ham_Menu = ({ handleClick }) => {
         return (
           <li
             className={`navitem py-4 ${item.submenu && "flex-seperate"}`}
-            onClick={() => handleClick(item.submenu)}
+            onClick={() => handleClick(item.label, item.submenu)}
             key={index}
           >
             {item.icon ? (

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Ham_Menu, Ham_Submenu } from "../Portal";
 
 const Hamburger = ({ closeHam }) => {
-  const handleClick = (items) => {
+  const handleClick = (title, items) => {
     if (items) {
-      setCurrentMenu(<Ham_Submenu items={items} />);
+      setCurrentMenu(<Ham_Submenu title={title} items={items} />);
     } else {
       setCurrentMenu(<Ham_Menu handleClick={handleClick} />);
     }

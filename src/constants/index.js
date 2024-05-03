@@ -333,68 +333,172 @@ export const hamburgerItems = [
   {
     href: "./vehicles",
     label: "Vehicle",
-    submenu: [
-      {
-        href: "/",
-        label: "Inventory",
-      },
-      {
-        href: "/",
-        label: "Used Cars",
-      },
-      {
-        href: "/demo",
-        label: "Demo Drive",
-      },
-      {
-        href: "/tradein",
-        label: "Trade-in",
-      },
-      {
-        href: "/fleet",
-        label: "Fleet",
-      },
-    ],
+    submenu: {
+      products: [
+        {
+          cover: Nav_S,
+          title: "Model S",
+          links: [
+            { label: "Learn", to: "/model s" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_X,
+          title: "Model X",
+          links: [
+            { label: "Learn", to: "/model x" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_3,
+          title: "Model 3",
+          links: [
+            { label: "Learn", to: "/model 3" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_Y,
+          title: "Model Y",
+          links: [
+            { label: "Learn", to: "/model y" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_Roadster,
+          title: "Roadster",
+          links: [
+            { label: "Learn", to: "/roadster" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_Cybertruck,
+          title: "Cybertruck",
+          links: [
+            { label: "Learn", to: "/cybertruck" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_Semi,
+          title: "Semi",
+          links: [
+            { label: "Learn", to: "/semi" },
+            { label: "Order", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_HMC,
+          title: "Help Me Choose",
+          links: [{ label: "Get Started", to: "/help" }],
+        },
+      ],
+      links: [
+        {
+          href: "/",
+          label: "Inventory",
+        },
+        {
+          href: "/",
+          label: "Used Cars",
+        },
+        {
+          href: "/demo",
+          label: "Demo Drive",
+        },
+        {
+          href: "/tradein",
+          label: "Trade-in",
+        },
+        {
+          href: "/fleet",
+          label: "Fleet",
+        },
+      ],
+    },
   },
   {
     href: "./energy",
     label: "Energy",
-    submenu: [
-      {
-        href: "/support",
-        label: "Support",
-      },
-      {
-        href: "/commercial",
-        label: "Commercial",
-      },
-      {
-        href: "/utilities",
-        label: "Utilities",
-      },
-    ],
+    submenu: {
+      products: [
+        {
+          cover: Nav_Powerwall,
+          title: "Powerwall",
+          links: [{ label: "Learn", to: "/powerwall" }],
+        },
+        {
+          cover: Nav_Megapack,
+          title: "Megapack",
+          links: [{ label: "Learn", to: "/megapack" }],
+        },
+      ],
+      links: [
+        {
+          href: "/support",
+          label: "Support",
+        },
+        {
+          href: "/commercial",
+          label: "Commercial",
+        },
+        {
+          href: "/utilities",
+          label: "Utilities",
+        },
+      ],
+    },
   },
   {
     href: "./charging",
     label: "Charging",
-    submenu: [
-      {
-        href: "/",
-        label: "Charging With NACS",
-      },
-      {
-        href: "/",
-        label: "Supercharger Voting",
-      },
-      {
-        href: "/",
-        label: "Host a Supercharger",
-      },
-      {
-        href: "/",
-        label: "Host Wall Connectors",
-      },
-    ],
+    submenu: {
+      products: [
+        {
+          cover: Nav_Charging,
+          title: "Charging",
+          links: [{ label: "Learn", to: "/charging" }],
+        },
+        {
+          cover: Nav_Home_Charging,
+          title: "Home Charging",
+          links: [
+            { label: "Learn", to: "/" },
+            { label: "Shop", to: "/" },
+          ],
+        },
+        {
+          cover: Nav_Supercharging,
+          title: "Supercharging",
+          links: [
+            { label: "Learn", to: "/" },
+            { label: "Find", to: "/" },
+          ],
+        },
+      ],
+      links: [
+        {
+          href: "/",
+          label: "Charging With NACS",
+        },
+        {
+          href: "/",
+          label: "Supercharger Voting",
+        },
+        {
+          href: "/",
+          label: "Host a Supercharger",
+        },
+        {
+          href: "/",
+          label: "Host Wall Connectors",
+        },
+      ],
+    },
   },
   {
     href: "./discover",
