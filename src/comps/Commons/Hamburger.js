@@ -4,24 +4,26 @@ import { Ham_Menu, Ham_Submenu } from "../Portal";
 const Hamburger = ({ closeHam }) => {
   const handleClick = (title, items) => {
     if (items) {
-      setCurrentMenu(<Ham_Submenu title={title} items={items} />);
+      setCurrentMenu(
+        <Ham_Submenu title={title} items={items} clickes={closeHam} />
+      );
     } else {
-      setCurrentMenu(<Ham_Menu handleClick={handleClick} />);
+      setCurrentMenu(<Ham_Menu handleClick={handleClick} clickes={closeHam} />);
     }
   };
 
   const [currentMenu, setCurrentMenu] = useState(
-    <Ham_Menu handleClick={handleClick} />
+    <Ham_Menu handleClick={handleClick} clickes={closeHam} />
   );
   const isHamSubmenu = currentMenu.type === Ham_Submenu;
   const clickBack = () => {
-    setCurrentMenu(<Ham_Menu handleClick={handleClick} />);
+    setCurrentMenu(<Ham_Menu handleClick={handleClick} clickes={closeHam} />);
   };
 
   return (
-    <div className="px-7 py-2 relative">
+    <div className="px-7 py-2 relative max-w-[900px] mx-auto">
       <div
-        className={`bg-slate-50 z-50 flex ${
+        className={`bg-slate-50 flex ${
           isHamSubmenu ? "justify-between" : "justify-end"
         }`}
       >
@@ -34,7 +36,7 @@ const Hamburger = ({ closeHam }) => {
           <i className="fa-light fa-xmark" />
         </button>
       </div>
-      <div className="mt-2 max-w-[900px] mx-auto">{currentMenu}</div>
+      <div className="mt-2">{currentMenu}</div>
     </div>
   );
 };

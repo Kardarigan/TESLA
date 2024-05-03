@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Ham_Submenu = ({ title, items }) => {
+const Ham_Submenu = ({ title, items, clickes }) => {
   return (
     <>
       <h4 className="w-20 mx-auto translate-y-[-45px] h-0 text-center">
@@ -10,7 +10,7 @@ const Ham_Submenu = ({ title, items }) => {
         <div className="max-w-[900px] mx-auto grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-3 px-12 mb-5 pb-12 border-b border-slate-200">
           {items.products?.map((item, index) => {
             return (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center" onClick={clickes}>
                 <div className="flex justify-center">
                   <Link to={item.links[0].to}>
                     <img
@@ -43,7 +43,11 @@ const Ham_Submenu = ({ title, items }) => {
         {items.links.map((item, index) => {
           return (
             <li key={index}>
-              <Link to="/" className="navitem block py-4">
+              <Link
+                to={item.href}
+                className="navitem block py-4"
+                onClick={clickes}
+              >
                 <span>{item.label}</span>
               </Link>
             </li>

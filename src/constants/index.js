@@ -505,7 +505,7 @@ export const hamburgerItems = [
     label: "Discover",
     submenu: [
       {
-        href: "/",
+        href: "/demo",
         label: "Demo Drive",
       },
       {
@@ -547,24 +547,26 @@ export const hamburgerItems = [
     href: "./support",
     label: "Languge",
     icon: "fal fa-globe",
-    submenu: [
-      {
-        href: "./vehicles",
-        label: "Vehicle 5",
-      },
-      {
-        href: "./vehicles",
-        label: "Vehicle 5",
-      },
-      {
-        href: "./vehicles",
-        label: "Vehicle 5",
-      },
-      {
-        href: "./vehicles",
-        label: "Vehicle 5",
-      },
-    ],
+    submenu: {
+      links: [
+        {
+          href: "/",
+          label: "English",
+        },
+        {
+          href: "/",
+          label: "French",
+        },
+        {
+          href: "/",
+          label: "Spanish",
+        },
+        {
+          href: "/",
+          label: "Russian",
+        },
+      ],
+    },
   },
   { href: "./account", label: "Account", icon: "fal fa-circle-user" },
 ];
