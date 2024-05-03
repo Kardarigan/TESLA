@@ -130,7 +130,7 @@ const Navbar = () => {
         </nav>
       </header>
       <div
-        className={`fixed size-screen z-50 block displayTrans bg-slate-50 ${
+        className={`absolute w-screen min-h-screen z-50 block displayTrans bg-slate-50 pb-5 ${
           hamburger ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >

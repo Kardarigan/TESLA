@@ -19,7 +19,7 @@ const Hamburger = ({ closeHam }) => {
   };
 
   return (
-    <div className="px-6 py-2 relative">
+    <div className="px-6 py-2">
       <div
         className={`bg-slate-50 z-50 flex ${
           isHamSubmenu ? "justify-between" : "justify-end"
@@ -27,14 +27,14 @@ const Hamburger = ({ closeHam }) => {
       >
         {isHamSubmenu && (
           <button className="navitem w-[48px] text-xl" onClick={clickBack}>
-            <i className="fal fa-chevron-left" />
+            <i className="far fa-chevron-left" />
           </button>
         )}
         <button className="navitem w-[48px] text-2xl" onClick={closeHam}>
           <i className="fa-light fa-xmark" />
         </button>
       </div>
-      <div className="mt-2">{currentMenu}</div>
+      <div className="mt-2 max-w-[900px] mx-auto">{currentMenu}</div>
     </div>
   );
 };
