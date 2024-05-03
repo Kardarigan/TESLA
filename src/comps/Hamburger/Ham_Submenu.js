@@ -43,7 +43,7 @@ const Ham_Submenu = ({ title, items }) => {
         {items.links.map((item, index) => {
           return (
             <li key={index}>
-              <Link to="/" className="block navitem py-4">
+              <Link to="/" className="navitem block py-4">
                 <span>{item.label}</span>
               </Link>
             </li>
