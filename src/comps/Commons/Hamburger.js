@@ -19,9 +19,9 @@ const Hamburger = ({ closeHam }) => {
   };
 
   return (
-    <div className="px-6 py-2">
+    <div className="px-6 py-2 relative">
       <div
-        className={`bg-slate-50 flex ${
+        className={`bg-slate-50 z-50 flex ${
           isHamSubmenu ? "justify-between" : "justify-end"
         }`}
       >
