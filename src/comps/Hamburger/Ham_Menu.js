@@ -21,12 +21,12 @@ const Ham_Menu = ({ handleClick }) => {
                     </span>
                   )}
                 </div>
-                {item.submenu && <i className="fa fa-chevron-right" />}
+                {item.submenu && <i className="fa fa-chevron-right pe-2" />}
               </>
             ) : (
               <>
                 <span>{item.label}</span>
-                {item.submenu && <i className="fa fa-chevron-right" />}
+                {item.submenu && <i className="fa fa-chevron-right pe-2" />}
               </>
             )}
           </li>

@@ -40,7 +40,7 @@ function App() {
             path="/communication-preferences/:subscribe"
             element={<Subscribe />}
           />
-          <Route path="/Fleet" element={<Fleet />} />
+          <Route path="/fleet" element={<Fleet />} />
           <Route path="/callback" element={<Callback />} />
           <Route path="/tradein/form" element={<Tradein_Form />} />
           <Route path="/commercial" element={<Commercial />} />

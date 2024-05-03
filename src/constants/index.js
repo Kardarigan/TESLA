@@ -335,20 +335,24 @@ export const hamburgerItems = [
     label: "Vehicle",
     submenu: [
       {
-        href: "./vehicles",
-        label: "Vehicle",
+        href: "/",
+        label: "Inventory",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle",
+        href: "/",
+        label: "Used Cars",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle",
+        href: "/demo",
+        label: "Demo Drive",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle",
+        href: "/tradein",
+        label: "Trade-in",
+      },
+      {
+        href: "/fleet",
+        label: "Fleet",
       },
     ],
   },
@@ -357,20 +361,16 @@ export const hamburgerItems = [
     label: "Energy",
     submenu: [
       {
-        href: "./vehicles",
-        label: "Vehicle 2",
+        href: "/support",
+        label: "Support",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 2",
+        href: "/commercial",
+        label: "Commercial",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 2",
-      },
-      {
-        href: "./vehicles",
-        label: "Vehicle 2",
+        href: "/utilities",
+        label: "Utilities",
       },
     ],
   },
@@ -379,20 +379,20 @@ export const hamburgerItems = [
     label: "Charging",
     submenu: [
       {
-        href: "./vehicles",
-        label: "Vehicle 3",
+        href: "/",
+        label: "Charging With NACS",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 3",
+        href: "/",
+        label: "Supercharger Voting",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 3",
+        href: "/",
+        label: "Host a Supercharger",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 3",
+        href: "/",
+        label: "Host Wall Connectors",
       },
     ],
   },
@@ -401,20 +401,40 @@ export const hamburgerItems = [
     label: "Discover",
     submenu: [
       {
-        href: "./vehicles",
-        label: "Vehicle 4",
+        href: "/",
+        label: "Demo Drive",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 4",
+        href: "/",
+        label: "Customer Stories",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 4",
+        href: "/",
+        label: "Events",
       },
       {
-        href: "./vehicles",
-        label: "Vehicle 4",
+        href: "/",
+        label: "Find Us",
+      },
+      {
+        href: "/",
+        label: "Find a Collision Center",
+      },
+      {
+        href: "/",
+        label: "Find a Certified Installer",
+      },
+      {
+        href: "/",
+        label: "About",
+      },
+      {
+        href: "/",
+        label: "Careers",
+      },
+      {
+        href: "/",
+        label: "Investor Relations",
       },
     ],
   },

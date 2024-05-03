@@ -13,24 +13,28 @@ const Hamburger = ({ closeHam }) => {
   const [currentMenu, setCurrentMenu] = useState(
     <Ham_Menu handleClick={handleClick} />
   );
-
+  const isHamSubmenu = currentMenu.type === Ham_Submenu;
   const clickBack = () => {
     setCurrentMenu(<Ham_Menu handleClick={handleClick} />);
   };
 
   return (
     <div className="px-6 py-2">
-      <div className="flex justify-between">
-        {currentMenu !== <Ham_Menu /> && (
-          <button className="navitem w-[48px] text-2xl" onClick={clickBack}>
-            Back
+      <div
+        className={`bg-slate-50 flex ${
+          isHamSubmenu ? "justify-between" : "justify-end"
+        }`}
+      >
+        {isHamSubmenu && (
+          <button className="navitem w-[48px] text-xl" onClick={clickBack}>
+            <i className="fal fa-chevron-left" />
           </button>
         )}
         <button className="navitem w-[48px] text-2xl" onClick={closeHam}>
           <i className="fa-light fa-xmark" />
         </button>
       </div>
-      <div className="mt-1">{currentMenu}</div>
+      <div className="mt-2">{currentMenu}</div>
     </div>
   );
 };
