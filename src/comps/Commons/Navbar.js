@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { navLinks, navTools } from "../../constants";
 import { Dropdown, Hamburger } from "../Portal";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const Navbar = () => {
   const [navOver, setNavOver] = useState(false);
   const [hamburger, setHamburger] = useState(false);
@@ -15,10 +15,14 @@ const Navbar = () => {
     setHamburger(false);
   };
 
+  const timerRef = useRef(null);
+
   const handleMouseOver = (item) => {
     setNavOver(true);
+    if (timerRef.current) clearTimeout(timerRef.current);
+
     for (var i = 0; i < dropdown.length; i += 1) {
-      if ((dropdown[i].style.display = "none")) {
+      if (dropdown[i].style.display === "none") {
         dropdown[i].style.display = "block";
       }
     }
@@ -26,21 +30,23 @@ const Navbar = () => {
       setCurrentItem(item);
     }
   };
+
   const handleMouseOut = (event) => {
     if (!event.relatedTarget || !event.relatedTarget.closest("nav")) {
       setNavOver(false);
-      if (!navOver) {
-        const timer = setTimeout(() => {
-          for (var i = 0; i < dropdown.length; i += 1) {
-            dropdown[i].style.display = "none";
-          }
-        }, 700);
-        if (navOver) {
-          clearTimeout(timer);
+      timerRef.current = setTimeout(() => {
+        for (var i = 0; i < dropdown.length; i += 1) {
+          dropdown[i].style.display = "none";
         }
-      }
+      }, 700);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, []);
 
   return (
     <>

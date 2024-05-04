@@ -64,8 +64,11 @@ import Fleet from "../pages/Fleet";
 import Semi from "../pages/Semi";
 import Ham_Menu from "./Hamburger/Ham_Menu";
 import Ham_Submenu from "./Hamburger/Ham_Submenu";
-
+import Events from "../pages/Events";
+import Event from "../pages/Event";
 export {
+  Event,
+  Events,
   Ham_Submenu,
   Ham_Menu,
   Semi,

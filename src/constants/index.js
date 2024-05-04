@@ -303,9 +303,9 @@ export const navLinks = [
       {
         title: "Resources",
         links: [
-          { label: "Demo Drive", to: "/" },
+          { label: "Demo Drive", to: "/demo" },
           { label: "Customer Stories", to: "/" },
-          { label: "Events", to: "/" },
+          { label: "Events", to: "/events" },
         ],
       },
       {
