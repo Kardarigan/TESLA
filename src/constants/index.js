@@ -3066,3 +3066,52 @@ export const semi = {
       '*Based on average diesel prices in California between February 2022–July 2022 and typical electric rates. <br /><br /> Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. <a href="/" class="link"> Learn more about Standard Connectivity and any limitations </a> .',
   },
 };
+
+export const events = [
+  {
+    title: "Experience Tesla with T-Mobile in South County",
+    link: "/",
+    date: "May 17, 2024",
+    location: "St. Louis, Missouri",
+    preview: "Experience Tesla starting with a demo drive.",
+  },
+  {
+    title: "Experience Tesla at Clean Commute Expo",
+    link: "/",
+    date: "May 4–5, 2024",
+    location: "Toronto, Canada",
+    preview:
+      "Experience Tesla starting with a demo drive at Clean Commute Expo.",
+  },
+
+  {
+    title: "Experience Tesla at Sertoma Park",
+    link: "/",
+    date: "May 7, 2024",
+    location: "Sioux City, Iowa",
+    preview: "Experience Tesla starting with a demo drive.",
+  },
+  {
+    title: "You're Invited—Tesla Buffalo Grand Opening",
+    link: "/",
+    date: "Apr 22, 2024",
+    location: "Buffalo, New York",
+    preview:
+      "Join us on April 22 from 10 AM to 2 PM for the grand opening of our new Buffalo, NY Location.",
+  },
+  {
+    title: "Get To Know Your Energy System (Prerecorded)",
+    link: "/",
+    date: "Jun 19, 2023–Jun 1, 2024",
+    preview:
+      "Sign up to receive a link to watch this prerecorded session to learn about operating, managing and monitoring your energy system.",
+  },
+  {
+    title: "Discover Dog Mode at Tesla Plano-Legacy West",
+    link: "/",
+    date: "May 11, 2024",
+    location: "Plano, Texas",
+    preview:
+      "You and your furry friend are invited to join us for a demonstration of Dog Mode at Tesla Plano-Legacy West.",
+  },
+];
