@@ -7,15 +7,15 @@ const Events = () => {
   return (
     <>
       <div
-        className="h-96 bg-fullcenter md:text-4xl text-2xl flex items-center padding-cont"
+        className="h-96 bg-fullcenter md:text-4xl text-2xl flex items-center ps-[6vw]"
         style={{ backgroundImage: "url(" + Background + ")" }}
       >
         <h1>Events</h1>
       </div>
       <section className="pagecenter-x flex justify-between max-md:flex-col-reverse pb-40">
         <div className="md:w-7/12">
-          <h2 className="title mb-2 max-sm:hidden">Near Chicago, Illinois</h2>
-          <p className="text-sm text-slate-200">
+          <h2 className="title mb-2 max-md:hidden">Near Chicago, Illinois</h2>
+          <p className="text-sm text-slate-200 mt-5">
             Can't find an event you're looking for?{" "}
             <Link to="/" className="link">
               Receive notifications for future events.
@@ -50,7 +50,7 @@ const Events = () => {
           </div>
         </div>
         <div className="md:w-4/12">
-          <h2 className="mb-2 sm:hidden">Near Chicago, Illinois</h2>
+          <h2 className="mb-2 md:hidden">Near Chicago, Illinois</h2>
           <Field
             icon="fa-magnifying-glass"
             id="location"
