@@ -3074,6 +3074,15 @@ export const events = [
     date: "May 17, 2024",
     location: "St. Louis, Missouri",
     preview: "Experience Tesla starting with a demo drive.",
+    overview:
+      "Experience Tesla starting with a demo drive.<br/><br/>Schedule your demo drive appointment and a Tesla Advisor will be available to answer any questions when you arrive. Experience one of the safest cars in the world with the latest active safety and convenience features, or learn more about easy home charging.<br/><br/>Please RSVP and a Tesla representative will confirm details. See expo website for hours.",
+    schedule: "May 17, 2024 @ 1 PM - 5 PM",
+    location: [
+      "Tesla - South County",
+      "5711 South Lindbergh Boulevard",
+      "St. Louis, Missouri",
+      "63123, United States",
+    ],
   },
   {
     title: "Experience Tesla at Clean Commute Expo",
@@ -3082,14 +3091,31 @@ export const events = [
     location: "Toronto, Canada",
     preview:
       "Experience Tesla starting with a demo drive at Clean Commute Expo.",
+    overview:
+      "Experience Tesla starting with a demo drive.<br/><br/>Schedule your demo drive appointment and a Tesla Advisor will be available to answer any questions when you arrive. Experience one of the safest cars in the world with the latest active safety and convenience features, or learn more about easy home charging.<br/><br/>Please RSVP and a Tesla representative will confirm details. See expo website for hours.",
+    schedule: "May 17, 2024 @ 1 PM - 5 PM",
+    location: [
+      "Tesla - South County",
+      "5711 South Lindbergh Boulevard",
+      "St. Louis, Missouri",
+      "63123, United States",
+    ],
   },
-
   {
     title: "Experience Tesla at Sertoma Park",
     link: "/events/Experience Tesla at Sertoma Park",
     date: "May 7, 2024",
     location: "Sioux City, Iowa",
     preview: "Experience Tesla starting with a demo drive.",
+    overview:
+      "Experience Tesla starting with a demo drive.<br/><br/>Schedule your demo drive appointment and a Tesla Advisor will be available to answer any questions when you arrive. Experience one of the safest cars in the world with the latest active safety and convenience features, or learn more about easy home charging.<br/><br/>Please RSVP and a Tesla representative will confirm details. See expo website for hours.",
+    schedule: "May 17, 2024 @ 1 PM - 5 PM",
+    location: [
+      "Tesla - South County",
+      "5711 South Lindbergh Boulevard",
+      "St. Louis, Missouri",
+      "63123, United States",
+    ],
   },
   {
     title: "You're Invited—Tesla Buffalo Grand Opening",
@@ -3098,21 +3124,15 @@ export const events = [
     location: "Buffalo, New York",
     preview:
       "Join us on April 22 from 10 AM to 2 PM for the grand opening of our new Buffalo, NY Location.",
-  },
-  {
-    title: "Get To Know Your Energy System (Prerecorded)",
-    link: "/events/Get To Know Your Energy System (Prerecorded)",
-    date: "Jun 19, 2023–Jun 1, 2024",
-    preview:
-      "Sign up to receive a link to watch this prerecorded session to learn about operating, managing and monitoring your energy system.",
-  },
-  {
-    title: "Discover Dog Mode at Tesla Plano-Legacy West",
-    link: "/events/Discover Dog Mode at Tesla Plano-Legacy West",
-    date: "May 11, 2024",
-    location: "Plano, Texas",
-    preview:
-      "You and your furry friend are invited to join us for a demonstration of Dog Mode at Tesla Plano-Legacy West.",
+    overview:
+      "Experience Tesla starting with a demo drive.<br/><br/>Schedule your demo drive appointment and a Tesla Advisor will be available to answer any questions when you arrive. Experience one of the safest cars in the world with the latest active safety and convenience features, or learn more about easy home charging.<br/><br/>Please RSVP and a Tesla representative will confirm details. See expo website for hours.",
+    schedule: "May 17, 2024 @ 1 PM - 5 PM",
+    location: [
+      "Tesla - South County",
+      "5711 South Lindbergh Boulevard",
+      "St. Louis, Missouri",
+      "63123, United States",
+    ],
   },
 ];
 

@@ -17,8 +17,15 @@ const Event = () => {
         style={{ backgroundImage: "url(" + Background + ")" }}
       ></div>
       <section className="pagecenter-x pb-40">
-        <div className="flex justify-between max-md:flex-col-reverse">
-          <form className="md:w-2/6 grid gap-8">
+        <Link to="/events" className="group">
+          <i className="fal fa-chevron-left transition-all group-hover:translate-x-[-5px]" />{" "}
+          Events
+        </Link>
+        <h1 className="md:text-4xl sm:text-2xl text-xl mt-2">
+          {theEvent.title}
+        </h1>
+        <div className="flex justify-between max-md:flex-col-reverse mt-8">
+          <form className="md:w-2/6 grid gap-8 max-md:mt-10">
             <h4 className="title">Sign Up</h4>
             <div className="grid gap-y-3">
               <Many_Fields fields={singUpForm} />
@@ -53,8 +60,34 @@ const Event = () => {
               Submit
             </button>
           </form>
-          <div className="md:w-3/6">
-            <h2 className="mb-2 md:hidden">Near Chicago, Illinois</h2>
+          <div className="md:w-3/6 flex flex-col gap-y-6">
+            <div>
+              <h3 className="mb-2 title">Overview</h3>
+              <p
+                className="text-slate-200"
+                dangerouslySetInnerHTML={{ __html: theEvent.overview }}
+              ></p>
+            </div>
+            <div>
+              <h3 className="mb-2 title">Schedule</h3>
+              <p className="text-slate-200">{theEvent.schedule}</p>
+            </div>
+            <div>
+              <h3 className="mb-2 title">Location</h3>
+              <p className="text-slate-200">
+                {theEvent.location.map((item) => {
+                  return (
+                    <>
+                      {item}
+                      <br />
+                    </>
+                  );
+                })}
+              </p>
+            </div>
+            <Link to="/" className="link">
+              Get Directions
+            </Link>
           </div>
         </div>
       </section>
