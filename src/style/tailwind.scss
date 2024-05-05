@@ -87,6 +87,9 @@
     @apply md:px-16 px-8 md:py-24 py-12;
   }
 
+  .padding-cont {
+    @apply md:px-36 px-12;
+  }
   .padding-x {
     @apply sm:px-16 px-8;
   }
@@ -116,6 +119,9 @@
   }
   .pagecenter {
     @apply max-w-[800px] mx-auto pt-32 padding-x;
+    &-x {
+      @apply max-w-[1100px] mx-auto pt-32 padding-x;
+    }
   }
   .size-screen {
     @apply w-screen h-screen;

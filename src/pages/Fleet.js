@@ -44,7 +44,7 @@ const Fleet = () => {
         </Fadein>
       </section>
       <Free_slider prod={fleet.charge} dark />
-      <section className="max-w-[1100px] mx-auto padding">
+      <section className="pagecenter-x">
         {fleet.section.map((item, index) => {
           return (
             <div className="py-8">

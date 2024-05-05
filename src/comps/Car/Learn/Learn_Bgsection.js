@@ -27,7 +27,7 @@ const Learn_Bgsection = ({ car, seperate = false }) => {
             />
           )}
           <div className="absolute padding-x">
-            <div className="max-w-[1100px] gap-x-9 mx-auto mt-8 flex max-md:flex-col">
+            <div className="gap-x-9 pagecenter-x flex max-md:flex-col">
               <h3 className="title min-w-48">{car.title}</h3>
               <p className="md:mt-[10px] mt-5">{car.describe}</p>
             </div>
@@ -39,7 +39,7 @@ const Learn_Bgsection = ({ car, seperate = false }) => {
           style={{ backgroundImage: "url(" + car.cover + ")" }}
         >
           <div className="absolute padding-x">
-            <div className="max-w-[1100px] gap-x-9 mx-auto flex max-md:flex-col">
+            <div className="gap-x-9 pagecenter-x-md:flex-col">
               <h3 className="title min-w-48">{car.title}</h3>
               <p className="md:mt-[10px] mt-5">{car.describe}</p>
             </div>

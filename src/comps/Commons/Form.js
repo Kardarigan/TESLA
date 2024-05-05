@@ -5,7 +5,7 @@ import Many_Fields from "./Many_Fields";
 const Form = ({ title = null, describe = null, form }) => {
   return (
     <section className="padding-x padding-t pb-32">
-      <div className="mx-auto max-w-[1000px] flex md:gap-x-24 max-md:flex-col">
+      <div className="pagecenter-x flex md:gap-x-24 max-md:flex-col">
         <div className="md:w-3/5 pb-3">
           <h2 className="title">{title}</h2>
           {describe && <p className="mt-4">{describe}</p>}
