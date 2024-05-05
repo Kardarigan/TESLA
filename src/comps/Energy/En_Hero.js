@@ -8,6 +8,7 @@ const En_Hero = ({
   get,
   dark = false,
   contact = false,
+  customLinkLabel = false,
 }) => {
   const hasButton = get || contact;
   return (
@@ -36,41 +37,51 @@ const En_Hero = ({
             {subtitle && <h6>{subtitle}</h6>}
           </div>
           <div>
-            <div
-              className={`grid ${
-                hasButton && "lg:grid-cols-4"
-              } grid-cols-3 gap-x-5`}
-            >
-              {prod.heroAbilities.map((item, index) => {
-                return (
-                  <div className="text-center" key={index}>
-                    {item.icon ? (
-                      <i className={item.icon + " md:text-3xl text-xl"} />
-                    ) : (
-                      <h3 className="md:text-3xl text-xl">{item.title}</h3>
-                    )}
-                    <h6 className="md:text-base text-xs mt-2">
-                      {item.describe}
-                    </h6>
+            {prod.heroAbilities && (
+              <div
+                className={`grid ${
+                  hasButton && "lg:grid-cols-4"
+                } grid-cols-3 gap-x-5`}
+              >
+                {prod.heroAbilities.map((item, index) => {
+                  return (
+                    <div className="text-center" key={index}>
+                      {item.icon ? (
+                        <i className={item.icon + " md:text-3xl text-xl"} />
+                      ) : (
+                        <h3 className="md:text-3xl text-xl">{item.title}</h3>
+                      )}
+                      <h6 className="md:text-base text-xs mt-2">
+                        {item.describe}
+                      </h6>
+                    </div>
+                  );
+                })}
+                {hasButton && (
+                  <div className="lg:block hidden pt-3">
+                    <Button
+                      label={contact ? "Contact Us" : "Get " + title}
+                      to={get}
+                      outline={dark ? "dark" : "light"}
+                    />
                   </div>
-                );
-              })}
-              {hasButton && (
-                <div className="lg:block hidden pt-3">
-                  <Button
-                    label={contact ? "Contact Us" : "Get " + title}
-                    to={get}
-                    outline={dark ? "dark" : "light"}
-                  />
-                </div>
-              )}
-            </div>
+                )}
+              </div>
+            )}
             {hasButton && (
               <Button
-                label={contact ? "Contact Us" : "Get " + title}
+                label={
+                  contact
+                    ? "Contact Us"
+                    : customLinkLabel
+                    ? customLinkLabel
+                    : "Get " + title
+                }
                 to={get}
                 outline={dark ? "dark" : "light"}
-                customClass="lg:hidden block mt-7 mx-auto"
+                customClass={`${
+                  prod.heroAbilities && "lg:hidden"
+                } block mt-7 mx-auto`}
               />
             )}
           </div>

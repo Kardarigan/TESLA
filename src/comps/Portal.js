@@ -66,7 +66,14 @@ import Ham_Menu from "./Hamburger/Ham_Menu";
 import Ham_Submenu from "./Hamburger/Ham_Submenu";
 import Events from "../pages/Events";
 import Event from "../pages/Event";
+import Charging from "../pages/Charging";
+import Home_Charging from "../pages/Home_Charging";
+import Supercharging from "../pages/Supercharging";
+
 export {
+  Charging,
+  Home_Charging,
+  Supercharging,
   Event,
   Events,
   Ham_Submenu,

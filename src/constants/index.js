@@ -166,6 +166,9 @@ import Semi_Range from "../assets/Single/Semi/Semi-Range-Desktop-Global.webm";
 import Semi_Owner from "../assets/Single/Semi/Semi-Ownership-Desktop-Global.jpg";
 import Semi_Specs from "../assets/Single/Semi/Semi-Specs-Desktop-Global.avif";
 
+import Charging_Hero_Poster from "../assets/Charging/Charging-Main-Hero-Poster-Desktop.avif";
+import Charging_Hero_Video from "../assets/Charging/Charging-Main-Hero-Desktop-NA-JP-KR-2800x1800.mp4";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -275,7 +278,7 @@ export const navLinks = [
         cover: Nav_Home_Charging,
         title: "Home Charging",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/home-charging" },
           { label: "Shop", to: "/" },
         ],
       },
@@ -283,7 +286,7 @@ export const navLinks = [
         cover: Nav_Supercharging,
         title: "Supercharging",
         links: [
-          { label: "Learn", to: "/" },
+          { label: "Learn", to: "/supercharging" },
           { label: "Find", to: "/" },
         ],
       },
@@ -467,7 +470,7 @@ export const hamburgerItems = [
           cover: Nav_Home_Charging,
           title: "Home Charging",
           links: [
-            { label: "Learn", to: "/" },
+            { label: "Learn", to: "/home-charging" },
             { label: "Shop", to: "/" },
           ],
         },
@@ -475,7 +478,7 @@ export const hamburgerItems = [
           cover: Nav_Supercharging,
           title: "Supercharging",
           links: [
-            { label: "Learn", to: "/" },
+            { label: "Learn", to: "/supercharging" },
             { label: "Find", to: "/" },
           ],
         },
@@ -3171,3 +3174,8 @@ export const singUpForm = [
     type: "text",
   },
 ];
+
+export const charging = {
+  heroCover: Charging_Hero_Poster,
+  heroVideo: Charging_Hero_Video,
+};

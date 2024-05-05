@@ -20,6 +20,9 @@ import {
   Semi,
   Events,
   Event,
+  Charging,
+  Home_Charging,
+  Supercharging,
 } from "./comps/Portal";
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
           <Route path=":model" element={<Learn />} />
           <Route path="/events" element={<Events />} />
           <Route path="/events/:event" element={<Event />} />
+          <Route path="/charging" element={<Charging />} />
+          <Route path="/home-charging" element={<Home_Charging />} />
+          <Route path="/supercharging" element={<Supercharging />} />
           <Route path="/Semi" element={<Semi />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
