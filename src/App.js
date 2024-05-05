@@ -32,7 +32,7 @@ function App() {
           <Route path=":model/order" element={<Order />} />
           <Route path=":model" element={<Learn />} />
           <Route path="/events" element={<Events />} />
-          <Route path=":events" element={<Event />} />
+          <Route path="/events/:event" element={<Event />} />
           <Route path="/Semi" element={<Semi />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />

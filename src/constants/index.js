@@ -3070,14 +3070,14 @@ export const semi = {
 export const events = [
   {
     title: "Experience Tesla with T-Mobile in South County",
-    link: "/",
+    link: "/events/Experience Tesla with T-Mobile in South County",
     date: "May 17, 2024",
     location: "St. Louis, Missouri",
     preview: "Experience Tesla starting with a demo drive.",
   },
   {
     title: "Experience Tesla at Clean Commute Expo",
-    link: "/",
+    link: "/events/Experience Tesla at Clean Commute Expo",
     date: "May 4–5, 2024",
     location: "Toronto, Canada",
     preview:
@@ -3086,14 +3086,14 @@ export const events = [
 
   {
     title: "Experience Tesla at Sertoma Park",
-    link: "/",
+    link: "/events/Experience Tesla at Sertoma Park",
     date: "May 7, 2024",
     location: "Sioux City, Iowa",
     preview: "Experience Tesla starting with a demo drive.",
   },
   {
     title: "You're Invited—Tesla Buffalo Grand Opening",
-    link: "/",
+    link: "/events/You're Invited—Tesla Buffalo Grand Opening",
     date: "Apr 22, 2024",
     location: "Buffalo, New York",
     preview:
@@ -3101,17 +3101,53 @@ export const events = [
   },
   {
     title: "Get To Know Your Energy System (Prerecorded)",
-    link: "/",
+    link: "/events/Get To Know Your Energy System (Prerecorded)",
     date: "Jun 19, 2023–Jun 1, 2024",
     preview:
       "Sign up to receive a link to watch this prerecorded session to learn about operating, managing and monitoring your energy system.",
   },
   {
     title: "Discover Dog Mode at Tesla Plano-Legacy West",
-    link: "/",
+    link: "/events/Discover Dog Mode at Tesla Plano-Legacy West",
     date: "May 11, 2024",
     location: "Plano, Texas",
     preview:
       "You and your furry friend are invited to join us for a demonstration of Dog Mode at Tesla Plano-Legacy West.",
+  },
+];
+
+export const singUpForm = [
+  {
+    label: "First Name",
+    type: "text",
+  },
+  {
+    label: "Last Name",
+    type: "text",
+  },
+  {
+    label: "Phone Number",
+    type: "tel",
+  },
+  {
+    label: "Email",
+    type: "email",
+  },
+  {
+    label: "Country",
+    type: "select",
+    options: [
+      "- Select country -",
+      "USA",
+      "Canada",
+      "UK",
+      "Germany",
+      "Australia",
+      "Netherlands",
+    ],
+  },
+  {
+    label: "Postal Code",
+    type: "text",
   },
 ];

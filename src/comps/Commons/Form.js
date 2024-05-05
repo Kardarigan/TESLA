@@ -19,12 +19,15 @@ const Form = ({ title = null, describe = null, form }) => {
           </button>
           <div className="mt-8 text-center px-5 text-xs text-slate-200">
             <p>
-              By clicking "Submit", I authorize Tesla to contact me about this
-              request via the contact information I provide. I understand calls
-              or texts may use automatic or computer-assisted dialing or
+              div By clicking "Submit", I authorize Tesla to contact me about
+              this request via the contact information I provide. I understand
+              calls or texts may use automatic or computer-assisted dialing or
               pre-recorded messages. Normal message and data rates apply. I can
               opt out at any time in the Tesla app or by{" "}
-              <Link to="/communication-preferences/unsubscribe">
+              <Link
+                to="/communication-preferences/unsubscribe"
+                className="link"
+              >
                 unsubscribing
               </Link>
               . This consent is not required to complete your request.

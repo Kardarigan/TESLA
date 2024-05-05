@@ -17,7 +17,7 @@ const Events = () => {
           <h2 className="title mb-2 max-md:hidden">Near Chicago, Illinois</h2>
           <p className="text-sm text-slate-200 mt-5">
             Can't find an event you're looking for?{" "}
-            <Link to="/" className="link">
+            <Link to="/communication-preferences/subscribe" className="link">
               Receive notifications for future events.
             </Link>
           </p>
