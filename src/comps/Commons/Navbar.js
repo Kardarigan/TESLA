@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="absolute w-full z-50" onClick={handleMouseOut}>
+      <header className="absolute w-full z-50">
         <nav
           className={`padding-x py-3 w-full z-10 flex-seperate text-slate-50 relative shadowFromTop transition-all ${
             navOver && "text-slate-950"
@@ -82,6 +82,7 @@ const Navbar = () => {
                         handleMouseOver(item);
                         setCurrentItem(item);
                       }}
+                      onClick={handleMouseOut}
                     >
                       {item.label}
                     </Link>
@@ -97,6 +98,7 @@ const Navbar = () => {
                           }
                           links={currentItem.links}
                           discover
+                          handleClick={handleMouseOut}
                         />
                       ) : (
                         <Dropdown
@@ -107,6 +109,7 @@ const Navbar = () => {
                           }
                           prods={currentItem.products}
                           links={currentItem.links}
+                          handleClick={handleMouseOut}
                         />
                       ))}
                   </div>

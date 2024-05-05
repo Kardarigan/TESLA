@@ -5,6 +5,7 @@ const Dropdown = ({
   links = [],
   discover = false,
   className = null,
+  handleClick,
 }) => {
   return (
     <section
@@ -24,6 +25,7 @@ const Dropdown = ({
                       <Link
                         className="hover:underline hover:decoration-2"
                         to={link.to}
+                        onClick={handleClick}
                       >
                         {link.label}
                       </Link>
@@ -40,7 +42,7 @@ const Dropdown = ({
                 return (
                   <div key={index} className="text-center">
                     <div className="flex justify-center">
-                      <Link to={item.links[0].to}>
+                      <Link to={item.links[0].to} onClick={handleClick}>
                         <img
                           src={item.cover}
                           alt={item.title}
@@ -56,6 +58,7 @@ const Dropdown = ({
                             to={link.to}
                             key={index}
                             className={`link ${index != 0 && "ms-1"}`}
+                            onClick={handleClick}
                           >
                             {link.label}
                           </Link>
@@ -73,6 +76,7 @@ const Dropdown = ({
                     <Link
                       to={link.to}
                       className="hover:underline hover:decoration-2"
+                      onClick={handleClick}
                     >
                       {link.label}
                     </Link>
