@@ -171,6 +171,10 @@ import Charging_Hero_Video from "../assets/Charging/Charging-Main-Hero-Desktop-N
 import Charging_Plugin_1 from "../assets/Charging/Charging-Carousel-1-Sleep-Desktop.avif";
 import Charging_Plugin_2 from "../assets/Charging/Charging-Carousel-1-Daily-Life-Desktop.avif";
 import Charging_Plugin_3 from "../assets/Charging/Charging-Carousel-1-Road-Trip-Desktop.avif";
+import Charging_Freedom_Cover from "../assets/Charging/Charging-Largest-Network-Desktop.avif";
+import Charging_Destination_1 from "../assets/Charging/Charging-Carousel-2-Battery-Desktop-LHD.jpg";
+import Charging_Destination_2 from "../assets/Charging/Charging-Carousel-2-Optimize-Desktop-LHD.jpg";
+import Charging_Destination_3 from "../assets/Charging/Charging-Carousel-2-Recommend-Desktop-LHD.jpg";
 
 export const navLinks = [
   {
@@ -3204,4 +3208,30 @@ export const charging = {
       },
     ],
   },
+  freedomCover: Charging_Freedom_Cover,
+  freedomLinks: [
+    { to: "/", label: "Find Us" },
+    { to: "/", label: "Learn More" },
+  ],
+  destination: [
+    {
+      title: "Optimizes Route",
+      describe: "Finds the best route to avoid traffic and charge if needed.",
+      cover: Charging_Destination_1,
+      duration: 15000,
+    },
+    {
+      title: "Measures Battery",
+      describe:
+        "Gives real-time battery estimates based on your driving style.",
+      cover: Charging_Destination_2,
+      duration: 15000,
+    },
+    {
+      title: "Recommends Chargers",
+      describe: "Offers charging location recommendations along your route.",
+      cover: Charging_Destination_3,
+      duration: 15000,
+    },
+  ],
 };

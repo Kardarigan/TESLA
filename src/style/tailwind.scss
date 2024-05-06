@@ -92,6 +92,9 @@
   .padding {
     @apply md:px-16 px-8 md:py-24 py-12;
   }
+  .padding-container {
+    @apply lg:px-24 sm:px-16 px-8;
+  }
   .padding-x {
     @apply sm:px-16 px-8;
   }

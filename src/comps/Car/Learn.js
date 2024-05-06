@@ -108,7 +108,7 @@ const Learn = () => {
             inventoryLink={car.inventoryLink}
             light
           />
-          <Free_slider prod={car.autoPilot.features.items} customClass="Auto" />
+          <Free_slider prod={car.autoPilot.features.items} />
           <Learn_Safety car={car} />
         </>
       )}
