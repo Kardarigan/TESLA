@@ -69,8 +69,9 @@ import Event from "../pages/Event";
 import Charging from "../pages/Charging";
 import Home_Charging from "../pages/Home_Charging";
 import Supercharging from "../pages/Supercharging";
-
+import Charg_Three from "./Charg/Charg_Three";
 export {
+  Charg_Three,
   Charging,
   Home_Charging,
   Supercharging,

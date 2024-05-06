@@ -27,7 +27,7 @@ const Events = () => {
                 return (
                   <div key={index}>
                     <Link to={item.link} className="group">
-                      <h3 className="md:text-xl text-lg">
+                      <h3 className="title-sm">
                         {item.title}
                         <i className="fal fa-chevron-right text-sm ps-3 transition-all group-hover:ps-4" />
                       </h3>

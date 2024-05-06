@@ -168,6 +168,9 @@ import Semi_Specs from "../assets/Single/Semi/Semi-Specs-Desktop-Global.avif";
 
 import Charging_Hero_Poster from "../assets/Charging/Charging-Main-Hero-Poster-Desktop.avif";
 import Charging_Hero_Video from "../assets/Charging/Charging-Main-Hero-Desktop-NA-JP-KR-2800x1800.mp4";
+import Charging_Plugin_1 from "../assets/Charging/Charging-Carousel-1-Sleep-Desktop.avif";
+import Charging_Plugin_2 from "../assets/Charging/Charging-Carousel-1-Daily-Life-Desktop.avif";
+import Charging_Plugin_3 from "../assets/Charging/Charging-Carousel-1-Road-Trip-Desktop.avif";
 
 export const navLinks = [
   {
@@ -3178,4 +3181,27 @@ export const singUpForm = [
 export const charging = {
   heroCover: Charging_Hero_Poster,
   heroVideo: Charging_Hero_Video,
+  plugin: {
+    title: "Plug In, Charge and Go",
+    subtitle:
+      "With plenty of range for both daily drives and road trips, Tesla vehicles get you where you want to go. Charging is fast, convenient and available anywhere with electricity.",
+    grids: [
+      {
+        cover: Charging_Plugin_1,
+        title: "While You Sleep",
+        describe: "Plug in at home or at nearby public chargers.",
+      },
+      {
+        cover: Charging_Plugin_2,
+        title: "During the Day",
+        describe: "Charge at a local Supercharger or at your workplace.",
+      },
+      {
+        cover: Charging_Plugin_3,
+        title: "On Road Trips",
+        describe:
+          "Recharge at Superchargers on the way or at your destination.",
+      },
+    ],
+  },
 };

@@ -60,6 +60,12 @@
   }
   .title {
     @apply md:text-3xl text-xl font-bold;
+    &-sm {
+      @apply md:text-xl text-lg font-bold;
+    }
+  }
+  .para {
+    @apply md:text-sm text-xs;
   }
   .field {
     @apply bg-slate-700 text-slate-200 border-0 text-sm rounded transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full px-3;
