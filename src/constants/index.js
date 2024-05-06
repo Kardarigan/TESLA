@@ -176,6 +176,14 @@ import Charging_Destination_1 from "../assets/Charging/Charging-Carousel-2-Batte
 import Charging_Destination_2 from "../assets/Charging/Charging-Carousel-2-Optimize-Desktop-LHD.jpg";
 import Charging_Destination_3 from "../assets/Charging/Charging-Carousel-2-Recommend-Desktop-LHD.jpg";
 
+import Homecharg_Hero from "../assets/HomeCharging/home-charging-hero-desktop.avif";
+import Homecharg_Way_1 from "../assets/HomeCharging/home-charging-mobile-connector-desktop.avif";
+import Homecharg_Way_2 from "../assets/HomeCharging/home-charging-wall-connector-desktop.avif";
+import Homecharg_Way_3 from "../assets/HomeCharging/home-charging-universal-desktop.avif";
+import Homecharg_Middle_1 from "../assets/HomeCharging/home-charging-charge-anytime-desktop.avif";
+import Homecharg_Middle_2 from "../assets/HomeCharging/home-charging-fast-flexible-desktop.avif";
+import Homecharg_Middle_3 from "../assets/HomeCharging/home-charging-energize-savings-desktop.avif";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -3232,6 +3240,89 @@ export const charging = {
       describe: "Offers charging location recommendations along your route.",
       cover: Charging_Destination_3,
       duration: 15000,
+    },
+  ],
+};
+
+export const homeCharging = {
+  heroCover: Homecharg_Hero,
+  heroAbilities: [
+    {
+      icon: "fa-light fa-apartment",
+      describe: "Tesla Certified Installers in North America",
+    },
+    {
+      title: "1,400+",
+      describe: "Designed for Any Property",
+    },
+    {
+      icon: "fa-light fa-timer",
+      describe: "Charge Anytime",
+    },
+  ],
+  ways: {
+    title: "Three Ways to Charge at Home",
+    button: {
+      to: "/",
+      label: "Compare Products",
+    },
+    grids: [
+      {
+        cover: Homecharg_Way_1,
+        title: "Mobile Connector",
+        describe:
+          "Portable and convenient, charge your Tesla vehicle wherever you are. Mobile Connector adds up to 4.8 kilometers of range per hour (or 1.3 kW) on standard household outlets or up to 48.2 kilometers (or 7.6 kW) on a 240 V outlet.",
+        link: {
+          to: "/",
+          label: "Compare Products",
+        },
+      },
+      {
+        cover: Homecharg_Way_2,
+        title: "Wall Connector",
+        describe:
+          "A faster and Wi-Fi enabled option for your Tesla vehicle, Wall Connector receives over-the-air updates so the charger becomes better over time. Wall Connector adds up to 71 kilometers of range per hour (or 11.5 kW). Installation is required.",
+        link: {
+          to: "/",
+          label: "Compare Products",
+        },
+      },
+      {
+        cover: Homecharg_Way_3,
+        title: "Universal Wall Connector",
+        describe:
+          "With the same speed, power and functionality as Wall Connector, Universal Wall Connector is compatible with Tesla vehicles and non-Tesla EVs. Universal Wall Connector adds up to 71 kilometers of range per hour (or 11.5 kW). Installation is required.",
+        link: {
+          to: "/",
+          label: "Compare Products",
+        },
+      },
+    ],
+  },
+  middles: [
+    {
+      cover: Homecharg_Middle_1,
+      topic: "Convenience",
+      title: "Charge Anytime",
+      describe:
+        "Wall Connector is our fastest way to charge your electric vehicle, whether a Tesla or non-Tesla, at home. For homes with more than one electric vehicle, multiple Wall Connectors can manage power output to meet charging needs. And with Wi-Fi connectivity, you'll always have access to the latest charging features and over-the-air updates.",
+      learnLink: "/",
+    },
+    {
+      cover: Homecharg_Middle_2,
+      topic: "Installation",
+      title: "Fast and Flexible",
+      describe:
+        "Wall Connector is designed for houses, apartments, condos and workplaces. The lightweight design allows for versatile, indoor or outdoor mounting that adapts to a range of electrical systems. Work with your own electrician or connect with a Tesla Certified Installer to install a Wall Connector in your home.",
+      learnLink: "/",
+    },
+    {
+      cover: Homecharg_Middle_3,
+      topic: "Cost of Ownership",
+      title: "Energize Your Savings",
+      describe:
+        "Charging at home allows you to take full advantage of low, overnight utility pricing by utilizing the 'Scheduled Departure' feature in your vehicle or charging controls in the Tesla app. Make a one-time investment in a Wall Connector or Mobile Connector to lock in potential energy savings for years to come.",
+      learnLink: "/",
     },
   ],
 };

@@ -12,7 +12,7 @@ const Charg_Three = ({ thing }) => {
           <Button to={thing.button.to} label={thing.button.label} />
         ) : null}
       </div>
-      <div className="grid md:grid-cols-3 gap-5">
+      <div className="grid lg:grid-cols-3 gap-5">
         {thing.grids.map((item, index) => {
           return (
             <div key={index} className="text-start">
@@ -25,8 +25,8 @@ const Charg_Three = ({ thing }) => {
                 <h3 className="title-sm">{item.title}</h3>
                 <p className="para">{item.describe}</p>
                 {item.link && (
-                  <Link className="link" to={item.link}>
-                    {item.label}
+                  <Link className="link block para" to={item.link.to}>
+                    {item.link.label}
                   </Link>
                 )}
               </div>

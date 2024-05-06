@@ -36,7 +36,7 @@ const En_Hero = ({
             <h1>{title}</h1>
             {subtitle && <h6>{subtitle}</h6>}
           </div>
-          <div>
+          <div className="max-w-[900px]">
             {prod.heroAbilities && (
               <div
                 className={`grid ${
@@ -49,9 +49,9 @@ const En_Hero = ({
                       {item.icon ? (
                         <i className={item.icon + " md:text-3xl text-xl"} />
                       ) : (
-                        <h3 className="md:text-3xl text-xl">{item.title}</h3>
+                        <h3 className="md:text-xl text-lg">{item.title}</h3>
                       )}
-                      <h6 className="md:text-base text-xs mt-2">
+                      <h6 className="md:text-sm text-xs mt-2">
                         {item.describe}
                       </h6>
                     </div>
@@ -60,7 +60,13 @@ const En_Hero = ({
                 {hasButton && (
                   <div className="lg:block hidden pt-3">
                     <Button
-                      label={contact ? "Contact Us" : "Get " + title}
+                      label={
+                        contact
+                          ? "Contact Us"
+                          : customLinkLabel
+                          ? customLinkLabel
+                          : "Get " + title
+                      }
                       to={get}
                       outline={dark ? "dark" : "light"}
                     />
