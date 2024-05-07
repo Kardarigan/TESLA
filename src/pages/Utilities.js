@@ -19,11 +19,12 @@ const Utilities = () => {
         cover={utilities.overview.cover}
       />
       <Middle_Image
-        topic="Overview"
+        topic="Hardware"
         title={utilities.hardware.title}
         describe={utilities.hardware.describe}
         cover={utilities.hardware.cover}
-        learnLink={utilities.learnLink}
+        link={utilities.learnLink}
+        label="Learn More"
         numbers={utilities.hardware.numbers}
         darkNumbers
         right

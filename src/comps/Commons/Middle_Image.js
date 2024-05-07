@@ -5,14 +5,13 @@ const Middle_Image = ({
   title,
   cover,
   describe,
-  learnLink = false,
-  orderLink = false,
-  inventoryLink = false,
-  contact = false,
+  link = false,
+  label = false,
+  link2nd = false,
+  label2nd = false,
   numbers = false,
   darkNumbers = false,
   right = false,
-  pw = false,
 }) => {
   return (
     <section
@@ -28,38 +27,22 @@ const Middle_Image = ({
             <p className="mt-4">{describe}</p>
           </div>
           <div>
-            {learnLink && (
+            {(link && (
               <Button
-                to={learnLink}
-                label="Learn More"
+                to={link}
+                label={label}
                 outline="dark"
                 customClass="w-full mt-24 mb-3"
               />
-            )}
-            {orderLink && (
-              <Button
-                to={orderLink}
-                label={pw ? "Get Powerwall" : "Order Now"}
-                outline="dark"
-                customClass="w-full mt-24 mb-3"
-              />
-            )}
-            {inventoryLink && (
-              <Button
-                to={inventoryLink}
-                label="View Inventory"
-                light
-                customClass="w-full mt-24 mb-3"
-              />
-            )}
-            {contact && (
-              <Button
-                to="/callback"
-                label="Contact"
-                light
-                customClass="w-full mt-24 mb-3"
-              />
-            )}
+            )) ||
+              (link2nd && (
+                <Button
+                  to={link2nd}
+                  label={label2nd}
+                  outline="dark"
+                  customClass="w-full"
+                />
+              ))}
           </div>
         </div>
       </div>

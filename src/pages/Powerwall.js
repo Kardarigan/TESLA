@@ -45,8 +45,9 @@ const Powerwall = () => {
         cover={powerwall.design.cover}
         describe={powerwall.design.describe}
         orderLink={powerwall.getLink}
+        link={powerwall.getLink}
+        label="Get Powerwall"
         numbers={powerwall.design.numbers}
-        pw
       />
       <Specs
         title={powerwall.specs.title}

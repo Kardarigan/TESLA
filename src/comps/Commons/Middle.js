@@ -9,7 +9,6 @@ const Learn_Middle = ({
   inventoryLink = false,
   contact = false,
   light = false,
-  pw = false,
 }) => {
   if (title) {
     return (

@@ -21,7 +21,8 @@ const Commercial = () => {
         title={commercial.storage.title}
         describe={commercial.storage.describe}
         cover={commercial.storage.cover}
-        contact
+        link="/callback"
+        label="Contact"
       />
       <section>
         <img

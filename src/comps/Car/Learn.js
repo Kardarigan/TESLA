@@ -71,9 +71,11 @@ const Learn = () => {
               title={car.utility.title}
               cover={car.utility.cover}
               describe={car.utility.describe}
-              orderLink={car.orderLink}
-              inventoryLink={car.inventoryLink}
               numbers={car.utility.numbers}
+              link={car.orderLink}
+              label="Order Now"
+              link2nd={car.inventoryLink}
+              label2nd="View Inventroy"
             />
           )}
           <section
@@ -95,9 +97,11 @@ const Learn = () => {
             title={car.range.title}
             cover={car.range.cover}
             describe={car.range.describe}
-            orderLink={car.orderLink}
-            inventoryLink={car.inventoryLink}
             numbers={car.range.numbers}
+            link={car.orderLink}
+            label="Order Now"
+            link2nd={car.inventoryLink}
+            label2nd="View Inventroy"
             right
           />
           <Middle

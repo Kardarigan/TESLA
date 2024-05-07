@@ -184,6 +184,9 @@ import Homecharg_Middle_1 from "../assets/HomeCharging/home-charging-charge-anyt
 import Homecharg_Middle_2 from "../assets/HomeCharging/home-charging-fast-flexible-desktop.avif";
 import Homecharg_Middle_3 from "../assets/HomeCharging/home-charging-energize-savings-desktop.avif";
 
+import Supercharging_Hero_Video from "../assets/Supercharging/Supercharger-Main-Hero-Desktop-1920x1080.mp4";
+import Supercharging_Locations from "../assets/Supercharging/Supercharger-Locations-Hero-Desktop-NA.avif";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -3325,4 +3328,30 @@ export const homeCharging = {
       learnLink: "/",
     },
   ],
+};
+
+export const supercharging = {
+  heroCover: Charging_Hero_Poster,
+  heroVideo: Supercharging_Hero_Video,
+
+  heroAbilities: [
+    {
+      title: "50,000+",
+      describe: "Global Superchargers",
+    },
+    {
+      title: "15 min",
+      describe: "Recharge up to 322 km",
+    },
+    {
+      title: "$",
+      describe: "Less than gasoline",
+    },
+  ],
+  locations: {
+    title: "Go Anywhere",
+    cover: Supercharging_Locations,
+    describe:
+      "With 50,000+ Superchargers, Tesla owns and operates the largest global, fast charging network in the world. Located on major routes near convenient amenities, Superchargers keep you charged when you're away from home. Simply plug in, charge and go.",
+  },
 };
