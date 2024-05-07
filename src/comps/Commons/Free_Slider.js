@@ -82,7 +82,11 @@ const Free_slider = ({ prod, dark = false, customClass = false }) => {
             onClick={() => setShowModel(index)}
             className={`border-t-2 px-1 pt-3 transition-all cursor-pointer ${
               dark ? "border-slate-100" : "border-slate-900"
-            } ${showModel === index ? "opacity-100" : "opacity-45"}`}
+            } ${
+              showModel === index
+                ? "opacity-100 border-t-4"
+                : "opacity-45 border-t-2"
+            }`}
           >
             <h5 className={`${item.describe ? "text-xl" : "text-sm"}`}>
               {item.title}

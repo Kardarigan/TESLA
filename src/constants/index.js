@@ -186,6 +186,12 @@ import Homecharg_Middle_3 from "../assets/HomeCharging/home-charging-energize-sa
 
 import Supercharging_Hero_Video from "../assets/Supercharging/Supercharger-Main-Hero-Desktop-1920x1080.mp4";
 import Supercharging_Locations from "../assets/Supercharging/Supercharger-Locations-Hero-Desktop-NA.avif";
+import Supercharging_Range from "../assets/Supercharging/Supercharger-Range-Hero-Desktop-NA.avif";
+import Supercharging_Trip from "../assets/Supercharging/Supercharger-Trip-Planner-Hero-Desktop-NA-LHD.avif";
+import Supercharging_Slide_1 from "../assets/Supercharging/Supercharger-Carousel-Slide-1-Desktop-NA.mp4";
+import Supercharging_Slide_2 from "../assets/Supercharging/Supercharger-Carousel-Slide-2-Desktop-NA.mp4";
+import Supercharging_Slide_3 from "../assets/Supercharging/Supercharger-Carousel-Slide-3-Desktop-NA.mp4";
+import Supercharging_Slide_4 from "../assets/Supercharging/Supercharger-Carousel-Slide-4-Desktop-NA.mp4";
 
 export const navLinks = [
   {
@@ -3353,5 +3359,61 @@ export const supercharging = {
     cover: Supercharging_Locations,
     describe:
       "With 50,000+ Superchargers, Tesla owns and operates the largest global, fast charging network in the world. Located on major routes near convenient amenities, Superchargers keep you charged when you're away from home. Simply plug in, charge and go.",
+  },
+  freedom: [
+    {
+      title: "Navigate",
+      describe: "Enter a destination and Trip Planner calculates your route.",
+      cover: Supercharging_Slide_1,
+      duration: 12000,
+    },
+    {
+      title: "Plug In",
+      describe: "Charge automatically — no need to swipe a credit card.",
+      cover: Supercharging_Slide_2,
+      duration: 2000,
+    },
+    {
+      title: "Relax",
+      describe: "Grab a coffee, stretch your legs or play a game.",
+      cover: Supercharging_Slide_3,
+      duration: 3000,
+    },
+    {
+      title: "Monitor",
+      describe: "View your charge status in real time and get ready to go.",
+      cover: Supercharging_Slide_4,
+      duration: 7000,
+    },
+  ],
+  speed: {
+    title: "Stay on the Road",
+    describe:
+      "Superchargers can add up to 322 kilometers of range in just 15 minutes. Since charging above 80 percent is rarely necessary, stops are typically short and convenient. With a broad network of fast charging, automatic battery preconditioning and the exceptional range of every Tesla car, you’ll spend even more time on the road.",
+    cover: Supercharging_Range,
+    numbers: [
+      {
+        value: 25,
+        unit: "%",
+        describe: "Faster with battery preconditioning",
+      },
+      {
+        value: 15,
+        unit: "min",
+        describe: "Recharge up to 322 km",
+      },
+      {
+        value: 250,
+        unit: "kW",
+        describe: "Max charging rate",
+      },
+    ],
+  },
+
+  trip: {
+    title: "Enter a Destination",
+    describe:
+      "Enter a destination on your touchscreen and Trip Planner will automatically calculate your route with Superchargers along the way. Trip Planner considers driving style, elevation, outside temperature, traffic, stall availability and more, offering a convenient door-to-door experience.",
+    cover: Supercharging_Trip,
   },
 };
