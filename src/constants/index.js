@@ -331,7 +331,7 @@ export const navLinks = [
         title: "Resources",
         links: [
           { label: "Demo Drive", to: "/demo" },
-          { label: "Customer Stories", to: "/" },
+          { label: "Customer Stories", to: "/customer-stories" },
           { label: "Events", to: "/events" },
         ],
       },
@@ -1667,6 +1667,7 @@ export const vehicles = [
   },
   {
     model: "Roadster",
+    subtitle: "Be Awaite forever",
     orderLink: "/roadster/order",
     learnLink: "/roadster",
     trsModel: Nav_Roadster,
@@ -1732,7 +1733,7 @@ export const vehicles = [
   },
   {
     model: "Cybertruck",
-    subtitle: "Not Just for Earth",
+    subtitle: "Beast",
     orderLink: "/cybertruck/order",
     learnLink: "/cybertruck",
     trsModel: Nav_Cybertruck,

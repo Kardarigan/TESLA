@@ -80,15 +80,16 @@ const Free_slider = ({ prod, dark = false, customClass = false }) => {
         {prod.map((item, index) => (
           <div
             onClick={() => setShowModel(index)}
-            className={`border-t-2 px-1 pt-3 transition-all cursor-pointer ${
-              dark ? "border-slate-100" : "border-slate-900"
-            } ${
-              showModel === index
-                ? "opacity-100 border-t-4"
-                : "opacity-45 border-t-2"
+            className={`px-1 transition-all cursor-pointer relative ${
+              showModel === index ? "opacity-100" : "opacity-45"
             }`}
           >
-            <h5 className={`${item.describe ? "text-xl" : "text-sm"}`}>
+            <hr
+              className={`border-t-2 px-1 absolute w-full transition-all ${
+                dark ? "border-slate-100" : "border-slate-900"
+              } ${showModel === index ? "border-t-4" : "border-t-2"}`}
+            />
+            <h5 className={`mt-5 ${item.describe ? "text-xl" : "text-sm"}`}>
               {item.title}
             </h5>
             {item.describe && <p className="mt-1 text-sm">{item.describe}</p>}

@@ -70,7 +70,12 @@ import Charging from "../pages/Charging";
 import Home_Charging from "../pages/Home_Charging";
 import Supercharging from "../pages/Supercharging";
 import Charg_Three from "./Charg/Charg_Three";
+import Stories from "../pages/Stories";
+import Story from "../pages/Story";
+
 export {
+  Story,
+  Stories,
   Charg_Three,
   Charging,
   Home_Charging,

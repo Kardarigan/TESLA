@@ -23,6 +23,8 @@ import {
   Charging,
   Home_Charging,
   Supercharging,
+  Stories,
+  Story,
 } from "./comps/Portal";
 
 function App() {
@@ -39,7 +41,9 @@ function App() {
           <Route path="/charging" element={<Charging />} />
           <Route path="/home-charging" element={<Home_Charging />} />
           <Route path="/supercharging" element={<Supercharging />} />
-          <Route path="/Semi" element={<Semi />} />
+          <Route path="/semi" element={<Semi />} />
+          <Route path="/customer-stories" element={<Stories />} />
+          <Route path=":customer-story" element={<Story />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />
