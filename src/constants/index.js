@@ -3438,46 +3438,46 @@ export const stories = [
     cover: Story_1,
     title: "Miyakojima Virtual Power Plant",
     uploadDate: "August 26, 2022",
-    path: "/customer-stories/Miyakojima Virtual Power Plant",
+    path: "/customer-stories/Miyakojima Virtual Power PlantMiyakojima Virtual Power Plant",
   },
   {
     cover: Story_2,
     title: "Easy installation of solar and Powerwall at home",
     uploadDate: "May 11, 2020",
-    path: "/customer-stories/",
+    path: "/customer-stories/Easy installation of solar and Powerwall at home",
   },
   {
     cover: Story_3,
     title: "A home, an office and two Teslas powered by the sun 24/7",
     uploadDate: "September 25, 2019",
-    path: "/customer-stories/",
+    path: "/customer-stories/A home, an office and two Teslas powered by the sun 24/7",
   },
   {
     cover: Story_4,
     title:
       "Meet Victoria Townsend, a customer of the South Australia Virtual Power Plant",
     uploadDate: "July 30, 2019",
-    path: "/customer-stories/",
+    path: "/customer-stories/Meet Victoria Townsend, a customer of the South Australia Virtual Power Plant",
   },
   {
     cover: Story_5,
     title:
       "South Melbourne home and office: powered by renewable energy, day and night",
     uploadDate: "August 12, 2019",
-    path: "/customer-stories/",
+    path: "/customer-stories/South Melbourne home and office: powered by renewable energy, day and night",
   },
   {
     cover: Story_6,
     title: "Powering the Snowy Vet",
     uploadDate: "July 30, 2019",
-    path: "/customer-stories/",
+    path: "/customer-stories/Powering the Snowy Vet",
   },
   {
     cover: Story_7,
     title:
       "Meet Ron and Sherallee Andrews, customers of the South Australian Virtual Power Plant",
     uploadDate: "July 30, 2019",
-    path: "/customer-stories/",
+    path: "/customer-stories/Meet Ron and Sherallee Andrews, customers of the South Australian Virtual Power Plant",
   },
   {
     cover: Story_8,
@@ -3485,110 +3485,49 @@ export const stories = [
     title:
       "Meet Eva Basis, a customer of the South Australia Virtual Power Plant",
     uploadDate: "July 29, 2019",
-    path: "/customer-stories/",
+    path: "/customer-stories/Meet Eva Basis, a customer of the South Australia Virtual Power Plant",
   },
   {
     cover: Story_9,
     title:
       "BIOS-groep takes its electric Schiphol taxi services to the next level with Model X",
     uploadDate: "March 5, 2018",
-    path: "/customer-stories/",
+    path: "/customer-stories/BIOS-groep takes its electric Schiphol taxi services to the next level with Model X",
   },
   {
     cover: Story_10,
     title: "The 8 Keg SUV",
     uploadDate: "September 1, 2017",
-    path: "/customer-stories/",
+    path: "/customer-stories/The 8 Keg SUV",
   },
   {
     cover: Story_11,
     title: "The Electric Family",
     uploadDate: "September 1, 2017",
-    path: "/customer-stories/",
+    path: "/customer-stories/The Electric Family",
   },
   {
     cover: Story_12,
     title: "50,000 Miles in Two Years. What a Ride!",
     uploadDate: "July 13, 2017",
-    path: "/customer-stories/",
+    path: "/customer-stories/50,000 Miles in Two Years. What a Ride!",
   },
   {
     cover: Story_1,
-    title: "111111111111111 Miyakojima Virtual Power Plant",
+    title: "Miyakojima Virtual Power Plant",
     uploadDate: "August 26, 2022",
-    path: "/customer-stories/Miyakojima Virtual Power Plant",
+    path: "/customer-stories/Miyakojima Virtual Power PlantMiyakojima Virtual Power Plant",
   },
   {
     cover: Story_2,
-    title: "111111111111111 Easy installation of solar and Powerwall at home",
+    title: "Easy installation of solar and Powerwall at home",
     uploadDate: "May 11, 2020",
-    path: "/customer-stories/",
+    path: "/customer-stories/Easy installation of solar and Powerwall at home",
   },
   {
     cover: Story_3,
-    title:
-      "111111111111111 A home, an office and two Teslas powered by the sun 24/7",
+    title: "A home, an office and two Teslas powered by the sun 24/7",
     uploadDate: "September 25, 2019",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_4,
-    title:
-      "1111111111 Meet Victoria Townsend, a customer of the South Australia Virtual Power Plant",
-    uploadDate: "July 30, 2019",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_5,
-    title:
-      "1111111111 South Melbourne home and office: powered by renewable energy, day and night",
-    uploadDate: "August 12, 2019",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_6,
-    title: "111111111111111 Powering the Snowy Vet",
-    uploadDate: "July 30, 2019",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_7,
-    title:
-      "1111111111 Meet Ron and Sherallee Andrews, customers of the South Australian Virtual Power Plant",
-    uploadDate: "July 30, 2019",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_8,
-
-    title:
-      "1111111111 Meet Eva Basis, a customer of the South Australia Virtual Power Plant",
-    uploadDate: "July 29, 2019",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_9,
-    title:
-      "1111111111 BIOS-groep takes its electric Schiphol taxi services to the next level with Model X",
-    uploadDate: "March 5, 2018",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_10,
-    title: "111111111111111 The 8 Keg SUV",
-    uploadDate: "September 1, 2017",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_11,
-    title: "111111111111111 The Electric Family",
-    uploadDate: "September 1, 2017",
-    path: "/customer-stories/",
-  },
-  {
-    cover: Story_12,
-    title: "111111111111111 50,000 Miles in Two Years. What a Ride!",
-    uploadDate: "July 13, 2017",
-    path: "/customer-stories/",
+    path: "/customer-stories/A home, an office and two Teslas powered by the sun 24/7",
   },
 ];

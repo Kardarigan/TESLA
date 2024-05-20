@@ -41,7 +41,6 @@ const All_Stories = () => {
       selectBox.value = page;
     }
   }, [page]);
-
   return (
     <>
       <section className="mt-8 grid md:grid-cols-3 gap-8">

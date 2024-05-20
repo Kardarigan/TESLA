@@ -6,9 +6,18 @@ const Story = () => {
   const { customer_story } = useParams();
   const theStory = stories.find(
     (e) =>
-      e.title.replace(/\s+/g, "-").toLowerCase() ===
-      customer_story.replace(/\s+/g, "-").toLowerCase()
+      e &&
+      e.title.replace(/\//g, "%2F").replace(/\s+/g, "-").toLowerCase() ===
+        customer_story.replace(/\//g, "%2F").replace(/\s+/g, "-").toLowerCase()
   );
+  console.log("----------------------------------");
+  console.log(
+    stories[0].title.replace(/\//g, "%2F").replace(/\s+/g, "-").toLowerCase()
+  );
+  console.log(
+    customer_story.replace(/\//g, "%2F").replace(/\s+/g, "-").toLowerCase()
+  );
+  console.log("----------------------------------");
 
   return <div className="pagecenter-x pb-40">{theStory.title}</div>;
 };
