@@ -43,7 +43,7 @@ function App() {
           <Route path="/supercharging" element={<Supercharging />} />
           <Route path="/semi" element={<Semi />} />
           <Route path="/customer-stories" element={<Stories />} />
-          <Route path="/customer-stories/:customer-story" element={<Story />} />
+          <Route path="/customer-stories/:customer_story" element={<Story />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/powerwall" element={<Powerwall />} />
           <Route path="/megapack" element={<Megapack />} />
