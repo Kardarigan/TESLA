@@ -52,6 +52,22 @@ $color_dark: #171a20;
   -webkit-box-shadow: 0 0 0 2px $color_prime inset;
   -moz-box-shadow: 0 0 0 2px $color_prime inset;
 }
+.fadeIn {
+  transition: opacity 0.5s ease;
+}
+
+.fadeIn.hidden {
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .displayTrans {
   transition: visibility 1s, opacity 0.2s linear;
 }

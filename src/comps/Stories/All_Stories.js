@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { stories } from "../../constants";
 import { Link } from "react-router-dom";
 
 const All_Stories = () => {
   const [page, setPage] = useState(1);
+  const isFirstPage = page === 1;
+  const isLastPage = page === stories.length / 12;
 
   const theStories = [];
   for (let i = (page - 1) * 12; i < page * 12; i++) {
@@ -12,9 +14,9 @@ const All_Stories = () => {
     }
   }
 
-  const pageDiviisons = [];
+  const pageDivisons = [];
   for (let i = 1; i < stories.length / 12 + 1; i++) {
-    pageDiviisons.push(i);
+    pageDivisons.push(i);
   }
 
   const handlePageChanging = (e) => {
@@ -22,12 +24,30 @@ const All_Stories = () => {
     setPage(pageNumber);
   };
 
+  const handleNextPage = () => {
+    if (!isLastPage) {
+      setPage(page + 1);
+    }
+  };
+  const handlePrevPage = () => {
+    if (!isFirstPage) {
+      setPage(page - 1);
+    }
+  };
+  useEffect(() => {
+    // Update the selected option when page changes
+    const selectBox = document.getElementById("pageSelect");
+    if (selectBox) {
+      selectBox.value = page;
+    }
+  }, [page]);
+
   return (
     <>
       <section className="mt-8 grid md:grid-cols-3 gap-8">
         {theStories.map((item, index) => {
           return (
-            <Link key={index} to={item.path} className="group">
+            <Link key={index} to={item.path} className="group fadeIn">
               <div className="w-full h-44 overflow-hidden rounded">
                 <img
                   src={item.cover}
@@ -44,23 +64,30 @@ const All_Stories = () => {
         })}
       </section>
 
-      <p className="max-w-[250px] mx-auto px-1 text-center mt-12">
-        <button>Prev</button>
+      <p className="max-w-[250px] mx-auto text-center mt-12">
+        <button
+          onClick={handlePrevPage}
+          className={isFirstPage && "opacity-70"}
+        >
+          Prev
+        </button>
         <select
-          name=""
-          id=""
-          className="mx-5 bg-transparent border-0"
+          id="pageSelect"
+          className="mx-1 bg-transparent py-0 px-[30px!important] border border-transparent shadow-none focus:border focus:border-slate-100"
           onChange={handlePageChanging}
         >
-          {pageDiviisons.map((item, index) => {
+          {pageDivisons.map((item, index) => {
             return (
-              <option key={index} value={item}>
-                {item} from {stories.length / 12}
+              <option key={index} value={item} className="text-slate-950">
+                {item} of {stories.length / 12}
               </option>
             );
           })}
         </select>
-        <button>Next</button>
+
+        <button onClick={handleNextPage} className={isLastPage && "opacity-70"}>
+          Next
+        </button>
       </p>
     </>
   );
