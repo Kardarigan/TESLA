@@ -59,7 +59,7 @@ const Navbar = () => {
         >
           <Link to="/" className="z-50">
             <svg
-              class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+              className="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
               width={130}
               viewBox="0 0 342 35"
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ const Navbar = () => {
                   key={index}
                   className="navitem text-xl px-2 py-1 z-50"
                 >
-                  <i class={item.class} />
+                  <i className={item.class} />
                 </Link>
               );
             })}

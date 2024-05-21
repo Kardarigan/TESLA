@@ -3438,7 +3438,7 @@ export const stories = [
     cover: Story_1,
     title: "Miyakojima Virtual Power Plant",
     uploadDate: "August 26, 2022",
-    path: "/customer-stories/Miyakojima Virtual Power PlantMiyakojima Virtual Power Plant",
+    path: "/customer-stories/Miyakojima Virtual Power Plant",
   },
   {
     cover: Story_2,
@@ -3450,7 +3450,7 @@ export const stories = [
     cover: Story_3,
     title: "A home, an office and two Teslas powered by the sun 24/7",
     uploadDate: "September 25, 2019",
-    path: "/customer-stories/A home, an office and two Teslas powered by the sun 24/7",
+    path: "/customer-stories/A home, an office and two Teslas powered by the sun 24%2F7",
   },
   {
     cover: Story_4,
@@ -3516,7 +3516,7 @@ export const stories = [
     cover: Story_1,
     title: "Miyakojima Virtual Power Plant",
     uploadDate: "August 26, 2022",
-    path: "/customer-stories/Miyakojima Virtual Power PlantMiyakojima Virtual Power Plant",
+    path: "/customer-stories/Miyakojima Virtual Power Plant",
   },
   {
     cover: Story_2,
@@ -3528,6 +3528,6 @@ export const stories = [
     cover: Story_3,
     title: "A home, an office and two Teslas powered by the sun 24/7",
     uploadDate: "September 25, 2019",
-    path: "/customer-stories/A home, an office and two Teslas powered by the sun 24/7",
+    path: "/customer-stories/A home, an office and two Teslas powered by the sun 24%2F7",
   },
 ];

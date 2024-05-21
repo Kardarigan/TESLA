@@ -36,7 +36,12 @@ const Ham_Menu = ({ handleClick, clickes }) => {
                 </li>
               )
             ) : (
-              <Link to="/" className="navitem block py-4" onClick={clickes}>
+              <Link
+                to="/"
+                className="navitem block py-4"
+                onClick={clickes}
+                key={index}
+              >
                 <span>{item.label}</span>
               </Link>
             )}

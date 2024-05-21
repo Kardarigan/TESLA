@@ -66,7 +66,7 @@ const Middle_Image = ({
                 <Fadein>
                   <div className="text-center">
                     <h4 className="md:text-3xl text-xl">
-                      {item.icon ? <i class={item.icon}></i> : item.value}
+                      {item.icon ? <i className={item.icon}></i> : item.value}
                       {item.unit && (
                         <span className="md:text-xl text-sm"> {item.unit}</span>
                       )}

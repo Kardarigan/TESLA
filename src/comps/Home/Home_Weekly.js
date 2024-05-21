@@ -27,7 +27,7 @@ const Home_Weekly = () => {
               <input
                 type="text"
                 id="weeklyMail"
-                class="field mt-12"
+                className="field mt-12"
                 placeholder="example@email.com"
                 required
               />
