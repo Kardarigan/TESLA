@@ -63,6 +63,9 @@
     &-sm {
       @apply md:text-xl text-lg font-bold;
     }
+    &-lg {
+      @apply lg:text-4xl md:text-3xl text-2xl font-bold;
+    }
   }
   .para {
     @apply md:text-sm text-xs;

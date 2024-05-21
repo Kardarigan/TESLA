@@ -3439,18 +3439,27 @@ export const stories = [
     title: "Miyakojima Virtual Power Plant",
     uploadDate: "August 26, 2022",
     path: "/customer-stories/Miyakojima Virtual Power Plant",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_2,
     title: "Easy installation of solar and Powerwall at home",
     uploadDate: "May 11, 2020",
     path: "/customer-stories/Easy installation of solar and Powerwall at home",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_3,
     title: "A home, an office and two Teslas powered by the sun 24/7",
     uploadDate: "September 25, 2019",
     path: "/customer-stories/A home, an office and two Teslas powered by the sun 24%2F7",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_4,
@@ -3458,6 +3467,9 @@ export const stories = [
       "Meet Victoria Townsend, a customer of the South Australia Virtual Power Plant",
     uploadDate: "July 30, 2019",
     path: "/customer-stories/Meet Victoria Townsend, a customer of the South Australia Virtual Power Plant",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_5,
@@ -3465,12 +3477,18 @@ export const stories = [
       "South Melbourne home and office: powered by renewable energy, day and night",
     uploadDate: "August 12, 2019",
     path: "/customer-stories/South Melbourne home and office: powered by renewable energy, day and night",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_6,
     title: "Powering the Snowy Vet",
     uploadDate: "July 30, 2019",
     path: "/customer-stories/Powering the Snowy Vet",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_7,
@@ -3478,14 +3496,19 @@ export const stories = [
       "Meet Ron and Sherallee Andrews, customers of the South Australian Virtual Power Plant",
     uploadDate: "July 30, 2019",
     path: "/customer-stories/Meet Ron and Sherallee Andrews, customers of the South Australian Virtual Power Plant",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_8,
-
     title:
       "Meet Eva Basis, a customer of the South Australia Virtual Power Plant",
     uploadDate: "July 29, 2019",
     path: "/customer-stories/Meet Eva Basis, a customer of the South Australia Virtual Power Plant",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_9,
@@ -3493,41 +3516,62 @@ export const stories = [
       "BIOS-groep takes its electric Schiphol taxi services to the next level with Model X",
     uploadDate: "March 5, 2018",
     path: "/customer-stories/BIOS-groep takes its electric Schiphol taxi services to the next level with Model X",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_10,
     title: "The 8 Keg SUV",
     uploadDate: "September 1, 2017",
     path: "/customer-stories/The 8 Keg SUV",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_11,
     title: "The Electric Family",
     uploadDate: "September 1, 2017",
     path: "/customer-stories/The Electric Family",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_12,
     title: "50,000 Miles in Two Years. What a Ride!",
     uploadDate: "July 13, 2017",
     path: "/customer-stories/50,000 Miles in Two Years. What a Ride!",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_1,
     title: "Miyakojima Virtual Power Plant",
     uploadDate: "August 26, 2022",
     path: "/customer-stories/Miyakojima Virtual Power Plant",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_2,
     title: "Easy installation of solar and Powerwall at home",
     uploadDate: "May 11, 2020",
     path: "/customer-stories/Easy installation of solar and Powerwall at home",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
   {
     cover: Story_3,
     title: "A home, an office and two Teslas powered by the sun 24/7",
     uploadDate: "September 25, 2019",
     path: "/customer-stories/A home, an office and two Teslas powered by the sun 24%2F7",
+    customer: "The Vogler family",
+    story:
+      "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
 ];
