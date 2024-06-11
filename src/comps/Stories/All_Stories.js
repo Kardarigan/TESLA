@@ -35,7 +35,6 @@ const All_Stories = () => {
     }
   };
   useEffect(() => {
-    // Update the selected option when page changes
     const selectBox = document.getElementById("pageSelect");
     if (selectBox) {
       selectBox.value = page;
@@ -63,7 +62,7 @@ const All_Stories = () => {
         })}
       </section>
 
-      <p className="max-w-[250px] mx-auto text-center mt-12">
+      <div className="max-w-[250px] mx-auto text-center mt-12">
         <button
           onClick={handlePrevPage}
           className={isFirstPage && "opacity-70"}
@@ -87,7 +86,7 @@ const All_Stories = () => {
         <button onClick={handleNextPage} className={isLastPage && "opacity-70"}>
           Next
         </button>
-      </p>
+      </div>
     </>
   );
 };

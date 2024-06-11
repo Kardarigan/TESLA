@@ -543,44 +543,46 @@ export const hamburgerItems = [
   {
     href: "./discover",
     label: "Discover",
-    submenu: [
-      {
-        href: "/demo",
-        label: "Demo Drive",
-      },
-      {
-        href: "/",
-        label: "Customer Stories",
-      },
-      {
-        href: "/",
-        label: "Events",
-      },
-      {
-        href: "/",
-        label: "Find Us",
-      },
-      {
-        href: "/",
-        label: "Find a Collision Center",
-      },
-      {
-        href: "/",
-        label: "Find a Certified Installer",
-      },
-      {
-        href: "/",
-        label: "About",
-      },
-      {
-        href: "/",
-        label: "Careers",
-      },
-      {
-        href: "/",
-        label: "Investor Relations",
-      },
-    ],
+    submenu: {
+      links: [
+        {
+          href: "/demo",
+          label: "Demo Drive",
+        },
+        {
+          href: "/customer-stories",
+          label: "Customer Stories",
+        },
+        {
+          href: "/events",
+          label: "Events",
+        },
+        {
+          href: "/",
+          label: "Find Us",
+        },
+        {
+          href: "/",
+          label: "Find a Collision Center",
+        },
+        {
+          href: "/",
+          label: "Find a Certified Installer",
+        },
+        {
+          href: "/",
+          label: "About",
+        },
+        {
+          href: "/",
+          label: "Careers",
+        },
+        {
+          href: "/",
+          label: "Investor Relations",
+        },
+      ],
+    },
   },
   { href: "./support", label: "Support" },
   {
@@ -1604,7 +1606,6 @@ export const vehicles = [
           "Exterior design combines an iconic look with elegant details.",
       },
     ],
-
     numbers: [
       {
         key: "Range (EPA est.)",
@@ -1671,7 +1672,7 @@ export const vehicles = [
       title: "Engineered for Safety",
       describe:
         "Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing side sills, a fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body structure that can withstand many times the car’s weight. Active safety features like automatic emergency braking come standard.",
-      cover: Safe_3,
+      cover: Safe_X,
       marks: [
         "Impact Protection",
         "Side Collision Protection",
