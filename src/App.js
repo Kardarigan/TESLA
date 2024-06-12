@@ -25,6 +25,7 @@ import {
   Supercharging,
   Stories,
   Story,
+  NACS,
 } from "./comps/Portal";
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
           <Route path="/callback" element={<Callback />} />
           <Route path="/tradein/form" element={<Tradein_Form />} />
           <Route path="/commercial" element={<Commercial />} />
+          <Route path="/NACS" element={<NACS />} />
           <Route path="/utilities" element={<Utilities />} />
           <Route path="*" element={<h1 className="m-auto">404</h1>} />
         </Route>

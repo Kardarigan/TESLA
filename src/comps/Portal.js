@@ -73,8 +73,10 @@ import Charg_Three from "./Charg/Charg_Three";
 import Stories from "../pages/Stories";
 import Story from "../pages/Story";
 import All_Stories from "./Stories/All_Stories";
+import NACS from "../pages/NACS";
 
 export {
+  NACS,
   All_Stories,
   Story,
   Stories,

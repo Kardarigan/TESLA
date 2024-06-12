@@ -206,6 +206,8 @@ import Story_10 from "../assets/Stories/brian_gilmore_1.jpg";
 import Story_11 from "../assets/Stories/TeslaStoryModelX-3b.jpg";
 import Story_12 from "../assets/Stories/IMG_1281_5B3.jpg";
 
+import NACS_Hero from "../assets/NACS/NACS-Main-Hero-Desktop.mp4";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -329,8 +331,7 @@ export const navLinks = [
       },
     ],
     links: [
-      { label: "Trip Planner", to: "/" },
-      { label: "Charging With NACS", to: "/" },
+      { label: "Charging With NACS", to: "/NACS" },
       { label: "Supercharger Voting", to: "/" },
       { label: "Host a Supercharger", to: "/" },
       { label: "Host Wall Connectors", to: "/" },
@@ -522,7 +523,7 @@ export const hamburgerItems = [
       ],
       links: [
         {
-          href: "/",
+          href: "/NACS",
           label: "Charging With NACS",
         },
         {
@@ -3350,6 +3351,30 @@ export const homeCharging = {
       learnLink: "/",
     },
   ],
+};
+
+export const chargingForAll = {
+  heroVideo: NACS_Hero,
+  heroAbilities: [
+    {
+      title: "27,000+",
+      describe: "Stalls for Teslas",
+    },
+    {
+      title: "15,000+",
+      describe: "Stalls for NACS",
+    },
+    {
+      title: "500+",
+      describe: "Stalls for Other EVs",
+    },
+  ],
+  access: {
+    title: "A Cleaner Grid",
+    describe:
+      "The future of renewable energy relies on large-scale energy storage. Megapack is a powerful battery that provides energy storage and support, helping to stabilize the grid and prevent outages. By strengthening our sustainable energy infrastructure, we can create a cleaner grid that protects our communities and the environment.",
+    cover: Mp_Cleaner,
+  },
 };
 
 export const supercharging = {
