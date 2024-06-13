@@ -207,6 +207,13 @@ import Story_11 from "../assets/Stories/TeslaStoryModelX-3b.jpg";
 import Story_12 from "../assets/Stories/IMG_1281_5B3.jpg";
 
 import NACS_Hero from "../assets/NACS/NACS-Main-Hero-Desktop.mp4";
+import NACS_Access from "../assets/NACS/NACS-Setting-Standard-Desktop.avif";
+import NACS_Ready from "../assets/NACS/NACS-Ready-to-Charge-Desktop.avif";
+import NACS_Mobile_1 from "../assets/NACS/NACS-Overview-Carousel-Slide-1-Charger-DMT.avif";
+import NACS_Mobile_2 from "../assets/NACS/NACS-Overview-Carousel-Slide-2-Adapter-DMT.avif";
+import NACS_Mobile_3 from "../assets/NACS/NACS-Overview-Carousel-Slide-3-Plug-DMT.avif";
+import NACS_Mobile_4 from "../assets/NACS/NACS-Overview-Carousel-Slide-4-Summary-DMT.avif";
+import NACS_Mobile_5 from "../assets/NACS/NACS-Overview-Carousel-Slide-5-Membership-DMT.avif";
 
 export const navLinks = [
   {
@@ -3353,30 +3360,6 @@ export const homeCharging = {
   ],
 };
 
-export const chargingForAll = {
-  heroVideo: NACS_Hero,
-  heroAbilities: [
-    {
-      title: "27,000+",
-      describe: "Stalls for Teslas",
-    },
-    {
-      title: "15,000+",
-      describe: "Stalls for NACS",
-    },
-    {
-      title: "500+",
-      describe: "Stalls for Other EVs",
-    },
-  ],
-  access: {
-    title: "A Cleaner Grid",
-    describe:
-      "The future of renewable energy relies on large-scale energy storage. Megapack is a powerful battery that provides energy storage and support, helping to stabilize the grid and prevent outages. By strengthening our sustainable energy infrastructure, we can create a cleaner grid that protects our communities and the environment.",
-    cover: Mp_Cleaner,
-  },
-};
-
 export const supercharging = {
   heroCover: Charging_Hero_Poster,
   heroVideo: Supercharging_Hero_Video,
@@ -3601,3 +3584,60 @@ export const stories = [
       "The Vogler Family in Germany wanted to support the transition to clean energy. They decided for the easy installation of solar and Powerwall.",
   },
 ];
+
+export const chargingForAll = {
+  heroVideo: NACS_Hero,
+  heroAbilities: [
+    {
+      title: "27,000+",
+      describe: "Stalls for Teslas",
+    },
+    {
+      title: "15,000+",
+      describe: "Stalls for NACS",
+    },
+    {
+      title: "500+",
+      describe: "Stalls for Other EVs",
+    },
+  ],
+  access: {
+    title: "Setting the Standard",
+    describe:
+      "Superchargers make up three out of four fast chargers and have set the standard for EV charging in North America. This standard, known as the North American Charging Standard (NACS), has been adopted by all large automakers, with manufacturers and charge point operators transitioning to the NACS by 2025.",
+    cover: NACS_Access,
+  },
+  ready: {
+    title: "",
+    cover: NACS_Ready,
+    describe:
+      "Throughout 2024 and 2025, our North American Supercharging network is opening to more automakers. As automakers transition vehicles to NACS, EV drivers will gradually be able to access Superchargers using adapters provided by their automakers. Soon, all new EVs will come with NACS charge ports built in and adapters will no longer be needed.",
+  },
+  mobile: [
+    {
+      title: "Find a Charger",
+      subtitle: "Input your destination to view nearby chargers.",
+      cover: NACS_Mobile_1,
+    },
+    {
+      title: "Connect Your Adapter",
+      subtitle: "Easily attach your adapter by following a few steps.",
+      cover: NACS_Mobile_2,
+    },
+    {
+      title: "Plug In and Charge",
+      subtitle: "Charging may take up to one minute to begin.",
+      cover: NACS_Mobile_3,
+    },
+    {
+      title: "View Your Charge Summary",
+      subtitle: "End your charge and review your charge stats.",
+      cover: NACS_Mobile_4,
+    },
+    {
+      title: "Save With Membership",
+      subtitle: "Access the lowest charge rates.",
+      cover: NACS_Mobile_5,
+    },
+  ],
+};
