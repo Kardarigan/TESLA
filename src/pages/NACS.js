@@ -36,7 +36,7 @@ const NACS = () => {
         describe={chargingForAll.access.describe}
       />
       <Middle_Image
-        title="Ready to Charge"
+        title={chargingForAll.ready.title}
         cover={chargingForAll.ready.cover}
         describe={chargingForAll.ready.describe}
         label="Get Powerwall"

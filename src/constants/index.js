@@ -751,7 +751,7 @@ export const vehicles = [
           title: "Model S",
           describe:
             "Dual Motor All-Wheel Drive unlocks more range than any other vehicle in our current lineup, with insane power and maximum control.",
-          image: Motor_S,
+          cover: Motor_X,
           acceleration: 3.2,
           range: 647,
           duration: 5000,
@@ -760,7 +760,7 @@ export const vehicles = [
           title: "Model S Plaid",
           describe:
             "Maintain 1,000+ horsepower all the way to 322 km/h with Tri-Motor All-Wheel Drive, featuring torque vectoring and three independent carbon-sleeved rotors.",
-          image: Motor_S_Plaid,
+          cover: Motor_X_Plaid,
           acceleration: 2.1,
           range: 578,
           duration: 5000,
@@ -3608,7 +3608,7 @@ export const chargingForAll = {
     cover: NACS_Access,
   },
   ready: {
-    title: "",
+    title: "Ready to Charge",
     cover: NACS_Ready,
     describe:
       "Throughout 2024 and 2025, our North American Supercharging network is opening to more automakers. As automakers transition vehicles to NACS, EV drivers will gradually be able to access Superchargers using adapters provided by their automakers. Soon, all new EVs will come with NACS charge ports built in and adapters will no longer be needed.",

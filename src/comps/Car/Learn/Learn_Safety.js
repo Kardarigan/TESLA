@@ -2,7 +2,7 @@ import { Button } from "../../Portal";
 
 const Learn_Safety = ({ car }) => {
   const carSafe = car.safety;
-  const haveDarkBg = car.model == "Model S" || car.model == "Model S";
+  const haveDarkBg = car.model == "Model 3" || car.model == "Model Y";
 
   return (
     <section
