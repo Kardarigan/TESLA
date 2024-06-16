@@ -937,6 +937,10 @@ export const vehicles = [
         "Very Low Rollover Risk",
       ],
     },
+    order: {
+      dog: "***",
+      estimated: "Jun 2024",
+    },
   },
   {
     model: "Model 3",

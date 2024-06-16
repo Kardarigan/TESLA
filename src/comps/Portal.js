@@ -30,7 +30,6 @@ import Learn_Overall from "./Car/Learn/Learn_Overall";
 import Learn_Autopilot from "./Car/Learn/Learn_Autopilot";
 import Learn_Safety from "./Car/Learn/Learn_Safety";
 import Actioncenter from "./Car/Actioncenter";
-import Order from "./Car/Order";
 import Energy from "../pages/Energy";
 import Powerwall from "../pages/Powerwall";
 import Megapack from "../pages/Megapack";
@@ -74,8 +73,13 @@ import Stories from "../pages/Stories";
 import Story from "../pages/Story";
 import All_Stories from "./Stories/All_Stories";
 import NACS from "../pages/NACS";
+import Order_Options from "./Order/Order_Options";
+import Order from "../pages/Order";
+import Select_Price from "./Order/Options/Select_Price";
 
 export {
+  Select_Price,
+  Order_Options,
   NACS,
   All_Stories,
   Story,
