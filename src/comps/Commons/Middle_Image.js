@@ -71,9 +71,7 @@ const Middle_Image = ({
                         <span className="md:text-xl text-sm"> {item.unit}</span>
                       )}
                     </h4>
-                    <p className="sm:text-[12px] text-[10px] mt-1">
-                      {item.describe}
-                    </p>
+                    <p className="para-sm mt-1">{item.describe}</p>
                   </div>
                 </Fadein>
               );

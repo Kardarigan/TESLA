@@ -940,6 +940,22 @@ export const vehicles = [
     order: {
       dog: "***",
       estimated: "Jun 2024",
+      editions: [
+        {
+          title: "Rear-Wheel Drive",
+          label: "Model 3",
+          price: 50990,
+        },
+        {
+          title: "Dual Motor All-Wheel Drive",
+          label: "Model 3 Long Range",
+          price: 60990,
+        },
+        {
+          label: "Model 3 Performance",
+          price: 69990,
+        },
+      ],
     },
   },
   {

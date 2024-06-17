@@ -1,4 +1,4 @@
-import { Select_Price } from "../Portal";
+import { Button, Select_Price } from "../Portal";
 
 const Order_Options = ({ car }) => {
   return (
@@ -18,15 +18,19 @@ const Order_Options = ({ car }) => {
               <div>
                 <h3 className="md:text-lg text-base">
                   {item.value}
-                  <span className="md:text-[10px] text-[8px]">{item.unit}</span>
+                  <span className="para-sm">{item.unit}</span>
                 </h3>
-                <p className="md:text-[10px] text-[8px]">{item.key}</p>
+                <p className="para-sm">{item.key}</p>
               </div>
             );
           }
         })}
       </div>
-      <Select_Price />
+      <Select_Price car={car.order} />
+      <p className="para-sm my-5">
+        * Costs above include potential incentives and gas savings of $10,100.
+      </p>
+      <button className="button button-dark">Feature Details</button>
     </section>
   );
 };

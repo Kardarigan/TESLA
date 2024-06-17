@@ -32,7 +32,7 @@ const Learn_Hero = ({ car }) => {
           );
         })}
 
-        <div className="absolute w-full text-center top-[90%] z-10 md:text-sm text-[9px]">
+        <div className="absolute w-full text-center top-[90%] z-10 para-sm">
           <p>{car.saving}</p>
         </div>
         <div className="md:block hidden splide__progress">

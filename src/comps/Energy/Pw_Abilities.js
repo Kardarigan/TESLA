@@ -15,9 +15,7 @@ const Pw_Abilities = ({ pw, cover }) => {
                   {item.title}
                 </h3>
               )}
-              <h6 className="md:text-sm sm:text-xs text-[8px] mt-5">
-                {item.describe}
-              </h6>
+              <h6 className="md:text-sm para-sm mt-5">{item.describe}</h6>
             </div>
           );
         })}
