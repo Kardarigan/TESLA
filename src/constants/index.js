@@ -215,6 +215,13 @@ import NACS_Mobile_3 from "../assets/NACS/NACS-Overview-Carousel-Slide-3-Plug-DM
 import NACS_Mobile_4 from "../assets/NACS/NACS-Overview-Carousel-Slide-4-Summary-DMT.avif";
 import NACS_Mobile_5 from "../assets/NACS/NACS-Overview-Carousel-Slide-5-Membership-DMT.avif";
 
+import Paint_Grey from "../assets/Colors/Paint_StealthGrey.avif";
+import Paint_White from "../assets/Colors/Paint_White.avif";
+import Paint_Blue from "../assets/Colors/Paint_Blue.avif";
+import Paint_Black from "../assets/Colors/Paint_Black.avif";
+import Paint_Red from "../assets/Colors/Paint_Red.avif";
+import Paint_Silver from "../assets/Colors/LSilverPaint.avif";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -374,6 +381,39 @@ export const navLinks = [
         ],
       },
     ],
+  },
+];
+
+export const paintColors = [
+  {
+    demo: Paint_Grey,
+    name: "Stealth Gray",
+    price: "Included",
+  },
+  {
+    demo: Paint_White,
+    name: "Pearl White Multi-Coat",
+    price: 1300,
+  },
+  {
+    demo: Paint_Blue,
+    name: "Deep Blue Metallic",
+    price: 1300,
+  },
+  {
+    demo: Paint_Black,
+    name: "Solid Black",
+    price: 2000,
+  },
+  {
+    demo: Paint_Red,
+    name: "Ultra Red",
+    price: 2600,
+  },
+  {
+    demo: Paint_Silver,
+    name: "Silver",
+    price: 2000,
   },
 ];
 

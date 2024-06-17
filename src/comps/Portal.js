@@ -76,8 +76,10 @@ import NACS from "../pages/NACS";
 import Order_Options from "./Order/Order_Options";
 import Order from "../pages/Order";
 import Select_Price from "./Order/Options/Select_Price";
+import Order_Paint from "./Order/Options/Order_Paint";
 
 export {
+  Order_Paint,
   Select_Price,
   Order_Options,
   NACS,
