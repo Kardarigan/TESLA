@@ -1,8 +1,8 @@
-import { Select_Price } from "../Portal";
+import { Order_Paint, Select_Price } from "../Portal";
 
 const Order_Options = ({ car }) => {
   return (
-    <div className="p-5 text-center">
+    <div className="p-5 text-center grid gap-y-32">
       <section className="grid gap-y-3">
         <h2 className="title-lg">{car.model}</h2>
         <p className="para  text-slate-300">
@@ -28,11 +28,12 @@ const Order_Options = ({ car }) => {
           })}
         </div>
         <Select_Price car={car.order} />
-        <p className="para-sm ">
+        <p className="para-sm my-5">
           * Costs above include potential incentives and gas savings of $10,100.
         </p>
         <button className="button button-dark">Feature Details</button>
       </section>
+      <Order_Paint car={car.order} />
     </div>
   );
 };

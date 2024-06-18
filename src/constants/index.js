@@ -222,6 +222,15 @@ import Paint_Black from "../assets/Colors/Paint_Black.avif";
 import Paint_Red from "../assets/Colors/Paint_Red.avif";
 import Paint_Silver from "../assets/Colors/LSilverPaint.avif";
 
+import Model_S_Wheel_1 from "../assets/Single/S/Wheels/21Arachnid.avif";
+import Model_S_Wheel_2 from "../assets/Single/S/Wheels/ui_swat_whl_tempest.avif";
+import Model_X_Wheel_1 from "../assets/Single/X/Wheels/20Cyberstream.avif";
+import Model_X_Wheel_2 from "../assets/Single/X/Wheels/22Turbine.avif";
+import Model_3_Wheel_1 from "../assets/Single/3/Wheels/Wheel-Swatch_18-in.avif";
+import Model_3_Wheel_2 from "../assets/Single/3/Wheels/Wheel-Swatch_19-in.avif";
+import Model_Y_Wheel_1 from "../assets/Single/Y/Wheels/20Cyberstream.avif";
+import Model_Y_Wheel_2 from "../assets/Single/Y/Wheels/22Turbine.avif";
+
 export const navLinks = [
   {
     href: "./vehicles",
@@ -996,6 +1005,7 @@ export const vehicles = [
           price: 69990,
         },
       ],
+      paint: [0, 1, 2, 3, 4],
     },
   },
   {

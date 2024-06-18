@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Select_Price = ({ car }) => {
   const [showModel, setShowModel] = useState(0);
