@@ -25,7 +25,7 @@ const Order_Paint = ({ car }) => {
                   paint === index ? "selected-ring" : ""
                 }`}
               >
-                <img src={item.demo} alt="demo color" className="" />
+                <img src={item.demo} alt="demo color" />
               </button>
             );
           }

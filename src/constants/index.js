@@ -222,6 +222,10 @@ import Paint_Black from "../assets/Colors/Paint_Black.avif";
 import Paint_Red from "../assets/Colors/Paint_Red.avif";
 import Paint_Silver from "../assets/Colors/LSilverPaint.avif";
 
+import Interior_White from "../assets/Colors/ui_swat_int_white.avif";
+import Interior_Cream from "../assets/Colors/Interior_Cream.avif";
+import Interior_Black from "../assets/Colors/ui_swat_int_in3pb.avif";
+
 import Model_S_Wheel_1 from "../assets/Single/S/Wheels/21Arachnid.avif";
 import Model_S_Wheel_2 from "../assets/Single/S/Wheels/ui_swat_whl_tempest.avif";
 import Model_X_Wheel_1 from "../assets/Single/X/Wheels/20Cyberstream.avif";
@@ -423,6 +427,24 @@ export const paintColors = [
     demo: Paint_Silver,
     name: "Silver",
     price: 2000,
+  },
+];
+
+export const interiorColors = [
+  {
+    demo: Interior_Black,
+    name: "Black",
+    price: "Included",
+  },
+  {
+    demo: Interior_White,
+    name: "Black and White",
+    price: 1300,
+  },
+  {
+    demo: Interior_Cream,
+    name: "Black and Cream",
+    price: 2100,
   },
 ];
 
@@ -1006,6 +1028,23 @@ export const vehicles = [
         },
       ],
       paint: [0, 1, 2, 3, 4],
+      wheels: [
+        {
+          demo: Model_S_Wheel_1,
+          name: "18’’ Photon Wheels",
+          price: "Included",
+          type: "All-Season Tires",
+          range: 438,
+        },
+        {
+          demo: Model_S_Wheel_2,
+          name: "19’’ Nova Wheels",
+          price: 2000,
+          type: "All-Season Tires",
+          range: 399,
+        },
+      ],
+      interior: [0, 1],
     },
   },
   {

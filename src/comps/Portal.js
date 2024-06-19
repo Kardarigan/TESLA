@@ -77,8 +77,14 @@ import Order_Options from "./Order/Order_Options";
 import Order from "../pages/Order";
 import Select_Price from "./Order/Options/Select_Price";
 import Order_Paint from "./Order/Options/Order_Paint";
+import Order_Wheel from "./Order/Options/Order_Wheel";
+import Order_Interior from "./Order/Options/Order_Interior";
+import Order_Self from "./Order/Options/Order_Self";
 
 export {
+  Order_Self,
+  Order_Interior,
+  Order_Wheel,
   Order_Paint,
   Select_Price,
   Order_Options,

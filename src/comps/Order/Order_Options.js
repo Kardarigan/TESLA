@@ -1,4 +1,10 @@
-import { Order_Paint, Select_Price } from "../Portal";
+import {
+  Order_Interior,
+  Order_Paint,
+  Order_Self,
+  Order_Wheel,
+  Select_Price,
+} from "../Portal";
 
 const Order_Options = ({ car }) => {
   return (
@@ -34,6 +40,9 @@ const Order_Options = ({ car }) => {
         <button className="button button-dark">Feature Details</button>
       </section>
       <Order_Paint car={car.order} />
+      <Order_Wheel car={car.order} />
+      <Order_Interior car={car.order} />
+      <Order_Self />
     </div>
   );
 };
