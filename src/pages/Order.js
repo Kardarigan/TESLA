@@ -12,8 +12,8 @@ const Order = () => {
 
   return (
     <div className="flex-seperate pt-24">
-      <section className="w-2/3 max-md:hidden h-screen"></section>
-      <section className="md:w-1/3">
+      <section className="w-3/5 max-md:hidden h-screen"></section>
+      <section className="md:w-2/5">
         <Order_Options car={car} />
       </section>
     </div>
