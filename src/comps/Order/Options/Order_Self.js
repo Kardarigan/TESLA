@@ -41,7 +41,7 @@ const Order_Self = () => {
           upgraded through over-the-air software updates.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-x-5 mt-5">
+      <div className="grid grid-cols-2 gap-x-3 mt-5">
         <button
           onClick={() => setAddSelfDriving(!addSelfDriving)}
           className={`button ${addSelfDriving ? "button-dark" : "button-sky"}`}

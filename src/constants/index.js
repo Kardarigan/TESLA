@@ -1011,6 +1011,7 @@ export const vehicles = [
     order: {
       dog: "***",
       estimated: "Jun 2024",
+      iZEV: true,
       editions: [
         {
           title: "Rear-Wheel Drive",
@@ -1045,6 +1046,22 @@ export const vehicles = [
         },
       ],
       interior: [0, 1],
+      charging: {
+        title: "Charging",
+        warn: "Home charging equipment is not included",
+        checkes: [
+          { label: "Universal Wall Connector", price: 800 },
+          { label: "Mobile Coonnector", price: 345 },
+        ],
+      },
+      accessories: {
+        title: "Accessories",
+        checkes: [
+          { label: "Model 3 Roof Rack", price: 480 },
+          { label: "Model 3 Center Console Trays", price: 45 },
+          { label: "Model 3 All-Weather Interior Liners", price: 310 },
+        ],
+      },
     },
   },
   {

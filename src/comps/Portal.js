@@ -80,8 +80,10 @@ import Order_Paint from "./Order/Options/Order_Paint";
 import Order_Wheel from "./Order/Options/Order_Wheel";
 import Order_Interior from "./Order/Options/Order_Interior";
 import Order_Self from "./Order/Options/Order_Self";
+import Order_Check from "./Order/Options/Order_Check";
 
 export {
+  Order_Check,
   Order_Self,
   Order_Interior,
   Order_Wheel,

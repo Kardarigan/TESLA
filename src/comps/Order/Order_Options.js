@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import {
+  Order_Check,
   Order_Interior,
   Order_Paint,
   Order_Self,
@@ -8,7 +10,7 @@ import {
 
 const Order_Options = ({ car }) => {
   return (
-    <div className="p-5 text-center grid gap-y-32">
+    <div className="px-10 py-5 text-center grid gap-y-32">
       <section className="grid gap-y-3">
         <h2 className="title-lg">{car.model}</h2>
         <p className="para  text-slate-300">
@@ -43,6 +45,27 @@ const Order_Options = ({ car }) => {
       <Order_Wheel car={car.order} />
       <Order_Interior car={car.order} />
       <Order_Self />
+      <Order_Check thing={car.order.charging} />
+      <Order_Check thing={car.order.accessories} />
+      <section className="grid gap-y-5">
+        <h2 className="title-sm">Order Your {car.model}</h2>
+        <p className="para-sm text-slate-300">
+          Estimated Delivery: {car.order.estimated}
+        </p>
+        {car.order.iZEV && (
+          <div className="flex gap-x-3 px-5">
+            <i class="fa-light fa-check text-green-400" />
+            <p className="text-justify para-sm">
+              Your design may qualify for a $5,000 iZEV incentive for eligible
+              buyers. Incentives are deducted after taxes and fees.
+              <Link to="/" className="link ms-2">
+                Learn More
+              </Link>
+            </p>
+          </div>
+        )}
+        <button className="button button-sky">Continue</button>
+      </section>
     </div>
   );
 };

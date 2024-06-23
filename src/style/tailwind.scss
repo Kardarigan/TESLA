@@ -19,7 +19,7 @@
   }
 
   .button {
-    @apply transition duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-[12px] rounded max-md:w-full inline-block px-10 py-2;
+    @apply transition text-nowrap duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-[12px] rounded max-md:w-full inline-block px-10 py-2;
     &-outline {
       * {
         @apply bg-transparent;
