@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { navLinks, navTools } from "../../constants";
 import { Dropdown, Hamburger } from "../Portal";
 import { useEffect, useRef, useState } from "react";
-const Navbar = () => {
+const Navbar = ({ className }) => {
   const [navOver, setNavOver] = useState(false);
   const [hamburger, setHamburger] = useState(false);
   const [currentItem, setCurrentItem] = useState("");
@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="absolute w-full z-50">
+      <header className={`w-full z-50${className ? " " + className : ""}`}>
         <nav
           className={`padding-x py-3 w-full z-10 flex-seperate text-slate-50 relative shadowFromTop transition-all ${
             navOver && "text-slate-950"

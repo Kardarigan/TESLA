@@ -19,6 +19,11 @@ import Amenity_3_3 from "../assets/Single/3/MS-Interior-Grid-D-Desktop.avif";
 import Road_3 from "../assets/Single/3/Road_Model3.jpg";
 import Overall_3 from "../assets/Single/3/jx0v1531co6yhxbk7w3y.png";
 import Safe_3 from "../assets/Single/3/Model-3-Safety-Hero-Desktop.jpg";
+import Order_Demo_3_1 from "../assets/Order_Demo/3/compositor.jfif";
+import Order_Demo_3_2 from "../assets/Order_Demo/3/compositor (1).jfif";
+import Order_Demo_3_3 from "../assets/Order_Demo/3/compositor (2).jfif";
+import Order_Demo_3_4 from "../assets/Order_Demo/3/compositor (3).jfif";
+import Order_Demo_3_5 from "../assets/Order_Demo/3/compositor (4).jfif";
 
 import Slide_1_Y from "../assets/Single/Y/Slide_ModelY_1.jpg";
 import Slide_2_Y from "../assets/Single/Y/Slide_ModelY_2.jpg";
@@ -1012,6 +1017,13 @@ export const vehicles = [
       dog: "***",
       estimated: "Jun 2024",
       iZEV: true,
+      demo: [
+        Order_Demo_3_1,
+        Order_Demo_3_2,
+        Order_Demo_3_3,
+        Order_Demo_3_4,
+        Order_Demo_3_5,
+      ],
       editions: [
         {
           title: "Rear-Wheel Drive",
