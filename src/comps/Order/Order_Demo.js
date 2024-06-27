@@ -2,7 +2,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const Order_Demo = ({ car }) => {
   return (
-    <section className="h-full bg-slate-50">
+    <section className="bg-slate-50 fixed w-2/3 h-full top-20">
       <Splide
         aria-label="Power Train"
         options={{
@@ -16,7 +16,7 @@ const Order_Demo = ({ car }) => {
         {car.order.demo.map((item, index) => {
           return (
             <SplideSlide>
-              <img src={item} alt={index} />
+              <img src={item} alt={index} className="bg-fullobject size-full" />
             </SplideSlide>
           );
         })}
