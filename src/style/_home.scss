@@ -32,6 +32,26 @@
     }
   }
 }
+.splide__arrow {
+  @apply opacity-0 hover:opacity-50 text-xs transition-all duration-500 rounded backdrop-blur-sm text-slate-800 bg-slate-300;
+
+  &.splide__arrow- {
+    &-prev {
+      transform: translateX(-50%);
+    }
+    &-next {
+      transform: translateX(50%);
+    }
+  }
+}
+.orderSlider {
+  &:hover {
+    .splide__arrow {
+      transform: translateX(0) !important;
+      @apply opacity-30;
+    }
+  }
+}
 .sectionSplide {
   .splide {
     &__pagination {
