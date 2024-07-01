@@ -250,7 +250,7 @@ export const navLinks = [
         title: "Model S",
         links: [
           { label: "Learn", to: "/model s" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/model s/order" },
         ],
       },
       {
@@ -258,7 +258,7 @@ export const navLinks = [
         title: "Model X",
         links: [
           { label: "Learn", to: "/model x" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/model x/order" },
         ],
       },
       {
@@ -266,7 +266,7 @@ export const navLinks = [
         title: "Model 3",
         links: [
           { label: "Learn", to: "/model 3" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/model 3/order" },
         ],
       },
       {
@@ -274,7 +274,7 @@ export const navLinks = [
         title: "Model Y",
         links: [
           { label: "Learn", to: "/model y" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/model y/order" },
         ],
       },
       {
@@ -282,7 +282,7 @@ export const navLinks = [
         title: "Roadster",
         links: [
           { label: "Learn", to: "/roadster" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/roadster/order" },
         ],
       },
       {
@@ -290,7 +290,7 @@ export const navLinks = [
         title: "Cybertruck",
         links: [
           { label: "Learn", to: "/cybertruck" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/cybertruck/order" },
         ],
       },
       {
@@ -298,7 +298,7 @@ export const navLinks = [
         title: "Semi",
         links: [
           { label: "Learn", to: "/semi" },
-          { label: "Order", to: "/" },
+          { label: "Order", to: "/contact" },
         ],
       },
       {
@@ -1014,7 +1014,6 @@ export const vehicles = [
       ],
     },
     order: {
-      dog: "***",
       estimated: "Jun 2024",
       iZEV: true,
       demo: [
@@ -1213,7 +1212,6 @@ export const vehicles = [
           "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.",
       },
     ],
-
     amenities: [
       {
         image: Amenity_1_3,
@@ -1328,6 +1326,67 @@ export const vehicles = [
         "Lane Departure Warning",
       ],
     },
+    order: {
+      estimated: "Jun 2024",
+      iZEV: true,
+      demo: [
+        Order_Demo_3_1,
+        Order_Demo_3_2,
+        Order_Demo_3_3,
+        Order_Demo_3_4,
+        Order_Demo_3_5,
+      ],
+      editions: [
+        {
+          title: "Rear-Wheel Drive",
+          label: "Model 3",
+          price: 50990,
+        },
+        {
+          title: "Dual Motor All-Wheel Drive",
+          label: "Model 3 Long Range",
+          price: 60990,
+        },
+        {
+          label: "Model 3 Performance",
+          price: 69990,
+        },
+      ],
+      paint: [0, 1, 2, 3, 4],
+      wheels: [
+        {
+          demo: Model_S_Wheel_1,
+          name: "18’’ Photon Wheels",
+          price: "Included",
+          type: "All-Season Tires",
+          range: 438,
+        },
+        {
+          demo: Model_S_Wheel_2,
+          name: "19’’ Nova Wheels",
+          price: 2000,
+          type: "All-Season Tires",
+          range: 399,
+        },
+      ],
+      interior: [0, 1],
+      charging: {
+        title: "Charging",
+        warn: "Home charging equipment is not included",
+        checkes: [
+          { label: "Universal Wall Connector", price: 800 },
+          { label: "Mobile Coonnector", price: 345 },
+        ],
+      },
+      accessories: {
+        title: "Accessories",
+        checkes: [
+          { label: "Model 3 Roof Rack", price: 480 },
+          { label: "Model 3 Center Console Trays", price: 45 },
+          { label: "Model 3 All-Weather Interior Liners", price: 310 },
+        ],
+      },
+    },
   },
   {
     model: "Model Y",
@@ -1385,7 +1444,6 @@ export const vehicles = [
         },
       ],
     },
-
     range: {
       title: "Go Anywhere",
       cover: Range_X,
@@ -1579,6 +1637,67 @@ export const vehicles = [
         "Side Collision Protection",
         "Lane Departure Warning",
       ],
+    },
+    order: {
+      estimated: "Jun 2024",
+      iZEV: true,
+      demo: [
+        Order_Demo_3_1,
+        Order_Demo_3_2,
+        Order_Demo_3_3,
+        Order_Demo_3_4,
+        Order_Demo_3_5,
+      ],
+      editions: [
+        {
+          title: "Rear-Wheel Drive",
+          label: "Model 3",
+          price: 50990,
+        },
+        {
+          title: "Dual Motor All-Wheel Drive",
+          label: "Model 3 Long Range",
+          price: 60990,
+        },
+        {
+          label: "Model 3 Performance",
+          price: 69990,
+        },
+      ],
+      paint: [0, 1, 2, 3, 4],
+      wheels: [
+        {
+          demo: Model_S_Wheel_1,
+          name: "18’’ Photon Wheels",
+          price: "Included",
+          type: "All-Season Tires",
+          range: 438,
+        },
+        {
+          demo: Model_S_Wheel_2,
+          name: "19’’ Nova Wheels",
+          price: 2000,
+          type: "All-Season Tires",
+          range: 399,
+        },
+      ],
+      interior: [0, 1],
+      charging: {
+        title: "Charging",
+        warn: "Home charging equipment is not included",
+        checkes: [
+          { label: "Universal Wall Connector", price: 800 },
+          { label: "Mobile Coonnector", price: 345 },
+        ],
+      },
+      accessories: {
+        title: "Accessories",
+        checkes: [
+          { label: "Model 3 Roof Rack", price: 480 },
+          { label: "Model 3 Center Console Trays", price: 45 },
+          { label: "Model 3 All-Weather Interior Liners", price: 310 },
+        ],
+      },
     },
   },
   {
@@ -1825,6 +1944,67 @@ export const vehicles = [
         "Lane Departure Warning",
       ],
     },
+    order: {
+      estimated: "Jun 2024",
+      iZEV: true,
+      demo: [
+        Order_Demo_3_1,
+        Order_Demo_3_2,
+        Order_Demo_3_3,
+        Order_Demo_3_4,
+        Order_Demo_3_5,
+      ],
+      editions: [
+        {
+          title: "Rear-Wheel Drive",
+          label: "Model 3",
+          price: 50990,
+        },
+        {
+          title: "Dual Motor All-Wheel Drive",
+          label: "Model 3 Long Range",
+          price: 60990,
+        },
+        {
+          label: "Model 3 Performance",
+          price: 69990,
+        },
+      ],
+      paint: [0, 1, 2, 3, 4],
+      wheels: [
+        {
+          demo: Model_S_Wheel_1,
+          name: "18’’ Photon Wheels",
+          price: "Included",
+          type: "All-Season Tires",
+          range: 438,
+        },
+        {
+          demo: Model_S_Wheel_2,
+          name: "19’’ Nova Wheels",
+          price: 2000,
+          type: "All-Season Tires",
+          range: 399,
+        },
+      ],
+      interior: [0, 1],
+      charging: {
+        title: "Charging",
+        warn: "Home charging equipment is not included",
+        checkes: [
+          { label: "Universal Wall Connector", price: 800 },
+          { label: "Mobile Coonnector", price: 345 },
+        ],
+      },
+      accessories: {
+        title: "Accessories",
+        checkes: [
+          { label: "Model 3 Roof Rack", price: 480 },
+          { label: "Model 3 Center Console Trays", price: 45 },
+          { label: "Model 3 All-Weather Interior Liners", price: 310 },
+        ],
+      },
+    },
   },
   {
     model: "Roadster",
@@ -1890,6 +2070,67 @@ export const vehicles = [
       title: "Glass Roof",
       describe:
         "A lightweight, removable Glass Roof stores in the trunk for an open-air, convertible driving experience.",
+    },
+    order: {
+      estimated: "Jun 2024",
+      iZEV: true,
+      demo: [
+        Order_Demo_3_1,
+        Order_Demo_3_2,
+        Order_Demo_3_3,
+        Order_Demo_3_4,
+        Order_Demo_3_5,
+      ],
+      editions: [
+        {
+          title: "Rear-Wheel Drive",
+          label: "Model 3",
+          price: 50990,
+        },
+        {
+          title: "Dual Motor All-Wheel Drive",
+          label: "Model 3 Long Range",
+          price: 60990,
+        },
+        {
+          label: "Model 3 Performance",
+          price: 69990,
+        },
+      ],
+      paint: [0, 1, 2, 3, 4],
+      wheels: [
+        {
+          demo: Model_S_Wheel_1,
+          name: "18’’ Photon Wheels",
+          price: "Included",
+          type: "All-Season Tires",
+          range: 438,
+        },
+        {
+          demo: Model_S_Wheel_2,
+          name: "19’’ Nova Wheels",
+          price: 2000,
+          type: "All-Season Tires",
+          range: 399,
+        },
+      ],
+      interior: [0, 1],
+      charging: {
+        title: "Charging",
+        warn: "Home charging equipment is not included",
+        checkes: [
+          { label: "Universal Wall Connector", price: 800 },
+          { label: "Mobile Coonnector", price: 345 },
+        ],
+      },
+      accessories: {
+        title: "Accessories",
+        checkes: [
+          { label: "Model 3 Roof Rack", price: 480 },
+          { label: "Model 3 Center Console Trays", price: 45 },
+          { label: "Model 3 All-Weather Interior Liners", price: 310 },
+        ],
+      },
     },
   },
   {

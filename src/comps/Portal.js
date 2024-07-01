@@ -82,8 +82,10 @@ import Order_Interior from "./Order/Options/Order_Interior";
 import Order_Self from "./Order/Options/Order_Self";
 import Order_Check from "./Order/Options/Order_Check";
 import Order_Demo from "./Order/Order_Demo";
+import Outlaw from "./Commons/Outlaw";
 
 export {
+  Outlaw,
   Order_Demo,
   Order_Check,
   Order_Self,

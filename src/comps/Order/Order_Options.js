@@ -6,9 +6,13 @@ import {
   Order_Self,
   Order_Wheel,
   Select_Price,
+  Outlaw,
 } from "../Portal";
+import { useState } from "react";
 
 const Order_Options = ({ car }) => {
+  const [postOpen, setPostOpen] = useState(false);
+
   return (
     <div className="px-10 py-5 text-center grid gap-y-32">
       <section className="grid gap-y-3">
@@ -18,7 +22,25 @@ const Order_Options = ({ car }) => {
         </p>
         <div className="flex-fullcenter">
           <i className="fa-solid fa-circle-info text-blue-500 me-1" />
-          <p className="link para text-slate-200">Enter Postal Code</p>
+          <button
+            className="link para text-slate-200"
+            onClick={() => setPostOpen(true)}
+          >
+            Enter Postal Code
+          </button>
+          <Outlaw
+            Outlaw
+            title="Enter Your Postal Code"
+            isOpen={postOpen}
+            onClose={() => setPostOpen(false)}
+          >
+            <form className="mt-10">
+              <input type="text" className="field" />
+              <button type="submit" className="button button-sky mt-12">
+                Confirm
+              </button>
+            </form>
+          </Outlaw>
         </div>
         <div className=" grid grid-cols-3">
           {car.numbers.map((item, index) => {
